@@ -7,7 +7,7 @@
   "main": "src/electron/main.js",
   "scripts": {
     "dev:react": "vite",
-    "dev:electron": "electron .",
+    "dev:electron": "NODE_ENV=development electron .",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
