@@ -9,7 +9,7 @@ export default defineConfig({
     outDir: "dist-react",
   },
   server: {
-    port: 3301,
+    port: 8000,
     strictPort: true,
   }
 })
