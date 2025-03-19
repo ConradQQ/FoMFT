@@ -1,1 +1,1 @@
-Loadout tool for Face of Mankind
+A Loadout tool for Face of Mankind, built using ElectronJS & React. Allows users to build, test, and save loadouts.

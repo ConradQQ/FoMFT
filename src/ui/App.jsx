@@ -1,6 +1,7 @@
 import './input.css'
 import ItemSlot from './components/ItemSlot'
 import ItemMenu from './components/ItemMenu'
+import StatsDisplay from './components/StatsDisplay'
 function App() {
 
   return (
@@ -37,9 +38,10 @@ function App() {
           <div id='medSlot' className='text-center bg-purple-300 w-16 h-16 mx-2 lg:w-32 lg:h-32'><ItemSlot slot="Booster" /></div>
         </div>
       </div>
+      {/* Stats Display */}
       <div className="stats-display bg-amber-700 flex flex-col w-1/3 h-full items-center">
         <h2>Total Stats</h2>
-        
+        <StatsDisplay />
       </div>
     </div>
   </>

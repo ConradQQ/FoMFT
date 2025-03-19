@@ -7,6 +7,7 @@ import FoodMenu from './FoodMenu';
 import { XCircle } from 'lucide-react'; 
 
 const ItemMenu = ({ onItemSelected }) => {
+
   const [selectedCategory, setSelectedCategory] = useState(null);
   const [showArmorTypes, setShowArmorTypes] = useState(false);
 
