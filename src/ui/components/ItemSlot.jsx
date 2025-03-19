@@ -48,7 +48,7 @@ const ItemSlot = ({ slot }) => {
         className="slot-title cursor-pointer" // Add cursor-pointer for visual feedback
         onClick={toggleItems}
       >
-        {slot.charAt(0).toUpperCase() + slot.slice(1)} 
+        {/* {slot.charAt(0).toUpperCase() + slot.slice(1)}  */}
       </div>
       {showItems && (
         <ul className="item-list">

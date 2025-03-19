@@ -26,6 +26,9 @@
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
+.HCS-slots {
+  border-spacing: 10px;
+}
 
 
 /* Media Queries */
