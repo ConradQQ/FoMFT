@@ -54,7 +54,7 @@ const ArmorMenu = ({ onItemSelected }) => {
           Armor
         </div>
         {showArmorTypes && (
-          <div className="armor-types">
+          <div className="armor-types flex flex-col">
             {armorTypes.map((type) => (
               <button key={type} onClick={() => handleArmorTypeClick(type)}>
                 {type.charAt(0).toUpperCase() + type.slice(1)}
