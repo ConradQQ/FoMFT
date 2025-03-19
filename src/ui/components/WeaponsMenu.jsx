@@ -35,7 +35,7 @@ const WeaponsMenu = ({ onItemSelected }) => {
         {weapons.length > 0 && (
           <ul className="item-list overflow-y-auto max-h-100">
             {weapons.map((weapon) => (
-              <li key={weapon.id} onClick={() => handleItemClick(weapon)}>
+              <li key={weapon.weapon_id} onClick={() => handleItemClick(weapon)} className='cursor-pointer'>
                 {weapon.weapon_name}
               </li>
             ))}

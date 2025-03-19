@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
-const ArmorMenu = ({ onItemSelected }) => {
+const ArmorMenu = ({ onItemSelected, showArmorTypes }) => {
   const [armorTypes, _setArmorTypes] = useState([
     'helmet',
     'torso',
@@ -12,13 +12,13 @@ const ArmorMenu = ({ onItemSelected }) => {
   ]);
 
   const [selectedArmorType, setSelectedArmorType] = useState(null);
-  const [showArmorTypes, setShowArmorTypes] = useState(false);
   const [items, setItems] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
 
+
   useEffect(() => {
-    if(selectedArmorType) {
+    if (selectedArmorType) {
       const fetchData = async () => {
         setLoading(true);
         try {
@@ -32,31 +32,28 @@ const ArmorMenu = ({ onItemSelected }) => {
       };
       fetchData();
     }
-    
   }, [selectedArmorType]);
 
   const handleArmorTypeClick = (type) => {
     setSelectedArmorType(type);
+
   };
 
   const handleItemClick = (item) => {
     onItemSelected(item);
   };
 
-  const handleArmorClick = () => {
-    setShowArmorTypes(!showArmorTypes);
-  };
-  
   return (
     <div className="armor-menu">
-      <div className="armor-category">
-        <div className="armor-label" onClick={handleArmorClick}>
-          Armor
-        </div>
+      <div className="armor-category absolute top-0 ml-2 lg:ml-8">
         {showArmorTypes && (
-          <div className="armor-types flex flex-col">
+          <div className="armor-types flex flex-row text-[14px] lg:text-[24px]">
             {armorTypes.map((type) => (
-              <button key={type} onClick={() => handleArmorTypeClick(type)}>
+              <button
+                key={type}
+                onClick={() => handleArmorTypeClick(type)}
+                className='mx-1 lg:mx-5 font-bold underline text-blue-800'
+              >
                 {type.charAt(0).toUpperCase() + type.slice(1)}
               </button>
             ))}
@@ -68,9 +65,13 @@ const ArmorMenu = ({ onItemSelected }) => {
           {loading && <div>Loading...</div>}
           {error && <div>Error: {error}</div>}
           {items.length > 0 && (
-            <ul className="item-list overflow-y-auto max-h-100">
+            <ul className="item-list overflow-y-auto max-h-100 no-scrollbar">
               {items.map((item) => (
-                <li key={item.armor_id} onClick={() => handleItemClick(item)}>
+                <li
+                  key={item.armor_id}
+                  onClick={() => handleItemClick(item)}
+                  className='cursor-pointer'
+                >
                   {item.armor_name}
                 </li>
               ))}
