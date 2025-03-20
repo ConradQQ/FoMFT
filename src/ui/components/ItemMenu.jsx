@@ -10,6 +10,8 @@ const ItemMenu = ({ onItemSelected }) => {
 
   const [selectedCategory, setSelectedCategory] = useState(null);
   const [showArmorTypes, setShowArmorTypes] = useState(false);
+  
+
 
   const handleCategoryClick = (category) => {
     if (category === 'armor') {
