@@ -2,14 +2,23 @@ import './input.css'
 import ItemSlot from './components/ItemSlot'
 import ItemMenu from './components/ItemMenu'
 import StatsDisplay from './components/StatsDisplay'
+import { useState } from 'react'
+
+
 function App() {
+
+  const [itemObjects, setItemObjects] = useState([]);
+  const [slotTypes, setSlotTypes] = useState([]);
 
   return (
     <>
     <div className="app-container flex flex-row w-screen h-screen bg-amber-400 overflow-hidden">
       <div className='items-menu w-1/3 bg-teal-500'>
         <div className='flex flex-col'>
-         <ItemMenu />
+         <ItemMenu  
+         setItemObjects={setItemObjects}
+         setSlotTypes={setSlotTypes}
+         slotTypes={slotTypes}/>
         </div>
       </div>
       <div className="item-slots bg-fuchsia-800 flex flex-col w-1/3 h-full items-center"> 
@@ -41,7 +50,9 @@ function App() {
       {/* Stats Display */}
       <div className="stats-display bg-amber-700 flex flex-col w-1/3 h-full items-center">
         <h2>Total Stats</h2>
-        <StatsDisplay />
+        <StatsDisplay 
+        itemObjects = {itemObjects}
+        slotTypes = {slotTypes} />
       </div>
     </div>
   </>

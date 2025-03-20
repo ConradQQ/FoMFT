@@ -11,7 +11,7 @@ const WeaponsMenu = ({ onItemSelected }) => {
     const fetchData = async () => {
       setLoading(true);
       try {
-        const response = await axios.get('http://localhost:3000/weapons'); // Adjust API URL if needed
+        const response = await axios.get('http://localhost:3000/weapons'); 
         setWeapons(response.data);
         setLoading(false);
       } catch (err) {
@@ -21,7 +21,7 @@ const WeaponsMenu = ({ onItemSelected }) => {
     };
 
     fetchData();
-  }, []); // Run only once on mount
+  }, []); 
 
   const handleItemClick = (weapon) => {
     onItemSelected(weapon);
@@ -35,7 +35,7 @@ const WeaponsMenu = ({ onItemSelected }) => {
         {weapons.length > 0 && (
           <ul className="item-list overflow-y-auto max-h-100">
             {weapons.map((weapon) => (
-              <li key={weapon.weapon_id} onClick={() => handleItemClick(weapon)} className='cursor-pointer'>
+              <li key={weapon.weapon_id} onClick={() => handleItemClick(weapon)} className='cursor-pointer underline'>
                 {weapon.weapon_name}
               </li>
             ))}

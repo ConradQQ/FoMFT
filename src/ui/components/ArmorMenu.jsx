@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
-const ArmorMenu = ({ onItemSelected, showArmorTypes }) => {
+const ArmorMenu = ({showArmorTypes, setItemObjects, setSlotTypes, slotTypes }) => {
   const [armorTypes, _setArmorTypes] = useState([
     'helmet',
     'torso',
@@ -40,7 +40,10 @@ const ArmorMenu = ({ onItemSelected, showArmorTypes }) => {
   };
 
   const handleItemClick = (item) => {
-    onItemSelected(item);
+    setSlotTypes(prevSlotTypes => [...prevSlotTypes, item.slot]);
+    setItemObjects(prevItemObject => [...prevItemObject, item])
+    console.log(slotTypes)
+  
   };
 
   return (
@@ -69,8 +72,10 @@ const ArmorMenu = ({ onItemSelected, showArmorTypes }) => {
               {items.map((item) => (
                 <li
                   key={item.armor_id}
-                  onClick={() => handleItemClick(item)}
-                  className='cursor-pointer'
+                  onClick={() => {
+                    handleItemClick(item)
+                  }}
+                  className='cursor-pointer underline mt-0.5'
                 >
                   {item.armor_name}
                 </li>

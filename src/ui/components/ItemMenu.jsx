@@ -6,7 +6,7 @@ import ImplantsMenu from './ImplantsMenu';
 import FoodMenu from './FoodMenu';
 import { XCircle } from 'lucide-react'; 
 
-const ItemMenu = ({ onItemSelected }) => {
+const ItemMenu = ({ onItemSelected, setItemObjects, setSlotTypes, slotTypes }) => {
 
   const [selectedCategory, setSelectedCategory] = useState(null);
   const [showArmorTypes, setShowArmorTypes] = useState(false);
@@ -97,13 +97,40 @@ const ItemMenu = ({ onItemSelected }) => {
         <ArmorMenu
           onItemSelected={onItemSelected}
           showArmorTypes={showArmorTypes}
+          setItemObjects={setItemObjects}
+          setSlotTypes={setSlotTypes}
+          slotTypes={slotTypes}
         />
       )}
-      {selectedCategory === 'weapons' && <WeaponsMenu onItemSelected={onItemSelected} />}
-      {selectedCategory === 'implants' && <ImplantsMenu onItemSelected={onItemSelected} />}
-      {selectedCategory === 'food' && <FoodMenu onItemSelected={onItemSelected} />}
-      {/* {selectedCategory === 'boosters' && <BoostersMenu onItemSelected={onItemSelected} />} */}
-      {selectedCategory === 'meds' && <MedsMenu onItemSelected={onItemSelected} />}
+      {selectedCategory === 'weapons' && <WeaponsMenu 
+      onItemSelected={onItemSelected} 
+      setItemObjects={setItemObjects}
+      setSlotTypes={setSlotTypes}
+      slotTypes={slotTypes}/>}
+
+      {selectedCategory === 'implants' && <ImplantsMenu 
+      onItemSelected={onItemSelected} 
+      setItemObjects={setItemObjects}
+      setSlotTypes={setSlotTypes}
+      slotTypes={slotTypes}/>}
+
+      {selectedCategory === 'food' && <FoodMenu 
+      onItemSelected={onItemSelected} 
+      setItemObjects={setItemObjects}
+      setSlotTypes={setSlotTypes}
+      slotTypes={slotTypes}/>}
+
+      {/* {selectedCategory === 'boosters' && <BoostersMenu 
+      onItemSelected={onItemSelected} 
+      setItemObjects={setItemObjects}
+      setSlotTypes={setSlotTypes}
+      slotTypes={slotTypes}/>} */}
+      
+      {selectedCategory === 'meds' && <MedsMenu 
+      onItemSelected={onItemSelected} 
+      setItemObjects={setItemObjects}
+      setSlotTypes={setSlotTypes}
+      slotTypes={slotTypes}/>}
     </div>
   );
 };

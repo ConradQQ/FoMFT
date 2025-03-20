@@ -34,7 +34,8 @@ const ImplantsMenu = ({ onItemSelected }) => {
         {implants.length > 0 && (
           <ul className="item-list overflow-y-auto max-h-100">
             {implants.map((implant) => (
-              <li key={implant.id} className='cursor-pointer'
+              <li key={implant.id} 
+              className='cursor-pointer underline mt-0.5'
                   onClick={() => handleItemClick(implant)}>
                   {implant.implant_name}
               </li>
