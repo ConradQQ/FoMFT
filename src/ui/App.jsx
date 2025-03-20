@@ -18,6 +18,7 @@ function App() {
          <ItemMenu  
          setItemObjects={setItemObjects}
          setSlotTypes={setSlotTypes}
+         itemObjects={itemObjects}
          slotTypes={slotTypes}/>
         </div>
       </div>

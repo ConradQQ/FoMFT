@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
-const ArmorMenu = ({showArmorTypes, setItemObjects, setSlotTypes, slotTypes }) => {
+const ArmorMenu = ({showArmorTypes, setItemObjects, itemObjects, setSlotTypes}) => {
   const [armorTypes, _setArmorTypes] = useState([
     'helmet',
     'torso',
@@ -40,10 +40,38 @@ const ArmorMenu = ({showArmorTypes, setItemObjects, setSlotTypes, slotTypes }) =
   };
 
   const handleItemClick = (item) => {
-    setSlotTypes(prevSlotTypes => [...prevSlotTypes, item.slot]);
-    setItemObjects(prevItemObject => [...prevItemObject, item])
-    console.log(slotTypes)
-  
+    let duplicateSlot = false;
+    let duplicateIndex = -1;
+
+// Check for duplicate slot type
+
+    itemObjects.forEach((existingItem, index) => {
+      if (item.slot === existingItem.slot) {
+        duplicateSlot = true;
+        duplicateIndex = index;
+      }
+    });
+
+// Logic for replacing duplicate slot with new item of the same slot type
+
+    if (duplicateSlot) {
+      setItemObjects(prevItemsObject => {
+        const newItemsObject = [...prevItemsObject];
+        newItemsObject[duplicateIndex] = item;
+        return newItemsObject
+      });
+
+      setSlotTypes(prevSlotTypes => {
+        const newSlotTypes = [...prevSlotTypes];
+        newSlotTypes[duplicateIndex] = item.slot; 
+        return newSlotTypes;
+      });
+
+    } else {
+        setItemObjects(prevItemObjects => [...prevItemObjects, item]);
+        setSlotTypes(prevSlotTypes => [...prevSlotTypes, item.slot]);   
+    }
+
   };
 
   return (

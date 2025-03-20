@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
-const FoodMenu = ({ onItemSelected }) => {
+const FoodMenu = ({ setItemObjects, itemObjects, setSlotTypes}) => {
   const [foods, setFoods] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
@@ -21,8 +21,39 @@ const FoodMenu = ({ onItemSelected }) => {
     fetchData();
   }, []);
 
-  const handleItemClick = (food) => {
-    onItemSelected(food);
+  const handleItemClick = (item) => {
+    let duplicateSlot = false;
+    let duplicateIndex = -1;
+
+// Check for duplicate slot type
+
+    itemObjects.forEach((existingItem, index) => {
+      if (item.slot === existingItem.slot) {
+        duplicateSlot = true;
+        duplicateIndex = index;
+      }
+    });
+
+// Logic for replacing duplicate slot with new item of the same slot type
+
+    if (duplicateSlot) {
+      setItemObjects(prevItemsObject => {
+        const newItemsObject = [...prevItemsObject];
+        newItemsObject[duplicateIndex] = item;
+        return newItemsObject
+      });
+
+      setSlotTypes(prevSlotTypes => {
+        const newSlotTypes = [...prevSlotTypes];
+        newSlotTypes[duplicateIndex] = item.slot; 
+        return newSlotTypes;
+      });
+
+    } else {
+        setItemObjects(prevItemObjects => [...prevItemObjects, item]);
+        setSlotTypes(prevSlotTypes => [...prevSlotTypes, item.slot]);   
+    }
+
   };
 
   return (

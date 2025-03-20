@@ -6,7 +6,7 @@ import ImplantsMenu from './ImplantsMenu';
 import FoodMenu from './FoodMenu';
 import { XCircle } from 'lucide-react'; 
 
-const ItemMenu = ({ onItemSelected, setItemObjects, setSlotTypes, slotTypes }) => {
+const ItemMenu = ({ onItemSelected, setItemObjects, itemObjects, setSlotTypes, slotTypes }) => {
 
   const [selectedCategory, setSelectedCategory] = useState(null);
   const [showArmorTypes, setShowArmorTypes] = useState(false);
@@ -98,6 +98,7 @@ const ItemMenu = ({ onItemSelected, setItemObjects, setSlotTypes, slotTypes }) =
           onItemSelected={onItemSelected}
           showArmorTypes={showArmorTypes}
           setItemObjects={setItemObjects}
+          itemObjects={itemObjects}
           setSlotTypes={setSlotTypes}
           slotTypes={slotTypes}
         />
@@ -105,30 +106,35 @@ const ItemMenu = ({ onItemSelected, setItemObjects, setSlotTypes, slotTypes }) =
       {selectedCategory === 'weapons' && <WeaponsMenu 
       onItemSelected={onItemSelected} 
       setItemObjects={setItemObjects}
+      itemObjects={itemObjects}
       setSlotTypes={setSlotTypes}
       slotTypes={slotTypes}/>}
 
       {selectedCategory === 'implants' && <ImplantsMenu 
       onItemSelected={onItemSelected} 
       setItemObjects={setItemObjects}
+      itemObjects={itemObjects}
       setSlotTypes={setSlotTypes}
       slotTypes={slotTypes}/>}
 
       {selectedCategory === 'food' && <FoodMenu 
       onItemSelected={onItemSelected} 
       setItemObjects={setItemObjects}
+      itemObjects={itemObjects}
       setSlotTypes={setSlotTypes}
       slotTypes={slotTypes}/>}
 
       {/* {selectedCategory === 'boosters' && <BoostersMenu 
       onItemSelected={onItemSelected} 
       setItemObjects={setItemObjects}
+      itemObjects={itemObjects}
       setSlotTypes={setSlotTypes}
       slotTypes={slotTypes}/>} */}
-      
+
       {selectedCategory === 'meds' && <MedsMenu 
       onItemSelected={onItemSelected} 
       setItemObjects={setItemObjects}
+      itemObjects={itemObjects}
       setSlotTypes={setSlotTypes}
       slotTypes={slotTypes}/>}
     </div>
