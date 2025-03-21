@@ -79,7 +79,7 @@ const ArmorMenu = ({showArmorTypes, setItemObjects, itemObjects, setSlotTypes}) 
     <div className="armor-menu">
       <div className="armor-category absolute top-0 ml-2 lg:ml-8">
         {showArmorTypes && (
-          <div className="armor-types flex flex-row text-[14px] lg:text-[24px]">
+          <div className="armor-types flex flex-row text-[11px] lg:text-[16px]">
             {armorTypes.map((type) => (
               <button
                 key={type}

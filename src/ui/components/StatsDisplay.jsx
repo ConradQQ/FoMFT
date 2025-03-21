@@ -16,6 +16,7 @@ const StatsDisplay = ({ itemObjects }) => {
       }
     }
   });
+  
   // Logic for adding stats to armorStats object
   itemObjects.forEach(item => {
     if(Object.keys(item)[0] === 'armor_id' || Object.keys(item)[0] === 'implant_id') {
@@ -58,7 +59,7 @@ const StatsDisplay = ({ itemObjects }) => {
       }
       delete weaponStats.agility
     }
-  }
+  };
 
   for (let [armorKey, armorValue] of Object.entries(armorStats)) {
     if (armorKey === 'weapon recoil') {
@@ -70,9 +71,30 @@ const StatsDisplay = ({ itemObjects }) => {
       }
       delete armorStats['weapon recoil']
     }
-  }
+  };
 
-  console.log(armorStats)
+// Round decimals in each of the stat objects
+
+for (let [weaponKey, weaponValue] of Object.entries(weaponStats)) {
+
+  if (typeof weaponStats[weaponKey] === 'number') {
+
+    weaponStats[weaponKey] = Math.round(weaponStats[weaponKey] * 10000) / 10000
+
+}
+
+};
+
+
+for (let [armorKey, armorValue] of Object.entries(armorStats)) {
+
+  if (typeof armorStats[armorKey] === 'number') {
+
+    armorStats[armorKey] = Math.round(armorStats[armorKey] * 10000) / 10000
+}
+
+};
+
 
   return (
     <div className="stats-container">
