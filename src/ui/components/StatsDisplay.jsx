@@ -18,7 +18,7 @@ const StatsDisplay = ({ itemObjects }) => {
   });
   // Logic for adding stats to armorStats object
   itemObjects.forEach(item => {
-    if(Object.keys(item)[0] === 'armor_id') {
+    if(Object.keys(item)[0] === 'armor_id' || Object.keys(item)[0] === 'implant_id') {
       if (item.stats) {
         for (const key in item.stats) {
           const value = item.stats[key];
@@ -46,6 +46,33 @@ const StatsDisplay = ({ itemObjects }) => {
       }
   }});
 
+  // Logic for handling agility and weapon_recoil
+
+  for (let [weaponKey, weaponValue] of Object.entries(weaponStats)) {
+    if (weaponKey === 'agility') {
+      if (armorStats.agility) {
+        armorStats.agility += weaponValue;
+      }
+      else{
+        armorStats.agility = weaponValue
+      }
+      delete weaponStats.agility
+    }
+  }
+
+  for (let [armorKey, armorValue] of Object.entries(armorStats)) {
+    if (armorKey === 'weapon recoil') {
+      if (weaponStats['weapon recoil']) {
+        weaponStats['weapon recoil'] += armorValue;
+      }
+      else{
+        weaponStats['weapon recoil'] = armorValue
+      }
+      delete armorStats['weapon recoil']
+    }
+  }
+
+  console.log(armorStats)
 
   return (
     <div className="stats-container">

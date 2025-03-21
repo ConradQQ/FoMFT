@@ -9,6 +9,7 @@ const ArmorMenu = ({showArmorTypes, setItemObjects, itemObjects, setSlotTypes}) 
     'arms',
     'legs',
     'shoulders',
+    'hands'
   ]);
 
   const [selectedArmorType, setSelectedArmorType] = useState(null);
