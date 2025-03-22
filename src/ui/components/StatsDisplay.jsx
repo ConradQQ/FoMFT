@@ -18,10 +18,11 @@ const StatsDisplay = ({ itemObjects }) => {
   });
   
   // Logic for adding stats to armorStats object
+
   itemObjects.forEach(item => {
     if(
-      Object.keys(item)[0] === 'armor_id' || Object.keys(item)[0] === 'implant_id'
-    || Object.keys(item)[0] === 'food_id' || Object.keys(item)[0] === 'booster_id') {
+      Object.keys(item)[0] === 'armor_id' || Object.keys(item)[0] === 'implant_id' ||
+      Object.keys(item)[0] === 'food_id' || Object.keys(item)[0] === 'med_id'  ) {
       if (item.stats) {
         for (const key in item.stats) {
           const value = item.stats[key];
@@ -35,6 +36,7 @@ const StatsDisplay = ({ itemObjects }) => {
   }});
 
   // Logic for adding stats to weaponStats object
+  
   itemObjects.forEach(item => {
     if(Object.keys(item)[0] === 'weapon_id') {
       if (item.stats) {

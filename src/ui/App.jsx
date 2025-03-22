@@ -10,7 +10,27 @@ function App() {
   const [itemObjects, setItemObjects] = useState([]);
   const [slotTypes, setSlotTypes] = useState([]);
 
-  const isChestAvailable = slotTypes.includes('chest')
+  const isHelmetSlotSelected = slotTypes.includes('Helmet');
+  const isTorsoSlotSelected = slotTypes.includes('Torso');
+  const isArmsSlotSelected = slotTypes.includes('Arms');
+
+  const isShoulderSlotSelected = slotTypes.includes('Shoulders');
+
+  const isLegsSlotSelected = slotTypes.includes('Legs');
+  const isHandsSlotSelected = slotTypes.includes('Hands');
+
+  const isWeaponSlotSelected = slotTypes.includes('weapon');
+
+  const isFoodSlotSelected = slotTypes.includes('food');
+
+  // const isBoosterSlotSelected = slotTypes.includes('booster');
+
+  const isMedSlotSelected = slotTypes.includes('med');
+
+
+
+
+  console.log(isHelmetSlotSelected)
 
   return (
     <>
@@ -31,23 +51,44 @@ function App() {
         <h1>Armor Slots</h1>
         {/* Armor Slots Layout */}
         <div className='armor-slots flex flex-col w-full h-2/6 border-2 border-indigo-600'>
-          <div className='HCS-slots flex flex-row justify-center  p-2'>
-            <div id='chestSlot' className='text-center bg-black w-16 h-16 mx-2 lg:w-32 lg:h-32'>
-              <ItemSlot slot="Torso" />
-            </div>
-            <div id='headSlot' className='text-center bg-amber-900 w-16 h-16 mx-2 lg:w-32 lg:h-32'>
-              <ItemSlot slot="Helmet" />
-            </div>
-            <div id='shoulderSlot' className='text-center bg-blue-400 w-16 h-16 mx-2 lg:w-32 lg:h-32'>
-              <ItemSlot slot="Shoulders" />
-            </div>
+          <div className='HTS-slots flex flex-row justify-center  p-2'>
+              <div className={isHelmetSlotSelected 
+                ? 'text-center bg-red-300 w-16 h-16 mx-2 lg:w-32 lg:h-32'
+                : 'text-center bg-[url(assets/headSlot.png)] w-16 h-16 mx-2 lg:w-32 lg:h-32 lg:bg-[url(assets/headSlotLG.png)]'
+              }>
+
+              </div>
+              <div className={isTorsoSlotSelected 
+                ? 'text-center bg-red-300 w-16 h-16 mx-2 lg:w-32 lg:h-32'
+                : 'text-center bg-[url(assets/torsoSlot.png)] w-16 h-16 mx-2 lg:w-32 lg:h-32 lg:bg-[url(assets/torsoSlotLG.png)]'
+              }>
+
+              </div>
+              <div className={isArmsSlotSelected 
+                ? 'text-center bg-red-300 w-16 h-16 mx-2 lg:w-32 lg:h-32'
+                : 'text-center bg-[url(assets/armSlot.png)] w-16 h-16 mx-2 lg:w-32 lg:h-32 lg:bg-[url(assets/armSlotLG.png)]'
+              }>
+
+              </div>
           </div>
-          <div className='LH-slots flex flex-row justify-between p-2 '>
-            <div id='legSlot' className='text-center bg-red-400 w-16 h-16 mx-2 lg:w-32 lg:h-32'>
-              <ItemSlot slot="Legs" />
+          <div className='LSH-slots flex flex-row justify-between p-2 '>
+          <div className={isLegsSlotSelected 
+                ? 'text-center bg-red-300 w-16 h-16 mx-2 lg:w-32 lg:h-32'
+                : 'text-center bg-[url(assets/legSlot.png)] w-16 h-16 mx-2 lg:w-32 lg:h-32 lg:bg-[url(assets/legSlotLG.png)]'
+              }>
+
             </div>
-            <div id='handSlot' className='text-center bg-green-300 w-16 h-16 mx-2 lg:w-32 lg:h-32'>
-              <ItemSlot slot="Hands" />
+            <div className={isShoulderSlotSelected 
+                ? 'text-center bg-red-300 w-16 h-16 mx-2 lg:w-32 lg:h-32'
+                : 'text-center bg-[url(assets/shouldersSlot.png)] w-16 h-16 mx-2 lg:w-32 lg:h-32 lg:bg-[url(assets/shouldersSlotLG.png)]'
+              }>
+
+            </div>
+            <div className={isHandsSlotSelected 
+                ? 'text-center bg-red-300 w-16 h-16 mx-2 lg:w-32 lg:h-32'
+                : 'text-center bg-[url(assets/handSlot.png)] w-16 h-16 mx-2 lg:w-32 lg:h-32 lg:bg-[url(assets/handSlotLG.png)]'
+              }>
+
             </div>
           </div>
         </div>
@@ -55,8 +96,11 @@ function App() {
         {/* Weapon Slot */}
 
         <div className='weapon-slot w-full h-2/10 mt-20 border-2 border-indigo-600 mb-20 p-2'>
-            <div id='weaponSlot' className='text-center bg-pink-600 w-full h-full'>
-              <ItemSlot slot="Weapon" />
+            <div id='weaponSlot' className={
+              isWeaponSlotSelected
+              ? 'text-center bg-pink-600 w-full h-full'
+              : 'text-center bg-green-600 w-full h-full'
+            }>
             </div>
         </div>
 
@@ -64,15 +108,20 @@ function App() {
 
         <h1>Misc. Slots</h1>
         <div className='misc-slots flex flex-row w-full justify-center mb-10 border-2 border-indigo-600 p-2'>
-          <div id='foodSlot' className='text-center bg-orange-300 w-16 h-16 mx-2 lg:w-32 lg:h-32'>
-            <ItemSlot slot="Food" />
-          </div>
-          <div id='boosterSlot' className='text-center bg-green-300 w-16 h-16 mx-2 lg:w-32 lg:h-32'>
-            <ItemSlot slot="Booster" />
-          </div>
-          <div id='medSlot' className='text-center bg-purple-300 w-16 h-16 mx-2 lg:w-32 lg:h-32'>
-            <ItemSlot slot="Booster" />
-          </div>
+        <div className={isFoodSlotSelected 
+                ? 'text-center bg-red-300 w-16 h-16 mx-2 lg:w-32 lg:h-32'
+                : 'text-center bg-green-300 w-16 h-16 mx-2 lg:w-32 lg:h-32'
+              }>
+
+        </div>
+            
+        <div className={isMedSlotSelected 
+                ? 'text-center bg-red-300 w-16 h-16 mx-2 lg:w-32 lg:h-32'
+                : 'text-center bg-green-300 w-16 h-16 mx-2 lg:w-32 lg:h-32'
+              }>
+
+        </div>
+        <ItemSlot slot="booster" />
         </div>
       </div>
 

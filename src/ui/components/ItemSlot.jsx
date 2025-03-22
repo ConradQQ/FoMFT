@@ -1,66 +1,18 @@
-// src/renderer/components/ItemSlot.jsx
-import React, { useState, useEffect } from 'react';
-import axios from 'axios';
+import React from 'react';
 
-const ItemSlot = ({ slot }) => {
-  const [items, setItems] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
-  const [showItems, setShowItems] = useState(false);
+const ItemSlot = ({slotTypes, slot}) => {
 
-  useEffect(() => {
-    if (showItems) {
-      const fetchData = async () => {
-        try {
-          const response = await axios.get(`http://localhost:3000/armor/${slot}`); 
-          setItems(response.data);
-          setLoading(false);
-        } catch (err) {
-          setError(err.message || 'Error fetching items.');
-          setLoading(false);
-        }
-      };
-
-      fetchData();
-    } else {
-      setLoading(false); 
-    }
-  }, [slot, showItems]);
-
-  const toggleItems = () => {
-    setShowItems(!showItems);
-    if (!showItems) {
-      setLoading(true); 
-    }
-  };
-
-  if (loading) {
-    return <div>Loading...</div>;
-  }
-
-  if (error) {
-    return <div>Error: {error}</div>;
-  }
+  const isSlotSelected = Array.isArray(slotTypes) && slotTypes.includes(slot);
 
   return (
-    <div className="item-slot">
-      <div
-        className="slot-title cursor-pointer" 
-        onClick={toggleItems}
-      >
-        {/* {slot.charAt(0).toUpperCase() + slot.slice(1)}  */}
-      </div>
-      {showItems && (
-        <ul className="item-list">
-          {items.map((item) => (
-            <li key={item.armor_id} className="item-list-item">
-              {item.armor_name} - {item.armor_defense} {/* Adjust based on your item properties */}
-            </li>
-          ))}
-        </ul>
-      )}
+    <div className={
+      isSlotSelected
+        ? 'text-center bg-red-300 w-16 h-16 mx-2 lg:w-32 lg:h-32'
+        : 'text-center bg-green-300 w-16 h-16 mx-2 lg:w-32 lg:h-32'
+    }>
     </div>
   );
+
 };
 
 export default ItemSlot;

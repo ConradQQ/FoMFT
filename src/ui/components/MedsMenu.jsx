@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
-const WeaponsMenu = ({setItemObjects, itemObjects, setSlotTypes }) => {
-  const [weapons, setWeapons] = useState([]);
+const MedsMenu = ({ setItemObjects, itemObjects, setSlotTypes}) => {
+  const [meds, setMeds] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
 
@@ -10,17 +10,16 @@ const WeaponsMenu = ({setItemObjects, itemObjects, setSlotTypes }) => {
     const fetchData = async () => {
       setLoading(true);
       try {
-        const response = await axios.get('http://localhost:3000/weapons'); 
-        setWeapons(response.data);
+        const response = await axios.get('http://localhost:3000/Meds');
+        setMeds(response.data);
         setLoading(false);
       } catch (err) {
-        setError(err.message || 'Error fetching weapons.');
+        setError(err.message || 'Error fetching food.');
         setLoading(false);
       }
     };
-
     fetchData();
-  }, []); 
+  }, []);
 
   const handleItemClick = (item) => {
     let duplicateSlot = false;
@@ -34,7 +33,7 @@ const WeaponsMenu = ({setItemObjects, itemObjects, setSlotTypes }) => {
         duplicateIndex = index;
       }
     });
-    
+
 // Logic for replacing duplicate slot with new item of the same slot type
 
     if (duplicateSlot) {
@@ -58,15 +57,17 @@ const WeaponsMenu = ({setItemObjects, itemObjects, setSlotTypes }) => {
   };
 
   return (
-    <div className="weapons-menu">
+    <div className="meds-menu">
       <div className="items flex flex-col">
         {loading && <div>Loading...</div>}
         {error && <div>Error: {error}</div>}
-        {weapons.length > 0 && (
+        {meds.length > 0 && (
           <ul className="item-list overflow-y-auto max-h-100">
-            {weapons.map((weapon) => (
-              <li key={weapon.weapon_id} onClick={() => handleItemClick(weapon)} className='cursor-pointer underline'>
-                {weapon.weapon_name}
+            {meds.map((med) => (
+              <li key={med.id} 
+                  className='cursor-pointer underline mt-0.5'
+                  onClick={() => handleItemClick(med)}>
+                  {med.med_name}
               </li>
             ))}
           </ul>
@@ -76,4 +77,4 @@ const WeaponsMenu = ({setItemObjects, itemObjects, setSlotTypes }) => {
   );
 };
 
-export default WeaponsMenu;
+export default MedsMenu;

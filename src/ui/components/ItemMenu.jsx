@@ -1,9 +1,9 @@
-// src/ui/components/ItemMenu.jsx
 import React, { useState } from 'react';
 import ArmorMenu from './ArmorMenu';
 import WeaponsMenu from './WeaponsMenu';
 import ImplantsMenu from './ImplantsMenu';
 import FoodMenu from './FoodMenu';
+import MedsMenu from './MedsMenu';
 import { XCircle } from 'lucide-react'; 
 
 const ItemMenu = ({ onItemSelected, setItemObjects, itemObjects, setSlotTypes, slotTypes }) => {
@@ -82,14 +82,14 @@ const ItemMenu = ({ onItemSelected, setItemObjects, itemObjects, setSlotTypes, s
             >
               Boosters
             </button> */}
-            {/* <button
+            <button
               onClick={() => handleCategoryClick('meds')}
               className={selectedCategory === 'meds' 
                 ? 'selected' 
                 : 'text-2xl lg:text-5xl my-2 lg:my-10'}
             >
               Meds
-            </button> */}
+            </button>
           </>
         )}
       </div>
