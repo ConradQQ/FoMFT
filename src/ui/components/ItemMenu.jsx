@@ -82,14 +82,14 @@ const ItemMenu = ({ onItemSelected, setItemObjects, itemObjects, setSlotTypes, s
             >
               Boosters
             </button> */}
-            <button
+            {/* <button
               onClick={() => handleCategoryClick('meds')}
               className={selectedCategory === 'meds' 
                 ? 'selected' 
                 : 'text-2xl lg:text-5xl my-2 lg:my-10'}
             >
               Meds
-            </button>
+            </button> */}
           </>
         )}
       </div>

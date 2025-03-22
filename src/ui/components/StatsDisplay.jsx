@@ -19,7 +19,9 @@ const StatsDisplay = ({ itemObjects }) => {
   
   // Logic for adding stats to armorStats object
   itemObjects.forEach(item => {
-    if(Object.keys(item)[0] === 'armor_id' || Object.keys(item)[0] === 'implant_id') {
+    if(
+      Object.keys(item)[0] === 'armor_id' || Object.keys(item)[0] === 'implant_id'
+    || Object.keys(item)[0] === 'food_id' || Object.keys(item)[0] === 'booster_id') {
       if (item.stats) {
         for (const key in item.stats) {
           const value = item.stats[key];
@@ -75,6 +77,7 @@ const StatsDisplay = ({ itemObjects }) => {
 
 // Round decimals in each of the stat objects
 
+// eslint-disable-next-line no-unused-vars
 for (let [weaponKey, weaponValue] of Object.entries(weaponStats)) {
 
   if (typeof weaponStats[weaponKey] === 'number') {
@@ -86,6 +89,7 @@ for (let [weaponKey, weaponValue] of Object.entries(weaponStats)) {
 };
 
 
+// eslint-disable-next-line no-unused-vars
 for (let [armorKey, armorValue] of Object.entries(armorStats)) {
 
   if (typeof armorStats[armorKey] === 'number') {

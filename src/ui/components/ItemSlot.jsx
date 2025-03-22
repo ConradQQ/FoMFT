@@ -12,7 +12,7 @@ const ItemSlot = ({ slot }) => {
     if (showItems) {
       const fetchData = async () => {
         try {
-          const response = await axios.get(`http://localhost:3000/armor/${slot}`); // Adjust API URL if needed
+          const response = await axios.get(`http://localhost:3000/armor/${slot}`); 
           setItems(response.data);
           setLoading(false);
         } catch (err) {
@@ -23,14 +23,14 @@ const ItemSlot = ({ slot }) => {
 
       fetchData();
     } else {
-      setLoading(false); // Set loading to false when not fetching
+      setLoading(false); 
     }
   }, [slot, showItems]);
 
   const toggleItems = () => {
     setShowItems(!showItems);
     if (!showItems) {
-      setLoading(true); // Start loading when showing items
+      setLoading(true); 
     }
   };
 
@@ -45,7 +45,7 @@ const ItemSlot = ({ slot }) => {
   return (
     <div className="item-slot">
       <div
-        className="slot-title cursor-pointer" // Add cursor-pointer for visual feedback
+        className="slot-title cursor-pointer" 
         onClick={toggleItems}
       >
         {/* {slot.charAt(0).toUpperCase() + slot.slice(1)}  */}
