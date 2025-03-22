@@ -220,8 +220,14 @@
   .mt-4 {
     margin-top: calc(var(--spacing) * 4);
   }
+  .mt-10 {
+    margin-top: calc(var(--spacing) * 10);
+  }
   .mt-20 {
     margin-top: calc(var(--spacing) * 20);
+  }
+  .mb-5 {
+    margin-bottom: calc(var(--spacing) * 5);
   }
   .mb-10 {
     margin-bottom: calc(var(--spacing) * 10);
@@ -247,11 +253,23 @@
   .h-2\/10 {
     height: calc(2/10 * 100%);
   }
+  .h-3 {
+    height: calc(var(--spacing) * 3);
+  }
+  .h-3\/10 {
+    height: calc(3/10 * 100%);
+  }
   .h-4 {
     height: calc(var(--spacing) * 4);
   }
+  .h-4\/10 {
+    height: calc(4/10 * 100%);
+  }
   .h-16 {
     height: calc(var(--spacing) * 16);
+  }
+  .h-24 {
+    height: calc(var(--spacing) * 24);
   }
   .h-full {
     height: 100%;
@@ -357,23 +375,62 @@
   .bg-teal-500 {
     background-color: var(--color-teal-500);
   }
+  .bg-\[url\(assets\/PP7\.png\)\] {
+    background-image: url(assets/PP7.png);
+  }
   .bg-\[url\(assets\/armSlot\.png\)\] {
     background-image: url(assets/armSlot.png);
+  }
+  .bg-\[url\(assets\/armsSelected\.png\)\] {
+    background-image: url(assets/armsSelected.png);
   }
   .bg-\[url\(assets\/handSlot\.png\)\] {
     background-image: url(assets/handSlot.png);
   }
+  .bg-\[url\(assets\/handsSelected\.png\)\] {
+    background-image: url(assets/handsSelected.png);
+  }
+  .bg-\[url\(assets\/handssSelected\.png\)\] {
+    background-image: url(assets/handssSelected.png);
+  }
   .bg-\[url\(assets\/headSlot\.png\)\] {
     background-image: url(assets/headSlot.png);
+  }
+  .bg-\[url\(assets\/helmetSelected\.png\)\] {
+    background-image: url(assets/helmetSelected.png);
   }
   .bg-\[url\(assets\/legSlot\.png\)\] {
     background-image: url(assets/legSlot.png);
   }
+  .bg-\[url\(assets\/miscSlot\.png\)\] {
+    background-image: url(assets/miscSlot.png);
+  }
+  .bg-\[url\(assets\/pizza\.png\)\] {
+    background-image: url(assets/pizza.png);
+  }
+  .bg-\[url\(assets\/resAmp\.png\)\] {
+    background-image: url(assets/resAmp.png);
+  }
+  .bg-\[url\(assets\/resAmpLG\.png\)\] {
+    background-image: url(assets/resAmpLG.png);
+  }
+  .bg-\[url\(assets\/shoulderSelected\.png\)\] {
+    background-image: url(assets/shoulderSelected.png);
+  }
+  .bg-\[url\(assets\/shouldersSelected\.png\)\] {
+    background-image: url(assets/shouldersSelected.png);
+  }
   .bg-\[url\(assets\/shouldersSlot\.png\)\] {
     background-image: url(assets/shouldersSlot.png);
   }
+  .bg-\[url\(assets\/torsoSelected\.png\)\] {
+    background-image: url(assets/torsoSelected.png);
+  }
   .bg-\[url\(assets\/torsoSlot\.png\)\] {
     background-image: url(assets/torsoSlot.png);
+  }
+  .bg-\[url\(assets\/xl\.png\)\] {
+    background-image: url(assets/xl.png);
   }
   .p-1 {
     padding: calc(var(--spacing) * 1);
@@ -459,9 +516,29 @@
       height: calc(var(--spacing) * 32);
     }
   }
+  .lg\:h-full {
+    @media (width >= 64rem) {
+      height: 100%;
+    }
+  }
   .lg\:w-32 {
     @media (width >= 64rem) {
       width: calc(var(--spacing) * 32);
+    }
+  }
+  .lg\:w-full {
+    @media (width >= 64rem) {
+      width: 100%;
+    }
+  }
+  .lg\:bg-\[url\(assets\/PP7\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/PP7.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/PP7LG\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/PP7LG.png);
     }
   }
   .lg\:bg-\[url\(assets\/armSlotLG\.png\)\] {
@@ -469,9 +546,19 @@
       background-image: url(assets/armSlotLG.png);
     }
   }
+  .lg\:bg-\[url\(assets\/armsSelectedLG\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/armsSelectedLG.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/handSlotLG\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/handSlotLG.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/handsSelectedLG\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/handsSelectedLG.png);
     }
   }
   .lg\:bg-\[url\(assets\/headSlotLG\.png\)\] {
@@ -479,9 +566,39 @@
       background-image: url(assets/headSlotLG.png);
     }
   }
+  .lg\:bg-\[url\(assets\/helmetSelectedLG\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/helmetSelectedLG.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/legSlotLG\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/legSlotLG.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/miscSlotLG\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/miscSlotLG.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/pizzaLG\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/pizzaLG.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/resAmpLG\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/resAmpLG.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/shoulderSelectedLG\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/shoulderSelectedLG.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/shouldersSelectedLG\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/shouldersSelectedLG.png);
     }
   }
   .lg\:bg-\[url\(assets\/shouldersSlotLG\.png\)\] {
@@ -489,9 +606,19 @@
       background-image: url(assets/shouldersSlotLG.png);
     }
   }
+  .lg\:bg-\[url\(assets\/torsoSelectedLG\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/torsoSelectedLG.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/torsoSlotLG\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/torsoSlotLG.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/xlLG\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/xlLG.png);
     }
   }
   .lg\:text-5xl {
