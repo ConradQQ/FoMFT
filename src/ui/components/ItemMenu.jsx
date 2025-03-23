@@ -4,6 +4,7 @@ import WeaponsMenu from './WeaponsMenu';
 import ImplantsMenu from './ImplantsMenu';
 import FoodMenu from './FoodMenu';
 import MedsMenu from './MedsMenu';
+import BoosterMenu from './BoosterMenu';
 import { XCircle } from 'lucide-react'; 
 
 const ItemMenu = ({ onItemSelected, setItemObjects, itemObjects, setSlotTypes, slotTypes }) => {
@@ -38,7 +39,7 @@ const ItemMenu = ({ onItemSelected, setItemObjects, itemObjects, setSlotTypes, s
              <XCircle className="h-4 w-4 text-gray-600 cursor-pointer" /> 
           </button>
         )}
-      <div className="categories flex flex-col relative sm:mt-35 lg:mt-40"> 
+      <div className="categories flex flex-col relative sm:mt-35 lg:mt-27"> 
 
         {selectedCategory === null && (
           <>
@@ -74,14 +75,7 @@ const ItemMenu = ({ onItemSelected, setItemObjects, itemObjects, setSlotTypes, s
             >
               Food
             </button>
-            {/* <button
-              onClick={() => handleCategoryClick('boosters')}
-              className={selectedCategory === 'boosters' 
-              ? 'selected' 
-              : 'text-2xl my-2 g:text-5xl lg:my-10'}
-            >
-              Boosters
-            </button> */}
+ 
             <button
               onClick={() => handleCategoryClick('meds')}
               className={selectedCategory === 'meds' 
@@ -89,6 +83,14 @@ const ItemMenu = ({ onItemSelected, setItemObjects, itemObjects, setSlotTypes, s
                 : 'text-2xl lg:text-5xl my-2 lg:my-10'}
             >
               Meds
+            </button>
+            <button
+              onClick={() => handleCategoryClick('boosters')}
+              className={selectedCategory === 'boosters' 
+              ? 'selected' 
+              : 'text-2xl my-2 lg:text-5xl lg:my-10'}
+            >
+              Boosters
             </button>
           </>
         )}
@@ -124,12 +126,12 @@ const ItemMenu = ({ onItemSelected, setItemObjects, itemObjects, setSlotTypes, s
       setSlotTypes={setSlotTypes}
       slotTypes={slotTypes}/>}
 
-      {/* {selectedCategory === 'boosters' && <BoostersMenu 
+      {selectedCategory === 'boosters' && <BoosterMenu 
       onItemSelected={onItemSelected} 
       setItemObjects={setItemObjects}
       itemObjects={itemObjects}
       setSlotTypes={setSlotTypes}
-      slotTypes={slotTypes}/>} */}
+      slotTypes={slotTypes}/>}
 
       {selectedCategory === 'meds' && <MedsMenu 
       onItemSelected={onItemSelected} 

@@ -84,7 +84,7 @@ const ArmorMenu = ({showArmorTypes, setItemObjects, itemObjects, setSlotTypes}) 
               <button
                 key={type}
                 onClick={() => handleArmorTypeClick(type)}
-                className='mx-1 lg:mx-5 font-bold underline text-blue-800'
+                className='mx-1 lg:mx-5 font-bold underline text-white'
               >
                 {type.charAt(0).toUpperCase() + type.slice(1)}
               </button>
@@ -104,7 +104,7 @@ const ArmorMenu = ({showArmorTypes, setItemObjects, itemObjects, setSlotTypes}) 
                   onClick={() => {
                     handleItemClick(item)
                   }}
-                  className='cursor-pointer underline mt-0.5'
+                  className='cursor-pointer underline mt-0.5 text-white'
                 >
                   {item.armor_name}
                 </li>

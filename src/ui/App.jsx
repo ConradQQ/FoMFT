@@ -34,10 +34,10 @@ function App() {
 
   return (
     <>
-    <div className="app-container flex flex-row w-screen h-screen bg-amber-400 overflow-hidden">
+    <div className="app-container flex flex-row w-screen h-screen  overflow-hidden bg-[url(assets/background.png)] lg:bg-[url(assets/backgroundLG.png)]">
       
       {/* Items Menu */}
-      <div className='items-menu w-1/3 bg-teal-500'>
+      <div className='items-menu w-1/3 '>
         <div className='flex flex-col'>
          <ItemMenu  
          setItemObjects={setItemObjects}
@@ -47,10 +47,10 @@ function App() {
         </div>
       </div>
       {/* Item Slots */}
-      <div className="item-slots bg-fuchsia-800 flex flex-col w-1/3 h-full items-center"> 
-        <h1>Armor Slots</h1>
+      <div className="item-slots flex flex-col w-1/3 h-full items-center"> 
+        <h1>Armor</h1>
         {/* Armor Slots Layout */}
-        <div className='armor-slots flex flex-col w-full h-2/6 border-2 border-indigo-600'>
+        <div className='armor-slots flex flex-col w-full h-1/6 bg-[url(asset/grid.jpg)] lg:mb-20'>
           <div className='HTS-slots flex flex-row justify-center  p-2'>
               <div className={isHelmetSlotSelected 
                 ? 'text-center bg-[url(assets/helmetSelected.png)] w-16 h-16 mx-2 lg:w-32 lg:h-32 lg:bg-[url(assets/helmetSelectedLG.png)]'
@@ -94,12 +94,12 @@ function App() {
         </div>
 
         {/* Weapon Slot */}
-
-        <div className='weapon-slot w-full h-full mt-10 border-2 border-indigo-600 mb-20 p-2'>
+              
+        <div className='weapon-slot w-full h-full mt-30 mb-10 p-2 bg-[#1f2533] opacity-50 rounded-xl lg:h-80 lg:mb-20'>
             <div id='weaponSlot' className={
               isWeaponSlotSelected
               ? 'text-center bg-[url(assets/PP7.png)] w-full h-full mx-2 lg:w-full lg:h-full lg:bg-[url(assets/PP7LG.png)]'
-              : 'text-center bg-green-600 w-full h-full'
+              : 'text-center w-full h-full bg-[url(assets/pp7Silx.png)] lg:bg-[url(assets/pp7SilxLG.png)]'
             }>
             </div>
         </div>
@@ -107,22 +107,23 @@ function App() {
         {/* Food, booster, med slots */}
 
         <h1>Misc. Slots</h1>
-        <div className='misc-slots flex flex-row w-full justify-center mb-5 border-2 border-indigo-600 p-2'>
+        <div className='misc-slots flex flex-row w-full justify-center mb-5 p-2 lg:mb-0 lg:mt-5'>
         <div className={isFoodSlotSelected 
-                ? 'text-center bg-[url(assets/pizza.png)] w-16 h-16 mx-2 lg:w-32 lg:h-32 lg:bg-[url(assets/pizzaLG.png)]'
+                ? 'text-center bg-[url(assets/pizza1x.png)] w-16 h-16 mx-2 lg:w-32 lg:h-32 lg:bg-[url(assets/pizza1xLG.png)]'
                 : 'text-center bg-[url(assets/miscSlot.png)] w-16 h-16 mx-2 lg:w-32 lg:h-32 lg:bg-[url(assets/miscSlotLG.png)]'
               }>
 
         </div>
             
         <div className={isMedSlotSelected 
-                ? 'text-center bg-[url(assets/xl.png)] w-16 h-16 mx-2 lg:w-32 lg:h-32 lg:bg-[url(assets/xlLG.png)]'
+                ? 'text-center bg-[url(assets/XL1.png)] w-16 h-16 mx-2 lg:w-32 lg:h-32 lg:bg-[url(assets/XL1LG.png)]'
                 : 'text-center bg-[url(assets/miscSlot.png)] w-16 h-16 mx-2 lg:w-32 lg:h-32 lg:bg-[url(assets/miscSlotLG.png)]'
               }>
 
         </div>
+        
         <div className={isBoosterSlotSelected 
-                ? 'text-center bg-red-300 w-16 h-16 mx-2 lg:w-32 lg:h-32'
+                ? 'text-center bg-[url(assets/fakeCoca1.png)] w-16 h-16 mx-2 lg:w-32 lg:h-32 lg:bg-[url(assets/fakeCoca1LG.png)]'
                 : 'text-center bg-[url(assets/miscSlot.png)] w-16 h-16 mx-2 lg:w-32 lg:h-32 lg:bg-[url(assets/miscSlotLG.png)]'
               }>
 
@@ -132,8 +133,7 @@ function App() {
 
       {/* Stats Display */}
 
-      <div className="stats-display bg-amber-700 flex flex-col w-1/3 h-full items-center">
-        <h2>Total Stats</h2>
+      <div className="stats-display  flex flex-col w-1/3 h-full items-center">
         <StatsDisplay 
         itemObjects = {itemObjects}
         slotTypes = {slotTypes} />
