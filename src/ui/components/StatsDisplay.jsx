@@ -104,7 +104,7 @@ for (let [armorKey, armorValue] of Object.entries(armorStats)) {
 
   return (
     <div className="stats-container">
-      <div className="defensive-stats mt-4 p-4 bg-indigo-900 rounded-md lg:h-150 lg:w-100">
+      <div className="defensive-stats mt-4 p-4 bg-indigo-900/70 rounded-md lg:h-150 lg:w-100">
         <h2 className="underline sm:text-sm lg:text-xl text-center mb-3">Defensive Stats</h2>
         {Object.entries(armorStats).map(([statName, statValue]) => (
           <p key={statName} className="sm:text-[12px] lg:text-xl">
@@ -112,7 +112,7 @@ for (let [armorKey, armorValue] of Object.entries(armorStats)) {
           </p>
         ))}
       </div>
-      <div className="offensive-stats mt-4 p-4 bg-indigo-900 rounded-md lg:h-70 lg:w-100">
+      <div className="offensive-stats mt-4 p-4 bg-indigo-900/70 rounded-md lg:h-70 lg:w-100">
         <h2 className="underline sm:text-sm lg:text-xl text-center mb-3">Offensive Stats</h2>
         {Object.entries(weaponStats).map(([statName, statValue]) => (
           <p key={statName} className='sm:text-[12px] lg:text-xl'>
