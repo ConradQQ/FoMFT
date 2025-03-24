@@ -65,7 +65,7 @@ const BoosterMenu = ({ setItemObjects, itemObjects, setSlotTypes}) => {
           <ul className="item-list overflow-y-auto max-h-100">
             {boosters.map((booster) => (
               <li key={booster.id} 
-                  className='cursor-pointer underline mt-0.5'
+                  className='cursor-pointer underline mt-0.5 text-white'
                   onClick={() => handleItemClick(booster)}>
                   {booster.booster_name}
               </li>

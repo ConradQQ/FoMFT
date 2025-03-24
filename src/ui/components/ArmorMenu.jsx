@@ -85,6 +85,7 @@ const ArmorMenu = ({showArmorTypes, setItemObjects, itemObjects, setSlotTypes}) 
                 key={type}
                 onClick={() => handleArmorTypeClick(type)}
                 className='mx-1 lg:mx-5 font-bold underline text-white'
+                style={{backgroundColor:'transparent'}}
               >
                 {type.charAt(0).toUpperCase() + type.slice(1)}
               </button>

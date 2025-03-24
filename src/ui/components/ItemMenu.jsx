@@ -47,7 +47,8 @@ const ItemMenu = ({ onItemSelected, setItemObjects, itemObjects, setSlotTypes, s
               onClick={() => handleCategoryClick('armor')}
               className={selectedCategory === 'armor' 
                 ? 'selected' 
-                : 'text-2xl my-2 lg:text-5xl lg:my-10'}
+                : 'text-2xl my-2 lg:text-5xl lg:my-10 text-white'}
+                style={{backgroundColor:'transparent'}}
             >
               Armor
             </button>
@@ -55,7 +56,8 @@ const ItemMenu = ({ onItemSelected, setItemObjects, itemObjects, setSlotTypes, s
               onClick={() => handleCategoryClick('weapons')}
               className={selectedCategory === 'weapons' 
                 ?  'selected' 
-                :  'text-2xl lg:text-5xl my-2 lg:my-10'}
+                :  'text-2xl lg:text-5xl my-2 lg:my-10 text-white'}
+                style={{backgroundColor:'transparent'}}
             >
               Weapons
             </button>
@@ -63,7 +65,8 @@ const ItemMenu = ({ onItemSelected, setItemObjects, itemObjects, setSlotTypes, s
               onClick={() => handleCategoryClick('implants')}
               className={selectedCategory === 'implants' 
                 ? 'selected' 
-                : 'text-2xl my-2 lg:text-5xl lg:my-10'}
+                : 'text-2xl my-2 lg:text-5xl lg:my-10 text-white'}
+                style={{backgroundColor:'transparent'}}
             >
               Implants
             </button>
@@ -71,7 +74,8 @@ const ItemMenu = ({ onItemSelected, setItemObjects, itemObjects, setSlotTypes, s
               onClick={() => handleCategoryClick('food')}
               className={selectedCategory === 'food' 
                 ? 'selected' 
-                : 'text-2xl my-2 lg:text-5xl lg:my-10'}
+                : 'text-2xl my-2 lg:text-5xl lg:my-10 text-white'}
+                style={{backgroundColor:'transparent'}}
             >
               Food
             </button>
@@ -80,7 +84,8 @@ const ItemMenu = ({ onItemSelected, setItemObjects, itemObjects, setSlotTypes, s
               onClick={() => handleCategoryClick('meds')}
               className={selectedCategory === 'meds' 
                 ? 'selected' 
-                : 'text-2xl lg:text-5xl my-2 lg:my-10'}
+                : 'text-2xl lg:text-5xl my-2 lg:my-10 text-white'}
+                style={{backgroundColor:'transparent'}}
             >
               Meds
             </button>
@@ -88,7 +93,8 @@ const ItemMenu = ({ onItemSelected, setItemObjects, itemObjects, setSlotTypes, s
               onClick={() => handleCategoryClick('boosters')}
               className={selectedCategory === 'boosters' 
               ? 'selected' 
-              : 'text-2xl my-2 lg:text-5xl lg:my-10'}
+              : 'text-2xl my-2 lg:text-5xl lg:my-10 text-white'}
+              style={{backgroundColor:'transparent'}}
             >
               Boosters
             </button>

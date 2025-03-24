@@ -48,7 +48,7 @@ function App() {
       </div>
       {/* Item Slots */}
       <div className="item-slots flex flex-col w-1/3 h-full items-center"> 
-        <h1>Armor</h1>
+        <h1 className='text-white'>Armor</h1>
         {/* Armor Slots Layout */}
         <div className='armor-slots flex flex-col w-full h-1/6 bg-[url(asset/grid.jpg)] lg:mb-20'>
           <div className='HTS-slots flex flex-row justify-center  p-2'>
@@ -110,7 +110,7 @@ function App() {
 
         {/* Food, booster, med slots */}
 
-        <h1>Misc. Slots</h1>
+        <h1 className='text-white'>Misc. Slots</h1>
         <div className='misc-slots flex flex-row w-full justify-center mb-5 p-2 lg:mb-0 lg:mt-5'>
         <div className={isFoodSlotSelected 
                 ? 'text-center bg-[url(assets/pizza1x.png)] w-16 h-16 mx-2 lg:w-32 lg:h-32 lg:bg-[url(assets/pizza1xLG.png)]'
