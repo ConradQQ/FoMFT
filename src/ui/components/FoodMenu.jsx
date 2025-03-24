@@ -10,7 +10,7 @@ const FoodMenu = ({ setItemObjects, itemObjects, setSlotTypes}) => {
     const fetchData = async () => {
       setLoading(true);
       try {
-        const response = await axios.get('http://localhost:3000/food');
+        const response = await axios.get('https://fomft-apix-674490081833.us-central1.run.app/food');
         setFoods(response.data);
         setLoading(false);
       } catch (err) {

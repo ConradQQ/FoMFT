@@ -10,7 +10,7 @@ const ImplantsMenu = ({setItemObjects, itemObjects, setSlotTypes  }) => {
     const fetchData = async () => {
       setLoading(true);
       try {
-        const response = await axios.get('http://localhost:3000/implants'); // Adjust API URL
+        const response = await axios.get('https://fomft-apix-674490081833.us-central1.run.app/implants');
         setImplants(response.data);
         setLoading(false);
       } catch (err) {

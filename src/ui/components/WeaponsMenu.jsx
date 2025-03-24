@@ -10,7 +10,7 @@ const WeaponsMenu = ({setItemObjects, itemObjects, setSlotTypes }) => {
     const fetchData = async () => {
       setLoading(true);
       try {
-        const response = await axios.get('http://localhost:3000/weapons'); 
+        const response = await axios.get('https://fomft-apix-674490081833.us-central1.run.app/weapons'); 
         setWeapons(response.data);
         setLoading(false);
       } catch (err) {

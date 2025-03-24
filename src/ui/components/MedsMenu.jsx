@@ -10,7 +10,7 @@ const MedsMenu = ({ setItemObjects, itemObjects, setSlotTypes}) => {
     const fetchData = async () => {
       setLoading(true);
       try {
-        const response = await axios.get('http://localhost:3000/Meds');
+        const response = await axios.get('https://fomft-apix-674490081833.us-central1.run.app/Meds');
         setMeds(response.data);
         setLoading(false);
       } catch (err) {
