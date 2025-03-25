@@ -34,7 +34,7 @@ const ItemMenu = ({ onItemSelected, setItemObjects, itemObjects, setSlotTypes, s
               {selectedCategory !== null && (
           <button 
             onClick={clearCategory}
-            className="absolute top-10 left-0 bg-gray-200 rounded-full p-1 hover:bg-gray-300 transition-colors"
+            className="absolute top-10 left-0 bg-gray-200 rounded-full p-1 hover:bg-indigo-400 transition-colors"
           >
              <XCircle className="h-4 w-4 text-gray-600 cursor-pointer" /> 
           </button>
@@ -47,7 +47,7 @@ const ItemMenu = ({ onItemSelected, setItemObjects, itemObjects, setSlotTypes, s
               onClick={() => handleCategoryClick('armor')}
               className={selectedCategory === 'armor' 
                 ? 'selected' 
-                : 'text-2xl my-2 lg:text-5xl lg:my-10 text-white'}
+                : 'text-2xl my-2 lg:text-5xl lg:my-10 text-white hover:text-indigo-400'}
                 style={{backgroundColor:'transparent'}}
             >
               Armor
@@ -56,7 +56,7 @@ const ItemMenu = ({ onItemSelected, setItemObjects, itemObjects, setSlotTypes, s
               onClick={() => handleCategoryClick('weapons')}
               className={selectedCategory === 'weapons' 
                 ?  'selected' 
-                :  'text-2xl lg:text-5xl my-2 lg:my-10 text-white'}
+                :  'text-2xl lg:text-5xl my-2 lg:my-10 text-white hover:text-indigo-400'}
                 style={{backgroundColor:'transparent'}}
             >
               Weapons
@@ -65,7 +65,7 @@ const ItemMenu = ({ onItemSelected, setItemObjects, itemObjects, setSlotTypes, s
               onClick={() => handleCategoryClick('implants')}
               className={selectedCategory === 'implants' 
                 ? 'selected' 
-                : 'text-2xl my-2 lg:text-5xl lg:my-10 text-white'}
+                : 'text-2xl my-2 lg:text-5xl lg:my-10 text-white hover:text-indigo-400'}
                 style={{backgroundColor:'transparent'}}
             >
               Implants
@@ -74,7 +74,7 @@ const ItemMenu = ({ onItemSelected, setItemObjects, itemObjects, setSlotTypes, s
               onClick={() => handleCategoryClick('food')}
               className={selectedCategory === 'food' 
                 ? 'selected' 
-                : 'text-2xl my-2 lg:text-5xl lg:my-10 text-white'}
+                : 'text-2xl my-2 lg:text-5xl lg:my-10 text-white hover:text-indigo-400'}
                 style={{backgroundColor:'transparent'}}
             >
               Food
@@ -84,7 +84,7 @@ const ItemMenu = ({ onItemSelected, setItemObjects, itemObjects, setSlotTypes, s
               onClick={() => handleCategoryClick('meds')}
               className={selectedCategory === 'meds' 
                 ? 'selected' 
-                : 'text-2xl lg:text-5xl my-2 lg:my-10 text-white'}
+                : 'text-2xl lg:text-5xl my-2 lg:my-10 text-white hover:text-indigo-400'}
                 style={{backgroundColor:'transparent'}}
             >
               Meds
@@ -93,7 +93,7 @@ const ItemMenu = ({ onItemSelected, setItemObjects, itemObjects, setSlotTypes, s
               onClick={() => handleCategoryClick('boosters')}
               className={selectedCategory === 'boosters' 
               ? 'selected' 
-              : 'text-2xl my-2 lg:text-5xl lg:my-10 text-white'}
+              : 'text-2xl my-2 lg:text-5xl lg:my-10 text-white hover:text-indigo-400'}
               style={{backgroundColor:'transparent'}}
             >
               Boosters

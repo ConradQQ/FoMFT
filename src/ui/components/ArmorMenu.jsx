@@ -18,6 +18,7 @@ const ArmorMenu = ({showArmorTypes, setItemObjects, itemObjects, setSlotTypes}) 
   const [error, setError] = useState(null);
 
 
+
   useEffect(() => {
     if (selectedArmorType) {
       const fetchData = async () => {
@@ -84,7 +85,7 @@ const ArmorMenu = ({showArmorTypes, setItemObjects, itemObjects, setSlotTypes}) 
               <button
                 key={type}
                 onClick={() => handleArmorTypeClick(type)}
-                className='mx-1 lg:mx-5 font-bold underline text-white'
+                className='mx-1 lg:mx-5 font-bold underline text-white hover:text-indigo-400'
                 style={{backgroundColor:'transparent'}}
               >
                 {type.charAt(0).toUpperCase() + type.slice(1)}
@@ -105,7 +106,7 @@ const ArmorMenu = ({showArmorTypes, setItemObjects, itemObjects, setSlotTypes}) 
                   onClick={() => {
                     handleItemClick(item)
                   }}
-                  className='cursor-pointer underline mt-0.5 text-white'
+                  className='cursor-pointer underline mt-0.5 text-white hover:text-indigo-400'
                 >
                   {item.armor_name}
                 </li>
