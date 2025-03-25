@@ -1,3 +1,5 @@
+FoMFT (Face of Mankind Fitting Tool) 
+
 A Loadout tool for Face of Mankind, built using ElectronJS & React and powered by the [FoMFT API](https://github.com/ConradQQ/FoMFT-api).
 
 Allows users to virtually build, test, and save loadouts.
