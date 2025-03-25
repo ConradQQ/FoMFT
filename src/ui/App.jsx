@@ -28,9 +28,15 @@ function App() {
   const isMedSlotSelected = slotTypes.includes('med');
 
 
+// Function to remove item of a slot from SlotTypes and ItemObjects on item slot click
 
+const handleSlotClick = (slotToRemove) => {
 
-  console.log(isHelmetSlotSelected)
+  setSlotTypes((prevSlots) => prevSlots.filter((slot) => slot !== slotToRemove));
+
+  setItemObjects((prevItems) => prevItems.filter((item) => item.slot !== slotToRemove));
+
+}
 
   return (
     <>
@@ -53,41 +59,47 @@ function App() {
         <div className='armor-slots flex flex-col w-full h-1/6 bg-[url(asset/grid.jpg)] lg:mb-20'>
           <div className='HTS-slots flex flex-row justify-center  p-2'>
               <div className={isHelmetSlotSelected 
-                ? 'text-center bg-[url(assets/helmetSelected.png)] w-16 h-16 mx-2 lg:w-32 lg:h-32 lg:bg-[url(assets/helmetSelectedLG.png)]'
+                ? 'text-center bg-[url(assets/helmetSelected.png)] w-16 h-16 mx-2 lg:w-32 lg:h-32 lg:bg-[url(assets/helmetSelectedLG.png)] cursor-pointer'
                 : 'text-center bg-[url(assets/headSlot.png)] w-16 h-16 mx-2 lg:w-32 lg:h-32 lg:bg-[url(assets/headSlotLG.png)]'
-              }>
+              }
+               onClick={isHelmetSlotSelected ? () => handleSlotClick('Helmet') : undefined}>
 
               </div>
               <div className={isTorsoSlotSelected 
-                ? 'text-center bg-[url(assets/torsoSelected.png)] w-16 h-16 mx-2 lg:w-32 lg:h-32 lg:bg-[url(assets/torsoSelectedLG.png)]'
+                ? 'text-center bg-[url(assets/torsoSelected.png)] w-16 h-16 mx-2 lg:w-32 lg:h-32 lg:bg-[url(assets/torsoSelectedLG.png)] cursor-pointer'
                 : 'text-center bg-[url(assets/torsoSlot.png)] w-16 h-16 mx-2 lg:w-32 lg:h-32 lg:bg-[url(assets/torsoSlotLG.png)]'
-              }>
+              }
+              onClick={isTorsoSlotSelected ? () => handleSlotClick('Torso') : undefined}>
 
               </div>
               <div className={isArmsSlotSelected 
-                ? 'text-center bg-[url(assets/armsSelected.png)] w-16 h-16 mx-2 lg:w-32 lg:h-32 lg:bg-[url(assets/armsSelectedLG.png)]'
+                ? 'text-center bg-[url(assets/armsSelected.png)] w-16 h-16 mx-2 lg:w-32 lg:h-32 lg:bg-[url(assets/armsSelectedLG.png)] cursor-pointer'
                 : 'text-center bg-[url(assets/armSlot.png)] w-16 h-16 mx-2 lg:w-32 lg:h-32 lg:bg-[url(assets/armSlotLG.png)]'
-              }>
+              }
+              onClick={isArmsSlotSelected ? () => handleSlotClick('Arms') : undefined}>
 
               </div>
           </div>
           <div className='LSH-slots flex flex-row justify-between p-2 '>
           <div className={isLegsSlotSelected 
-                ? 'text-center bg-[url(assets/resAmp.png)] w-16 h-16 mx-2 lg:w-32 lg:h-32 lg:bg-[url(assets/resAmpLG.png)]'
+                ? 'text-center bg-[url(assets/resAmp.png)] w-16 h-16 mx-2 lg:w-32 lg:h-32 lg:bg-[url(assets/resAmpLG.png)] cursor-pointer'
                 : 'text-center bg-[url(assets/legSlot.png)] w-16 h-16 mx-2 lg:w-32 lg:h-32 lg:bg-[url(assets/legSlotLG.png)]'
-              }>
+              }
+              onClick={isLegsSlotSelected ? () => handleSlotClick('Legs') : undefined}>
 
             </div>
             <div className={isShoulderSlotSelected 
-                ? 'text-center bg-[url(assets/shouldersSelected.png)] w-16 h-16 mx-2 lg:w-32 lg:h-32 lg:bg-[url(assets/shouldersSelectedLG.png)]'
+                ? 'text-center bg-[url(assets/shouldersSelected.png)] w-16 h-16 mx-2 lg:w-32 lg:h-32 lg:bg-[url(assets/shouldersSelectedLG.png)] cursor-pointer'
                 : 'text-center bg-[url(assets/shouldersSlot.png)] w-16 h-16 mx-2 lg:w-32 lg:h-32 lg:bg-[url(assets/shouldersSlotLG.png)]'
-              }>
+              }
+              onClick={isShoulderSlotSelected ? () => handleSlotClick('Shoulders') : undefined}>
 
             </div>
             <div className={isHandsSlotSelected 
-                ? 'text-center bg-[url(assets/handsSelected.png)] w-16 h-16 mx-2 lg:w-32 lg:h-32 lg:bg-[url(assets/handsSelectedLG.png)]'
+                ? 'text-center bg-[url(assets/handsSelected.png)] w-16 h-16 mx-2 lg:w-32 lg:h-32 lg:bg-[url(assets/handsSelectedLG.png)] cursor-pointer'
                 : 'text-center bg-[url(assets/handSlot.png)] w-16 h-16 mx-2 lg:w-32 lg:h-32 lg:bg-[url(assets/handSlotLG.png)]'
-              }>
+              }
+              onClick={isHandsSlotSelected ? () => handleSlotClick('Hands') : undefined}>
 
             </div>
           </div>
@@ -97,14 +109,15 @@ function App() {
               
         <div className= {
           isWeaponSlotSelected
-          ? 'weapon-slot w-full h-full mt-30 mb-10 p-2 bg-[#1f2533]/50 rounded-xl lg:h-80 lg:mb-20'
+          ? 'weapon-slot w-full h-full mt-30 mb-10 p-2 bg-[#1f2533]/50 rounded-xl lg:h-80 lg:mb-20 cursor-pointer'
           : 'weapon-slot w-full h-full mt-30 mb-10 p-2 bg-[#1f2533] opacity-50 rounded-xl lg:h-80 lg:mb-20'
         }>
             <div id='weaponSlot' className={
               isWeaponSlotSelected
               ? 'text-center bg-[url(assets/PP7xs.png)] w-full h-full mx-2 lg:w-full lg:h-full lg:bg-[url(assets/pp7XL.png)]'
               : 'text-center w-full h-full bg-[url(assets/pp7Silx.png)] lg:bg-[url(assets/pp7SilxLG.png)]'
-            }>
+            }
+            onClick={isWeaponSlotSelected ? () => handleSlotClick('weapon') : undefined}>
             </div>
         </div>
 
@@ -113,23 +126,26 @@ function App() {
         <h1 className='text-white'>Misc. Slots</h1>
         <div className='misc-slots flex flex-row w-full justify-center mb-5 p-2 lg:mb-0 lg:mt-5'>
         <div className={isFoodSlotSelected 
-                ? 'text-center bg-[url(assets/pizza1x.png)] w-16 h-16 mx-2 lg:w-32 lg:h-32 lg:bg-[url(assets/pizza1xLG.png)]'
+                ? 'text-center bg-[url(assets/pizza1x.png)] w-16 h-16 mx-2 lg:w-32 lg:h-32 lg:bg-[url(assets/pizza1xLG.png)] cursor-pointer'
                 : 'text-center bg-[url(assets/miscSlot.png)] w-16 h-16 mx-2 lg:w-32 lg:h-32 lg:bg-[url(assets/miscSlotLG.png)]'
-              }>
+              }
+              onClick={isFoodSlotSelected ? () => handleSlotClick('food') : undefined}>
 
         </div>
             
         <div className={isMedSlotSelected 
-                ? 'text-center bg-[url(assets/XL1.png)] w-16 h-16 mx-2 lg:w-32 lg:h-32 lg:bg-[url(assets/XL1LG.png)]'
-                : 'text-center bg-[url(assets/miscSlot.png)] w-16 h-16 mx-2 lg:w-32 lg:h-32 lg:bg-[url(assets/miscSlotLG.png)]'
-              }>
+              ? 'text-center bg-[url(assets/XL1.png)] w-16 h-16 mx-2 lg:w-32 lg:h-32 lg:bg-[url(assets/XL1LG.png)] cursor-pointer'
+              : 'text-center bg-[url(assets/miscSlot.png)] w-16 h-16 mx-2 lg:w-32 lg:h-32 lg:bg-[url(assets/miscSlotLG.png)]'
+              }
+              onClick={isMedSlotSelected ? () => handleSlotClick('med') : undefined}>
 
         </div>
         
         <div className={isBoosterSlotSelected 
-                ? 'text-center bg-[url(assets/fakeCoca1.png)] w-16 h-16 mx-2 lg:w-32 lg:h-32 lg:bg-[url(assets/fakeCoca1LG.png)]'
+                ? 'text-center bg-[url(assets/fakeCoca1.png)] w-16 h-16 mx-2 lg:w-32 lg:h-32 lg:bg-[url(assets/fakeCoca1LG.png)] cursor-pointer'
                 : 'text-center bg-[url(assets/miscSlot.png)] w-16 h-16 mx-2 lg:w-32 lg:h-32 lg:bg-[url(assets/miscSlotLG.png)]'
-              }>
+              }
+              onClick={isBoosterSlotSelected ? () => handleSlotClick('booster') : undefined}>
 
         </div>
         </div>
