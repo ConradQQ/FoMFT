@@ -384,6 +384,12 @@
   .bg-\[url\(assets\/helmetSelected\.png\)\] {
     background-image: url(assets/helmetSelected.png);
   }
+  .bg-\[url\(assets\/legPadSelected\.png\)\] {
+    background-image: url(assets/legPadSelected.png);
+  }
+  .bg-\[url\(assets\/legPadsSelected\.png\)\] {
+    background-image: url(assets/legPadsSelected.png);
+  }
   .bg-\[url\(assets\/legSlot\.png\)\] {
     background-image: url(assets/legSlot.png);
   }
@@ -670,6 +676,11 @@
   .lg\:bg-\[url\(assets\/helmetSelectedLG\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/helmetSelectedLG.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/legPadSelectedLG\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/legPadSelectedLG.png);
     }
   }
   .lg\:bg-\[url\(assets\/legSlotLG\.png\)\] {

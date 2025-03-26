@@ -52,6 +52,13 @@ function App() {
   const boosterItem = itemObjects.find((item) => item.slot === 'booster');
   const boosterItemName = boosterItem ? boosterItem.booster_name : undefined;
 
+// Logic for determining leg pads or implant in leg slot
+const legsItemKeys = legsItem ? Object.keys(legsItem) : undefined;
+const legsItemType = legsItem ? legsItemKeys[1] : undefined
+
+console.log(legsItemType)
+
+
 // Function to remove item of a slot from SlotTypes and ItemObjects on item slot click
 
 const handleSlotClick = (slotToRemove) => {
@@ -108,7 +115,9 @@ const handleSlotClick = (slotToRemove) => {
           </div>
           <div className='LSH-slots flex flex-row justify-between p-2 '>
           <div className={isLegsSlotSelected 
-                ? 'text-center bg-[url(assets/resAmp.png)] w-16 h-16 mx-2 lg:w-32 lg:h-32 lg:bg-[url(assets/resAmpLG.png)] cursor-pointer'
+                ? legsItemType === 'armor_name' 
+                  ? 'text-center bg-[url(assets/legPadSelected.png)] w-16 h-16 mx-2 lg:w-32 lg:h-32 lg:bg-[url(assets/legPadSelectedLG.png)] cursor-pointer'
+                  : 'text-center bg-[url(assets/resAmp.png)] w-16 h-16 mx-2 lg:w-32 lg:h-32 lg:bg-[url(assets/resAmpLG.png)] cursor-pointer'
                 : 'text-center bg-[url(assets/legSlot.png)] w-16 h-16 mx-2 lg:w-32 lg:h-32 lg:bg-[url(assets/legSlotLG.png)]'
               }
               title={legsItemName}
