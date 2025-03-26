@@ -13,20 +13,44 @@ function App() {
   const isHelmetSlotSelected = slotTypes.includes('Helmet');
   const isTorsoSlotSelected = slotTypes.includes('Torso');
   const isArmsSlotSelected = slotTypes.includes('Arms');
-
   const isShoulderSlotSelected = slotTypes.includes('Shoulders');
-
   const isLegsSlotSelected = slotTypes.includes('Legs');
   const isHandsSlotSelected = slotTypes.includes('Hands');
-
   const isWeaponSlotSelected = slotTypes.includes('weapon');
-
   const isFoodSlotSelected = slotTypes.includes('food');
-
   const isBoosterSlotSelected = slotTypes.includes('booster');
-
   const isMedSlotSelected = slotTypes.includes('med');
 
+  // Item slot tooltip logic
+  const helmetItem = itemObjects.find((item) => item.slot === 'Helmet');
+  const helmetItemName = helmetItem ? helmetItem.armor_name : undefined;
+
+  const torsoItem = itemObjects.find((item) => item.slot === 'Torso');
+  const torsoItemName = torsoItem ? torsoItem.armor_name : undefined;
+
+  const armsItem = itemObjects.find((item) => item.slot === 'Arms');
+  const armsItemName = armsItem ? armsItem.armor_name : undefined;
+
+  const legsItem = itemObjects.find((item) => item.slot === 'Legs');
+  const legsItemName = legsItem ? legsItem.armor_name : undefined;
+
+  const shouldersItem = itemObjects.find((item) => item.slot === 'Shoulders');
+  const shoulderItemName = shouldersItem ? shouldersItem.armor_name : undefined;
+
+  const handsItem = itemObjects.find((item) => item.slot === 'Hands');
+  const handsItemName = handsItem ? handsItem.armor_name : undefined;
+
+  const weaponItem = itemObjects.find((item) => item.slot === 'weapon');
+  const weaponItemName = weaponItem ? weaponItem.weapon_name : undefined;
+
+  const foodItem = itemObjects.find((item) => item.slot === 'food');
+  const foodItemName = foodItem ? foodItem.food_name : undefined;
+
+  const medItem = itemObjects.find((item) => item.slot === 'med');
+  const medItemName = medItem ? medItem.med_name : undefined;
+
+  const boosterItem = itemObjects.find((item) => item.slot === 'booster');
+  const boosterItemName = boosterItem ? boosterItem.booster_name : undefined;
 
 // Function to remove item of a slot from SlotTypes and ItemObjects on item slot click
 
@@ -62,13 +86,14 @@ const handleSlotClick = (slotToRemove) => {
                 ? 'text-center bg-[url(assets/helmetSelected.png)] w-16 h-16 mx-2 lg:w-32 lg:h-32 lg:bg-[url(assets/helmetSelectedLG.png)] cursor-pointer'
                 : 'text-center bg-[url(assets/headSlot.png)] w-16 h-16 mx-2 lg:w-32 lg:h-32 lg:bg-[url(assets/headSlotLG.png)]'
               }
+               title={helmetItemName}
                onClick={isHelmetSlotSelected ? () => handleSlotClick('Helmet') : undefined}>
-
               </div>
               <div className={isTorsoSlotSelected 
                 ? 'text-center bg-[url(assets/torsoSelected.png)] w-16 h-16 mx-2 lg:w-32 lg:h-32 lg:bg-[url(assets/torsoSelectedLG.png)] cursor-pointer'
                 : 'text-center bg-[url(assets/torsoSlot.png)] w-16 h-16 mx-2 lg:w-32 lg:h-32 lg:bg-[url(assets/torsoSlotLG.png)]'
               }
+              title={torsoItemName}
               onClick={isTorsoSlotSelected ? () => handleSlotClick('Torso') : undefined}>
 
               </div>
@@ -76,6 +101,7 @@ const handleSlotClick = (slotToRemove) => {
                 ? 'text-center bg-[url(assets/armsSelected.png)] w-16 h-16 mx-2 lg:w-32 lg:h-32 lg:bg-[url(assets/armsSelectedLG.png)] cursor-pointer'
                 : 'text-center bg-[url(assets/armSlot.png)] w-16 h-16 mx-2 lg:w-32 lg:h-32 lg:bg-[url(assets/armSlotLG.png)]'
               }
+              title={armsItemName}
               onClick={isArmsSlotSelected ? () => handleSlotClick('Arms') : undefined}>
 
               </div>
@@ -85,6 +111,7 @@ const handleSlotClick = (slotToRemove) => {
                 ? 'text-center bg-[url(assets/resAmp.png)] w-16 h-16 mx-2 lg:w-32 lg:h-32 lg:bg-[url(assets/resAmpLG.png)] cursor-pointer'
                 : 'text-center bg-[url(assets/legSlot.png)] w-16 h-16 mx-2 lg:w-32 lg:h-32 lg:bg-[url(assets/legSlotLG.png)]'
               }
+              title={legsItemName}
               onClick={isLegsSlotSelected ? () => handleSlotClick('Legs') : undefined}>
 
             </div>
@@ -92,6 +119,7 @@ const handleSlotClick = (slotToRemove) => {
                 ? 'text-center bg-[url(assets/shouldersSelected.png)] w-16 h-16 mx-2 lg:w-32 lg:h-32 lg:bg-[url(assets/shouldersSelectedLG.png)] cursor-pointer'
                 : 'text-center bg-[url(assets/shouldersSlot.png)] w-16 h-16 mx-2 lg:w-32 lg:h-32 lg:bg-[url(assets/shouldersSlotLG.png)]'
               }
+              title={shoulderItemName}
               onClick={isShoulderSlotSelected ? () => handleSlotClick('Shoulders') : undefined}>
 
             </div>
@@ -99,6 +127,7 @@ const handleSlotClick = (slotToRemove) => {
                 ? 'text-center bg-[url(assets/handsSelected.png)] w-16 h-16 mx-2 lg:w-32 lg:h-32 lg:bg-[url(assets/handsSelectedLG.png)] cursor-pointer'
                 : 'text-center bg-[url(assets/handSlot.png)] w-16 h-16 mx-2 lg:w-32 lg:h-32 lg:bg-[url(assets/handSlotLG.png)]'
               }
+              title={handsItemName}
               onClick={isHandsSlotSelected ? () => handleSlotClick('Hands') : undefined}>
 
             </div>
@@ -117,6 +146,7 @@ const handleSlotClick = (slotToRemove) => {
               ? 'text-center bg-[url(assets/PP7xs.png)] w-full h-full mx-2 lg:w-full lg:h-full lg:bg-[url(assets/pp7XL.png)]'
               : 'text-center w-full h-full bg-[url(assets/pp7Silx.png)] lg:bg-[url(assets/pp7SilxLG.png)]'
             }
+            title={weaponItemName}
             onClick={isWeaponSlotSelected ? () => handleSlotClick('weapon') : undefined}>
             </div>
         </div>
@@ -129,6 +159,7 @@ const handleSlotClick = (slotToRemove) => {
                 ? 'text-center bg-[url(assets/pizza1x.png)] w-16 h-16 mx-2 lg:w-32 lg:h-32 lg:bg-[url(assets/pizza1xLG.png)] cursor-pointer'
                 : 'text-center bg-[url(assets/miscSlot.png)] w-16 h-16 mx-2 lg:w-32 lg:h-32 lg:bg-[url(assets/miscSlotLG.png)]'
               }
+              title={foodItemName}
               onClick={isFoodSlotSelected ? () => handleSlotClick('food') : undefined}>
 
         </div>
@@ -137,6 +168,7 @@ const handleSlotClick = (slotToRemove) => {
               ? 'text-center bg-[url(assets/XL1.png)] w-16 h-16 mx-2 lg:w-32 lg:h-32 lg:bg-[url(assets/XL1LG.png)] cursor-pointer'
               : 'text-center bg-[url(assets/miscSlot.png)] w-16 h-16 mx-2 lg:w-32 lg:h-32 lg:bg-[url(assets/miscSlotLG.png)]'
               }
+              title={medItemName}
               onClick={isMedSlotSelected ? () => handleSlotClick('med') : undefined}>
 
         </div>
@@ -145,6 +177,7 @@ const handleSlotClick = (slotToRemove) => {
                 ? 'text-center bg-[url(assets/fakeCoca1.png)] w-16 h-16 mx-2 lg:w-32 lg:h-32 lg:bg-[url(assets/fakeCoca1LG.png)] cursor-pointer'
                 : 'text-center bg-[url(assets/miscSlot.png)] w-16 h-16 mx-2 lg:w-32 lg:h-32 lg:bg-[url(assets/miscSlotLG.png)]'
               }
+              title={boosterItemName}
               onClick={isBoosterSlotSelected ? () => handleSlotClick('booster') : undefined}>
 
         </div>
