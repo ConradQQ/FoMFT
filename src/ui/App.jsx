@@ -95,7 +95,6 @@ function App() {
       </div>
 
       {/* Slots Menu */}
-      
       <div className='slots-menu flex flex-col w-1/3 h-full items-center'>
         <SlotsMenu 
           itemObjects={itemObjects}
@@ -107,7 +106,6 @@ function App() {
       </div>
 
       {/* Stats Display */}
-
       <div className="stats-display flex flex-col w-1/3 h-full items-center">
         <StatsDisplay 
         itemObjects = {itemObjects}
