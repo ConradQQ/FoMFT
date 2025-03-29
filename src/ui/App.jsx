@@ -68,7 +68,7 @@ function App() {
       
       {/* Save Button */}
       <div
-      className='bg-[url(./assets/export.png)] lg:bg-[url(./assets/exportLG.png)] w-[16px] h-[16px] lg:w-[24px] lg:h-[24px] cursor-pointer'
+      className='bg-[url(./assets/export.png)] hover:bg-[url(./assets/exportHover.png)] lg:bg-[url(./assets/exportLG.png)] hover:lg:bg-[url(./assets/exportHoverLG.png)] w-[16px] h-[16px] lg:w-[24px] lg:h-[24px] cursor-pointer'
       onClick={() => {
       saveLoadout();
       }}>
@@ -76,7 +76,7 @@ function App() {
 
       {/* Load Button */}
        <div
-       className='bg-[url(./assets/import.png)] lg:bg-[url(./assets/importLG.png)] h-[16px] w-[16px] lg:w-[24px] lg:h-[24px] cursor-pointer ml-2'
+       className='bg-[url(./assets/import.png)] hover:bg-[url(./assets/importHover.png)] lg:bg-[url(./assets/importLG.png)] hover:lg:bg-[url(./assets/importHoverLG.png)] h-[16px] w-[16px] lg:w-[24px] lg:h-[24px] cursor-pointer ml-2'
       onClick={() => {
       loadLoadout();
       }}>
