@@ -1,3 +1,5 @@
+// ItemSlot.jsx
+
 import React from 'react';
 
 
@@ -17,6 +19,8 @@ const SlotsMenu = ({itemObjects, slotTypes, handleSlotClick}) => {
   // Item slot tooltip logic
   const helmetItem = itemObjects.find((item) => item.slot === 'Helmet');
   const helmetItemName = helmetItem ? helmetItem.armor_name : undefined;
+  const helmetImg = helmetItem ? helmetItem.image_path_sm : undefined;
+  const helmetImgLG = helmetItem ? helmetItem.image_path_lg : undefined;
 
   const torsoItem = itemObjects.find((item) => item.slot === 'Torso');
   const torsoItemName = torsoItem ? torsoItem.armor_name : undefined;
@@ -49,9 +53,8 @@ const SlotsMenu = ({itemObjects, slotTypes, handleSlotClick}) => {
 const legsItemKeys = legsItem ? Object.keys(legsItem) : undefined;
 const legsItemType = legsItem ? legsItemKeys[1] : undefined
 
-
-
-
+// console.log(helmetImg);
+// console.log(helmetImgLG)
 
 return (
   <>
@@ -61,8 +64,9 @@ return (
         {/* Armor Slots Layout */}
         <div className='armor-slots flex flex-col w-full h-1/6 bg-[url(asset/grid.jpg)] lg:mb-20'>
           <div className='HTS-slots flex flex-row justify-center  p-2'>
-              <div className={isHelmetSlotSelected 
-                ? 'text-center bg-[url(assets/helmetSelected.png)] w-16 h-16 mx-2 lg:w-32 lg:h-32 lg:bg-[url(assets/helmetSelectedLG.png)] cursor-pointer'
+              <div 
+              className={isHelmetSlotSelected
+                ? `text-center ${helmetImg} w-16 h-16 mx-2 lg:w-32 lg:h-32 ${helmetImgLG} cursor-pointer`
                 : 'text-center bg-[url(assets/headSlot.png)] w-16 h-16 mx-2 lg:w-32 lg:h-32 lg:bg-[url(assets/headSlotLG.png)]'
               }
                title={helmetItemName}

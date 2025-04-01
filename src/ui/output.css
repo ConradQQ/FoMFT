@@ -7,8 +7,6 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-red-300: oklch(0.808 0.114 19.571);
-    --color-green-300: oklch(0.871 0.15 154.449);
     --color-indigo-400: oklch(0.673 0.182 276.935);
     --color-indigo-600: oklch(0.511 0.262 276.966);
     --color-indigo-900: oklch(0.359 0.144 278.697);
@@ -207,9 +205,6 @@
   .left-0 {
     left: calc(var(--spacing) * 0);
   }
-  .mx-1 {
-    margin-inline: calc(var(--spacing) * 1);
-  }
   .mx-2 {
     margin-inline: calc(var(--spacing) * 2);
   }
@@ -349,9 +344,6 @@
   .bg-gray-200 {
     background-color: var(--color-gray-200);
   }
-  .bg-green-300 {
-    background-color: var(--color-green-300);
-  }
   .bg-indigo-600 {
     background-color: var(--color-indigo-600);
   }
@@ -360,9 +352,6 @@
   }
   .bg-indigo-900\/70 {
     background-color: color-mix(in oklab, var(--color-indigo-900) 70%, transparent);
-  }
-  .bg-red-300 {
-    background-color: var(--color-red-300);
   }
   .bg-\[url\(\.\/assets\/export\.png\)\] {
     background-image: url(./assets/export.png);
@@ -379,6 +368,9 @@
   .bg-\[url\(assets\/XL1\.png\)\] {
     background-image: url(assets/XL1.png);
   }
+  .bg-\[url\(assets\/advanced-civilian-helmet\.png\)\] {
+    background-image: url(assets/advanced-civilian-helmet.png);
+  }
   .bg-\[url\(assets\/armSlot\.png\)\] {
     background-image: url(assets/armSlot.png);
   }
@@ -391,6 +383,9 @@
   .bg-\[url\(assets\/fakeCoca1\.png\)\] {
     background-image: url(assets/fakeCoca1.png);
   }
+  .bg-\[url\(assets\/firstborn-powered-helmet\.png\)\] {
+    background-image: url(assets/firstborn-powered-helmet.png);
+  }
   .bg-\[url\(assets\/handSlot\.png\)\] {
     background-image: url(assets/handSlot.png);
   }
@@ -400,8 +395,8 @@
   .bg-\[url\(assets\/headSlot\.png\)\] {
     background-image: url(assets/headSlot.png);
   }
-  .bg-\[url\(assets\/helmetSelected\.png\)\] {
-    background-image: url(assets/helmetSelected.png);
+  .bg-\[url\(assets\/infensus-x2-assault-helmet\.png\)\] {
+    background-image: url(assets/infensus-x2-assault-helmet.png);
   }
   .bg-\[url\(assets\/legPadSelected\.png\)\] {
     background-image: url(assets/legPadSelected.png);
@@ -411,6 +406,9 @@
   }
   .bg-\[url\(assets\/miscSlot\.png\)\] {
     background-image: url(assets/miscSlot.png);
+  }
+  .bg-\[url\(assets\/mt-27\.png\)\] {
+    background-image: url(assets/mt-27.png);
   }
   .bg-\[url\(assets\/pizza1x\.png\)\] {
     background-image: url(assets/pizza1x.png);
@@ -433,12 +431,6 @@
   .bg-\[url\(assets\/torsoSlot\.png\)\] {
     background-image: url(assets/torsoSlot.png);
   }
-  .p-0 {
-    padding: calc(var(--spacing) * 0);
-  }
-  .p-0\.5 {
-    padding: calc(var(--spacing) * 0.5);
-  }
   .p-1 {
     padding: calc(var(--spacing) * 1);
   }
@@ -447,27 +439,6 @@
   }
   .p-4 {
     padding: calc(var(--spacing) * 4);
-  }
-  .p-\[2px\] {
-    padding: 2px;
-  }
-  .p-\[3px\] {
-    padding: 3px;
-  }
-  .p-\[5px\] {
-    padding: 5px;
-  }
-  .p-\[200px\] {
-    padding: 200px;
-  }
-  .px-\[3px\] {
-    padding-inline: 3px;
-  }
-  .px-\[4px\] {
-    padding-inline: 4px;
-  }
-  .px-\[5px\] {
-    padding-inline: 5px;
   }
   .text-center {
     text-align: center;
@@ -540,16 +511,6 @@
       margin-top: calc(var(--spacing) * 2);
     }
   }
-  .sm\:mt-3 {
-    @media (width >= 40rem) {
-      margin-top: calc(var(--spacing) * 3);
-    }
-  }
-  .sm\:mt-5 {
-    @media (width >= 40rem) {
-      margin-top: calc(var(--spacing) * 5);
-    }
-  }
   .sm\:mt-35 {
     @media (width >= 40rem) {
       margin-top: calc(var(--spacing) * 35);
@@ -566,34 +527,14 @@
       line-height: var(--tw-leading, var(--text-sm--line-height));
     }
   }
-  .sm\:text-\[10px\] {
-    @media (width >= 40rem) {
-      font-size: 10px;
-    }
-  }
   .sm\:text-\[12px\] {
     @media (width >= 40rem) {
       font-size: 12px;
     }
   }
-  .lg\:mx-2 {
-    @media (width >= 64rem) {
-      margin-inline: calc(var(--spacing) * 2);
-    }
-  }
   .lg\:mx-3 {
     @media (width >= 64rem) {
       margin-inline: calc(var(--spacing) * 3);
-    }
-  }
-  .lg\:mx-4 {
-    @media (width >= 64rem) {
-      margin-inline: calc(var(--spacing) * 4);
-    }
-  }
-  .lg\:mx-5 {
-    @media (width >= 64rem) {
-      margin-inline: calc(var(--spacing) * 5);
     }
   }
   .lg\:my-10 {
@@ -609,11 +550,6 @@
   .lg\:mt-27 {
     @media (width >= 64rem) {
       margin-top: calc(var(--spacing) * 27);
-    }
-  }
-  .lg\:mr-4 {
-    @media (width >= 64rem) {
-      margin-right: calc(var(--spacing) * 4);
     }
   }
   .lg\:mb-0 {
@@ -696,6 +632,11 @@
       background-image: url(assets/XL1LG.png);
     }
   }
+  .lg\:bg-\[url\(assets\/advanced-civilian-helmet\.pnglg\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/advanced-civilian-helmet.pnglg);
+    }
+  }
   .lg\:bg-\[url\(assets\/armSlotLG\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/armSlotLG.png);
@@ -716,6 +657,11 @@
       background-image: url(assets/fakeCoca1LG.png);
     }
   }
+  .lg\:bg-\[url\(assets\/firstborn-powered-helmetlg\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/firstborn-powered-helmetlg.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/handSlotLG\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/handSlotLG.png);
@@ -731,9 +677,14 @@
       background-image: url(assets/headSlotLG.png);
     }
   }
-  .lg\:bg-\[url\(assets\/helmetSelectedLG\.png\)\] {
+  .lg\:bg-\[url\(assets\/infensus-x2-assault-helmet\.png\)\] {
     @media (width >= 64rem) {
-      background-image: url(assets/helmetSelectedLG.png);
+      background-image: url(assets/infensus-x2-assault-helmet.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/infensus-x2-assault-helmetlg\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/infensus-x2-assault-helmetlg.png);
     }
   }
   .lg\:bg-\[url\(assets\/legPadSelectedLG\.png\)\] {
@@ -749,6 +700,11 @@
   .lg\:bg-\[url\(assets\/miscSlotLG\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/miscSlotLG.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/mt-27lg\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/mt-27lg.png);
     }
   }
   .lg\:bg-\[url\(assets\/pizza1xLG\.png\)\] {
@@ -816,11 +772,6 @@
   .lg\:text-\[16px\] {
     @media (width >= 64rem) {
       font-size: 16px;
-    }
-  }
-  .lg\:text-\[20px\] {
-    @media (width >= 64rem) {
-      font-size: 20px;
     }
   }
   .hover\:lg\:bg-\[url\(\.\/assets\/exportHoverLG\.png\)\] {
