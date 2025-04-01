@@ -404,6 +404,18 @@
   .bg-\[url\(assets\/legSlot\.png\)\] {
     background-image: url(assets/legSlot.png);
   }
+  .bg-\[url\(assets\/locans-defense-helmet\.png\)\] {
+    background-image: url(assets/locans-defense-helmet.png);
+  }
+  .bg-\[url\(assets\/locans-ethereal-helmet\.png\)\] {
+    background-image: url(assets/locans-ethereal-helmet.png);
+  }
+  .bg-\[url\(assets\/locans-patrol-helmet\.png\)\] {
+    background-image: url(assets/locans-patrol-helmet.png);
+  }
+  .bg-\[url\(assets\/locans-pressured-helmet\.png\)\] {
+    background-image: url(assets/locans-pressured-helmet.png);
+  }
   .bg-\[url\(assets\/miscSlot\.png\)\] {
     background-image: url(assets/miscSlot.png);
   }
@@ -416,6 +428,15 @@
   .bg-\[url\(assets\/pp7Silx\.png\)\] {
     background-image: url(assets/pp7Silx.png);
   }
+  .bg-\[url\(assets\/pythica-mobile-infantry-helmet\.png\)\] {
+    background-image: url(assets/pythica-mobile-infantry-helmet.png);
+  }
+  .bg-\[url\(assets\/pythica-s1-helmet\.png\)\] {
+    background-image: url(assets/pythica-s1-helmet.png);
+  }
+  .bg-\[url\(assets\/pythica-special-operations-helmet\.png\)\] {
+    background-image: url(assets/pythica-special-operations-helmet.png);
+  }
   .bg-\[url\(assets\/resAmp\.png\)\] {
     background-image: url(assets/resAmp.png);
   }
@@ -424,6 +445,9 @@
   }
   .bg-\[url\(assets\/shouldersSlot\.png\)\] {
     background-image: url(assets/shouldersSlot.png);
+  }
+  .bg-\[url\(assets\/tactical-systems-helmet\.png\)\] {
+    background-image: url(assets/tactical-systems-helmet.png);
   }
   .bg-\[url\(assets\/torsoSelected\.png\)\] {
     background-image: url(assets/torsoSelected.png);
@@ -632,9 +656,9 @@
       background-image: url(assets/XL1LG.png);
     }
   }
-  .lg\:bg-\[url\(assets\/advanced-civilian-helmet\.pnglg\)\] {
+  .lg\:bg-\[url\(assets\/advanced-civilian-helmetlg\.png\)\] {
     @media (width >= 64rem) {
-      background-image: url(assets/advanced-civilian-helmet.pnglg);
+      background-image: url(assets/advanced-civilian-helmetlg.png);
     }
   }
   .lg\:bg-\[url\(assets\/armSlotLG\.png\)\] {
@@ -677,11 +701,6 @@
       background-image: url(assets/headSlotLG.png);
     }
   }
-  .lg\:bg-\[url\(assets\/infensus-x2-assault-helmet\.png\)\] {
-    @media (width >= 64rem) {
-      background-image: url(assets/infensus-x2-assault-helmet.png);
-    }
-  }
   .lg\:bg-\[url\(assets\/infensus-x2-assault-helmetlg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/infensus-x2-assault-helmetlg.png);
@@ -695,6 +714,26 @@
   .lg\:bg-\[url\(assets\/legSlotLG\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/legSlotLG.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/locans-defense-helmetlg\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/locans-defense-helmetlg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/locans-ethereal-helmetlg\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/locans-ethereal-helmetlg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/locans-patrol-helmetlg\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/locans-patrol-helmetlg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/locans-pressured-helmetlg\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/locans-pressured-helmetlg.png);
     }
   }
   .lg\:bg-\[url\(assets\/miscSlotLG\.png\)\] {
@@ -722,6 +761,21 @@
       background-image: url(assets/pp7XL.png);
     }
   }
+  .lg\:bg-\[url\(assets\/pythica-mobile-infantry-helmetlg\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/pythica-mobile-infantry-helmetlg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/pythica-s1-helmetlg\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/pythica-s1-helmetlg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/pythica-special-operations-helmetlg\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/pythica-special-operations-helmetlg.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/resAmpLG\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/resAmpLG.png);
@@ -735,6 +789,11 @@
   .lg\:bg-\[url\(assets\/shouldersSlotLG\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/shouldersSlotLG.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/tactical-systems-helmetlg\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/tactical-systems-helmetlg.png);
     }
   }
   .lg\:bg-\[url\(assets\/torsoSelectedLG\.png\)\] {
