@@ -371,6 +371,12 @@
   .bg-\[url\(assets\/advanced-civilian-helmet\.png\)\] {
     background-image: url(assets/advanced-civilian-helmet.png);
   }
+  .bg-\[url\(assets\/aramid-basic-helmet\.png\)\] {
+    background-image: url(assets/aramid-basic-helmet.png);
+  }
+  .bg-\[url\(assets\/aramid-modified-helmet\.png\)\] {
+    background-image: url(assets/aramid-modified-helmet.png);
+  }
   .bg-\[url\(assets\/armSlot\.png\)\] {
     background-image: url(assets/armSlot.png);
   }
@@ -379,6 +385,18 @@
   }
   .bg-\[url\(assets\/background\.png\)\] {
     background-image: url(assets/background.png);
+  }
+  .bg-\[url\(assets\/delta-powered-helmet\.png\)\] {
+    background-image: url(assets/delta-powered-helmet.png);
+  }
+  .bg-\[url\(assets\/detox-combat-helmet\.png\)\] {
+    background-image: url(assets/detox-combat-helmet.png);
+  }
+  .bg-\[url\(assets\/dilatant-46b-helmet\.png\)\] {
+    background-image: url(assets/dilatant-46b-helmet.png);
+  }
+  .bg-\[url\(assets\/dilatant-50b-helmet\.png\)\] {
+    background-image: url(assets/dilatant-50b-helmet.png);
   }
   .bg-\[url\(assets\/fakeCoca1\.png\)\] {
     background-image: url(assets/fakeCoca1.png);
@@ -392,20 +410,41 @@
   .bg-\[url\(assets\/handsSelected\.png\)\] {
     background-image: url(assets/handsSelected.png);
   }
+  .bg-\[url\(assets\/havoc-powered-helmet\.png\)\] {
+    background-image: url(assets/havoc-powered-helmet.png);
+  }
   .bg-\[url\(assets\/headSlot\.png\)\] {
     background-image: url(assets/headSlot.png);
   }
   .bg-\[url\(assets\/hypobaric-helmet\.png\)\] {
     background-image: url(assets/hypobaric-helmet.png);
   }
+  .bg-\[url\(assets\/infensus-essentials-helmet\.png\)\] {
+    background-image: url(assets/infensus-essentials-helmet.png);
+  }
+  .bg-\[url\(assets\/infensus-minimalist-helmet\.png\)\] {
+    background-image: url(assets/infensus-minimalist-helmet.png);
+  }
+  .bg-\[url\(assets\/infensus-shock-helmet\.png\)\] {
+    background-image: url(assets/infensus-shock-helmet.png);
+  }
   .bg-\[url\(assets\/infensus-x2-assault-helmet\.png\)\] {
     background-image: url(assets/infensus-x2-assault-helmet.png);
+  }
+  .bg-\[url\(assets\/justicar-powered-helmet\.png\)\] {
+    background-image: url(assets/justicar-powered-helmet.png);
+  }
+  .bg-\[url\(assets\/leech-helmet\.png\)\] {
+    background-image: url(assets/leech-helmet.png);
   }
   .bg-\[url\(assets\/legPadSelected\.png\)\] {
     background-image: url(assets/legPadSelected.png);
   }
   .bg-\[url\(assets\/legSlot\.png\)\] {
     background-image: url(assets/legSlot.png);
+  }
+  .bg-\[url\(assets\/legionnaire-powered-helmet\.png\)\] {
+    background-image: url(assets/legionnaire-powered-helmet.png);
   }
   .bg-\[url\(assets\/locans-defense-helmet\.png\)\] {
     background-image: url(assets/locans-defense-helmet.png);
@@ -418,6 +457,9 @@
   }
   .bg-\[url\(assets\/locans-pressured-helmet\.png\)\] {
     background-image: url(assets/locans-pressured-helmet.png);
+  }
+  .bg-\[url\(assets\/locans-stabilized-helmet\.png\)\] {
+    background-image: url(assets/locans-stabilized-helmet.png);
   }
   .bg-\[url\(assets\/metabolic-helmet\.png\)\] {
     background-image: url(assets/metabolic-helmet.png);
@@ -445,6 +487,24 @@
   }
   .bg-\[url\(assets\/pp7Silx\.png\)\] {
     background-image: url(assets/pp7Silx.png);
+  }
+  .bg-\[url\(assets\/premet-buffer-helmet\.png\)\] {
+    background-image: url(assets/premet-buffer-helmet.png);
+  }
+  .bg-\[url\(assets\/premet-collision-helmet\.png\)\] {
+    background-image: url(assets/premet-collision-helmet.png);
+  }
+  .bg-\[url\(assets\/premet-contact-helmet\.png\)\] {
+    background-image: url(assets/premet-contact-helmet.png);
+  }
+  .bg-\[url\(assets\/premet-impact-helmet\.png\)\] {
+    background-image: url(assets/premet-impact-helmet.png);
+  }
+  .bg-\[url\(assets\/premet-tremor-helmet\.png\)\] {
+    background-image: url(assets/premet-tremor-helmet.png);
+  }
+  .bg-\[url\(assets\/pythica-durable-battle-helmet\.png\)\] {
+    background-image: url(assets/pythica-durable-battle-helmet.png);
   }
   .bg-\[url\(assets\/pythica-mobile-infantry-helmet\.png\)\] {
     background-image: url(assets/pythica-mobile-infantry-helmet.png);
@@ -475,6 +535,12 @@
   }
   .bg-\[url\(assets\/torsoSlot\.png\)\] {
     background-image: url(assets/torsoSlot.png);
+  }
+  .bg-\[url\(assets\/venom-helmet\.png\)\] {
+    background-image: url(assets/venom-helmet.png);
+  }
+  .bg-\[url\(assets\/xenotech-expeditionary-helmet\.png\)\] {
+    background-image: url(assets/xenotech-expeditionary-helmet.png);
   }
   .p-1 {
     padding: calc(var(--spacing) * 1);
@@ -682,6 +748,16 @@
       background-image: url(assets/advanced-civilian-helmetlg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/aramid-basic-helmetlg\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/aramid-basic-helmetlg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/aramid-modified-helmetlg\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/aramid-modified-helmetlg.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/armSlotLG\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/armSlotLG.png);
@@ -695,6 +771,26 @@
   .lg\:bg-\[url\(assets\/backgroundLG\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/backgroundLG.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/delta-powered-helmetlg\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/delta-powered-helmetlg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/detox-combat-helmetlg\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/detox-combat-helmetlg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/dilatant-46b-helmetlg\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/dilatant-46b-helmetlg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/dilatant-50b-helmetlg\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/dilatant-50b-helmetlg.png);
     }
   }
   .lg\:bg-\[url\(assets\/fakeCoca1LG\.png\)\] {
@@ -717,6 +813,11 @@
       background-image: url(assets/handsSelectedLG.png);
     }
   }
+  .lg\:bg-\[url\(assets\/havoc-powered-helmetlg\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/havoc-powered-helmetlg.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/headSlotLG\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/headSlotLG.png);
@@ -727,9 +828,34 @@
       background-image: url(assets/hypobaric-helmetlg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/infensus-essentials-helmetlg\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/infensus-essentials-helmetlg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/infensus-minimalist-helmetlg\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/infensus-minimalist-helmetlg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/infensus-shock-helmetlg\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/infensus-shock-helmetlg.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/infensus-x2-assault-helmetlg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/infensus-x2-assault-helmetlg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/justicar-powered-helmetlg\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/justicar-powered-helmetlg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/leech-helmetlg\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/leech-helmetlg.png);
     }
   }
   .lg\:bg-\[url\(assets\/legPadSelectedLG\.png\)\] {
@@ -740,6 +866,11 @@
   .lg\:bg-\[url\(assets\/legSlotLG\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/legSlotLG.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/legionnaire-powered-helmetlg\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/legionnaire-powered-helmetlg.png);
     }
   }
   .lg\:bg-\[url\(assets\/locans-defense-helmetlg\.png\)\] {
@@ -760,6 +891,11 @@
   .lg\:bg-\[url\(assets\/locans-pressured-helmetlg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/locans-pressured-helmetlg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/locans-stabilized-helmetlg\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/locans-stabilized-helmetlg.png);
     }
   }
   .lg\:bg-\[url\(assets\/metabolic-helmetlg\.png\)\] {
@@ -812,6 +948,36 @@
       background-image: url(assets/pp7XL.png);
     }
   }
+  .lg\:bg-\[url\(assets\/premet-buffer-helmetlg\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/premet-buffer-helmetlg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/premet-collision-helmetlg\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/premet-collision-helmetlg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/premet-contact-helmetlg\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/premet-contact-helmetlg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/premet-impact-helmetlg\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/premet-impact-helmetlg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/premet-tremor-helmetlg\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/premet-tremor-helmetlg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/pythica-durable-battle-helmetlg\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/pythica-durable-battle-helmetlg.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/pythica-mobile-infantry-helmetlg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/pythica-mobile-infantry-helmetlg.png);
@@ -860,6 +1026,16 @@
   .lg\:bg-\[url\(assets\/torsoSlotLG\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/torsoSlotLG.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/venom-helmetlg\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/venom-helmetlg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/xenotech-expeditionary-helmetlg\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/xenotech-expeditionary-helmetlg.png);
     }
   }
   .lg\:px-\[10px\] {
