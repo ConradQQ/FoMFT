@@ -395,6 +395,9 @@
   .bg-\[url\(assets\/headSlot\.png\)\] {
     background-image: url(assets/headSlot.png);
   }
+  .bg-\[url\(assets\/hypobaric-helmet\.png\)\] {
+    background-image: url(assets/hypobaric-helmet.png);
+  }
   .bg-\[url\(assets\/infensus-x2-assault-helmet\.png\)\] {
     background-image: url(assets/infensus-x2-assault-helmet.png);
   }
@@ -416,11 +419,26 @@
   .bg-\[url\(assets\/locans-pressured-helmet\.png\)\] {
     background-image: url(assets/locans-pressured-helmet.png);
   }
+  .bg-\[url\(assets\/metabolic-helmet\.png\)\] {
+    background-image: url(assets/metabolic-helmet.png);
+  }
   .bg-\[url\(assets\/miscSlot\.png\)\] {
     background-image: url(assets/miscSlot.png);
   }
   .bg-\[url\(assets\/mt-27\.png\)\] {
     background-image: url(assets/mt-27.png);
+  }
+  .bg-\[url\(assets\/nanotech-cognizant-helmet\.png\)\] {
+    background-image: url(assets/nanotech-cognizant-helmet.png);
+  }
+  .bg-\[url\(assets\/nanotech-scout-helmet\.png\)\] {
+    background-image: url(assets/nanotech-scout-helmet.png);
+  }
+  .bg-\[url\(assets\/nanotech-trauma-helmet\.png\)\] {
+    background-image: url(assets/nanotech-trauma-helmet.png);
+  }
+  .bg-\[url\(assets\/nanotech-voltaic-helmet\.png\)\] {
+    background-image: url(assets/nanotech-voltaic-helmet.png);
   }
   .bg-\[url\(assets\/pizza1x\.png\)\] {
     background-image: url(assets/pizza1x.png);
@@ -436,6 +454,9 @@
   }
   .bg-\[url\(assets\/pythica-special-operations-helmet\.png\)\] {
     background-image: url(assets/pythica-special-operations-helmet.png);
+  }
+  .bg-\[url\(assets\/pythica-sustained-battle-helmet\.png\)\] {
+    background-image: url(assets/pythica-sustained-battle-helmet.png);
   }
   .bg-\[url\(assets\/resAmp\.png\)\] {
     background-image: url(assets/resAmp.png);
@@ -701,6 +722,11 @@
       background-image: url(assets/headSlotLG.png);
     }
   }
+  .lg\:bg-\[url\(assets\/hypobaric-helmetlg\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/hypobaric-helmetlg.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/infensus-x2-assault-helmetlg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/infensus-x2-assault-helmetlg.png);
@@ -736,6 +762,11 @@
       background-image: url(assets/locans-pressured-helmetlg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/metabolic-helmetlg\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/metabolic-helmetlg.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/miscSlotLG\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/miscSlotLG.png);
@@ -744,6 +775,26 @@
   .lg\:bg-\[url\(assets\/mt-27lg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/mt-27lg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/nanotech-cognizant-helmetlg\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/nanotech-cognizant-helmetlg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/nanotech-scout-helmetlg\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/nanotech-scout-helmetlg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/nanotech-trauma-helmetlg\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/nanotech-trauma-helmetlg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/nanotech-voltaic-helmetlg\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/nanotech-voltaic-helmetlg.png);
     }
   }
   .lg\:bg-\[url\(assets\/pizza1xLG\.png\)\] {
@@ -774,6 +825,11 @@
   .lg\:bg-\[url\(assets\/pythica-special-operations-helmetlg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/pythica-special-operations-helmetlg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/pythica-sustained-battle-helmetlg\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/pythica-sustained-battle-helmetlg.png);
     }
   }
   .lg\:bg-\[url\(assets\/resAmpLG\.png\)\] {

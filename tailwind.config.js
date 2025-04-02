@@ -25,6 +25,22 @@ module.exports = {
       'bg-[url(assets/pythica-mobile-infantry-helmet.png)]',
       'lg:bg-[url(assets/pythica-mobile-infantry-helmetlg.png)]',
       'bg-[url(assets/pythica-s1-helmet.png)]',
-      'lg:bg-[url(assets/pythica-s1-helmetlg.png)]'
+      'lg:bg-[url(assets/pythica-s1-helmetlg.png)]',
+      'bg-[url(assets/pythica-sustained-battle-helmet.png)]',
+      'lg:bg-[url(assets/pythica-sustained-battle-helmetlg.png)]',
+      'bg-[url(assets/nanotech-trauma-helmet.png)]',
+      'lg:bg-[url(assets/nanotech-trauma-helmetlg.png)]',
+      'bg-[url(assets/nanotech-scout-helmet.png)]',
+      'lg:bg-[url(assets/nanotech-scout-helmetlg.png)]',
+      'bg-[url(assets/nanotech-voltaic-helmet.png)]',
+      'lg:bg-[url(assets/nanotech-voltaic-helmetlg.png)]',
+      'bg-[url(assets/nanotech-cognizant-helmet.png)]',
+      'lg:bg-[url(assets/nanotech-cognizant-helmetlg.png)]',
+      'bg-[url(assets/hypobaric-helmet.png)]',
+      'lg:bg-[url(assets/hypobaric-helmetlg.png)]',
+      'bg-[url(assets/metabolic-helmet.png)]',
+      'lg:bg-[url(assets/metabolic-helmetlg.png)]',
+      
+      
   ],
 };
