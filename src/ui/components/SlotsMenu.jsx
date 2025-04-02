@@ -33,6 +33,8 @@ const SlotsMenu = ({itemObjects, slotTypes, handleSlotClick}) => {
 
   const shouldersItem = itemObjects.find((item) => item.slot === 'Shoulders');
   const shoulderItemName = shouldersItem ? shouldersItem.armor_name : undefined;
+  const shoulderImg = shouldersItem ? shouldersItem.image_path_sm : undefined;
+  const shoulderImgLG = shouldersItem ? shouldersItem.image_path_lg : undefined;
 
   const handsItem = itemObjects.find((item) => item.slot === 'Hands');
   const handsItemName = handsItem ? handsItem.armor_name : undefined;
@@ -101,7 +103,7 @@ return (
 
             </div>
             <div className={isShoulderSlotSelected 
-                ? 'text-center bg-[url(assets/shouldersSelected.png)] w-16 h-16 mx-2 lg:w-32 lg:h-32 lg:bg-[url(assets/shouldersSelectedLG.png)] cursor-pointer'
+                ? `text-center ${shoulderImg}  w-16 h-16 mx-2 lg:w-32 lg:h-32 ${shoulderImgLG} cursor-pointer`
                 : 'text-center bg-[url(assets/shouldersSlot.png)] w-16 h-16 mx-2 lg:w-32 lg:h-32 lg:bg-[url(assets/shouldersSlotLG.png)]'
               }
               title={shoulderItemName}

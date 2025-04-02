@@ -371,11 +371,23 @@
   .bg-\[url\(assets\/advanced-civilian-helmet\.png\)\] {
     background-image: url(assets/advanced-civilian-helmet.png);
   }
+  .bg-\[url\(assets\/advanced-civilian-shoulder-pads\.png\)\] {
+    background-image: url(assets/advanced-civilian-shoulder-pads.png);
+  }
+  .bg-\[url\(assets\/aramid-altered-shoulder-pads\.png\)\] {
+    background-image: url(assets/aramid-altered-shoulder-pads.png);
+  }
   .bg-\[url\(assets\/aramid-basic-helmet\.png\)\] {
     background-image: url(assets/aramid-basic-helmet.png);
   }
+  .bg-\[url\(assets\/aramid-basic-shoulder-pads\.png\)\] {
+    background-image: url(assets/aramid-basic-shoulder-pads.png);
+  }
   .bg-\[url\(assets\/aramid-modified-helmet\.png\)\] {
     background-image: url(assets/aramid-modified-helmet.png);
+  }
+  .bg-\[url\(assets\/aramid-modified-shoulder-pads\.png\)\] {
+    background-image: url(assets/aramid-modified-shoulder-pads.png);
   }
   .bg-\[url\(assets\/armSlot\.png\)\] {
     background-image: url(assets/armSlot.png);
@@ -389,20 +401,35 @@
   .bg-\[url\(assets\/delta-powered-helmet\.png\)\] {
     background-image: url(assets/delta-powered-helmet.png);
   }
+  .bg-\[url\(assets\/delta-powered-shoulder-pads\.png\)\] {
+    background-image: url(assets/delta-powered-shoulder-pads.png);
+  }
   .bg-\[url\(assets\/detox-combat-helmet\.png\)\] {
     background-image: url(assets/detox-combat-helmet.png);
+  }
+  .bg-\[url\(assets\/detox-combat-shoulder-pads\.png\)\] {
+    background-image: url(assets/detox-combat-shoulder-pads.png);
   }
   .bg-\[url\(assets\/dilatant-46b-helmet\.png\)\] {
     background-image: url(assets/dilatant-46b-helmet.png);
   }
+  .bg-\[url\(assets\/dilatant-46b-shoulder-pads\.png\)\] {
+    background-image: url(assets/dilatant-46b-shoulder-pads.png);
+  }
   .bg-\[url\(assets\/dilatant-50b-helmet\.png\)\] {
     background-image: url(assets/dilatant-50b-helmet.png);
+  }
+  .bg-\[url\(assets\/dilatant-50b-shoulder-pads\.png\)\] {
+    background-image: url(assets/dilatant-50b-shoulder-pads.png);
   }
   .bg-\[url\(assets\/fakeCoca1\.png\)\] {
     background-image: url(assets/fakeCoca1.png);
   }
   .bg-\[url\(assets\/firstborn-powered-helmet\.png\)\] {
     background-image: url(assets/firstborn-powered-helmet.png);
+  }
+  .bg-\[url\(assets\/firstborn-powered-shoulders\.png\)\] {
+    background-image: url(assets/firstborn-powered-shoulders.png);
   }
   .bg-\[url\(assets\/handSlot\.png\)\] {
     background-image: url(assets/handSlot.png);
@@ -413,20 +440,41 @@
   .bg-\[url\(assets\/havoc-powered-helmet\.png\)\] {
     background-image: url(assets/havoc-powered-helmet.png);
   }
+  .bg-\[url\(assets\/havoc-powered-shoulder-pads\.png\)\] {
+    background-image: url(assets/havoc-powered-shoulder-pads.png);
+  }
   .bg-\[url\(assets\/headSlot\.png\)\] {
     background-image: url(assets/headSlot.png);
   }
   .bg-\[url\(assets\/hypobaric-helmet\.png\)\] {
     background-image: url(assets/hypobaric-helmet.png);
   }
+  .bg-\[url\(assets\/hypobaric-shoulder-pads\.png\)\] {
+    background-image: url(assets/hypobaric-shoulder-pads.png);
+  }
   .bg-\[url\(assets\/infensus-essentials-helmet\.png\)\] {
     background-image: url(assets/infensus-essentials-helmet.png);
+  }
+  .bg-\[url\(assets\/infensus-essentials-shoulder-pads\.png\)\] {
+    background-image: url(assets/infensus-essentials-shoulder-pads.png);
+  }
+  .bg-\[url\(assets\/infensus-heavy-shoulder-pads\.png\)\] {
+    background-image: url(assets/infensus-heavy-shoulder-pads.png);
   }
   .bg-\[url\(assets\/infensus-minimalist-helmet\.png\)\] {
     background-image: url(assets/infensus-minimalist-helmet.png);
   }
+  .bg-\[url\(assets\/infensus-minimalist-shoulder-pads\.png\)\] {
+    background-image: url(assets/infensus-minimalist-shoulder-pads.png);
+  }
   .bg-\[url\(assets\/infensus-shock-helmet\.png\)\] {
     background-image: url(assets/infensus-shock-helmet.png);
+  }
+  .bg-\[url\(assets\/infensus-shock-shoulder-pads\.png\)\] {
+    background-image: url(assets/infensus-shock-shoulder-pads.png);
+  }
+  .bg-\[url\(assets\/infensus-x1-shoulder-pads\.png\)\] {
+    background-image: url(assets/infensus-x1-shoulder-pads.png);
   }
   .bg-\[url\(assets\/infensus-x2-assault-helmet\.png\)\] {
     background-image: url(assets/infensus-x2-assault-helmet.png);
@@ -434,8 +482,14 @@
   .bg-\[url\(assets\/justicar-powered-helmet\.png\)\] {
     background-image: url(assets/justicar-powered-helmet.png);
   }
+  .bg-\[url\(assets\/justicar-powered-shoulder-pads\.png\)\] {
+    background-image: url(assets/justicar-powered-shoulder-pads.png);
+  }
   .bg-\[url\(assets\/leech-helmet\.png\)\] {
     background-image: url(assets/leech-helmet.png);
+  }
+  .bg-\[url\(assets\/leech-shoulder-pads\.png\)\] {
+    background-image: url(assets/leech-shoulder-pads.png);
   }
   .bg-\[url\(assets\/legPadSelected\.png\)\] {
     background-image: url(assets/legPadSelected.png);
@@ -446,26 +500,50 @@
   .bg-\[url\(assets\/legionnaire-powered-helmet\.png\)\] {
     background-image: url(assets/legionnaire-powered-helmet.png);
   }
+  .bg-\[url\(assets\/legionnaire-powered-shoulder-pads\.png\)\] {
+    background-image: url(assets/legionnaire-powered-shoulder-pads.png);
+  }
   .bg-\[url\(assets\/locans-defense-helmet\.png\)\] {
     background-image: url(assets/locans-defense-helmet.png);
+  }
+  .bg-\[url\(assets\/locans-defense-shoulder-pads\.png\)\] {
+    background-image: url(assets/locans-defense-shoulder-pads.png);
   }
   .bg-\[url\(assets\/locans-ethereal-helmet\.png\)\] {
     background-image: url(assets/locans-ethereal-helmet.png);
   }
+  .bg-\[url\(assets\/locans-ethereal-shoulder-pads\.png\)\] {
+    background-image: url(assets/locans-ethereal-shoulder-pads.png);
+  }
   .bg-\[url\(assets\/locans-patrol-helmet\.png\)\] {
     background-image: url(assets/locans-patrol-helmet.png);
+  }
+  .bg-\[url\(assets\/locans-patrol-shoulder-pads\.png\)\] {
+    background-image: url(assets/locans-patrol-shoulder-pads.png);
   }
   .bg-\[url\(assets\/locans-pressured-helmet\.png\)\] {
     background-image: url(assets/locans-pressured-helmet.png);
   }
+  .bg-\[url\(assets\/locans-pressured-shoulder-pads\.png\)\] {
+    background-image: url(assets/locans-pressured-shoulder-pads.png);
+  }
   .bg-\[url\(assets\/locans-stabilized-helmet\.png\)\] {
     background-image: url(assets/locans-stabilized-helmet.png);
+  }
+  .bg-\[url\(assets\/locans-stabilized-shoulder-pads\.png\)\] {
+    background-image: url(assets/locans-stabilized-shoulder-pads.png);
   }
   .bg-\[url\(assets\/metabolic-helmet\.png\)\] {
     background-image: url(assets/metabolic-helmet.png);
   }
+  .bg-\[url\(assets\/metabolic-shoulder-pads\.png\)\] {
+    background-image: url(assets/metabolic-shoulder-pads.png);
+  }
   .bg-\[url\(assets\/miscSlot\.png\)\] {
     background-image: url(assets/miscSlot.png);
+  }
+  .bg-\[url\(assets\/mt-27-ballistics-shoulder-pads\.png\)\] {
+    background-image: url(assets/mt-27-ballistics-shoulder-pads.png);
   }
   .bg-\[url\(assets\/mt-27\.png\)\] {
     background-image: url(assets/mt-27.png);
@@ -473,14 +551,35 @@
   .bg-\[url\(assets\/nanotech-cognizant-helmet\.png\)\] {
     background-image: url(assets/nanotech-cognizant-helmet.png);
   }
+  .bg-\[url\(assets\/nanotech-cognizant-shoulder-pads\.png\)\] {
+    background-image: url(assets/nanotech-cognizant-shoulder-pads.png);
+  }
   .bg-\[url\(assets\/nanotech-scout-helmet\.png\)\] {
     background-image: url(assets/nanotech-scout-helmet.png);
+  }
+  .bg-\[url\(assets\/nanotech-scout-shoulder-pads\.png\)\] {
+    background-image: url(assets/nanotech-scout-shoulder-pads.png);
   }
   .bg-\[url\(assets\/nanotech-trauma-helmet\.png\)\] {
     background-image: url(assets/nanotech-trauma-helmet.png);
   }
+  .bg-\[url\(assets\/nanotech-trauma-shoulder-pads\.png\)\] {
+    background-image: url(assets/nanotech-trauma-shoulder-pads.png);
+  }
+  .bg-\[url\(assets\/nanotech-vitality-battle-shoulder-pads\.png\)\] {
+    background-image: url(assets/nanotech-vitality-battle-shoulder-pads.png);
+  }
+  .bg-\[url\(assets\/nanotech-vitality-shoulder-pads\.png\)\] {
+    background-image: url(assets/nanotech-vitality-shoulder-pads.png);
+  }
+  .bg-\[url\(assets\/nanotech-vitality-shoulder-padslg\.png\)\] {
+    background-image: url(assets/nanotech-vitality-shoulder-padslg.png);
+  }
   .bg-\[url\(assets\/nanotech-voltaic-helmet\.png\)\] {
     background-image: url(assets/nanotech-voltaic-helmet.png);
+  }
+  .bg-\[url\(assets\/nanotech-voltaic-shoulder-pads\.png\)\] {
+    background-image: url(assets/nanotech-voltaic-shoulder-pads.png);
   }
   .bg-\[url\(assets\/pizza1x\.png\)\] {
     background-image: url(assets/pizza1x.png);
@@ -491,32 +590,62 @@
   .bg-\[url\(assets\/premet-buffer-helmet\.png\)\] {
     background-image: url(assets/premet-buffer-helmet.png);
   }
+  .bg-\[url\(assets\/premet-buffer-shoulder-pads\.png\)\] {
+    background-image: url(assets/premet-buffer-shoulder-pads.png);
+  }
   .bg-\[url\(assets\/premet-collision-helmet\.png\)\] {
     background-image: url(assets/premet-collision-helmet.png);
+  }
+  .bg-\[url\(assets\/premet-collision-shoulder-pads\.png\)\] {
+    background-image: url(assets/premet-collision-shoulder-pads.png);
   }
   .bg-\[url\(assets\/premet-contact-helmet\.png\)\] {
     background-image: url(assets/premet-contact-helmet.png);
   }
+  .bg-\[url\(assets\/premet-contact-shoulder-pads\.png\)\] {
+    background-image: url(assets/premet-contact-shoulder-pads.png);
+  }
   .bg-\[url\(assets\/premet-impact-helmet\.png\)\] {
     background-image: url(assets/premet-impact-helmet.png);
+  }
+  .bg-\[url\(assets\/premet-impact-shoulder-pads\.png\)\] {
+    background-image: url(assets/premet-impact-shoulder-pads.png);
   }
   .bg-\[url\(assets\/premet-tremor-helmet\.png\)\] {
     background-image: url(assets/premet-tremor-helmet.png);
   }
+  .bg-\[url\(assets\/premet-tremor-shoulder-pads\.png\)\] {
+    background-image: url(assets/premet-tremor-shoulder-pads.png);
+  }
   .bg-\[url\(assets\/pythica-durable-battle-helmet\.png\)\] {
     background-image: url(assets/pythica-durable-battle-helmet.png);
+  }
+  .bg-\[url\(assets\/pythica-durable-battle-shoulder-pads\.png\)\] {
+    background-image: url(assets/pythica-durable-battle-shoulder-pads.png);
   }
   .bg-\[url\(assets\/pythica-mobile-infantry-helmet\.png\)\] {
     background-image: url(assets/pythica-mobile-infantry-helmet.png);
   }
+  .bg-\[url\(assets\/pythica-mobile-infantry-shoulder-pads\.png\)\] {
+    background-image: url(assets/pythica-mobile-infantry-shoulder-pads.png);
+  }
   .bg-\[url\(assets\/pythica-s1-helmet\.png\)\] {
     background-image: url(assets/pythica-s1-helmet.png);
+  }
+  .bg-\[url\(assets\/pythica-s1-shoulder-pads\.png\)\] {
+    background-image: url(assets/pythica-s1-shoulder-pads.png);
   }
   .bg-\[url\(assets\/pythica-special-operations-helmet\.png\)\] {
     background-image: url(assets/pythica-special-operations-helmet.png);
   }
+  .bg-\[url\(assets\/pythica-special-operations-shoulder-pads\.png\)\] {
+    background-image: url(assets/pythica-special-operations-shoulder-pads.png);
+  }
   .bg-\[url\(assets\/pythica-sustained-battle-helmet\.png\)\] {
     background-image: url(assets/pythica-sustained-battle-helmet.png);
+  }
+  .bg-\[url\(assets\/pythica-sustained-battle-shoulder-pads\.png\)\] {
+    background-image: url(assets/pythica-sustained-battle-shoulder-pads.png);
   }
   .bg-\[url\(assets\/resAmp\.png\)\] {
     background-image: url(assets/resAmp.png);
@@ -530,6 +659,9 @@
   .bg-\[url\(assets\/tactical-systems-helmet\.png\)\] {
     background-image: url(assets/tactical-systems-helmet.png);
   }
+  .bg-\[url\(assets\/tactical-systems-shoulder-pads\.png\)\] {
+    background-image: url(assets/tactical-systems-shoulder-pads.png);
+  }
   .bg-\[url\(assets\/torsoSelected\.png\)\] {
     background-image: url(assets/torsoSelected.png);
   }
@@ -539,8 +671,14 @@
   .bg-\[url\(assets\/venom-helmet\.png\)\] {
     background-image: url(assets/venom-helmet.png);
   }
+  .bg-\[url\(assets\/venom-shoulder-pads\.png\)\] {
+    background-image: url(assets/venom-shoulder-pads.png);
+  }
   .bg-\[url\(assets\/xenotech-expeditionary-helmet\.png\)\] {
     background-image: url(assets/xenotech-expeditionary-helmet.png);
+  }
+  .bg-\[url\(assets\/xenotech-expeditionary-shoulder-pads\.png\)\] {
+    background-image: url(assets/xenotech-expeditionary-shoulder-pads.png);
   }
   .p-1 {
     padding: calc(var(--spacing) * 1);
@@ -748,14 +886,34 @@
       background-image: url(assets/advanced-civilian-helmetlg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/advanced-civilian-shoulder-padslg\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/advanced-civilian-shoulder-padslg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/aramid-altered-shoulder-padslg\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/aramid-altered-shoulder-padslg.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/aramid-basic-helmetlg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/aramid-basic-helmetlg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/aramid-basic-shoulder-padslg\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/aramid-basic-shoulder-padslg.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/aramid-modified-helmetlg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/aramid-modified-helmetlg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/aramid-modified-shoulder-padslg\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/aramid-modified-shoulder-padslg.png);
     }
   }
   .lg\:bg-\[url\(assets\/armSlotLG\.png\)\] {
@@ -778,9 +936,19 @@
       background-image: url(assets/delta-powered-helmetlg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/delta-powered-shoulder-padslg\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/delta-powered-shoulder-padslg.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/detox-combat-helmetlg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/detox-combat-helmetlg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/detox-combat-shoulder-padslg\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/detox-combat-shoulder-padslg.png);
     }
   }
   .lg\:bg-\[url\(assets\/dilatant-46b-helmetlg\.png\)\] {
@@ -788,9 +956,19 @@
       background-image: url(assets/dilatant-46b-helmetlg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/dilatant-46b-shoulder-padslg\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/dilatant-46b-shoulder-padslg.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/dilatant-50b-helmetlg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/dilatant-50b-helmetlg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/dilatant-50b-shoulder-padslg\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/dilatant-50b-shoulder-padslg.png);
     }
   }
   .lg\:bg-\[url\(assets\/fakeCoca1LG\.png\)\] {
@@ -801,6 +979,11 @@
   .lg\:bg-\[url\(assets\/firstborn-powered-helmetlg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/firstborn-powered-helmetlg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/firstborn-powered-shoulderslg\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/firstborn-powered-shoulderslg.png);
     }
   }
   .lg\:bg-\[url\(assets\/handSlotLG\.png\)\] {
@@ -818,6 +1001,11 @@
       background-image: url(assets/havoc-powered-helmetlg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/havoc-powered-shoulder-padslg\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/havoc-powered-shoulder-padslg.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/headSlotLG\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/headSlotLG.png);
@@ -828,9 +1016,24 @@
       background-image: url(assets/hypobaric-helmetlg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/hypobaric-shoulder-padslg\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/hypobaric-shoulder-padslg.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/infensus-essentials-helmetlg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/infensus-essentials-helmetlg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/infensus-essentials-shoulder-padslg\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/infensus-essentials-shoulder-padslg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/infensus-heavy-shoulder-padslg\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/infensus-heavy-shoulder-padslg.png);
     }
   }
   .lg\:bg-\[url\(assets\/infensus-minimalist-helmetlg\.png\)\] {
@@ -838,9 +1041,24 @@
       background-image: url(assets/infensus-minimalist-helmetlg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/infensus-minimalist-shoulder-padslg\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/infensus-minimalist-shoulder-padslg.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/infensus-shock-helmetlg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/infensus-shock-helmetlg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/infensus-shock-shoulder-padslg\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/infensus-shock-shoulder-padslg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/infensus-x1-shoulder-padslg\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/infensus-x1-shoulder-padslg.png);
     }
   }
   .lg\:bg-\[url\(assets\/infensus-x2-assault-helmetlg\.png\)\] {
@@ -853,9 +1071,19 @@
       background-image: url(assets/justicar-powered-helmetlg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/justicar-powered-shoulder-padslg\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/justicar-powered-shoulder-padslg.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/leech-helmetlg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/leech-helmetlg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/leech-shoulder-padslg\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/leech-shoulder-padslg.png);
     }
   }
   .lg\:bg-\[url\(assets\/legPadSelectedLG\.png\)\] {
@@ -873,9 +1101,19 @@
       background-image: url(assets/legionnaire-powered-helmetlg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/legionnaire-powered-shoulder-padslg\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/legionnaire-powered-shoulder-padslg.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/locans-defense-helmetlg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/locans-defense-helmetlg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/locans-defense-shoulder-padslg\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/locans-defense-shoulder-padslg.png);
     }
   }
   .lg\:bg-\[url\(assets\/locans-ethereal-helmetlg\.png\)\] {
@@ -883,9 +1121,19 @@
       background-image: url(assets/locans-ethereal-helmetlg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/locans-ethereal-shoulder-padslg\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/locans-ethereal-shoulder-padslg.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/locans-patrol-helmetlg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/locans-patrol-helmetlg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/locans-patrol-shoulder-padslg\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/locans-patrol-shoulder-padslg.png);
     }
   }
   .lg\:bg-\[url\(assets\/locans-pressured-helmetlg\.png\)\] {
@@ -893,9 +1141,19 @@
       background-image: url(assets/locans-pressured-helmetlg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/locans-pressured-shoulder-padslg\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/locans-pressured-shoulder-padslg.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/locans-stabilized-helmetlg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/locans-stabilized-helmetlg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/locans-stabilized-shoulder-padslg\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/locans-stabilized-shoulder-padslg.png);
     }
   }
   .lg\:bg-\[url\(assets\/metabolic-helmetlg\.png\)\] {
@@ -903,9 +1161,19 @@
       background-image: url(assets/metabolic-helmetlg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/metabolic-shoulder-padslg\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/metabolic-shoulder-padslg.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/miscSlotLG\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/miscSlotLG.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/mt-27-ballistics-shoulder-padslg\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/mt-27-ballistics-shoulder-padslg.png);
     }
   }
   .lg\:bg-\[url\(assets\/mt-27lg\.png\)\] {
@@ -918,9 +1186,19 @@
       background-image: url(assets/nanotech-cognizant-helmetlg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/nanotech-cognizant-shoulder-padslg\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/nanotech-cognizant-shoulder-padslg.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/nanotech-scout-helmetlg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/nanotech-scout-helmetlg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/nanotech-scout-shoulder-padslg\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/nanotech-scout-shoulder-padslg.png);
     }
   }
   .lg\:bg-\[url\(assets\/nanotech-trauma-helmetlg\.png\)\] {
@@ -928,9 +1206,29 @@
       background-image: url(assets/nanotech-trauma-helmetlg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/nanotech-trauma-shoulder-padslg\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/nanotech-trauma-shoulder-padslg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/nanotech-vitality-battle-shoulder-padslg\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/nanotech-vitality-battle-shoulder-padslg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/nanotech-vitality-shoulder-padslg\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/nanotech-vitality-shoulder-padslg.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/nanotech-voltaic-helmetlg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/nanotech-voltaic-helmetlg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/nanotech-voltaic-shoulder-padslg\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/nanotech-voltaic-shoulder-padslg.png);
     }
   }
   .lg\:bg-\[url\(assets\/pizza1xLG\.png\)\] {
@@ -953,9 +1251,19 @@
       background-image: url(assets/premet-buffer-helmetlg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/premet-buffer-shoulder-padslg\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/premet-buffer-shoulder-padslg.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/premet-collision-helmetlg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/premet-collision-helmetlg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/premet-collision-shoulder-padslg\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/premet-collision-shoulder-padslg.png);
     }
   }
   .lg\:bg-\[url\(assets\/premet-contact-helmetlg\.png\)\] {
@@ -963,9 +1271,19 @@
       background-image: url(assets/premet-contact-helmetlg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/premet-contact-shoulder-padslg\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/premet-contact-shoulder-padslg.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/premet-impact-helmetlg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/premet-impact-helmetlg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/premet-impact-shoulder-padslg\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/premet-impact-shoulder-padslg.png);
     }
   }
   .lg\:bg-\[url\(assets\/premet-tremor-helmetlg\.png\)\] {
@@ -973,9 +1291,19 @@
       background-image: url(assets/premet-tremor-helmetlg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/premet-tremor-shoulder-padslg\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/premet-tremor-shoulder-padslg.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/pythica-durable-battle-helmetlg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/pythica-durable-battle-helmetlg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/pythica-durable-battle-shoulder-padslg\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/pythica-durable-battle-shoulder-padslg.png);
     }
   }
   .lg\:bg-\[url\(assets\/pythica-mobile-infantry-helmetlg\.png\)\] {
@@ -983,9 +1311,19 @@
       background-image: url(assets/pythica-mobile-infantry-helmetlg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/pythica-mobile-infantry-shoulder-padslg\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/pythica-mobile-infantry-shoulder-padslg.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/pythica-s1-helmetlg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/pythica-s1-helmetlg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/pythica-s1-shoulder-padslg\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/pythica-s1-shoulder-padslg.png);
     }
   }
   .lg\:bg-\[url\(assets\/pythica-special-operations-helmetlg\.png\)\] {
@@ -993,9 +1331,19 @@
       background-image: url(assets/pythica-special-operations-helmetlg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/pythica-special-operations-shoulder-padslg\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/pythica-special-operations-shoulder-padslg.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/pythica-sustained-battle-helmetlg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/pythica-sustained-battle-helmetlg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/pythica-sustained-battle-shoulder-padslg\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/pythica-sustained-battle-shoulder-padslg.png);
     }
   }
   .lg\:bg-\[url\(assets\/resAmpLG\.png\)\] {
@@ -1018,6 +1366,11 @@
       background-image: url(assets/tactical-systems-helmetlg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/tactical-systems-shoulder-padslg\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/tactical-systems-shoulder-padslg.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/torsoSelectedLG\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/torsoSelectedLG.png);
@@ -1033,9 +1386,19 @@
       background-image: url(assets/venom-helmetlg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/venom-shoulder-padslg\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/venom-shoulder-padslg.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/xenotech-expeditionary-helmetlg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/xenotech-expeditionary-helmetlg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/xenotech-expeditionary-shoulder-padslg\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/xenotech-expeditionary-shoulder-padslg.png);
     }
   }
   .lg\:px-\[10px\] {
