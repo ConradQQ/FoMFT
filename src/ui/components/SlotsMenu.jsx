@@ -24,6 +24,8 @@ const SlotsMenu = ({itemObjects, slotTypes, handleSlotClick}) => {
 
   const torsoItem = itemObjects.find((item) => item.slot === 'Torso');
   const torsoItemName = torsoItem ? torsoItem.armor_name : undefined;
+  const torsoImg = torsoItem ? torsoItem.image_path_sm : undefined;
+  const torsoImgLG = torsoItem ? torsoItem.image_path_lg : undefined;
 
   const armsItem = itemObjects.find((item) => item.slot === 'Arms');
   const armsItemName = armsItem ? armsItem.armor_name : undefined;
@@ -75,7 +77,7 @@ return (
                onClick={isHelmetSlotSelected ? () => handleSlotClick('Helmet') : undefined}>
               </div>
               <div className={isTorsoSlotSelected 
-                ? 'text-center bg-[url(assets/torsoSelected.png)] w-16 h-16 mx-2 lg:w-32 lg:h-32 lg:bg-[url(assets/torsoSelectedLG.png)] cursor-pointer'
+                ? `text-center ${torsoImg} w-16 h-16 mx-2 lg:w-32 lg:h-32 ${torsoImgLG} cursor-pointer`
                 : 'text-center bg-[url(assets/torsoSlot.png)] w-16 h-16 mx-2 lg:w-32 lg:h-32 lg:bg-[url(assets/torsoSlotLG.png)]'
               }
               title={torsoItemName}
@@ -83,7 +85,7 @@ return (
 
               </div>
               <div className={isArmsSlotSelected 
-                ? 'text-center bg-[url(assets/armsSelected.png)] w-16 h-16 mx-2 lg:w-32 lg:h-32 lg:bg-[url(assets/armsSelectedLG.png)] cursor-pointer'
+                ? `text-center ${torsoImg} w-16 h-16 mx-2 lg:w-32 lg:h-32 ${torsoImgLG} cursor-pointer`
                 : 'text-center bg-[url(assets/armSlot.png)] w-16 h-16 mx-2 lg:w-32 lg:h-32 lg:bg-[url(assets/armSlotLG.png)]'
               }
               title={armsItemName}
