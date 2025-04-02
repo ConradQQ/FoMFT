@@ -1755,6 +1755,9 @@
   .bg-\[url\(assets\/infensus-shock-torso-armor\.png\)\] {
     background-image: url(assets/infensus-shock-torso-armor.png);
   }
+  .bg-\[url\(assets\/infensus-x1-assault-torso-armor\.png\)\] {
+    background-image: url(assets/infensus-x1-assault-torso-armor.png);
+  }
   .bg-\[url\(assets\/infensus-x1-shoulder-pads\.png\)\] {
     background-image: url(assets/infensus-x1-shoulder-pads.png);
   }
@@ -1923,6 +1926,9 @@
   .bg-\[url\(assets\/nanotech-voltaic-shoulder-pads\.png\)\] {
     background-image: url(assets/nanotech-voltaic-shoulder-pads.png);
   }
+  .bg-\[url\(assets\/nanotech-voltaic-torso-armor\.png\)\] {
+    background-image: url(assets/nanotech-voltaic-torso-armor.png);
+  }
   .bg-\[url\(assets\/pizza1x\.png\)\] {
     background-image: url(assets/pizza1x.png);
   }
@@ -1946,6 +1952,12 @@
   }
   .bg-\[url\(assets\/premet-collision-torso-armor\.png\)\] {
     background-image: url(assets/premet-collision-torso-armor.png);
+  }
+  .bg-\[url\(assets\/premet-collison-torso-armor\)\] {
+    background-image: url(assets/premet-collison-torso-armor);
+  }
+  .bg-\[url\(assets\/premet-collison-torso-armor\.png\)\] {
+    background-image: url(assets/premet-collison-torso-armor.png);
   }
   .bg-\[url\(assets\/premet-contact-helmet\.png\)\] {
     background-image: url(assets/premet-contact-helmet.png);
@@ -3245,6 +3257,11 @@
       background-image: url(assets/infensus-shock-torso-armorlg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/infensus-x1-assault-torso-armorlg\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/infensus-x1-assault-torso-armorlg.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/infensus-x1-shoulder-padslg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/infensus-x1-shoulder-padslg.png);
@@ -3515,6 +3532,11 @@
       background-image: url(assets/nanotech-voltaic-shoulder-padslg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/nanotech-voltaic-torso-armorlg\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/nanotech-voltaic-torso-armorlg.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/pizza1xLG\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/pizza1xLG.png);
@@ -3558,6 +3580,11 @@
   .lg\:bg-\[url\(assets\/premet-collision-torso-armorlg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/premet-collision-torso-armorlg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/premet-collison-torso-armorlg\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/premet-collison-torso-armorlg.png);
     }
   }
   .lg\:bg-\[url\(assets\/premet-contact-helmetlg\.png\)\] {
