@@ -34,6 +34,8 @@ const SlotsMenu = ({itemObjects, slotTypes, handleSlotClick}) => {
 
   const legsItem = itemObjects.find((item) => item.slot === 'Legs');
   const legsItemName = legsItem ? legsItem.armor_name || legsItem.implant_name : undefined;
+  const legsImg = legsItem ? legsItem.image_path_sm : undefined;
+  const legsImgLG = legsItem ? legsItem.image_path_lg : undefined;
 
   const shouldersItem = itemObjects.find((item) => item.slot === 'Shoulders');
   const shoulderItemName = shouldersItem ? shouldersItem.armor_name : undefined;
@@ -98,7 +100,7 @@ return (
           <div className='LSH-slots flex flex-row justify-between p-2 '>
           <div className={isLegsSlotSelected 
                 ? legsItemType === 'armor_name' 
-                  ? 'text-center bg-[url(assets/legPadSelected.png)] w-16 h-16 mx-2 lg:w-32 lg:h-32 lg:bg-[url(assets/legPadSelectedLG.png)] cursor-pointer'
+                  ? `text-center ${legsImg} w-16 h-16 mx-2 lg:w-32 lg:h-32 ${legsImgLG} cursor-pointer`
                   : 'text-center bg-[url(assets/resAmp.png)] w-16 h-16 mx-2 lg:w-32 lg:h-32 lg:bg-[url(assets/resAmpLG.png)] cursor-pointer'
                 : 'text-center bg-[url(assets/legSlot.png)] w-16 h-16 mx-2 lg:w-32 lg:h-32 lg:bg-[url(assets/legSlotLG.png)]'
               }
