@@ -29,6 +29,8 @@ const SlotsMenu = ({itemObjects, slotTypes, handleSlotClick}) => {
 
   const armsItem = itemObjects.find((item) => item.slot === 'Arms');
   const armsItemName = armsItem ? armsItem.armor_name : undefined;
+  const armsImg = armsItem ? armsItem.image_path_sm : undefined;
+  const armsImgLG = armsItem ? armsItem.image_path_lg : undefined;
 
   const legsItem = itemObjects.find((item) => item.slot === 'Legs');
   const legsItemName = legsItem ? legsItem.armor_name || legsItem.implant_name : undefined;
@@ -85,7 +87,7 @@ return (
 
               </div>
               <div className={isArmsSlotSelected 
-                ? `text-center ${torsoImg} w-16 h-16 mx-2 lg:w-32 lg:h-32 ${torsoImgLG} cursor-pointer`
+                ? `text-center ${armsImg} w-16 h-16 mx-2 lg:w-32 lg:h-32 ${armsImgLG} cursor-pointer`
                 : 'text-center bg-[url(assets/armSlot.png)] w-16 h-16 mx-2 lg:w-32 lg:h-32 lg:bg-[url(assets/armSlotLG.png)]'
               }
               title={armsItemName}
