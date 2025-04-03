@@ -1671,6 +1671,12 @@
   .bg-\[url\(assets\/background\.png\)\] {
     background-image: url(assets/background.png);
   }
+  .bg-\[url\(assets\/battle-medikit\.png\)\] {
+    background-image: url(assets/battle-medikit.png);
+  }
+  .bg-\[url\(assets\/biocell\.png\)\] {
+    background-image: url(assets/biocell.png);
+  }
   .bg-\[url\(assets\/delta-powered-arm-pads\.png\)\] {
     background-image: url(assets/delta-powered-arm-pads.png);
   }
@@ -1745,6 +1751,9 @@
   }
   .bg-\[url\(assets\/doublecheese-mystique\.png\)\] {
     background-image: url(assets/doublecheese-mystique.png);
+  }
+  .bg-\[url\(assets\/emergency-medikit\.png\)\] {
+    background-image: url(assets/emergency-medikit.png);
   }
   .bg-\[url\(assets\/envirotech-gloves\.png\)\] {
     background-image: url(assets/envirotech-gloves.png);
@@ -2379,8 +2388,14 @@
   .bg-\[url\(assets\/shouldersSlot\.png\)\] {
     background-image: url(assets/shouldersSlot.png);
   }
+  .bg-\[url\(assets\/small-medikit\.png\)\] {
+    background-image: url(assets/small-medikit.png);
+  }
   .bg-\[url\(assets\/stamina-amp\.png\)\] {
     background-image: url(assets/stamina-amp.png);
+  }
+  .bg-\[url\(assets\/standard-medikit\.png\)\] {
+    background-image: url(assets/standard-medikit.png);
   }
   .bg-\[url\(assets\/tactical-systems-arm-pads\.png\)\] {
     background-image: url(assets/tactical-systems-arm-pads.png);
@@ -3466,6 +3481,16 @@
       background-image: url(assets/backgroundLG.png);
     }
   }
+  .lg\:bg-\[url\(assets\/battle-medikitlg\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/battle-medikitlg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/biocelllg\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/biocelllg.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/delta-powered-arm-padslg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/delta-powered-arm-padslg.png);
@@ -3589,6 +3614,11 @@
   .lg\:bg-\[url\(assets\/doublecheese-mystiquelg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/doublecheese-mystiquelg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/emergency-medikitlg\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/emergency-medikitlg.png);
     }
   }
   .lg\:bg-\[url\(assets\/envirotech-gloveslg\.png\)\] {
@@ -4651,9 +4681,19 @@
       background-image: url(assets/shouldersSlotLG.png);
     }
   }
+  .lg\:bg-\[url\(assets\/small-medikitlg\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/small-medikitlg.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/stamina-amplg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/stamina-amplg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/standard-medikitlg\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/standard-medikitlg.png);
     }
   }
   .lg\:bg-\[url\(assets\/tactical-systems-alegrm-padslg\.png\)\] {

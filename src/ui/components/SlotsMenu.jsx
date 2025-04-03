@@ -57,6 +57,8 @@ const SlotsMenu = ({itemObjects, slotTypes, handleSlotClick}) => {
 
   const medItem = itemObjects.find((item) => item.slot === 'med');
   const medItemName = medItem ? medItem.med_name : undefined;
+  const medImg = medItem ? medItem.image_path_sm : undefined;
+  const medImgLG = medItem ? medItem.image_path_lg : undefined;
 
   const boosterItem = itemObjects.find((item) => item.slot === 'booster');
   const boosterItemName = boosterItem ? boosterItem.booster_name : undefined;
@@ -162,7 +164,7 @@ return (
         </div>
             
         <div className={isMedSlotSelected 
-              ? 'text-center bg-[url(assets/XL1.png)] w-16 h-16 mx-2 lg:w-32 lg:h-32 lg:bg-[url(assets/XL1LG.png)] cursor-pointer'
+              ? `text-center ${medImg} w-16 h-16 mx-2 lg:w-32 lg:h-32 ${medImgLG} cursor-pointer`
               : 'text-center bg-[url(assets/miscSlot.png)] w-16 h-16 mx-2 lg:w-32 lg:h-32 lg:bg-[url(assets/miscSlotLG.png)]'
               }
               title={medItemName}

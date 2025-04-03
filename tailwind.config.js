@@ -549,6 +549,18 @@ module.exports = {
       'lg:bg-[url(assets/flying-orangelg.png)]',
       'bg-[url(assets/doublecheese-mystique.png)]',
       'lg:bg-[url(assets/doublecheese-mystiquelg.png)]',
+
+      // Meds
+      'bg-[url(assets/biocell.png)]',
+      'lg:bg-[url(assets/biocelllg.png)]',
+      'bg-[url(assets/small-medikit.png)]',
+      'lg:bg-[url(assets/small-medikitlg.png)]',
+      'bg-[url(assets/standard-medikit.png)]',
+      'lg:bg-[url(assets/standard-medikitlg.png)]',
+      'bg-[url(assets/battle-medikit.png)]',
+      'lg:bg-[url(assets/battle-medikitlg.png)]',
+      'bg-[url(assets/emergency-medikit.png)]',
+      'lg:bg-[url(assets/emergency-medikitlg.png)]',
       
   ],
 };
