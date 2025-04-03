@@ -44,6 +44,8 @@ const SlotsMenu = ({itemObjects, slotTypes, handleSlotClick}) => {
 
   const handsItem = itemObjects.find((item) => item.slot === 'Hands');
   const handsItemName = handsItem ? handsItem.armor_name : undefined;
+  const handsImg = handsItem ? handsItem.image_path_sm : undefined;
+  const handsImgLG = handsItem ? handsItem.image_path_lg : undefined;
 
   const weaponItem = itemObjects.find((item) => item.slot === 'weapon');
   const weaponItemName = weaponItem ? weaponItem.weapon_name : undefined;
@@ -109,7 +111,7 @@ return (
 
             </div>
             <div className={isShoulderSlotSelected 
-                ? `text-center ${shoulderImg}  w-16 h-16 mx-2 lg:w-32 lg:h-32 ${shoulderImgLG} cursor-pointer`
+                ? `text-center ${shoulderImg} w-16 h-16 mx-2 lg:w-32 lg:h-32 ${shoulderImgLG} cursor-pointer`
                 : 'text-center bg-[url(assets/shouldersSlot.png)] w-16 h-16 mx-2 lg:w-32 lg:h-32 lg:bg-[url(assets/shouldersSlotLG.png)]'
               }
               title={shoulderItemName}
@@ -117,7 +119,7 @@ return (
 
             </div>
             <div className={isHandsSlotSelected 
-                ? 'text-center bg-[url(assets/handsSelected.png)] w-16 h-16 mx-2 lg:w-32 lg:h-32 lg:bg-[url(assets/handsSelectedLG.png)] cursor-pointer'
+                ? `text-center ${handsImg} w-16 h-16 mx-2 lg:w-32 lg:h-32 ${handsImgLG} cursor-pointer`
                 : 'text-center bg-[url(assets/handSlot.png)] w-16 h-16 mx-2 lg:w-32 lg:h-32 lg:bg-[url(assets/handSlotLG.png)]'
               }
               title={handsItemName}
