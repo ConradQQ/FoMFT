@@ -1614,6 +1614,9 @@
   .bg-\[url\(assets\/advanced-civilian-torso-armor\.png\)\] {
     background-image: url(assets/advanced-civilian-torso-armor.png);
   }
+  .bg-\[url\(assets\/aquatican-brew\.png\)\] {
+    background-image: url(assets/aquatican-brew.png);
+  }
   .bg-\[url\(assets\/aramid-altered-arm-pads\.png\)\] {
     background-image: url(assets/aramid-altered-arm-pads.png);
   }
@@ -1740,6 +1743,9 @@
   .bg-\[url\(assets\/dilatant-50b-torso-armor\.png\)\] {
     background-image: url(assets/dilatant-50b-torso-armor.png);
   }
+  .bg-\[url\(assets\/doublecheese-mystique\.png\)\] {
+    background-image: url(assets/doublecheese-mystique.png);
+  }
   .bg-\[url\(assets\/envirotech-gloves\.png\)\] {
     background-image: url(assets/envirotech-gloves.png);
   }
@@ -1763,6 +1769,12 @@
   }
   .bg-\[url\(assets\/firstborn-powered-torso-armor\.png\)\] {
     background-image: url(assets/firstborn-powered-torso-armor.png);
+  }
+  .bg-\[url\(assets\/flying-orange\.png\)\] {
+    background-image: url(assets/flying-orange.png);
+  }
+  .bg-\[url\(assets\/ginnan-sushi\.png\)\] {
+    background-image: url(assets/ginnan-sushi.png);
   }
   .bg-\[url\(assets\/handSlot\.png\)\] {
     background-image: url(assets/handSlot.png);
@@ -2085,6 +2097,15 @@
   .bg-\[url\(assets\/mt-27\.png\)\] {
     background-image: url(assets/mt-27.png);
   }
+  .bg-\[url\(assets\/mystic-cola\.png\)\] {
+    background-image: url(assets/mystic-cola.png);
+  }
+  .bg-\[url\(assets\/mystical-cola\.png\)\] {
+    background-image: url(assets/mystical-cola.png);
+  }
+  .bg-\[url\(assets\/nano-bite-burger\.png\)\] {
+    background-image: url(assets/nano-bite-burger.png);
+  }
   .bg-\[url\(assets\/nanotech-cognizant-arm-pads\.png\)\] {
     background-image: url(assets/nanotech-cognizant-arm-pads.png);
   }
@@ -2259,6 +2280,9 @@
   .bg-\[url\(assets\/premet-tremor-torso-armor\.png\)\] {
     background-image: url(assets/premet-tremor-torso-armor.png);
   }
+  .bg-\[url\(assets\/pulse-mineral-water\.png\)\] {
+    background-image: url(assets/pulse-mineral-water.png);
+  }
   .bg-\[url\(assets\/pythica-durable-battle-arm-pads\.png\)\] {
     background-image: url(assets/pythica-durable-battle-arm-pads.png);
   }
@@ -2349,8 +2373,14 @@
   .bg-\[url\(assets\/resAmp\.png\)\] {
     background-image: url(assets/resAmp.png);
   }
+  .bg-\[url\(assets\/shield-implant\.png\)\] {
+    background-image: url(assets/shield-implant.png);
+  }
   .bg-\[url\(assets\/shouldersSlot\.png\)\] {
     background-image: url(assets/shouldersSlot.png);
+  }
+  .bg-\[url\(assets\/stamina-amp\.png\)\] {
+    background-image: url(assets/stamina-amp.png);
   }
   .bg-\[url\(assets\/tactical-systems-arm-pads\.png\)\] {
     background-image: url(assets/tactical-systems-arm-pads.png);
@@ -3341,6 +3371,11 @@
       background-image: url(assets/advanced-civilian-torso-armorlg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/aquatican-brewlg\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/aquatican-brewlg.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/aramid-altered-arm-padslg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/aramid-altered-arm-padslg.png);
@@ -3551,6 +3586,11 @@
       background-image: url(assets/dilatant-50b-torso-armorlg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/doublecheese-mystiquelg\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/doublecheese-mystiquelg.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/envirotech-gloveslg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/envirotech-gloveslg.png);
@@ -3589,6 +3629,16 @@
   .lg\:bg-\[url\(assets\/firstborn-powered-torso-armorlg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/firstborn-powered-torso-armorlg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/flying-orangelg\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/flying-orangelg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/ginnan-sushilg\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/ginnan-sushilg.png);
     }
   }
   .lg\:bg-\[url\(assets\/handSlotLG\.png\)\] {
@@ -4126,6 +4176,21 @@
       background-image: url(assets/mt-27lg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/mystic-colalg\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/mystic-colalg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/mystical-colalg\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/mystical-colalg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/nano-bite-burgerlg\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/nano-bite-burgerlg.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/nanotech-cognizant-arm-padslg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/nanotech-cognizant-arm-padslg.png);
@@ -4421,6 +4486,11 @@
       background-image: url(assets/premet-tremor-torso-armorlg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/pulse-mineral-waterlg\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/pulse-mineral-waterlg.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/pythica-durable-battle-arm-padslg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/pythica-durable-battle-arm-padslg.png);
@@ -4571,9 +4641,19 @@
       background-image: url(assets/resAmpLG.png);
     }
   }
+  .lg\:bg-\[url\(assets\/shield-implantlg\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/shield-implantlg.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/shouldersSlotLG\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/shouldersSlotLG.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/stamina-amplg\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/stamina-amplg.png);
     }
   }
   .lg\:bg-\[url\(assets\/tactical-systems-alegrm-padslg\.png\)\] {

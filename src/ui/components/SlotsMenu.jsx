@@ -52,6 +52,8 @@ const SlotsMenu = ({itemObjects, slotTypes, handleSlotClick}) => {
 
   const foodItem = itemObjects.find((item) => item.slot === 'food');
   const foodItemName = foodItem ? foodItem.food_name : undefined;
+  const foodImg = foodItem ? foodItem.image_path_sm : undefined;
+  const foodImgLG = foodItem ? foodItem.image_path_lg : undefined;
 
   const medItem = itemObjects.find((item) => item.slot === 'med');
   const medItemName = medItem ? medItem.med_name : undefined;
@@ -103,7 +105,7 @@ return (
           <div className={isLegsSlotSelected 
                 ? legsItemType === 'armor_name' 
                   ? `text-center ${legsImg} w-16 h-16 mx-2 lg:w-32 lg:h-32 ${legsImgLG} cursor-pointer`
-                  : 'text-center bg-[url(assets/resAmp.png)] w-16 h-16 mx-2 lg:w-32 lg:h-32 lg:bg-[url(assets/resAmpLG.png)] cursor-pointer'
+                  : `text-center ${legsImg} w-16 h-16 mx-2 lg:w-32 lg:h-32 ${legsImgLG} cursor-pointer`
                 : 'text-center bg-[url(assets/legSlot.png)] w-16 h-16 mx-2 lg:w-32 lg:h-32 lg:bg-[url(assets/legSlotLG.png)]'
               }
               title={legsItemName}
@@ -151,7 +153,7 @@ return (
         <h1 className='text-white'>Misc. Slots</h1>
         <div className='misc-slots flex flex-row w-full justify-center mb-5 p-2 lg:mb-0 lg:mt-5'>
         <div className={isFoodSlotSelected 
-                ? 'text-center bg-[url(assets/pizza1x.png)] w-16 h-16 mx-2 lg:w-32 lg:h-32 lg:bg-[url(assets/pizza1xLG.png)] cursor-pointer'
+                ? `text-center ${foodImg} w-16 h-16 mx-2 lg:w-32 lg:h-32 ${foodImgLG} cursor-pointer`
                 : 'text-center bg-[url(assets/miscSlot.png)] w-16 h-16 mx-2 lg:w-32 lg:h-32 lg:bg-[url(assets/miscSlotLG.png)]'
               }
               title={foodItemName}

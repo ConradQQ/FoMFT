@@ -525,7 +525,30 @@ module.exports = {
       'lg:bg-[url(assets/infensus-x1-assault-gloveslg.png)]',
       'bg-[url(assets/infensus-heavy-gloves.png)]',
       'lg:bg-[url(assets/infensus-heavy-gloveslg.png)]',
-      
+
+      // Implants
+      'bg-[url(assets/resAmp.png)]',
+      'lg:bg-[url(assets/resAmpLG.png)]',
+      'bg-[url(assets/stamina-amp.png)]',
+      'lg:bg-[url(assets/stamina-amplg.png)]',
+      'bg-[url(assets/shield-implant.png)]',
+      'lg:bg-[url(assets/shield-implantlg.png)]',
+
+      // Food
+      'bg-[url(assets/aquatican-brew.png)]',
+      'lg:bg-[url(assets/aquatican-brewlg.png)]',
+      'bg-[url(assets/nano-bite-burger.png)]',
+      'lg:bg-[url(assets/nano-bite-burgerlg.png)]',
+      'bg-[url(assets/pulse-mineral-water.png)]',
+      'lg:bg-[url(assets/pulse-mineral-waterlg.png)]',
+      'bg-[url(assets/mystical-cola.png)]',
+      'lg:bg-[url(assets/mystical-colalg.png)]',
+      'bg-[url(assets/ginnan-sushi.png)]',
+      'lg:bg-[url(assets/ginnan-sushilg.png)]',
+      'bg-[url(assets/flying-orange.png)]',
+      'lg:bg-[url(assets/flying-orangelg.png)]',
+      'bg-[url(assets/doublecheese-mystique.png)]',
+      'lg:bg-[url(assets/doublecheese-mystiquelg.png)]',
       
   ],
 };
