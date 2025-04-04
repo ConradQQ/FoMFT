@@ -86,6 +86,8 @@ module.exports = {
       'lg:bg-[url(assets/premet-tremor-helmetlg.png)]',
       'bg-[url(assets/infensus-essentials-helmet.png)]',
       'lg:bg-[url(assets/infensus-essentials-helmetlg.png)]',
+      'bg-[url(assets/infensus-heavy-helmet.png)]',
+      'lg:bg-[url(assets/infensus-heavy-helmetlg.png)]',
 
       // Shoulders
       'bg-[url(assets/firstborn-powered-shoulders.png)]',

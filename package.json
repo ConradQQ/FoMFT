@@ -2,7 +2,7 @@
   "name": "fomft",
   "author": "ConradQQ",
   "private": true,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "main": "src/electron/main.js",
   "scripts": {

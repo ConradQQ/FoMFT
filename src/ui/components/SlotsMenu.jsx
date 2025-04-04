@@ -76,7 +76,7 @@ return (
   <div className="item-slots flex flex-col w-full h-full items-center"> 
         <h1 className='text-white'>Armor</h1>
         {/* Armor Slots Layout */}
-        <div className='armor-slots flex flex-col w-full h-1/6 bg-[url(asset/grid.jpg)] lg:mb-20'>
+        <div className='armor-slots flex flex-col w-full h-1/6 lg:mb-20'>
           <div className='HTS-slots flex flex-row justify-center  p-2'>
               <div 
               className={isHelmetSlotSelected
@@ -103,7 +103,7 @@ return (
 
               </div>
           </div>
-          <div className='LSH-slots flex flex-row justify-between p-2 '>
+          <div className='LSH-slots flex flex-row p-2 ml-1 lg:ml-21 '>
           <div className={isLegsSlotSelected 
                 ? legsItemType === 'armor_name' 
                   ? `text-center ${legsImg} w-16 h-16 mx-2 lg:w-32 lg:h-32 ${legsImgLG} cursor-pointer`
