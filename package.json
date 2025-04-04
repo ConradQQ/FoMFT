@@ -2,13 +2,13 @@
   "name": "fomft",
   "author": "ConradQQ",
   "private": true,
-  "version": "1.0.1",
+  "version": "1.0.0",
   "type": "module",
   "main": "src/electron/main.js",
   "scripts": {
     "dev": "npm-run-all --parallel dev:react dev:electron",
     "dev:react": "vite",
-    "dev:electron": "NODE_ENV=development electron .",
+    "dev:electron": "cross-env NODE_ENV=development electron .",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
@@ -17,18 +17,20 @@
     "dist:linux": "npm run build && electron-builder --linux --x64"
   },
   "dependencies": {
-    "@tailwindcss/cli": "^4.0.14",
+    "@tailwindcss/cli": "^4.0.15",
     "axios": "^1.8.3",
+    "lightningcss": "^1.29.3",
     "lucide-react": "^0.483.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "tailwindcss": "^4.0.14"
+    "tailwindcss": "^4.0.15"
   },
   "devDependencies": {
     "@eslint/js": "^9.21.0",
     "@types/react": "^19.0.10",
     "@types/react-dom": "^19.0.4",
     "@vitejs/plugin-react": "^4.3.4",
+    "cross-env": "^7.0.3",
     "electron": "^35.0.2",
     "electron-builder": "^25.1.8",
     "eslint": "^9.21.0",

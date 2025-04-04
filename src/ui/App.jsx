@@ -84,7 +84,7 @@ function App() {
     </div>
 
       {/* Items Menu */}
-      <div className='items-menu w-1/3 '>
+      <div className='items-menu w-1/3'>
         <div className='flex flex-col'>
          <ItemMenu  
           setItemObjects={setItemObjects}

@@ -76,8 +76,8 @@ return (
   <div className="item-slots flex flex-col w-full h-full items-center"> 
         <h1 className='text-white'>Armor</h1>
         {/* Armor Slots Layout */}
-        <div className='armor-slots flex flex-col w-full h-1/6 lg:mb-20'>
-          <div className='HTS-slots flex flex-row justify-center  p-2'>
+        <div className='armor-slots flex flex-col w-full h-1/6 lg:mb-10'>
+          <div className='HTS-slots flex flex-row justify-center'>
               <div 
               className={isHelmetSlotSelected
                 ? `text-center ${helmetImg} w-16 h-16 mx-2 lg:w-32 lg:h-32 ${helmetImgLG} cursor-pointer`
@@ -137,12 +137,12 @@ return (
               
         <div className= {
           isWeaponSlotSelected
-          ? 'weapon-slot w-full h-full mt-30 mb-10 p-2 bg-[#1f2533]/50 rounded-xl lg:h-80 lg:mb-20 cursor-pointer'
-          : 'weapon-slot w-full h-full mt-30 mb-20 p-2 bg-[#1f2533] opacity-50 rounded-xl lg:h-80 lg:mb-20'
+          ? 'weapon-slot w-full h-full mt-30 mb-10 p-2 bg-[#1f2533]/50 rounded-xl lg:h-80 lg:mb-10 cursor-pointer'
+          : 'weapon-slot w-full h-full mt-30 mb-10 p-2 bg-[#1f2533] opacity-50 rounded-xl lg:h-80 lg:mb-10'
         }>
             <div id='weaponSlot' className={
               isWeaponSlotSelected
-              ? 'text-center bg-[url(assets/PP7xs.png)] w-full h-full mx-2 lg:w-full lg:h-full lg:bg-[url(assets/pp7XL.png)]'
+              ? 'text-center bg-[url(assets/PP7xs.png)] w-full h-full mx-2 lg:bg-[url(assets/pp7XL.png)]'
               : 'text-center w-full h-full bg-[url(assets/pp7Silx.png)] lg:bg-[url(assets/pp7SilxLG.png)]'
             }
             title={weaponItemName}
@@ -152,8 +152,8 @@ return (
 
         {/* Food, booster, med slots */}
 
-        <h1 className='text-white'>Misc. Slots</h1>
-        <div className='misc-slots flex flex-row w-full justify-center mb-5 p-2 lg:mb-0 lg:mt-5'>
+        <h1 className='text-white mt-5'>Misc. Slots</h1>
+        <div className='misc-slots flex flex-row w-full justify-center mb-5 p-2 lg:mb-0 lg:mt-0'>
         <div className={isFoodSlotSelected 
                 ? `text-center ${foodImg} w-16 h-16 mx-2 lg:w-32 lg:h-32 ${foodImgLG} cursor-pointer`
                 : 'text-center bg-[url(assets/miscSlot.png)] w-16 h-16 mx-2 lg:w-32 lg:h-32 lg:bg-[url(assets/miscSlotLG.png)]'
