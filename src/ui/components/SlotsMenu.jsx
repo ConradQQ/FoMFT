@@ -137,7 +137,7 @@ return (
               
         <div className= {
           isWeaponSlotSelected
-          ? 'weapon-slot w-full h-full mt-30 mb-10 p-2 bg-[#1f2533]/50 rounded-xl lg:h-80 lg:mb-20 cursor-pointer'
+          ? 'weapon-slot w-full h-full mt-30 mb-20 p-2 bg-[#1f2533]/50 rounded-xl lg:h-80 lg:mb-20 cursor-pointer'
           : 'weapon-slot w-full h-full mt-30 mb-20 p-2 bg-[#1f2533] opacity-50 rounded-xl lg:h-80 lg:mb-20'
         }>
             <div id='weaponSlot' className={

@@ -4,7 +4,7 @@ import { useState } from "react";
 
 const StatsDisplay = ({ itemObjects }) => {
 
-  const [showCharts, setShowCharts] = useState(false);
+  const [showRawStats, setShowRawStats] = useState(true);
 
   const aggregatedStats = {};
   const armorStats = {};
@@ -109,12 +109,12 @@ for (let [armorKey, armorValue] of Object.entries(armorStats)) {
 
 
   return (
-    <div className="stats-container text-white flex flex-col sm:mt-2 w-full h-full items-center">
+    <div className="stats-container text-white flex flex-col sm:mt-5 w-full h-full items-center">
       <div 
       className="bg-[url(assets/chart.png)] lg:bg-[url(assets/chartlg.png)] hover:bg-[url(assets/chartHover.png)] hover:lg:bg-[url(assets/chartHover.png)] w-[16px] h-[16px] lg:w-[24px] lg:h-[24px] cursor-pointer absolute top-1 right-56 lg:top-1 lg:right-140" 
-      onClick={() => setShowCharts(!showCharts)}></div>
+      onClick={() => setShowRawStats(!showRawStats)}></div>
 
-      {!showCharts && (
+      {!showRawStats && (
         <>
         <div className="defensive-stats mt-4 p-4 bg-indigo-900/70 rounded-md ">
         <h2 className="underline sm:text-sm lg:text-xl text-center mb-3">Defensive Stats</h2>
@@ -135,7 +135,7 @@ for (let [armorKey, armorValue] of Object.entries(armorStats)) {
       </div>
         </>
       )}
-      {showCharts && (
+      {showRawStats && (
         <>
         <p className="ml-2">Defense Stats</p>
         <DefenseChart armorStats={armorStats} />

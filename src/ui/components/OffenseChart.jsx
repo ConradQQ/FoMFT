@@ -1,3 +1,4 @@
+/* eslint-disable no-prototype-builtins */
 import React, { PureComponent } from 'react';
 import { Radar, RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, ResponsiveContainer } from 'recharts';
 
@@ -59,7 +60,7 @@ const OffenseChart = ({weaponStats}) => {
 
   return (
     <ResponsiveContainer width="100%" height="100%">
-        <RadarChart cx="50%" cy="45%" outerRadius="60%" data={updatedData} style={{fontSize: '12px', color: 'red'}}>
+        <RadarChart cx="50%" cy="40%" outerRadius="60%" data={updatedData} style={{fontSize: '12px', color: 'red'}}>
           <PolarGrid />
           <PolarAngleAxis dataKey="stat" style={{color: 'red'}} />
           <Radar name="Defense" dataKey="A" stroke="#8884d8" fill="#3F51B5" fillOpacity={0.6} />
