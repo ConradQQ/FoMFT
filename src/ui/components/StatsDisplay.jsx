@@ -1,3 +1,5 @@
+import ChartTest from "./ChartTest";
+
 const StatsDisplay = ({ itemObjects }) => {
 
   const aggregatedStats = {};
@@ -103,9 +105,9 @@ for (let [armorKey, armorValue] of Object.entries(armorStats)) {
 
 
   return (
-    <div className="stats-container text-white flex flex-col sm:mt-2">
+    <div className="stats-container text-white flex flex-col sm:mt-2 w-full h-full">
 
-      <div className="defensive-stats mt-4 p-4 bg-indigo-900/70 rounded-md ">
+      {/* <div className="defensive-stats mt-4 p-4 bg-indigo-900/70 rounded-md ">
         <h2 className="underline sm:text-sm lg:text-xl text-center mb-3">Defensive Stats</h2>
         {Object.entries(armorStats).map(([statName, statValue]) => (
           <p key={statName} className="sm:text-[12px] lg:text-xl">
@@ -121,7 +123,12 @@ for (let [armorKey, armorValue] of Object.entries(armorStats)) {
             {statName}: {statValue}
           </p>
         ))}
-      </div>
+      </div> */}
+      
+
+      <ChartTest armorStats={armorStats} weaponStats={weaponStats} />
+
+      
       
     </div>
   );

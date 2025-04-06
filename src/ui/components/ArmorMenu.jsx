@@ -98,7 +98,7 @@ const ArmorMenu = ({showArmorTypes, setItemObjects, itemObjects, setSlotTypes}) 
           {loading && <div>Loading...</div>}
           {error && <div>Error: {error}</div>}
           {items.length > 0 && (
-            <ul className="item-list overflow-y-auto max-h-100 no-scrollbar">
+            <ul className="item-list overflow-y-auto max-h-100">
               {items.map((item) => (
                 <li
                   key={item.armor_id}
