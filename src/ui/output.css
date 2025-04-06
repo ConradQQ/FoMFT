@@ -12,7 +12,6 @@
     --color-indigo-900: oklch(0.359 0.144 278.697);
     --color-gray-200: oklch(0.928 0.006 264.531);
     --color-gray-600: oklch(0.446 0.03 256.802);
-    --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
     --text-sm: 0.875rem;
@@ -203,8 +202,65 @@
   .right-1 {
     right: calc(var(--spacing) * 1);
   }
+  .right-40 {
+    right: calc(var(--spacing) * 40);
+  }
+  .right-50 {
+    right: calc(var(--spacing) * 50);
+  }
+  .right-51 {
+    right: calc(var(--spacing) * 51);
+  }
+  .right-52 {
+    right: calc(var(--spacing) * 52);
+  }
+  .right-53 {
+    right: calc(var(--spacing) * 53);
+  }
+  .right-55 {
+    right: calc(var(--spacing) * 55);
+  }
+  .right-56 {
+    right: calc(var(--spacing) * 56);
+  }
+  .right-57 {
+    right: calc(var(--spacing) * 57);
+  }
+  .right-60 {
+    right: calc(var(--spacing) * 60);
+  }
+  .right-100 {
+    right: calc(var(--spacing) * 100);
+  }
+  .right-105 {
+    right: calc(var(--spacing) * 105);
+  }
+  .right-110 {
+    right: calc(var(--spacing) * 110);
+  }
+  .right-120 {
+    right: calc(var(--spacing) * 120);
+  }
+  .right-130 {
+    right: calc(var(--spacing) * 130);
+  }
+  .right-150 {
+    right: calc(var(--spacing) * 150);
+  }
+  .right-200 {
+    right: calc(var(--spacing) * 200);
+  }
+  .right-1000 {
+    right: calc(var(--spacing) * 1000);
+  }
   .left-0 {
     left: calc(var(--spacing) * 0);
+  }
+  .left-20 {
+    left: calc(var(--spacing) * 20);
+  }
+  .left-50 {
+    left: calc(var(--spacing) * 50);
   }
   .mx-2 {
     margin-inline: calc(var(--spacing) * 2);
@@ -239,6 +295,9 @@
   .mb-20 {
     margin-bottom: calc(var(--spacing) * 20);
   }
+  .ml-1 {
+    margin-left: calc(var(--spacing) * 1);
+  }
   .ml-2 {
     margin-left: calc(var(--spacing) * 2);
   }
@@ -263,6 +322,9 @@
   .h-\[16px\] {
     height: 16px;
   }
+  .h-\[24px\] {
+    height: 24px;
+  }
   .h-full {
     height: 100%;
   }
@@ -284,8 +346,14 @@
   .w-16 {
     width: calc(var(--spacing) * 16);
   }
+  .w-\[12px\] {
+    width: 12px;
+  }
   .w-\[16px\] {
     width: 16px;
+  }
+  .w-\[24px\] {
+    width: 24px;
   }
   .w-full {
     width: 100%;
@@ -342,14 +410,8 @@
   .bg-\[\#1f2533\]\/50 {
     background-color: color-mix(in oklab, #1f2533 50%, transparent);
   }
-  .bg-black {
-    background-color: var(--color-black);
-  }
   .bg-gray-200 {
     background-color: var(--color-gray-200);
-  }
-  .bg-indigo-400 {
-    background-color: var(--color-indigo-400);
   }
   .bg-indigo-600 {
     background-color: var(--color-indigo-600);
@@ -446,6 +508,12 @@
   }
   .bg-\[url\(assets\/biocell\.png\)\] {
     background-image: url(assets/biocell.png);
+  }
+  .bg-\[url\(assets\/chart\.png\)\] {
+    background-image: url(assets/chart.png);
+  }
+  .bg-\[url\(assets\/charts\.png\)\] {
+    background-image: url(assets/charts.png);
   }
   .bg-\[url\(assets\/delta-powered-arm-pads\.png\)\] {
     background-image: url(assets/delta-powered-arm-pads.png);
@@ -1222,10 +1290,6 @@
     font-size: var(--text-2xl);
     line-height: var(--tw-leading, var(--text-2xl--line-height));
   }
-  .text-sm {
-    font-size: var(--text-sm);
-    line-height: var(--tw-leading, var(--text-sm--line-height));
-  }
   .text-\[10px\] {
     font-size: 10px;
   }
@@ -1278,6 +1342,13 @@
       }
     }
   }
+  .hover\:bg-\[url\(assets\/chartHover\.png\)\] {
+    &:hover {
+      @media (hover: hover) {
+        background-image: url(assets/chartHover.png);
+      }
+    }
+  }
   .hover\:text-indigo-400 {
     &:hover {
       @media (hover: hover) {
@@ -1309,6 +1380,41 @@
   .sm\:text-\[12px\] {
     @media (width >= 40rem) {
       font-size: 12px;
+    }
+  }
+  .lg\:top-1 {
+    @media (width >= 64rem) {
+      top: calc(var(--spacing) * 1);
+    }
+  }
+  .lg\:right-105 {
+    @media (width >= 64rem) {
+      right: calc(var(--spacing) * 105);
+    }
+  }
+  .lg\:right-120 {
+    @media (width >= 64rem) {
+      right: calc(var(--spacing) * 120);
+    }
+  }
+  .lg\:right-130 {
+    @media (width >= 64rem) {
+      right: calc(var(--spacing) * 130);
+    }
+  }
+  .lg\:right-135 {
+    @media (width >= 64rem) {
+      right: calc(var(--spacing) * 135);
+    }
+  }
+  .lg\:right-140 {
+    @media (width >= 64rem) {
+      right: calc(var(--spacing) * 140);
+    }
+  }
+  .lg\:right-150 {
+    @media (width >= 64rem) {
+      right: calc(var(--spacing) * 150);
     }
   }
   .lg\:mx-3 {
@@ -1519,6 +1625,11 @@
   .lg\:bg-\[url\(assets\/biocelllg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/biocelllg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/chartlg\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/chartlg.png);
     }
   }
   .lg\:bg-\[url\(assets\/delta-powered-arm-padslg\.png\)\] {
@@ -2832,6 +2943,15 @@
       @media (hover: hover) {
         @media (width >= 64rem) {
           background-image: url(./assets/importHoverLG.png);
+        }
+      }
+    }
+  }
+  .hover\:lg\:bg-\[url\(assets\/chartHover\.png\)\] {
+    &:hover {
+      @media (hover: hover) {
+        @media (width >= 64rem) {
+          background-image: url(assets/chartHover.png);
         }
       }
     }

@@ -47,7 +47,7 @@ const DefenseChart = ({armorStats}) => {
 console.log(updatedData)
   return (
     <ResponsiveContainer width="100%" height="100%">
-        <RadarChart cx="50%" cy="50%" outerRadius="60%" data={updatedData} style={{fontSize: '11px'}}>
+        <RadarChart cx="51%" cy="45%" outerRadius="60%" data={updatedData} style={{fontSize: '12px'}}>
           <PolarGrid />
           <PolarAngleAxis dataKey="stat" />
           <Radar name="Defense" dataKey="A" stroke="#8884d8" fill="#3F51B5" fillOpacity={0.6} />

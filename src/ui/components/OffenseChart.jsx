@@ -6,17 +6,37 @@ const OffenseChart = ({weaponStats}) => {
 
   const data = [
     {
-      stat: 'xeno dmg',
+      stat: 'xeno',
       A: 0,
       fullMark: 10,
     },
     {
-      stat: 'ballistics dmg',
+      stat: 'ballistics',
       A: 0,
       fullMark: 100,
     },
     {
-      stat: 'energy dmg',
+      stat: 'energy',
+      A: 0,
+      fullMark: 100,
+    },
+    {
+      stat: 'destruction',
+      A: 0,
+      fullMark: 100,
+    },
+    {
+      stat: 'bio',
+      A: 0,
+      fullMark: 100,
+    },
+    {
+      stat: 'stamina',
+      A: 0,
+      fullMark: 100,
+    },
+    {
+      stat: 'aura',
       A: 0,
       fullMark: 100,
     },
@@ -39,9 +59,9 @@ const OffenseChart = ({weaponStats}) => {
 
   return (
     <ResponsiveContainer width="100%" height="100%">
-        <RadarChart cx="50%" cy="50%" outerRadius="60%" data={updatedData} style={{fontSize: '11px'}}>
+        <RadarChart cx="50%" cy="45%" outerRadius="60%" data={updatedData} style={{fontSize: '12px', color: 'red'}}>
           <PolarGrid />
-          <PolarAngleAxis dataKey="stat" />
+          <PolarAngleAxis dataKey="stat" style={{color: 'red'}} />
           <Radar name="Defense" dataKey="A" stroke="#8884d8" fill="#3F51B5" fillOpacity={0.6} />
         </RadarChart>
       </ResponsiveContainer>
