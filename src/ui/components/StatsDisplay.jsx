@@ -111,7 +111,7 @@ for (let [armorKey, armorValue] of Object.entries(armorStats)) {
   return (
     <div className="stats-container text-white flex flex-col sm:mt-5 w-full h-full items-center">
       <div 
-      className="bg-[url(assets/chart.png)] lg:bg-[url(assets/chartlg.png)] hover:bg-[url(assets/chartHover.png)] hover:lg:bg-[url(assets/chartHover.png)] w-[16px] h-[16px] lg:w-[24px] lg:h-[24px] cursor-pointer absolute top-1 right-56 lg:top-1 lg:right-140" 
+      className="bg-[url(assets/chart.png)] lg:bg-[url(assets/chartlg.png)] hover:bg-[url(assets/chartHover.png)] hover:lg:bg-[url(assets/chartHover.png)] w-[16px] h-[16px] lg:w-[24px] lg:h-[24px] cursor-pointer absolute top-1 right-56 lg:top-1 lg:right-100" 
       onClick={() => setShowRawStats(!showRawStats)}></div>
 
       {!showRawStats && (
