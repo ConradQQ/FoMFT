@@ -45,7 +45,6 @@ const DefenseChart = ({armorStats}) => {
   })
   : undefined
 
-console.log(updatedData)
   return (
     <ResponsiveContainer width="100%" height="100%">
         <RadarChart cx="51%" cy="40%" outerRadius="60%" data={updatedData} style={{fontSize: '12px'}}>

@@ -56,7 +56,6 @@ const OffenseChart = ({weaponStats}) => {
   })
   : undefined;
 
-  console.log(updatedData)
 
   return (
     <ResponsiveContainer width="100%" height="100%">

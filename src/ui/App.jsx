@@ -1,8 +1,8 @@
 import './input.css';
-import ItemMenu from './components/ItemMenu';
-import StatsDisplay from './components/StatsDisplay';
-import SlotsMenu from './components/SlotsMenu';
+import BasePage from './components/BasePage';
+import DetailedStatsPage from './components/DetailedStatsPage';
 import { useState, useEffect } from 'react';
+import { Routes, Route, Link, useNavigate } from 'react-router-dom';
 
 function App() {
   const [itemObjects, setItemObjects] = useState([]);
@@ -11,6 +11,7 @@ function App() {
   const [slotTypes, setSlotTypes] = useState([]);
   // eslint-disable-next-line no-unused-vars
   const [slotItems, setSlotItems] = useState({});
+  const navigate = useNavigate();
 
   // Function to remove item of a slot from SlotTypes and ItemObjects on item slot click
   const handleSlotClick = (slotToRemove) => {
@@ -59,61 +60,49 @@ function App() {
       }
     }, []);
 
+    // Electron menu navigation
+
+    useEffect(() => {
+      if (window.electronAPI && window.electronAPI.on) {
+        window.electronAPI.on('navigate-basePage', () => {
+          navigate('/');
+        });
+  
+        window.electronAPI.on('navigate-stats', () => {
+          console.log('Navigate to Detailed Stats');
+          navigate('/stats');
+        });
+  
+        window.electronAPI.on('navigate-about', () => {
+          console.log('Navigate to About');
+          navigate('/about');
+        });
+      }
+    }, [navigate]);
+
   return (
     <>
-    <div className="app-container flex flex-row w-screen h-screen  overflow-hidden bg-[url(assets/background.png)] lg:bg-[url(assets/backgroundLG.png)]">
 
-    {/* Save/Load Container */}
-    <div className='load-save-container flex flex-row absolute right-1 top-1'>
-      
-      {/* Save Button */}
-      <div
-      className='bg-[url(./assets/export.png)] hover:bg-[url(./assets/exportHover.png)] lg:bg-[url(./assets/exportLG.png)] hover:lg:bg-[url(./assets/exportHoverLG.png)] w-[16px] h-[16px] lg:w-[24px] lg:h-[24px] cursor-pointer'
-      onClick={() => {
-      saveLoadout();
-      }}>
-      </div>
-
-      {/* Load Button */}
-       <div
-       className='bg-[url(./assets/import.png)] hover:bg-[url(./assets/importHover.png)] lg:bg-[url(./assets/importLG.png)] hover:lg:bg-[url(./assets/importHoverLG.png)] h-[16px] w-[16px] lg:w-[24px] lg:h-[24px] cursor-pointer ml-2'
-      onClick={() => {
-      loadLoadout();
-      }}>
-      </div>
-    </div>
-
-      {/* Items Menu */}
-      <div className='items-menu w-1/3 '>
-        <div className='flex flex-col'>
-         <ItemMenu  
+    <Routes>
+      <Route
+        path="/"
+        element={<BasePage
+          itemObjects={itemObjects}
           setItemObjects={setItemObjects}
-          setSlotTypes={setSlotTypes}
-          itemObjects={itemObjects}
-          slotTypes={slotTypes}/>
-        </div>
-      </div>
-
-      {/* Slots Menu */}
-      <div className='slots-menu flex flex-col w-1/3 h-full items-center'>
-        <SlotsMenu 
-          itemObjects={itemObjects}
           slotTypes={slotTypes}
+          setSlotTypes={setSlotTypes}
+          slotItems={slotItems}
+          setSlotItems={setSlotItems}
           handleSlotClick={handleSlotClick}
           saveLoadout={saveLoadout}
           loadLoadout={loadLoadout}
-        />
-      </div>
-
-      {/* Stats Display */}
-      <div className="stats-display flex flex-col w-1/3 h-full items-center">
-        <StatsDisplay 
-        itemObjects = {itemObjects}
-        slotTypes = {slotTypes} />
-      </div>
-    </div>
-  </>
-  )
+        />}
+      />
+      <Route path="/stats" element={<DetailedStatsPage />} />
+      {/* <Route path="/about" element={<AboutPage />} /> */}
+    </Routes>
+    </>
+  );
 }
 
 export default App

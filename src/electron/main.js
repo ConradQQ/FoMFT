@@ -46,7 +46,30 @@ app.on('ready', () => {
         { role: 'quit' },
       ],
     },
-    { // Add a new menu item for DevTools
+    {
+      label: 'Menus',
+      submenu: [
+        {
+          label: 'Main Menu',
+          click: () => {
+            mainWindow.webContents.send('navigate-basePage');
+          },
+        },
+        {
+          label: 'Detailed Stats',
+          click: () => {
+            mainWindow.webContents.send('navigate-stats');
+          },
+        },
+        {
+          label: 'About',
+          click: () => {
+            mainWindow.webContents.send('navigate-about');
+          },
+        },
+      ],
+    },
+    { 
       label: 'DevTools',
       submenu: [
         {
