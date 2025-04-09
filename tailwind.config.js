@@ -1,6 +1,32 @@
 // tailwind.config.js
 // eslint-disable-next-line no-undef
+/** @type {import('tailwindcss').Config} */
+// eslint-disable-next-line no-undef
 module.exports = {
+  // plugins: [
+  //   function({addUtilities}){
+  //     const newUtilities = {
+  //       ".scrollbar-thin" : {
+  //         scrollbarWidth: "thin",
+  //         scrollarColor: "rgb(31 29 29) white"
+  //       },
+  //       ".scrollbar-webkit": {
+  //         "&::-webkit-scrollbar": {
+  //           width: "8px"
+  //         },
+  //         "&::-webkit-scrollbar-track": {
+  //           background: "white"
+  //         },
+  //         "&::-webkit-scrollbar-thumb": {
+  //           backgroundColor: "rgb(31 41 55)",
+  //           borderRadius: "20px",
+  //           border: "1px solid white"
+  //         }
+  //       }
+  //     }
+  //     addUtilities(newUtilities, ["responsive", "hover"])
+  //   }
+  // ],
   safelist: [
     
     // Helmets

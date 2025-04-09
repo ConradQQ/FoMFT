@@ -65,7 +65,7 @@ const MedsMenu = ({ setItemObjects, itemObjects, setSlotTypes}) => {
           <ul className="item-list overflow-y-auto max-h-100">
             {meds.map((med) => (
               <li key={med.id} 
-                  className='cursor-pointer underline mt-0.5 text-white hover:text-indigo-400'
+                  className='w-fit cursor-pointer my-1 text-white hover:text-indigo-400 hover:underline'
                   onClick={() => handleItemClick(med)}>
                   {med.med_name}
               </li>

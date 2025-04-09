@@ -98,14 +98,14 @@ const ArmorMenu = ({showArmorTypes, setItemObjects, itemObjects, setSlotTypes}) 
           {loading && <div>Loading...</div>}
           {error && <div>Error: {error}</div>}
           {items.length > 0 && (
-            <ul className="item-list overflow-y-auto max-h-100">
+            <ul className="item-list overflow-y-auto scrollbar max-h-100">
               {items.map((item) => (
                 <li
                   key={item.armor_id}
                   onClick={() => {
                     handleItemClick(item)
                   }}
-                  className='cursor-pointer underline mt-0.5 text-white hover:text-indigo-400'
+                  className='w-fit cursor-pointer my-1 text-white hover:text-indigo-400 hover:underline'
                 >
                   {item.armor_name}
                 </li>

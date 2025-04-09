@@ -98,7 +98,20 @@ function App() {
           loadLoadout={loadLoadout}
         />}
       />
-      <Route path="/stats" element={<DetailedStatsPage />} />
+      <Route 
+      path="/stats" 
+      element={<DetailedStatsPage 
+        itemObjects={itemObjects}
+        setItemObjects={setItemObjects}
+        slotTypes={slotTypes}
+        setSlotTypes={setSlotTypes}
+        slotItems={slotItems}
+        setSlotItems={setSlotItems}
+        handleSlotClick={handleSlotClick}
+        saveLoadout={saveLoadout}
+        loadLoadout={loadLoadout}
+        />} 
+      />
       {/* <Route path="/about" element={<AboutPage />} /> */}
     </Routes>
     </>
