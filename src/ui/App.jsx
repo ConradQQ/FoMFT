@@ -1,15 +1,15 @@
+/* eslint-disable no-unused-vars */
 import './input.css';
 import BasePage from './components/BasePage';
 import DetailedStatsPage from './components/DetailedStatsPage';
+import CompareToolPage from './components/CompareToolPage';
 import { useState, useEffect } from 'react';
 import { Routes, Route, Link, useNavigate } from 'react-router-dom';
 
-function App() {
+const App = () => {
   const [itemObjects, setItemObjects] = useState([]);
-  // eslint-disable-next-line no-unused-vars
   const [key, setKey] = useState(0); 
   const [slotTypes, setSlotTypes] = useState([]);
-  // eslint-disable-next-line no-unused-vars
   const [slotItems, setSlotItems] = useState({});
   const navigate = useNavigate();
 
@@ -84,6 +84,7 @@ function App() {
     <>
 
     <Routes>
+      
       <Route
         path="/"
         element={<BasePage
@@ -98,21 +99,28 @@ function App() {
           loadLoadout={loadLoadout}
         />}
       />
+
       <Route 
-      path="/stats" 
-      element={<DetailedStatsPage 
-        itemObjects={itemObjects}
-        setItemObjects={setItemObjects}
-        slotTypes={slotTypes}
-        setSlotTypes={setSlotTypes}
-        slotItems={slotItems}
-        setSlotItems={setSlotItems}
-        handleSlotClick={handleSlotClick}
-        saveLoadout={saveLoadout}
-        loadLoadout={loadLoadout}
+        path="/stats" 
+        element={<DetailedStatsPage 
+          itemObjects={itemObjects}
+          setItemObjects={setItemObjects}
+          slotTypes={slotTypes}
+          setSlotTypes={setSlotTypes}
+          slotItems={slotItems}
+          setSlotItems={setSlotItems}
+          handleSlotClick={handleSlotClick}
+          saveLoadout={saveLoadout}
+          loadLoadout={loadLoadout}
         />} 
       />
-      {/* <Route path="/about" element={<AboutPage />} /> */}
+
+      <Route 
+        path="/about"
+        element={<CompareToolPage />}
+      
+      />
+
     </Routes>
     </>
   );

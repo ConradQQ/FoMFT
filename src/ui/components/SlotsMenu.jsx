@@ -1,7 +1,4 @@
-// ItemSlot.jsx
-
 import React from 'react';
-
 
 const SlotsMenu = ({itemObjects, slotTypes, handleSlotClick}) => {
 
@@ -67,8 +64,6 @@ const SlotsMenu = ({itemObjects, slotTypes, handleSlotClick}) => {
 const legsItemKeys = legsItem ? Object.keys(legsItem) : undefined;
 const legsItemType = legsItem ? legsItemKeys[1] : undefined
 
-// console.log(helmetImg);
-// console.log(helmetImgLG)
 
 return (
   <>

@@ -34,9 +34,9 @@ const ItemMenu = ({ onItemSelected, setItemObjects, itemObjects, setSlotTypes, s
               {selectedCategory !== null && (
           <button 
             onClick={clearCategory}
-            className="absolute top-10 left-0 bg-gray-200 rounded-full p-1 hover:bg-indigo-400 transition-colors"
+            className="absolute top-0 left-0 bg-gray-200 rounded-full p-1 hover:bg-indigo-400 transition-colors"
           >
-             <XCircle className="h-4 w-4 text-gray-600 cursor-pointer" /> 
+             <XCircle className="h-2 w-2 lg:h-4 lg:w-4 text-gray-600 cursor-pointer" /> 
           </button>
         )}
       <div className="categories flex flex-col relative sm:mt-35 lg:mt-27"> 

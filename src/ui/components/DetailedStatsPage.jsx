@@ -13,7 +13,7 @@ const DetailedStatsPage = ({
 return (
 <>
 
-<h1 className="text-red-500">Detailed Stats</h1>
+<h1 className="w-screen h-screen">Detailed Stats</h1>
 
 </>
 )  

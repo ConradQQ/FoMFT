@@ -62,7 +62,7 @@ app.on('ready', () => {
           },
         },
         {
-          label: 'About',
+          label: 'Comparison Tool',
           click: () => {
             mainWindow.webContents.send('navigate-about');
           },

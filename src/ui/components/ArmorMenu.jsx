@@ -80,12 +80,13 @@ const ArmorMenu = ({showArmorTypes, setItemObjects, itemObjects, setSlotTypes}) 
     <div className="armor-menu">
       <div className="armor-category absolute top-0 left-0 ml-2 lg:ml-8">
         {showArmorTypes && (
-          <div className="armor-types flex flex-row text-[11px] lg:text-[16px] top-0 left-0">
+          <div className="armor-types flex flex-row text-[11px] lg:text-[16px] absolute top-6 left-0">
             {armorTypes.map((type) => (
               <button
                 key={type}
                 onClick={() => handleArmorTypeClick(type)}
-                className='mr-2 lg:mx-3 font-bold  text-white text-[10px] lg:text-[14px] hover:bg-indigo-400 bg-indigo-600 rounded-lg sm:px-[4px] lg:px-[10px]'
+                className='mr-2 lg:mx-3 font-bold  text-white text-[10px] lg:text-[14px] hover:bg-indigo-400 bg-indigo-600 rounded-lg sm:px-[4px] 
+                lg:px-[10px]'
               >
                 {type.charAt(0).toUpperCase() + type.slice(1)}
               </button>
