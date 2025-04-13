@@ -7,9 +7,12 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-red-500: oklch(0.637 0.237 25.331);
+    --color-blue-600: oklch(0.546 0.245 262.881);
     --color-indigo-400: oklch(0.673 0.182 276.935);
     --color-indigo-600: oklch(0.511 0.262 276.966);
     --color-indigo-900: oklch(0.359 0.144 278.697);
+    --color-purple-500: oklch(0.627 0.265 303.9);
     --color-gray-200: oklch(0.928 0.006 264.531);
     --color-gray-600: oklch(0.446 0.03 256.802);
     --color-white: #fff;
@@ -208,6 +211,9 @@
   .left-0 {
     left: calc(var(--spacing) * 0);
   }
+  .mx-1 {
+    margin-inline: calc(var(--spacing) * 1);
+  }
   .mx-2 {
     margin-inline: calc(var(--spacing) * 2);
   }
@@ -216,6 +222,9 @@
   }
   .my-2 {
     margin-block: calc(var(--spacing) * 2);
+  }
+  .mt-1 {
+    margin-top: calc(var(--spacing) * 1);
   }
   .mt-4 {
     margin-top: calc(var(--spacing) * 4);
@@ -244,8 +253,17 @@
   .flex {
     display: flex;
   }
+  .table {
+    display: table;
+  }
+  .h-1 {
+    height: calc(var(--spacing) * 1);
+  }
   .h-1\/2 {
     height: calc(1/2 * 100%);
+  }
+  .h-1\/3 {
+    height: calc(1/3 * 100%);
   }
   .h-1\/6 {
     height: calc(1/6 * 100%);
@@ -253,11 +271,29 @@
   .h-2 {
     height: calc(var(--spacing) * 2);
   }
+  .h-15 {
+    height: calc(var(--spacing) * 15);
+  }
   .h-16 {
     height: calc(var(--spacing) * 16);
   }
   .h-\[16px\] {
     height: 16px;
+  }
+  .h-\[20px\] {
+    height: 20px;
+  }
+  .h-\[50px\] {
+    height: 50px;
+  }
+  .h-\[60\] {
+    height: 60;
+  }
+  .h-\[60px\] {
+    height: 60px;
+  }
+  .h-\[75px\] {
+    height: 75px;
   }
   .h-full {
     height: 100%;
@@ -268,17 +304,47 @@
   .max-h-100 {
     max-height: calc(var(--spacing) * 100);
   }
+  .w-1 {
+    width: calc(var(--spacing) * 1);
+  }
   .w-1\/3 {
     width: calc(1/3 * 100%);
   }
   .w-2 {
     width: calc(var(--spacing) * 2);
   }
+  .w-15 {
+    width: calc(var(--spacing) * 15);
+  }
   .w-16 {
     width: calc(var(--spacing) * 16);
   }
+  .w-50 {
+    width: calc(var(--spacing) * 50);
+  }
   .w-\[16px\] {
     width: 16px;
+  }
+  .w-\[20px\] {
+    width: 20px;
+  }
+  .w-\[50px\] {
+    width: 50px;
+  }
+  .w-\[60px\] {
+    width: 60px;
+  }
+  .w-\[75px\] {
+    width: 75px;
+  }
+  .w-\[100px\] {
+    width: 100px;
+  }
+  .w-\[200-px\] {
+    width: 200-px;
+  }
+  .w-\[200px\] {
+    width: 200px;
   }
   .w-fit {
     width: fit-content;
@@ -289,8 +355,14 @@
   .w-screen {
     width: 100vw;
   }
+  .border-collapse {
+    border-collapse: collapse;
+  }
   .cursor-pointer {
     cursor: pointer;
+  }
+  .resize {
+    resize: both;
   }
   .flex-col {
     flex-direction: column;
@@ -332,14 +404,26 @@
   .bg-\[\#1f2533\]\/50 {
     background-color: color-mix(in oklab, #1f2533 50%, transparent);
   }
+  .bg-blue-600 {
+    background-color: var(--color-blue-600);
+  }
   .bg-gray-200 {
     background-color: var(--color-gray-200);
   }
   .bg-indigo-600 {
     background-color: var(--color-indigo-600);
   }
+  .bg-indigo-900 {
+    background-color: var(--color-indigo-900);
+  }
   .bg-indigo-900\/70 {
     background-color: color-mix(in oklab, var(--color-indigo-900) 70%, transparent);
+  }
+  .bg-purple-500 {
+    background-color: var(--color-purple-500);
+  }
+  .bg-red-500 {
+    background-color: var(--color-red-500);
   }
   .bg-\[url\(\.\/assets\/export\.png\)\] {
     background-image: url(./assets/export.png);
@@ -415,6 +499,9 @@
   }
   .bg-\[url\(assets\/aramid-modified-torso-armor\.png\)\] {
     background-image: url(assets/aramid-modified-torso-armor.png);
+  }
+  .bg-\[url\(assets\/armSlot-sm\.png\)\] {
+    background-image: url(assets/armSlot-sm.png);
   }
   .bg-\[url\(assets\/armSlot\.png\)\] {
     background-image: url(assets/armSlot.png);
@@ -539,6 +626,9 @@
   .bg-\[url\(assets\/ginnan-sushi\.png\)\] {
     background-image: url(assets/ginnan-sushi.png);
   }
+  .bg-\[url\(assets\/handSlot-sm\.png\)\] {
+    background-image: url(assets/handSlot-sm.png);
+  }
   .bg-\[url\(assets\/handSlot\.png\)\] {
     background-image: url(assets/handSlot.png);
   }
@@ -559,6 +649,9 @@
   }
   .bg-\[url\(assets\/havoc-powered-torso-armor\.png\)\] {
     background-image: url(assets/havoc-powered-torso-armor.png);
+  }
+  .bg-\[url\(assets\/headSlot-sm\.png\)\] {
+    background-image: url(assets/headSlot-sm.png);
   }
   .bg-\[url\(assets\/headSlot\.png\)\] {
     background-image: url(assets/headSlot.png);
@@ -707,6 +800,9 @@
   .bg-\[url\(assets\/leech-torso-armor\.png\)\] {
     background-image: url(assets/leech-torso-armor.png);
   }
+  .bg-\[url\(assets\/legSlot-sm\.png\)\] {
+    background-image: url(assets/legSlot-sm.png);
+  }
   .bg-\[url\(assets\/legSlot\.png\)\] {
     background-image: url(assets/legSlot.png);
   }
@@ -832,6 +928,9 @@
   }
   .bg-\[url\(assets\/metabolic-torso-armor\.png\)\] {
     background-image: url(assets/metabolic-torso-armor.png);
+  }
+  .bg-\[url\(assets\/miscSlot-sm\.png\)\] {
+    background-image: url(assets/miscSlot-sm.png);
   }
   .bg-\[url\(assets\/miscSlot\.png\)\] {
     background-image: url(assets/miscSlot.png);
@@ -1124,6 +1223,12 @@
   .bg-\[url\(assets\/shield-implant\.png\)\] {
     background-image: url(assets/shield-implant.png);
   }
+  .bg-\[url\(assets\/shoulderSlot-sm\.png\)\] {
+    background-image: url(assets/shoulderSlot-sm.png);
+  }
+  .bg-\[url\(assets\/shouldersSlot-sm\.png\)\] {
+    background-image: url(assets/shouldersSlot-sm.png);
+  }
   .bg-\[url\(assets\/shouldersSlot\.png\)\] {
     background-image: url(assets/shouldersSlot.png);
   }
@@ -1150,6 +1255,9 @@
   }
   .bg-\[url\(assets\/tactical-systems-torso-armor\.png\)\] {
     background-image: url(assets/tactical-systems-torso-armor.png);
+  }
+  .bg-\[url\(assets\/torsoSlot-sm\.png\)\] {
+    background-image: url(assets/torsoSlot-sm.png);
   }
   .bg-\[url\(assets\/torsoSlot\.png\)\] {
     background-image: url(assets/torsoSlot.png);
@@ -1227,6 +1335,10 @@
   }
   .opacity-50 {
     opacity: 50%;
+  }
+  .outline {
+    outline-style: var(--tw-outline-style);
+    outline-width: 1px;
   }
   .transition-colors {
     transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;
@@ -2904,4 +3016,9 @@
 @property --tw-font-weight {
   syntax: "*";
   inherits: false;
+}
+@property --tw-outline-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
 }
