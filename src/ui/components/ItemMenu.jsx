@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import ArmorMenu from './ArmorMenu';
 import WeaponsMenu from './WeaponsMenu';
 import ImplantsMenu from './ImplantsMenu';
@@ -28,6 +28,21 @@ const ItemMenu = ({ onItemSelected, setItemObjects, itemObjects, setSlotTypes, s
     setSelectedCategory(null);
     setShowArmorTypes(false);
   };
+
+  // Use Effect hook to handle clear categories on esc key press
+  useEffect(() => {
+    const handleKeyDown = (event) => {
+      if (event.key === 'Escape') {
+        clearCategory();
+      }
+    };
+  
+    window.addEventListener('keydown', handleKeyDown);
+  
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown);
+    };
+  }, []);
 
   return (
     <div className="item-menu flex flex-col">

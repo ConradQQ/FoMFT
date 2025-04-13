@@ -1,17 +1,22 @@
 /* eslint-disable no-unused-vars */
 import { useState, useEffect } from 'react';
 import CompareItemSlots from './CompareItemSlots';
-import axios from 'axios';
 
-const CompareToolPage = () => {
+const CompareToolPage = ({
+  firstCompareItemsObjects,
+  setFirstCompareItemObjects,
+  secondCompareItemsObjects,
+  setSecondCompareItemObjects,
+  compareSlotTypesOne,
+  setCompareSlotTypesOne,
+  compareSlotTypesTwo,
+  setCompareSlotTypesTwo,
+  currentCompareItemObject,
+  setCurrentCompareItemObject
+}) => {
 
   // State Logic to be passed down
-    const [selectedCompareArmorType, setSelectedCompareArmorType] = useState(null);
-    const [compareItems, setCompareItems] = useState([]);
-    const [loading, setLoading] = useState(false);
-    const [error, setError] = useState(null);
-    const [firstCompareItemsObjects, setFirstCompareItemObjects] = useState([]);
-    const [secondCompareItemsObjects, setSecondCompareItemObjects] = useState([]);
+    
 
   // Use effect hook for making API call when slot is clicked
 
@@ -24,17 +29,16 @@ return (
       <div className='compare-tool-armorslots w-1/3 h-full'>
 
           <CompareItemSlots 
-            selectedCompareArmorType={selectedCompareArmorType}
-            setSelectedCompareArmorType={setSelectedCompareArmorType}
             firstCompareItemsObjects={firstCompareItemsObjects}
-            setFirstItemObjects={setFirstCompareItemObjects}
+            setFirstCompareItemObjects={setFirstCompareItemObjects}
             secondCompareItemsObjects={secondCompareItemsObjects}
             setSecondCompareItemObjects={setSecondCompareItemObjects}
-            compareItems={compareItems}
-            setCompareItems={setCompareItems}
-            loading={loading}
-            setLoading={setLoading}
-            error={error}
+            compareSlotTypesOne={compareSlotTypesOne}
+            setCompareSlotTypesOne={setCompareSlotTypesOne}
+            compareSlotTypesTwo={compareSlotTypesTwo}
+            setCompareSlotTypesTwo={setCompareSlotTypesTwo}
+            currentCompareItemObject={currentCompareItemObject}
+            setCurrentCompareItemObject={setCurrentCompareItemObject}
           />
         
       </div>

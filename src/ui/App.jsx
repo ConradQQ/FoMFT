@@ -19,8 +19,10 @@ const App = () => {
 
   const [firstCompareItemsObjects, setFirstCompareItemObjects] = useState([]);
   const [secondCompareItemsObjects, setSecondCompareItemObjects] = useState([]);
-  const [compareSlotTypes, setCompareSlotTypes] = useState([]);
+  const [compareSlotTypesOne, setCompareSlotTypesOne] = useState([]);
+  const [compareSlotTypesTwo, setCompareSlotTypesTwo] = useState([]);
   const [compareSlotItems, setCompareSlotItems] = useState({});
+  const [currentCompareItemObject, setCurrentCompareItemObject] = useState(1);
 
   // Function to remove item of a slot from SlotTypes and ItemObjects on item slot click
   const handleSlotClick = (slotToRemove) => {
@@ -132,10 +134,12 @@ const App = () => {
           setFirstCompareItemObjects={setFirstCompareItemObjects}
           secondCompareItemsObjects={secondCompareItemsObjects}
           setSecondCompareItemObjects={setSecondCompareItemObjects}
-          compareSlotItems={compareSlotItems}
-          setCompareSlotItems={setCompareSlotItems}
-          compareSlotTypes={compareSlotTypes}
-          setCompareSlotTypes={setCompareSlotTypes}
+          compareSlotTypesOne={compareSlotTypesOne}
+          setCompareSlotTypesOne={setCompareSlotTypesOne}
+          compareSlotTypesTwo={compareSlotTypesTwo}
+          setCompareSlotTypesTwo={setCompareSlotTypesTwo}
+          currentCompareItemObject={currentCompareItemObject}
+          setCurrentCompareItemObject={setCurrentCompareItemObject}
         
         />}
       />
