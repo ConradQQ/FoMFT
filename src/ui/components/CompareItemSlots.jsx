@@ -1,14 +1,12 @@
 /* eslint-disable no-unused-vars */
 const CompareItemSlots = ({
-  itemObjects,
-  setItemObjects,
-  slotTypes,
-  setSlotTypes,
-  slotItems,
-  setSlotItems,
-  handleSlotClick,
-  saveLoadout,
-  loadLoadout,
+  selectedArmorType,
+  setSelectedArmorType,
+  items,
+  setItems,
+  loading,
+  setLoading,
+  error
 }) => {
 
 // Going to need it's own state logic for the first loadout itemsObject if it doesnt exist, and it will always need logic for the second

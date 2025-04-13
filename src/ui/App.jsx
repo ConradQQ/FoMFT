@@ -7,17 +7,27 @@ import { useState, useEffect } from 'react';
 import { Routes, Route, Link, useNavigate } from 'react-router-dom';
 
 const App = () => {
+
+  // Base Page State Logic
   const [itemObjects, setItemObjects] = useState([]);
   const [key, setKey] = useState(0); 
   const [slotTypes, setSlotTypes] = useState([]);
   const [slotItems, setSlotItems] = useState({});
   const navigate = useNavigate();
 
+  // CompareToolPage state logic
+
+  const [firstCompareItemsObjects, setFirstCompareItemObjects] = useState([]);
+  const [secondCompareItemsObjects, setSecondCompareItemObjects] = useState([]);
+  const [compareSlotTypes, setCompareSlotTypes] = useState([]);
+  const [compareSlotItems, setCompareSlotItems] = useState({});
+
   // Function to remove item of a slot from SlotTypes and ItemObjects on item slot click
   const handleSlotClick = (slotToRemove) => {
     setSlotTypes((prevSlots) => prevSlots.filter((slot) => slot !== slotToRemove));
     setItemObjects((prevItems) => prevItems.filter((item) => item.slot !== slotToRemove));
   };
+
 
   // Function to save the current loadout
   const saveLoadout = () => {
@@ -118,18 +128,16 @@ const App = () => {
       <Route 
         path="/about"
         element={<CompareToolPage 
-          itemObjects={itemObjects}
-          setItemObjects={setItemObjects}
-          slotTypes={slotTypes}
-          setSlotTypes={setSlotTypes}
-          slotItems={slotItems}
-          setSlotItems={setSlotItems}
-          handleSlotClick={handleSlotClick}
-          saveLoadout={saveLoadout}
-          loadLoadout={loadLoadout}
+          firstCompareItemsObjects={firstCompareItemsObjects}
+          setFirstCompareItemObjects={setFirstCompareItemObjects}
+          secondCompareItemsObjects={secondCompareItemsObjects}
+          setSecondCompareItemObjects={setSecondCompareItemObjects}
+          compareSlotItems={compareSlotItems}
+          setCompareSlotItems={setCompareSlotItems}
+          compareSlotTypes={compareSlotTypes}
+          setCompareSlotTypes={setCompareSlotTypes}
         
         />}
-      
       />
 
     </Routes>
