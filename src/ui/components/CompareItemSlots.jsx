@@ -13,6 +13,8 @@ const CompareItemSlots = ({
 
 // Going to need it's own state logic for the first loadout itemsObject if it doesnt exist, and it will always need logic for the second
 
+// Needs to display item category list on slot click
+
   return (
     <>
       <div className="compare-item-slots-container h-full w-full">
