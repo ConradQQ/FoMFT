@@ -12,8 +12,12 @@ const DetailedStatsPage = ({
 
 return (
 <>
+<div className="w-screen h-screen bg-[url(assets/background.png)]">
 
-<h1 className="w-screen h-screen">Detailed Stats</h1>
+<h1 className="w-screen h-screen text-red-500">Detailed Stats</h1>
+
+</div>
+
 
 </>
 )  

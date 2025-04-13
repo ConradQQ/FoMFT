@@ -34,9 +34,9 @@ const ItemMenu = ({ onItemSelected, setItemObjects, itemObjects, setSlotTypes, s
               {selectedCategory !== null && (
           <button 
             onClick={clearCategory}
-            className="absolute top-0 left-0 bg-gray-200 rounded-full p-1 hover:bg-indigo-400 transition-colors"
+            className="absolute top-0 left-0 armorType rounded-full p-1 transition-colors cursor-pointer"
           >
-             <XCircle className="h-2 w-2 lg:h-4 lg:w-4 text-gray-600 cursor-pointer" /> 
+             <XCircle className="h-2 w-2 lg:h-4 lg:w-4 text-white cursor-pointer" /> 
           </button>
         )}
       <div className="categories flex flex-col relative sm:mt-35 lg:mt-27"> 
@@ -47,7 +47,7 @@ const ItemMenu = ({ onItemSelected, setItemObjects, itemObjects, setSlotTypes, s
               onClick={() => handleCategoryClick('armor')}
               className={selectedCategory === 'armor' 
                 ? 'selected' 
-                : 'text-2xl my-2 lg:text-5xl lg:my-10 text-white hover:text-indigo-400'}
+                : 'text-2xl my-2 lg:text-5xl lg:my-10 text-white hover:text-indigo-400 cursor-pointer'}
                 style={{backgroundColor:'transparent'}}
             >
               Armor
@@ -56,7 +56,7 @@ const ItemMenu = ({ onItemSelected, setItemObjects, itemObjects, setSlotTypes, s
               onClick={() => handleCategoryClick('weapons')}
               className={selectedCategory === 'weapons' 
                 ?  'selected' 
-                :  'text-2xl lg:text-5xl my-2 lg:my-10 text-white hover:text-indigo-400'}
+                :  'text-2xl lg:text-5xl my-2 lg:my-10 text-white hover:text-indigo-400 cursor-pointer'}
                 style={{backgroundColor:'transparent'}}
             >
               Weapons
@@ -65,7 +65,7 @@ const ItemMenu = ({ onItemSelected, setItemObjects, itemObjects, setSlotTypes, s
               onClick={() => handleCategoryClick('implants')}
               className={selectedCategory === 'implants' 
                 ? 'selected' 
-                : 'text-2xl my-2 lg:text-5xl lg:my-10 text-white hover:text-indigo-400'}
+                : 'text-2xl my-2 lg:text-5xl lg:my-10 text-white hover:text-indigo-400 cursor-pointer'}
                 style={{backgroundColor:'transparent'}}
             >
               Implants
@@ -74,7 +74,7 @@ const ItemMenu = ({ onItemSelected, setItemObjects, itemObjects, setSlotTypes, s
               onClick={() => handleCategoryClick('food')}
               className={selectedCategory === 'food' 
                 ? 'selected' 
-                : 'text-2xl my-2 lg:text-5xl lg:my-10 text-white hover:text-indigo-400'}
+                : 'text-2xl my-2 lg:text-5xl lg:my-10 text-white hover:text-indigo-400 cursor-pointer'}
                 style={{backgroundColor:'transparent'}}
             >
               Food
@@ -84,7 +84,7 @@ const ItemMenu = ({ onItemSelected, setItemObjects, itemObjects, setSlotTypes, s
               onClick={() => handleCategoryClick('meds')}
               className={selectedCategory === 'meds' 
                 ? 'selected' 
-                : 'text-2xl lg:text-5xl my-2 lg:my-10 text-white hover:text-indigo-400'}
+                : 'text-2xl lg:text-5xl my-2 lg:my-10 text-white hover:text-indigo-400 cursor-pointer'}
                 style={{backgroundColor:'transparent'}}
             >
               Meds
@@ -93,7 +93,7 @@ const ItemMenu = ({ onItemSelected, setItemObjects, itemObjects, setSlotTypes, s
               onClick={() => handleCategoryClick('boosters')}
               className={selectedCategory === 'boosters' 
               ? 'selected' 
-              : 'text-2xl my-2 lg:text-5xl lg:my-10 text-white hover:text-indigo-400'}
+              : 'text-2xl my-2 lg:text-5xl lg:my-10 text-white hover:text-indigo-400 cursor-pointer'}
               style={{backgroundColor:'transparent'}}
             >
               Boosters
@@ -111,40 +111,45 @@ const ItemMenu = ({ onItemSelected, setItemObjects, itemObjects, setSlotTypes, s
           slotTypes={slotTypes}
         />
       )}
-      {selectedCategory === 'weapons' && <WeaponsMenu 
-      onItemSelected={onItemSelected} 
-      setItemObjects={setItemObjects}
-      itemObjects={itemObjects}
-      setSlotTypes={setSlotTypes}
-      slotTypes={slotTypes}/>}
+      {selectedCategory === 'weapons' && 
+      <WeaponsMenu 
+        onItemSelected={onItemSelected} 
+        setItemObjects={setItemObjects}
+        itemObjects={itemObjects}
+        setSlotTypes={setSlotTypes}
+        slotTypes={slotTypes}/>}
 
-      {selectedCategory === 'implants' && <ImplantsMenu 
-      onItemSelected={onItemSelected} 
-      setItemObjects={setItemObjects}
-      itemObjects={itemObjects}
-      setSlotTypes={setSlotTypes}
-      slotTypes={slotTypes}/>}
+      {selectedCategory === 'implants' && 
+      <ImplantsMenu 
+        onItemSelected={onItemSelected} 
+        setItemObjects={setItemObjects}
+        itemObjects={itemObjects}
+        setSlotTypes={setSlotTypes}
+        slotTypes={slotTypes}/>}
 
-      {selectedCategory === 'food' && <FoodMenu 
-      onItemSelected={onItemSelected} 
-      setItemObjects={setItemObjects}
-      itemObjects={itemObjects}
-      setSlotTypes={setSlotTypes}
-      slotTypes={slotTypes}/>}
+      {selectedCategory === 'food' && 
+      <FoodMenu 
+        onItemSelected={onItemSelected} 
+        setItemObjects={setItemObjects}
+        itemObjects={itemObjects}
+        setSlotTypes={setSlotTypes}
+        slotTypes={slotTypes}/>}
 
-      {selectedCategory === 'boosters' && <BoosterMenu 
-      onItemSelected={onItemSelected} 
-      setItemObjects={setItemObjects}
-      itemObjects={itemObjects}
-      setSlotTypes={setSlotTypes}
-      slotTypes={slotTypes}/>}
+      {selectedCategory === 'boosters' && 
+      <BoosterMenu 
+        onItemSelected={onItemSelected} 
+        setItemObjects={setItemObjects}
+        itemObjects={itemObjects}
+        setSlotTypes={setSlotTypes}
+        slotTypes={slotTypes}/>}
 
-      {selectedCategory === 'meds' && <MedsMenu 
-      onItemSelected={onItemSelected} 
-      setItemObjects={setItemObjects}
-      itemObjects={itemObjects}
-      setSlotTypes={setSlotTypes}
-      slotTypes={slotTypes}/>}
+      {selectedCategory === 'meds' && 
+      <MedsMenu 
+        onItemSelected={onItemSelected} 
+        setItemObjects={setItemObjects}
+        itemObjects={itemObjects}
+        setSlotTypes={setSlotTypes}
+        slotTypes={slotTypes}/>}
     </div>
   );
 };

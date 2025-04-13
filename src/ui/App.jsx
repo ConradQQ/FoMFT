@@ -117,7 +117,18 @@ const App = () => {
 
       <Route 
         path="/about"
-        element={<CompareToolPage />}
+        element={<CompareToolPage 
+          itemObjects={itemObjects}
+          setItemObjects={setItemObjects}
+          slotTypes={slotTypes}
+          setSlotTypes={setSlotTypes}
+          slotItems={slotItems}
+          setSlotItems={setSlotItems}
+          handleSlotClick={handleSlotClick}
+          saveLoadout={saveLoadout}
+          loadLoadout={loadLoadout}
+        
+        />}
       
       />
 

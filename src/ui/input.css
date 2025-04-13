@@ -44,3 +44,10 @@
     background-color: #f9f9f9;
   }
 }
+
+.armorType {
+  background-color: rgb(79 70 229);
+}
+.armorType:hover {
+  background-color: rgb(129 140 248);
+}

@@ -8,11 +8,9 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-red-500: oklch(0.637 0.237 25.331);
-    --color-blue-600: oklch(0.546 0.245 262.881);
     --color-indigo-400: oklch(0.673 0.182 276.935);
     --color-indigo-600: oklch(0.511 0.262 276.966);
     --color-indigo-900: oklch(0.359 0.144 278.697);
-    --color-purple-500: oklch(0.627 0.265 303.9);
     --color-gray-200: oklch(0.928 0.006 264.531);
     --color-gray-600: oklch(0.446 0.03 256.802);
     --color-white: #fff;
@@ -271,29 +269,14 @@
   .h-2 {
     height: calc(var(--spacing) * 2);
   }
-  .h-15 {
-    height: calc(var(--spacing) * 15);
-  }
   .h-16 {
     height: calc(var(--spacing) * 16);
   }
   .h-\[16px\] {
     height: 16px;
   }
-  .h-\[20px\] {
-    height: 20px;
-  }
-  .h-\[50px\] {
-    height: 50px;
-  }
-  .h-\[60\] {
-    height: 60;
-  }
   .h-\[60px\] {
     height: 60px;
-  }
-  .h-\[75px\] {
-    height: 75px;
   }
   .h-full {
     height: 100%;
@@ -313,35 +296,14 @@
   .w-2 {
     width: calc(var(--spacing) * 2);
   }
-  .w-15 {
-    width: calc(var(--spacing) * 15);
-  }
   .w-16 {
     width: calc(var(--spacing) * 16);
-  }
-  .w-50 {
-    width: calc(var(--spacing) * 50);
   }
   .w-\[16px\] {
     width: 16px;
   }
-  .w-\[20px\] {
-    width: 20px;
-  }
-  .w-\[50px\] {
-    width: 50px;
-  }
   .w-\[60px\] {
     width: 60px;
-  }
-  .w-\[75px\] {
-    width: 75px;
-  }
-  .w-\[100px\] {
-    width: 100px;
-  }
-  .w-\[200-px\] {
-    width: 200-px;
   }
   .w-\[200px\] {
     width: 200px;
@@ -404,9 +366,6 @@
   .bg-\[\#1f2533\]\/50 {
     background-color: color-mix(in oklab, #1f2533 50%, transparent);
   }
-  .bg-blue-600 {
-    background-color: var(--color-blue-600);
-  }
   .bg-gray-200 {
     background-color: var(--color-gray-200);
   }
@@ -418,12 +377,6 @@
   }
   .bg-indigo-900\/70 {
     background-color: color-mix(in oklab, var(--color-indigo-900) 70%, transparent);
-  }
-  .bg-purple-500 {
-    background-color: var(--color-purple-500);
-  }
-  .bg-red-500 {
-    background-color: var(--color-red-500);
   }
   .bg-\[url\(\.\/assets\/export\.png\)\] {
     background-image: url(./assets/export.png);
@@ -1223,9 +1176,6 @@
   .bg-\[url\(assets\/shield-implant\.png\)\] {
     background-image: url(assets/shield-implant.png);
   }
-  .bg-\[url\(assets\/shoulderSlot-sm\.png\)\] {
-    background-image: url(assets/shoulderSlot-sm.png);
-  }
   .bg-\[url\(assets\/shouldersSlot-sm\.png\)\] {
     background-image: url(assets/shouldersSlot-sm.png);
   }
@@ -1326,6 +1276,9 @@
   }
   .text-gray-600 {
     color: var(--color-gray-600);
+  }
+  .text-red-500 {
+    color: var(--color-red-500);
   }
   .text-white {
     color: var(--color-white);
@@ -3007,6 +2960,12 @@
   button {
     background-color: #f9f9f9;
   }
+}
+.armorType {
+  background-color: rgb(79 70 229);
+}
+.armorType:hover {
+  background-color: rgb(129 140 248);
 }
 @property --tw-border-style {
   syntax: "*";
