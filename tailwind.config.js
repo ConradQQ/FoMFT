@@ -564,8 +564,10 @@ module.exports = {
 
       // Food
       'bg-[url(assets/aquatican-brew.png)]',
+      'bg-[url(assets/aquatican-brew-sm.png)]',
       'lg:bg-[url(assets/aquatican-brewlg.png)]',
       'bg-[url(assets/nano-bite-burger.png)]',
+      'bg-[url(assets/nano-bite-burger-sm.png)]',
       'lg:bg-[url(assets/nano-bite-burgerlg.png)]',
       'bg-[url(assets/pulse-mineral-water.png)]',
       'lg:bg-[url(assets/pulse-mineral-waterlg.png)]',

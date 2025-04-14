@@ -248,6 +248,12 @@
   .flex {
     display: flex;
   }
+  .table {
+    display: table;
+  }
+  .h-1 {
+    height: calc(var(--spacing) * 1);
+  }
   .h-1\/2 {
     height: calc(1/2 * 100%);
   }
@@ -278,6 +284,9 @@
   .max-h-100 {
     max-height: calc(var(--spacing) * 100);
   }
+  .w-1 {
+    width: calc(var(--spacing) * 1);
+  }
   .w-1\/3 {
     width: calc(1/3 * 100%);
   }
@@ -305,8 +314,14 @@
   .w-screen {
     width: 100vw;
   }
+  .border-collapse {
+    border-collapse: collapse;
+  }
   .cursor-pointer {
     cursor: pointer;
+  }
+  .resize {
+    resize: both;
   }
   .flex-col {
     flex-direction: column;
@@ -348,6 +363,9 @@
   .bg-\[\#1f2533\]\/50 {
     background-color: color-mix(in oklab, #1f2533 50%, transparent);
   }
+  .bg-indigo-900 {
+    background-color: var(--color-indigo-900);
+  }
   .bg-indigo-900\/70 {
     background-color: color-mix(in oklab, var(--color-indigo-900) 70%, transparent);
   }
@@ -374,6 +392,9 @@
   }
   .bg-\[url\(assets\/advanced-civilian-torso-armor\.png\)\] {
     background-image: url(assets/advanced-civilian-torso-armor.png);
+  }
+  .bg-\[url\(assets\/aquatican-brew-sm\.png\)\] {
+    background-image: url(assets/aquatican-brew-sm.png);
   }
   .bg-\[url\(assets\/aquatican-brew\.png\)\] {
     background-image: url(assets/aquatican-brew.png);
@@ -879,6 +900,9 @@
   .bg-\[url\(assets\/mystical-cola\.png\)\] {
     background-image: url(assets/mystical-cola.png);
   }
+  .bg-\[url\(assets\/nano-bite-burger-sm\.png\)\] {
+    background-image: url(assets/nano-bite-burger-sm.png);
+  }
   .bg-\[url\(assets\/nano-bite-burger\.png\)\] {
     background-image: url(assets/nano-bite-burger.png);
   }
@@ -1258,6 +1282,10 @@
   }
   .opacity-50 {
     opacity: 50%;
+  }
+  .outline {
+    outline-style: var(--tw-outline-style);
+    outline-width: 1px;
   }
   .transition-colors {
     transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;
@@ -2934,4 +2962,9 @@
 @property --tw-font-weight {
   syntax: "*";
   inherits: false;
+}
+@property --tw-outline-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
 }

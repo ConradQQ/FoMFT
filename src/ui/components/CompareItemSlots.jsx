@@ -15,6 +15,48 @@ const CompareItemSlots = ({
   setCurrentCompareItemObject
 }) => {
 
+    // Checks if slots are selected on compareSlotTypesOne
+    const isHelmetSlotSelectedOne = compareSlotTypesOne.includes('Helmet');
+    const isTorsoSlotSelectedOne = compareSlotTypesOne.includes('Torso');
+    const isArmsSlotSelectedOne = compareSlotTypesOne.includes('Arms');
+    const isShoulderSlotSelectedOne = compareSlotTypesOne.includes('Shoulders');
+    const isLegsSlotSelectedOne = compareSlotTypesOne.includes('Legs');
+    const isHandsSlotSelectedOne = compareSlotTypesOne.includes('Hands');
+    const isWeaponSlotSelectedOne = compareSlotTypesOne.includes('weapon');
+    const isFoodSlotSelectedOne = compareSlotTypesOne.includes('food');
+    const isBoosterSlotSelectedOne = compareSlotTypesOne.includes('booster');
+    const isMedSlotSelectedOne = compareSlotTypesOne.includes('med');
+  
+     // Checks if slots are selected on compareSlotTypesTwo
+     const isHelmetSlotSelectedTwo = compareSlotTypesTwo.includes('Helmet');
+     const isTorsoSlotSelectedTwo = compareSlotTypesTwo.includes('Torso');
+     const isArmsSlotSelectedTwo = compareSlotTypesTwo.includes('Arms');
+     const isShoulderSlotSelectedTwo = compareSlotTypesTwo.includes('Shoulders');
+     const isLegsSlotSelectedTwo = compareSlotTypesTwo.includes('Legs');
+     const isHandsSlotSelectedTwo = compareSlotTypesTwo.includes('Hands');
+     const isWeaponSlotSelectedTwo = compareSlotTypesTwo.includes('weapon');
+     const isFoodSlotSelectedTwo = compareSlotTypesTwo.includes('food');
+     const isBoosterSlotSelectedTwo = compareSlotTypesTwo.includes('booster');
+     const isMedSlotSelectedTwo = compareSlotTypesTwo.includes('med');
+
+    //  Image Handling Logic for firstCompareItemsObjects
+
+    const foodItem = firstCompareItemsObjects.find((item) => item.slot === 'food');
+    const foodItemName = foodItem ? foodItem.food_name : undefined;
+    const foodImg = foodItem ? foodItem.image_path_xs : undefined;
+    const foodImgLG = foodItem ? foodItem.image_path_sm : undefined;
+
+
+    //  Image Handling Logic for secondCompareItemsObjects
+
+    const foodItemTwo = secondCompareItemsObjects.find((item) => item.slot === 'food');
+    const foodItemNameTwo = foodItem ? foodItem.food_name : undefined;
+    const foodImgTwo = foodItemTwo ? foodItemTwo.image_path_xs : undefined;
+    const foodImgLGTwo = foodItemTwo ? foodItemTwo.image_path_sm : undefined;
+
+
+
+
 // Local State Logic
 const [selectedCategory, setSelectedCategory] = useState(null);
 const [armorCategorySelected, setArmorCategorySelected] = useState(null);
@@ -75,7 +117,10 @@ console.log(currentCompareItemObject)
 
           <div className="misc-slots-1 w-full h-1/3 item-center flex flex-row mt-1">
             <div 
-              className="foodSlot1 bg-[url(assets/miscSlot-sm.png)] w-[60px] h-[60px] mx-1 cursor-pointer"
+              className={isFoodSlotSelectedOne
+                ? `foodSlot1 ${foodImg} w-[60px] h-[60px] mx-1 cursor-pointer`
+                : "foodSlot1 bg-[url(assets/miscSlot-sm.png)] w-[60px] h-[60px] mx-1 cursor-pointer"
+              }
               onClick={() => handleCategoryClickOne('food')}
             ></div>
             <div className="medSlot1 bg-[url(assets/miscSlot-sm.png)] w-[60px] h-[60px] mx-1 cursor-pointer"></div>
@@ -104,7 +149,10 @@ console.log(currentCompareItemObject)
 
         <div className="misc-slots-2 w-full h-1/3 item-center flex flex-row mt-1">
           <div 
-          className="foodSlot2 bg-[url(assets/miscSlot-sm.png)] w-[60px] h-[60px] mx-1 cursor-pointer"
+          className={isFoodSlotSelectedTwo
+            ? `foodSlot2 ${foodImgTwo} w-[60px] h-[60px] mx-1 cursor-pointer`
+            : "foodSlot2 bg-[url(assets/miscSlot-sm.png)] w-[60px] h-[60px] mx-1 cursor-pointer"
+          }
           onClick={() => handleCategoryClickTwo('food')}>
 
           </div>

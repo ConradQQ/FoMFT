@@ -15,29 +15,7 @@ const FoodMenuCompare = ({
   setCurrentCompareItemObject
 
 }) => {
-  // Checks if slots are selected on compareSlotTypesOne
-  const isHelmetSlotSelectedOne = compareSlotTypesOne.includes('Helmet');
-  const isTorsoSlotSelectedOne = compareSlotTypesOne.includes('Torso');
-  const isArmsSlotSelectedOne = compareSlotTypesOne.includes('Arms');
-  const isShoulderSlotSelectedOne = compareSlotTypesOne.includes('Shoulders');
-  const isLegsSlotSelectedOne = compareSlotTypesOne.includes('Legs');
-  const isHandsSlotSelectedOne = compareSlotTypesOne.includes('Hands');
-  const isWeaponSlotSelectedOne = compareSlotTypesOne.includes('weapon');
-  const isFoodSlotSelectedOne = compareSlotTypesOne.includes('food');
-  const isBoosterSlotSelectedOne = compareSlotTypesOne.includes('booster');
-  const isMedSlotSelectedOne = compareSlotTypesOne.includes('med');
 
-   // Checks if slots are selected on compareSlotTypesTwo
-   const isHelmetSlotSelectedTwo = compareSlotTypesTwo.includes('Helmet');
-   const isTorsoSlotSelectedTwo = compareSlotTypesTwo.includes('Torso');
-   const isArmsSlotSelectedTwo = compareSlotTypesTwo.includes('Arms');
-   const isShoulderSlotSelectedTwo = compareSlotTypesTwo.includes('Shoulders');
-   const isLegsSlotSelectedTwo = compareSlotTypesTwo.includes('Legs');
-   const isHandsSlotSelectedTwo = compareSlotTypesTwo.includes('Hands');
-   const isWeaponSlotSelectedTwo = compareSlotTypesTwo.includes('weapon');
-   const isFoodSlotSelectedTwo = compareSlotTypesTwo.includes('food');
-   const isBoosterSlotSelectedTwo = compareSlotTypesTwo.includes('booster');
-   const isMedSlotSelectedTwo = compareSlotTypesTwo.includes('med');
 
   const [foods, setFoods] = useState([]);
   const [loading, setLoading] = useState(false);
