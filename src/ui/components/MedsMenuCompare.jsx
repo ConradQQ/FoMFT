@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
-const FoodMenuCompare = ({ 
+const MedsMenuCompare = ({ 
   firstCompareItemsObjects,
   setFirstCompareItemObjects,
   secondCompareItemsObjects,
@@ -12,25 +12,21 @@ const FoodMenuCompare = ({
   compareSlotTypesTwo,
   setCompareSlotTypesTwo,
   currentCompareItemObject,
-  setCurrentCompareItemObject
-
+  setCurrentCompareItemObject,
 }) => {
-
-
-  const [foods, setFoods] = useState([]);
+  const [meds, setMeds] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
-  
-// API call
+
   useEffect(() => {
     const fetchData = async () => {
       setLoading(true);
       try {
-        const response = await axios.get('https://fomft-apix-674490081833.us-central1.run.app/food');
-        setFoods(response.data);
+        const response = await axios.get('https://fomft-apix-674490081833.us-central1.run.app/Meds');
+        setMeds(response.data);
         setLoading(false);
       } catch (err) {
-        setError(err.message || 'Error fetching food.');
+        setError(err.message || 'Error fetching Meds.');
         setLoading(false);
       }
     };
@@ -106,19 +102,18 @@ const FoodMenuCompare = ({
 
 };
 
-
   return (
-    <div className="foods-menu">
+    <div className="meds-menu">
       <div className="items flex flex-col">
         {loading && <div>Loading...</div>}
         {error && <div>Error: {error}</div>}
-        {foods.length > 0 && (
+        {meds.length > 0 && (
           <ul className="item-list overflow-y-auto max-h-100">
-            {foods.map((food) => (
-              <li key={food.id} 
+            {meds.map((med) => (
+              <li key={med.id} 
                   className='w-fit cursor-pointer my-1 text-white hover:text-indigo-400 hover:underline'
-                  onClick={() => handleItemClick(food)}>
-                  {food.food_name}
+                  onClick={() => handleItemClick(med)}>
+                  {med.med_name}
               </li>
             ))}
           </ul>
@@ -128,4 +123,4 @@ const FoodMenuCompare = ({
   );
 };
 
-export default FoodMenuCompare;
+export default MedsMenuCompare;

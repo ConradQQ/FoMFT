@@ -456,8 +456,14 @@
   .bg-\[url\(assets\/background\.png\)\] {
     background-image: url(assets/background.png);
   }
+  .bg-\[url\(assets\/battle-medikit-sm\.png\)\] {
+    background-image: url(assets/battle-medikit-sm.png);
+  }
   .bg-\[url\(assets\/battle-medikit\.png\)\] {
     background-image: url(assets/battle-medikit.png);
+  }
+  .bg-\[url\(assets\/biocell-sm\.png\)\] {
+    background-image: url(assets/biocell-sm.png);
   }
   .bg-\[url\(assets\/biocell\.png\)\] {
     background-image: url(assets/biocell.png);
@@ -537,8 +543,14 @@
   .bg-\[url\(assets\/dilatant-50b-torso-armor\.png\)\] {
     background-image: url(assets/dilatant-50b-torso-armor.png);
   }
+  .bg-\[url\(assets\/doublecheese-mystique-sm\.png\)\] {
+    background-image: url(assets/doublecheese-mystique-sm.png);
+  }
   .bg-\[url\(assets\/doublecheese-mystique\.png\)\] {
     background-image: url(assets/doublecheese-mystique.png);
+  }
+  .bg-\[url\(assets\/emergency-medikit-sm\.png\)\] {
+    background-image: url(assets/emergency-medikit-sm.png);
   }
   .bg-\[url\(assets\/emergency-medikit\.png\)\] {
     background-image: url(assets/emergency-medikit.png);
@@ -567,8 +579,14 @@
   .bg-\[url\(assets\/firstborn-powered-torso-armor\.png\)\] {
     background-image: url(assets/firstborn-powered-torso-armor.png);
   }
+  .bg-\[url\(assets\/flying-orange-sm\.png\)\] {
+    background-image: url(assets/flying-orange-sm.png);
+  }
   .bg-\[url\(assets\/flying-orange\.png\)\] {
     background-image: url(assets/flying-orange.png);
+  }
+  .bg-\[url\(assets\/ginnan-sushi-sm\.png\)\] {
+    background-image: url(assets/ginnan-sushi-sm.png);
   }
   .bg-\[url\(assets\/ginnan-sushi\.png\)\] {
     background-image: url(assets/ginnan-sushi.png);
@@ -897,6 +915,9 @@
   .bg-\[url\(assets\/mt-27\.png\)\] {
     background-image: url(assets/mt-27.png);
   }
+  .bg-\[url\(assets\/mystical-cola-sm\.png\)\] {
+    background-image: url(assets/mystical-cola-sm.png);
+  }
   .bg-\[url\(assets\/mystical-cola\.png\)\] {
     background-image: url(assets/mystical-cola.png);
   }
@@ -1077,6 +1098,9 @@
   .bg-\[url\(assets\/premet-tremor-torso-armor\.png\)\] {
     background-image: url(assets/premet-tremor-torso-armor.png);
   }
+  .bg-\[url\(assets\/pulse-mineral-water-sm\.png\)\] {
+    background-image: url(assets/pulse-mineral-water-sm.png);
+  }
   .bg-\[url\(assets\/pulse-mineral-water\.png\)\] {
     background-image: url(assets/pulse-mineral-water.png);
   }
@@ -1179,11 +1203,17 @@
   .bg-\[url\(assets\/shouldersSlot\.png\)\] {
     background-image: url(assets/shouldersSlot.png);
   }
+  .bg-\[url\(assets\/small-medikit-sm\.png\)\] {
+    background-image: url(assets/small-medikit-sm.png);
+  }
   .bg-\[url\(assets\/small-medikit\.png\)\] {
     background-image: url(assets/small-medikit.png);
   }
   .bg-\[url\(assets\/stamina-amp\.png\)\] {
     background-image: url(assets/stamina-amp.png);
+  }
+  .bg-\[url\(assets\/standard-medikit-sm\.png\)\] {
+    background-image: url(assets/standard-medikit-sm.png);
   }
   .bg-\[url\(assets\/standard-medikit\.png\)\] {
     background-image: url(assets/standard-medikit.png);

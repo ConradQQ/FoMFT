@@ -30,6 +30,19 @@ const App = () => {
     setItemObjects((prevItems) => prevItems.filter((item) => item.slot !== slotToRemove));
   };
 
+   // Functions to remove item of a compare slot 
+   const handleCompareSlotClickOne = (slotToRemove) => {
+    setCompareSlotTypesOne((prevSlots) => prevSlots.filter((slot) => slot !== slotToRemove));
+    setFirstCompareItemObjects((prevItems) => prevItems.filter((item) => item.slot !== slotToRemove));
+  };
+
+  const handleCompareSlotClickTwo = (slotToRemove) => {
+    setCompareSlotTypesTwo((prevSlots) => prevSlots.filter((slot) => slot !== slotToRemove));
+    setSecondCompareItemObjects((prevItems) => prevItems.filter((item) => item.slot !== slotToRemove));
+  };
+
+
+
 
   // Function to save the current loadout
   const saveLoadout = () => {
@@ -140,6 +153,8 @@ const App = () => {
           setCompareSlotTypesTwo={setCompareSlotTypesTwo}
           currentCompareItemObject={currentCompareItemObject}
           setCurrentCompareItemObject={setCurrentCompareItemObject}
+          handleCompareSlotClickOne={handleCompareSlotClickOne}
+          handleCompareSlotClickTwo={handleCompareSlotClickTwo}
         
         />}
       />

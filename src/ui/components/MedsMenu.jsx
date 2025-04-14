@@ -14,7 +14,7 @@ const MedsMenu = ({ setItemObjects, itemObjects, setSlotTypes}) => {
         setMeds(response.data);
         setLoading(false);
       } catch (err) {
-        setError(err.message || 'Error fetching food.');
+        setError(err.message || 'Error fetching Meds.');
         setLoading(false);
       }
     };

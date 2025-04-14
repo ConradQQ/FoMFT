@@ -12,7 +12,9 @@ const CompareToolPage = ({
   compareSlotTypesTwo,
   setCompareSlotTypesTwo,
   currentCompareItemObject,
-  setCurrentCompareItemObject
+  setCurrentCompareItemObject,
+  handleCompareSlotClickOne,
+  handleCompareSlotClickTwo
 }) => {
 
   // State Logic to be passed down
@@ -39,6 +41,8 @@ return (
             setCompareSlotTypesTwo={setCompareSlotTypesTwo}
             currentCompareItemObject={currentCompareItemObject}
             setCurrentCompareItemObject={setCurrentCompareItemObject}
+            handleCompareSlotClickOne={handleCompareSlotClickOne}
+            handleCompareSlotClickTwo={handleCompareSlotClickTwo}
           />
         
       </div>

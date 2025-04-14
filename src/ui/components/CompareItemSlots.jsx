@@ -1,5 +1,6 @@
 /* eslint-disable no-unused-vars */
 import FoodMenuCompare from "./FoodMenuCompare";
+import MedsMenuCompare from "./MedsMenuCompare";
 import { useState, useEffect } from "react";
 
 const CompareItemSlots = ({
@@ -12,7 +13,9 @@ const CompareItemSlots = ({
   compareSlotTypesTwo,
   setCompareSlotTypesTwo,
   currentCompareItemObject,
-  setCurrentCompareItemObject
+  setCurrentCompareItemObject,
+  handleCompareSlotClickOne,
+  handleCompareSlotClickTwo
 }) => {
 
     // Checks if slots are selected on compareSlotTypesOne
@@ -41,19 +44,28 @@ const CompareItemSlots = ({
 
     //  Image Handling Logic for firstCompareItemsObjects
 
-    const foodItem = firstCompareItemsObjects.find((item) => item.slot === 'food');
-    const foodItemName = foodItem ? foodItem.food_name : undefined;
-    const foodImg = foodItem ? foodItem.image_path_xs : undefined;
-    const foodImgLG = foodItem ? foodItem.image_path_sm : undefined;
+    const foodItemOne = firstCompareItemsObjects.find((item) => item.slot === 'food');
+    const foodItemNameOne = foodItemOne ? foodItemOne.food_name : undefined;
+    const foodImgOne = foodItemOne ? foodItemOne.image_path_xs : undefined;
+    const foodImgLG = foodItemOne ? foodItemOne.image_path_sm : undefined;
+
+    const medItemOne = firstCompareItemsObjects.find((item) => item.slot === 'med');
+    const medItemNameOne = medItemOne ? medItemOne.med_name : undefined;
+    const medImgOne = medItemOne ? medItemOne.image_path_xs : undefined;
+    const medImgLGOne = medItemOne ? medItemOne.image_path_sm : undefined;
 
 
     //  Image Handling Logic for secondCompareItemsObjects
 
     const foodItemTwo = secondCompareItemsObjects.find((item) => item.slot === 'food');
-    const foodItemNameTwo = foodItem ? foodItem.food_name : undefined;
+    const foodItemNameTwo = foodItemTwo ? foodItemTwo.food_name : undefined;
     const foodImgTwo = foodItemTwo ? foodItemTwo.image_path_xs : undefined;
     const foodImgLGTwo = foodItemTwo ? foodItemTwo.image_path_sm : undefined;
 
+    const medItemTwo = secondCompareItemsObjects.find((item) => item.slot === 'med');
+    const medItemNameTwo = medItemTwo ? medItemTwo.med_name : undefined;
+    const medImgTwo = medItemTwo ? medItemTwo.image_path_xs : undefined;
+    const medImgLGTwo = medItemTwo ? medItemTwo.image_path_sm : undefined;
 
 
 
@@ -79,7 +91,7 @@ const clearCategory = () => {
   setSelectedCategory(null);
 };
 
-// Use Effect hook to handle clear categories on esc key press
+// Handles clearing categories on esc key press
 useEffect(() => {
   const handleKeyDown = (event) => {
     if (event.key === 'Escape') {
@@ -93,8 +105,12 @@ useEffect(() => {
     window.removeEventListener('keydown', handleKeyDown);
   };
 }, []);
-// Needs to display item category list on slot click
-console.log(currentCompareItemObject)
+
+// Closes menu window after an item is selected
+useEffect(() => {
+  clearCategory();
+}, [isFoodSlotSelectedOne, isFoodSlotSelectedTwo, isMedSlotSelectedOne, isMedSlotSelectedTwo]);
+
 
   return (
     <>
@@ -118,12 +134,16 @@ console.log(currentCompareItemObject)
           <div className="misc-slots-1 w-full h-1/3 item-center flex flex-row mt-1">
             <div 
               className={isFoodSlotSelectedOne
-                ? `foodSlot1 ${foodImg} w-[60px] h-[60px] mx-1 cursor-pointer`
+                ? `foodSlot1 ${foodImgOne} w-[60px] h-[60px] mx-1 cursor-pointer`
                 : "foodSlot1 bg-[url(assets/miscSlot-sm.png)] w-[60px] h-[60px] mx-1 cursor-pointer"
               }
-              onClick={() => handleCategoryClickOne('food')}
+              onClick={isFoodSlotSelectedOne ? () => handleCompareSlotClickOne('food') : () => handleCategoryClickOne('food')}
             ></div>
-            <div className="medSlot1 bg-[url(assets/miscSlot-sm.png)] w-[60px] h-[60px] mx-1 cursor-pointer"></div>
+            <div className={isMedSlotSelectedOne
+                ? `medSlot1 ${medImgOne} w-[60px] h-[60px] mx-1 cursor-pointer`
+                : "medSlot1 bg-[url(assets/miscSlot-sm.png)] w-[60px] h-[60px] mx-1 cursor-pointer"
+              }
+              onClick={isMedSlotSelectedOne ? () => handleCompareSlotClickOne('med') : () => handleCategoryClickOne('med')}></div>
             <div className="boosterSlot1 bg-[url(assets/miscSlot-sm.png)] w-[60px] h-[60px] mx-1 cursor-pointer"></div>
         </div>
 
@@ -153,10 +173,14 @@ console.log(currentCompareItemObject)
             ? `foodSlot2 ${foodImgTwo} w-[60px] h-[60px] mx-1 cursor-pointer`
             : "foodSlot2 bg-[url(assets/miscSlot-sm.png)] w-[60px] h-[60px] mx-1 cursor-pointer"
           }
-          onClick={() => handleCategoryClickTwo('food')}>
+          onClick={isFoodSlotSelectedTwo ? () => handleCompareSlotClickTwo('food') : () => handleCategoryClickTwo('food')}>
 
           </div>
-          <div className="medSlot2 bg-[url(assets/miscSlot-sm.png)] w-[60px] h-[60px] mx-1 cursor-pointer"></div>
+          <div className={isMedSlotSelectedTwo
+                ? `medSlot1 ${medImgTwo} w-[60px] h-[60px] mx-1 cursor-pointer`
+                : "medSlot1 bg-[url(assets/miscSlot-sm.png)] w-[60px] h-[60px] mx-1 cursor-pointer"
+              }
+              onClick={isMedSlotSelectedTwo ? () => handleCompareSlotClickTwo('med') : () => handleCategoryClickTwo('med')}></div>
           <div className="boosterSlot2 bg-[url(assets/miscSlot-sm.png)] w-[60px] h-[60px] mx-1 cursor-pointer"></div>
         </div>
 
@@ -167,8 +191,23 @@ console.log(currentCompareItemObject)
       </div>
     </> )}
         
-        {selectedCategory === 'food' && (
+        {selectedCategory === 'food' &&  (
           <FoodMenuCompare 
+          firstCompareItemsObjects={firstCompareItemsObjects}
+          setFirstCompareItemObjects={setFirstCompareItemObjects}
+          secondCompareItemsObjects={secondCompareItemsObjects}
+          setSecondCompareItemObjects={setSecondCompareItemObjects}
+          compareSlotTypesOne={compareSlotTypesOne}
+          setCompareSlotTypesOne={setCompareSlotTypesOne}
+          compareSlotTypesTwo={compareSlotTypesTwo}
+          setCompareSlotTypesTwo={setCompareSlotTypesTwo}
+          currentCompareItemObject={currentCompareItemObject}
+          setCurrentCompareItemObject={setCurrentCompareItemObject}
+          />
+        )}
+
+        {selectedCategory === 'med' &&  (
+          <MedsMenuCompare 
           firstCompareItemsObjects={firstCompareItemsObjects}
           setFirstCompareItemObjects={setFirstCompareItemObjects}
           secondCompareItemsObjects={secondCompareItemsObjects}
