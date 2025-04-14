@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 import FoodMenuCompare from "./FoodMenuCompare";
 import MedsMenuCompare from "./MedsMenuCompare";
+import BoosterMenuCompare from "./BoosterMenuCompare";
 import { useState, useEffect } from "react";
 
 const CompareItemSlots = ({
@@ -54,6 +55,11 @@ const CompareItemSlots = ({
     const medImgOne = medItemOne ? medItemOne.image_path_xs : undefined;
     const medImgLGOne = medItemOne ? medItemOne.image_path_sm : undefined;
 
+    const boosterItemOne = firstCompareItemsObjects.find((item) => item.slot === 'booster');
+    const boosterItemNameOne = boosterItemOne ? boosterItemOne.booster_name : undefined;
+    const boosterImgOne = boosterItemOne ? boosterItemOne.image_path_xs : undefined;
+    const boosterImgLGOne = boosterItemOne ?boosterItemOne.image_path_sm : undefined;
+
 
     //  Image Handling Logic for secondCompareItemsObjects
 
@@ -66,6 +72,11 @@ const CompareItemSlots = ({
     const medItemNameTwo = medItemTwo ? medItemTwo.med_name : undefined;
     const medImgTwo = medItemTwo ? medItemTwo.image_path_xs : undefined;
     const medImgLGTwo = medItemTwo ? medItemTwo.image_path_sm : undefined;
+
+    const boosterItemTwo = secondCompareItemsObjects.find((item) => item.slot === 'booster');
+    const boosterItemNameTwo = boosterItemTwo ? boosterItemTwo.booster_name : undefined;
+    const boosterImgTwo = boosterItemTwo ? boosterItemTwo.image_path_xs : undefined;
+    const boosterImgLGTwo = boosterItemTwo ? boosterItemTwo.image_path_sm : undefined;
 
 
 
@@ -109,7 +120,7 @@ useEffect(() => {
 // Closes menu window after an item is selected
 useEffect(() => {
   clearCategory();
-}, [isFoodSlotSelectedOne, isFoodSlotSelectedTwo, isMedSlotSelectedOne, isMedSlotSelectedTwo]);
+}, [isFoodSlotSelectedOne, isFoodSlotSelectedTwo, isMedSlotSelectedOne, isMedSlotSelectedTwo, isBoosterSlotSelectedOne, isBoosterSlotSelectedTwo]);
 
 
   return (
@@ -133,18 +144,24 @@ useEffect(() => {
 
           <div className="misc-slots-1 w-full h-1/3 item-center flex flex-row mt-1">
             <div 
+
               className={isFoodSlotSelectedOne
                 ? `foodSlot1 ${foodImgOne} w-[60px] h-[60px] mx-1 cursor-pointer`
                 : "foodSlot1 bg-[url(assets/miscSlot-sm.png)] w-[60px] h-[60px] mx-1 cursor-pointer"
               }
-              onClick={isFoodSlotSelectedOne ? () => handleCompareSlotClickOne('food') : () => handleCategoryClickOne('food')}
-            ></div>
+              onClick={isFoodSlotSelectedOne ? () => handleCompareSlotClickOne('food') : () => handleCategoryClickOne('food')}></div>
+
             <div className={isMedSlotSelectedOne
                 ? `medSlot1 ${medImgOne} w-[60px] h-[60px] mx-1 cursor-pointer`
                 : "medSlot1 bg-[url(assets/miscSlot-sm.png)] w-[60px] h-[60px] mx-1 cursor-pointer"
               }
               onClick={isMedSlotSelectedOne ? () => handleCompareSlotClickOne('med') : () => handleCategoryClickOne('med')}></div>
-            <div className="boosterSlot1 bg-[url(assets/miscSlot-sm.png)] w-[60px] h-[60px] mx-1 cursor-pointer"></div>
+
+            <div className={isBoosterSlotSelectedOne
+                ? `medSlot1 ${boosterImgOne} w-[60px] h-[60px] mx-1 cursor-pointer`
+                : "medSlot1 bg-[url(assets/miscSlot-sm.png)] w-[60px] h-[60px] mx-1 cursor-pointer"
+              }
+              onClick={isBoosterSlotSelectedOne ? () => handleCompareSlotClickOne('booster') : () => handleCategoryClickOne('booster')}></div>
         </div>
 
           <div className="weapon-slot-1 w-full h-1/3 item-center flex flex-row mt-1">
@@ -168,6 +185,7 @@ useEffect(() => {
         </div>
 
         <div className="misc-slots-2 w-full h-1/3 item-center flex flex-row mt-1">
+
           <div 
           className={isFoodSlotSelectedTwo
             ? `foodSlot2 ${foodImgTwo} w-[60px] h-[60px] mx-1 cursor-pointer`
@@ -176,12 +194,18 @@ useEffect(() => {
           onClick={isFoodSlotSelectedTwo ? () => handleCompareSlotClickTwo('food') : () => handleCategoryClickTwo('food')}>
 
           </div>
+
           <div className={isMedSlotSelectedTwo
                 ? `medSlot1 ${medImgTwo} w-[60px] h-[60px] mx-1 cursor-pointer`
                 : "medSlot1 bg-[url(assets/miscSlot-sm.png)] w-[60px] h-[60px] mx-1 cursor-pointer"
               }
               onClick={isMedSlotSelectedTwo ? () => handleCompareSlotClickTwo('med') : () => handleCategoryClickTwo('med')}></div>
-          <div className="boosterSlot2 bg-[url(assets/miscSlot-sm.png)] w-[60px] h-[60px] mx-1 cursor-pointer"></div>
+
+          <div className={isBoosterSlotSelectedTwo
+                ? `medSlot1 ${boosterImgTwo} w-[60px] h-[60px] mx-1 cursor-pointer`
+                : "medSlot1 bg-[url(assets/miscSlot-sm.png)] w-[60px] h-[60px] mx-1 cursor-pointer"
+              }
+              onClick={isBoosterSlotSelectedTwo ? () => handleCompareSlotClickTwo('booster') : () => handleCategoryClickTwo('booster')}></div>
         </div>
 
         <div className="weapon-slot-2 w-full h-1/3 item-center flex flex-row mt-1 cursor-pointer">
@@ -208,6 +232,21 @@ useEffect(() => {
 
         {selectedCategory === 'med' &&  (
           <MedsMenuCompare 
+          firstCompareItemsObjects={firstCompareItemsObjects}
+          setFirstCompareItemObjects={setFirstCompareItemObjects}
+          secondCompareItemsObjects={secondCompareItemsObjects}
+          setSecondCompareItemObjects={setSecondCompareItemObjects}
+          compareSlotTypesOne={compareSlotTypesOne}
+          setCompareSlotTypesOne={setCompareSlotTypesOne}
+          compareSlotTypesTwo={compareSlotTypesTwo}
+          setCompareSlotTypesTwo={setCompareSlotTypesTwo}
+          currentCompareItemObject={currentCompareItemObject}
+          setCurrentCompareItemObject={setCurrentCompareItemObject}
+          />
+        )}
+
+        {selectedCategory === 'booster' &&  (
+          <BoosterMenuCompare 
           firstCompareItemsObjects={firstCompareItemsObjects}
           setFirstCompareItemObjects={setFirstCompareItemObjects}
           secondCompareItemsObjects={secondCompareItemsObjects}
