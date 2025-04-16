@@ -248,6 +248,12 @@
   .flex {
     display: flex;
   }
+  .table {
+    display: table;
+  }
+  .h-1 {
+    height: calc(var(--spacing) * 1);
+  }
   .h-1\/2 {
     height: calc(1/2 * 100%);
   }
@@ -269,6 +275,9 @@
   .h-\[60px\] {
     height: 60px;
   }
+  .h-\[90px\] {
+    height: 90px;
+  }
   .h-full {
     height: 100%;
   }
@@ -277,6 +286,9 @@
   }
   .max-h-100 {
     max-height: calc(var(--spacing) * 100);
+  }
+  .w-1 {
+    width: calc(var(--spacing) * 1);
   }
   .w-1\/3 {
     width: calc(1/3 * 100%);
@@ -305,8 +317,14 @@
   .w-screen {
     width: 100vw;
   }
+  .border-collapse {
+    border-collapse: collapse;
+  }
   .cursor-pointer {
     cursor: pointer;
+  }
+  .resize {
+    resize: both;
   }
   .flex-col {
     flex-direction: column;
@@ -348,6 +366,9 @@
   .bg-\[\#1f2533\]\/50 {
     background-color: color-mix(in oklab, #1f2533 50%, transparent);
   }
+  .bg-indigo-900 {
+    background-color: var(--color-indigo-900);
+  }
   .bg-indigo-900\/70 {
     background-color: color-mix(in oklab, var(--color-indigo-900) 70%, transparent);
   }
@@ -356,6 +377,9 @@
   }
   .bg-\[url\(\.\/assets\/import\.png\)\] {
     background-image: url(./assets/import.png);
+  }
+  .bg-\[url\(assets\/PP7xs-sm\.png\)\] {
+    background-image: url(assets/PP7xs-sm.png);
   }
   .bg-\[url\(assets\/PP7xs\.png\)\] {
     background-image: url(assets/PP7xs.png);
@@ -993,6 +1017,9 @@
   .bg-\[url\(assets\/pp7Silx\.png\)\] {
     background-image: url(assets/pp7Silx.png);
   }
+  .bg-\[url\(assets\/pp7xs-sm\.png\)\] {
+    background-image: url(assets/pp7xs-sm.png);
+  }
   .bg-\[url\(assets\/premet-buffer-arm-pads\.png\)\] {
     background-image: url(assets/premet-buffer-arm-pads.png);
   }
@@ -1257,6 +1284,9 @@
   .bg-\[url\(assets\/xenotech-expeditionary-torso-armor\.png\)\] {
     background-image: url(assets/xenotech-expeditionary-torso-armor.png);
   }
+  .bg-auto {
+    background-size: auto;
+  }
   .p-1 {
     padding: calc(var(--spacing) * 1);
   }
@@ -1294,6 +1324,10 @@
   }
   .opacity-50 {
     opacity: 50%;
+  }
+  .outline {
+    outline-style: var(--tw-outline-style);
+    outline-width: 1px;
   }
   .transition-colors {
     transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;
@@ -2970,4 +3004,9 @@
 @property --tw-font-weight {
   syntax: "*";
   inherits: false;
+}
+@property --tw-outline-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
 }

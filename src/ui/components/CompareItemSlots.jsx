@@ -2,6 +2,7 @@
 import FoodMenuCompare from "./FoodMenuCompare";
 import MedsMenuCompare from "./MedsMenuCompare";
 import BoosterMenuCompare from "./BoosterMenuCompare";
+import WeaponsMenuCompare from "./WeaponsMenuCompare";
 import { useState, useEffect } from "react";
 
 const CompareItemSlots = ({
@@ -120,7 +121,16 @@ useEffect(() => {
 // Closes menu window after an item is selected
 useEffect(() => {
   clearCategory();
-}, [isFoodSlotSelectedOne, isFoodSlotSelectedTwo, isMedSlotSelectedOne, isMedSlotSelectedTwo, isBoosterSlotSelectedOne, isBoosterSlotSelectedTwo]);
+}, [
+  isFoodSlotSelectedOne, 
+  isFoodSlotSelectedTwo, 
+  isMedSlotSelectedOne, 
+  isMedSlotSelectedTwo, 
+  isBoosterSlotSelectedOne, 
+  isBoosterSlotSelectedTwo, 
+  isWeaponSlotSelectedOne,
+  isWeaponSlotSelectedTwo,
+]);
 
 
   return (
@@ -165,7 +175,15 @@ useEffect(() => {
         </div>
 
           <div className="weapon-slot-1 w-full h-1/3 item-center flex flex-row mt-1">
-            <div className="bg-[#1f2533] opacity-50 w-[200px] h-[60px] mx-1 rounded-lg cursor-pointer"></div>
+            <div className="bg-[#1f2533] opacity-50 w-[200px] h-[90px] mx-1 rounded-lg cursor-pointer">
+              <div className={isWeaponSlotSelectedOne
+                ? `weaponSlot1 bg-[url(assets/PP7xs-sm.png)] w-full h-full bg-auto`
+                : 'w-full h-full'
+              }
+              onClick={isWeaponSlotSelectedOne ? () => handleCompareSlotClickOne('weapon') : () => handleCategoryClickOne('weapon')}>
+
+              </div>
+            </div>
           </div>
         
       </div>
@@ -209,7 +227,15 @@ useEffect(() => {
         </div>
 
         <div className="weapon-slot-2 w-full h-1/3 item-center flex flex-row mt-1 cursor-pointer">
-          <div className="bg-[#1f2533] opacity-50 w-[200px] h-[60px] mx-1 rounded-lg"></div>
+          <div className="bg-[#1f2533] opacity-50 w-[200px] h-[90px] mx-1 rounded-lg">
+          <div className={isWeaponSlotSelectedTwo
+                ? `weaponSlot1 bg-[url(assets/PP7xs-sm.png)] w-full h-full bg-auto`
+                : 'w-full h-full'
+              }
+              onClick={isWeaponSlotSelectedTwo ? () => handleCompareSlotClickTwo('weapon') : () => handleCategoryClickTwo('weapon')}>
+
+              </div>
+          </div>
         </div>
       
       </div>
@@ -247,6 +273,21 @@ useEffect(() => {
 
         {selectedCategory === 'booster' &&  (
           <BoosterMenuCompare 
+          firstCompareItemsObjects={firstCompareItemsObjects}
+          setFirstCompareItemObjects={setFirstCompareItemObjects}
+          secondCompareItemsObjects={secondCompareItemsObjects}
+          setSecondCompareItemObjects={setSecondCompareItemObjects}
+          compareSlotTypesOne={compareSlotTypesOne}
+          setCompareSlotTypesOne={setCompareSlotTypesOne}
+          compareSlotTypesTwo={compareSlotTypesTwo}
+          setCompareSlotTypesTwo={setCompareSlotTypesTwo}
+          currentCompareItemObject={currentCompareItemObject}
+          setCurrentCompareItemObject={setCurrentCompareItemObject}
+          />
+        )}
+
+        {selectedCategory === 'weapon' &&  (
+          <WeaponsMenuCompare 
           firstCompareItemsObjects={firstCompareItemsObjects}
           setFirstCompareItemObjects={setFirstCompareItemObjects}
           secondCompareItemsObjects={secondCompareItemsObjects}
