@@ -1,8 +1,23 @@
+/* eslint-disable no-unused-vars */
 
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
-const ArmorMenu = ({showArmorTypes, setItemObjects, itemObjects, setSlotTypes}) => {
+const ArmorMenuCompareOne = ({
+  firstCompareItemsObjects,
+  setFirstCompareItemObjects,
+  secondCompareItemsObjects,
+  setSecondCompareItemObjects,
+  compareSlotTypesOne,
+  setCompareSlotTypesOne,
+  compareSlotTypesTwo,
+  setCompareSlotTypesTwo,
+  currentCompareItemObject,
+  setCurrentCompareItemObject,
+  selectedArmorTypeOne,
+  setSelectedArmorTypeOne,
+  selectedArmorType
+}) => {
   const [armorTypes, _setArmorTypes] = useState([
     'helmet',
     'torso',
@@ -12,7 +27,6 @@ const ArmorMenu = ({showArmorTypes, setItemObjects, itemObjects, setSlotTypes}) 
     'hands'
   ]);
 
-  const [selectedArmorType, setSelectedArmorType] = useState(null);
   const [items, setItems] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
@@ -20,7 +34,7 @@ const ArmorMenu = ({showArmorTypes, setItemObjects, itemObjects, setSlotTypes}) 
 
 
   useEffect(() => {
-    if (selectedArmorType) {
+    if (currentCompareItemObject === 1) {
       const fetchData = async () => {
         setLoading(true);
         try {
@@ -34,12 +48,8 @@ const ArmorMenu = ({showArmorTypes, setItemObjects, itemObjects, setSlotTypes}) 
       };
       fetchData();
     }
-  }, [selectedArmorType]);
+  }, [selectedArmorType, currentCompareItemObject]);
 
-  const handleArmorTypeClick = (type) => {
-    setSelectedArmorType(type);
-
-  };
 
   const handleItemClick = (item) => {
     let duplicateSlot = false;
@@ -47,7 +57,7 @@ const ArmorMenu = ({showArmorTypes, setItemObjects, itemObjects, setSlotTypes}) 
 
 // Check for duplicate slot type
 
-    itemObjects.forEach((existingItem, index) => {
+firstCompareItemsObjects.forEach((existingItem, index) => {
       if (item.slot === existingItem.slot) {
         duplicateSlot = true;
         duplicateIndex = index;
@@ -57,43 +67,27 @@ const ArmorMenu = ({showArmorTypes, setItemObjects, itemObjects, setSlotTypes}) 
 // Logic for replacing duplicate slot with new item of the same slot type
 
     if (duplicateSlot) {
-      setItemObjects(prevItemsObject => {
+      setFirstCompareItemObjects(prevItemsObject => {
         const newItemsObject = [...prevItemsObject];
         newItemsObject[duplicateIndex] = item;
         return newItemsObject
       });
 
-      setSlotTypes(prevSlotTypes => {
+      setCompareSlotTypesOne(prevSlotTypes => {
         const newSlotTypes = [...prevSlotTypes];
         newSlotTypes[duplicateIndex] = item.slot; 
         return newSlotTypes;
       });
 
     } else {
-        setItemObjects(prevItemObjects => [...prevItemObjects, item]);
-        setSlotTypes(prevSlotTypes => [...prevSlotTypes, item.slot]);   
+      setFirstCompareItemObjects(prevItemObjects => [...prevItemObjects, item]);
+      setCompareSlotTypesOne(prevSlotTypes => [...prevSlotTypes, item.slot]);   
     }
 
   };
 
   return (
     <div className="armor-menu">
-      <div className="armor-category absolute top-0 left-0 ml-2 lg:ml-8">
-        {showArmorTypes && (
-          <div className="armor-types flex flex-row text-[11px] lg:text-[16px] absolute top-6 left-0">
-            {armorTypes.map((type) => (
-              <button
-                key={type}
-                onClick={() => handleArmorTypeClick(type)}
-                className='armorType mr-2 lg:mx-3 font-bold  text-white text-[10px] lg:text-[14px] cursor-pointer rounded-lg sm:px-[4px] 
-                lg:px-[10px]'
-              >
-                {type.charAt(0).toUpperCase() + type.slice(1)}
-              </button>
-            ))}
-          </div>
-        )}
-      </div>
       {selectedArmorType && (
         <div className="items flex flex-col">
           {loading && <div>Loading...</div>}
@@ -119,4 +113,4 @@ const ArmorMenu = ({showArmorTypes, setItemObjects, itemObjects, setSlotTypes}) 
   );
 };
 
-export default ArmorMenu;
+export default ArmorMenuCompareOne;

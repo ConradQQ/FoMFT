@@ -13,6 +13,10 @@ const App = () => {
   const [key, setKey] = useState(0); 
   const [slotTypes, setSlotTypes] = useState([]);
   const [slotItems, setSlotItems] = useState({});
+  const [selectedArmorType, setSelectedArmorType] = useState(null);
+  const [selectedArmorTypeOne, setSelectedArmorTypeOne] = useState(null);
+  const [selectedArmorTypeTwo, setSelectedArmorTypeTwo] = useState(null);
+  
   const navigate = useNavigate();
 
   // CompareToolPage state logic
@@ -30,13 +34,24 @@ const App = () => {
     setItemObjects((prevItems) => prevItems.filter((item) => item.slot !== slotToRemove));
   };
 
-   // Functions to remove item of a compare slot 
+   // Functions to remove item of a non-armor compare slot  
    const handleCompareSlotClickOne = (slotToRemove) => {
     setCompareSlotTypesOne((prevSlots) => prevSlots.filter((slot) => slot !== slotToRemove));
     setFirstCompareItemObjects((prevItems) => prevItems.filter((item) => item.slot !== slotToRemove));
   };
 
-  const handleCompareSlotClickTwo = (slotToRemove) => {
+   const handleCompareSlotClickTwo = (slotToRemove) => {
+    setCompareSlotTypesTwo((prevSlots) => prevSlots.filter((slot) => slot !== slotToRemove));
+    setSecondCompareItemObjects((prevItems) => prevItems.filter((item) => item.slot !== slotToRemove));
+  };
+
+  // Functions to remove armor compare slot
+    const handleArmorSlotClickOne = (slotToRemove) => {
+    setCompareSlotTypesOne((prevSlots) => prevSlots.filter((slot) => slot !== slotToRemove));
+    setFirstCompareItemObjects((prevItems) => prevItems.filter((item) => item.slot !== slotToRemove));
+  };
+
+   const handleArmorSlotClickTwo = (slotToRemove) => {
     setCompareSlotTypesTwo((prevSlots) => prevSlots.filter((slot) => slot !== slotToRemove));
     setSecondCompareItemObjects((prevItems) => prevItems.filter((item) => item.slot !== slotToRemove));
   };
@@ -155,7 +170,14 @@ const App = () => {
           setCurrentCompareItemObject={setCurrentCompareItemObject}
           handleCompareSlotClickOne={handleCompareSlotClickOne}
           handleCompareSlotClickTwo={handleCompareSlotClickTwo}
-        
+          selectedArmorTypeOne={selectedArmorTypeOne}
+          setSelectedArmorTypeOne={setSelectedArmorTypeOne}
+          selectedArmorTypeTwo={selectedArmorTypeTwo}
+          setSelectedArmorTypeTwo={setSelectedArmorTypeTwo}
+          selectedArmorType={selectedArmorType}
+          setSelectedArmorType={setSelectedArmorType}
+          handleArmorSlotClickTwo={handleArmorSlotClickTwo}
+          handleArmorSlotClickOne={handleArmorSlotClickOne}
         />}
       />
 

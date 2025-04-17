@@ -3,6 +3,7 @@ import FoodMenuCompare from "./FoodMenuCompare";
 import MedsMenuCompare from "./MedsMenuCompare";
 import BoosterMenuCompare from "./BoosterMenuCompare";
 import WeaponsMenuCompare from "./WeaponsMenuCompare";
+import ArmorMenuCompareOne from "./ArmorMenuCompareOne";
 import { useState, useEffect } from "react";
 
 const CompareItemSlots = ({
@@ -17,7 +18,15 @@ const CompareItemSlots = ({
   currentCompareItemObject,
   setCurrentCompareItemObject,
   handleCompareSlotClickOne,
-  handleCompareSlotClickTwo
+  handleCompareSlotClickTwo,
+  selectedArmorTypeOne,
+  setSelectedArmorTypeOne,
+  selectedArmorTypeTwo,
+  setSelectedArmorTypeTwo,
+  selectedArmorType,
+  setSelectedArmorType,
+  handleArmorSlotClickOne,
+  handleArmorSlotClickTwo
 }) => {
 
     // Checks if slots are selected on compareSlotTypesOne
@@ -61,6 +70,16 @@ const CompareItemSlots = ({
     const boosterImgOne = boosterItemOne ? boosterItemOne.image_path_xs : undefined;
     const boosterImgLGOne = boosterItemOne ?boosterItemOne.image_path_sm : undefined;
 
+    const helmetItemOne = firstCompareItemsObjects.find((item) => item.slot === 'Helmet');
+    const helmetItemNameOne = helmetItemOne ? helmetItemOne.armor_name : undefined;
+    const helmetImgOne = helmetItemOne ? helmetItemOne.image_path_xs : undefined;
+    const helmetImgLGOne = helmetItemOne ? helmetItemOne.image_path_sm : undefined;
+    
+
+    const torsoItemOne = firstCompareItemsObjects.find((item) => item.slot === 'Torso');
+    const torsoItemNameOne = torsoItemOne ? torsoItemOne.armor_name : undefined;
+    const torsoImgOne = torsoItemOne ? torsoItemOne.image_path_xs : undefined;
+    const torsoImgLGOne = torsoItemOne ? torsoItemOne.image_path_sm : undefined;
 
     //  Image Handling Logic for secondCompareItemsObjects
 
@@ -83,7 +102,7 @@ const CompareItemSlots = ({
 
 // Local State Logic
 const [selectedCategory, setSelectedCategory] = useState(null);
-const [armorCategorySelected, setArmorCategorySelected] = useState(null);
+  
 
 const handleCategoryClickOne = (category) => {
   setSelectedCategory(category);
@@ -95,8 +114,18 @@ const handleCategoryClickTwo = (category) => {
   setCurrentCompareItemObject(2);
 };
 
-const handleArmorCategoryClick = (armorType) => {
-  setArmorCategorySelected(armorType);
+const handleArmorTypeClickOne = (armorType) => {
+  setSelectedArmorType(armorType);
+  setSelectedCategory('armor1')
+  setCurrentCompareItemObject(1);
+};
+
+console.log(selectedArmorType)
+
+const handleArmorTypeClickTwo = (armorType) => {
+  setSelectedArmorType(armorType);
+  setSelectedCategory('armor2')
+  setCurrentCompareItemObject(2);
 };
 
 const clearCategory = () => { 
@@ -130,9 +159,21 @@ useEffect(() => {
   isBoosterSlotSelectedTwo, 
   isWeaponSlotSelectedOne,
   isWeaponSlotSelectedTwo,
+  isHelmetSlotSelectedOne,
+  isTorsoSlotSelectedOne,
+  isShoulderSlotSelectedOne,
+  isLegsSlotSelectedOne,
+  isHandsSlotSelectedOne,
+  isArmsSlotSelectedOne,
+  isHelmetSlotSelectedTwo,
+  isTorsoSlotSelectedTwo,
+  isShoulderSlotSelectedTwo,
+  isLegsSlotSelectedTwo,
+  isHandsSlotSelectedTwo,
+  isArmsSlotSelectedTwo,
 ]);
 
-
+console.log(`Selected Category: ${selectedCategory}`)
   return (
     <>
       <div className="compare-item-slots-container">
@@ -141,8 +182,18 @@ useEffect(() => {
           <div className="item-slots-1 flex flex-col  w-full h-1/2 items-center">
             
           <div className="HTS-slots-1 w-full h-1/3 item-center flex flex-row mt-1">
-            <div className="bg-[url(assets/headSlot-sm.png)] w-[60px] h-[60px] mx-1 cursor-pointer"></div>
-            <div className="bg-[url(assets/torsoSlot-sm.png)] w-[60px] h-[60px] mx-1 cursor-pointer"></div>
+            <div className={isHelmetSlotSelectedOne
+                ? `foodSlot1 ${helmetImgOne} w-[60px] h-[60px] mx-1 cursor-pointer`
+                : "foodSlot1 bg-[url(assets/headSlot-sm.png)] w-[60px] h-[60px] mx-1 cursor-pointer"
+              }
+              onClick={isHelmetSlotSelectedOne ? () => handleArmorSlotClickOne('Helmet') : () => handleArmorTypeClickOne('Helmet')}></div>
+
+            <div className={isTorsoSlotSelectedOne
+                ? `foodSlot1 ${torsoImgOne} w-[60px] h-[60px] mx-1 cursor-pointer`
+                : "foodSlot1 bg-[url(assets/torsoSlot-sm.png)] w-[60px] h-[60px] mx-1 cursor-pointer"
+              }
+              onClick={isTorsoSlotSelectedOne ? () => handleCompareSlotClickOne('armor1') : () => handleArmorTypeClickOne('Torso')}></div>
+              
             <div className="bg-[url(assets/armSlot-sm.png)] w-[60px] h-[60px] mx-1 cursor-pointer"></div>
           </div>
 
@@ -298,6 +349,27 @@ useEffect(() => {
           setCompareSlotTypesTwo={setCompareSlotTypesTwo}
           currentCompareItemObject={currentCompareItemObject}
           setCurrentCompareItemObject={setCurrentCompareItemObject}
+          />
+        )}
+
+        {selectedCategory === 'armor1' &&  (
+          <ArmorMenuCompareOne
+          firstCompareItemsObjects={firstCompareItemsObjects}
+          setFirstCompareItemObjects={setFirstCompareItemObjects}
+          secondCompareItemsObjects={secondCompareItemsObjects}
+          setSecondCompareItemObjects={setSecondCompareItemObjects}
+          compareSlotTypesOne={compareSlotTypesOne}
+          setCompareSlotTypesOne={setCompareSlotTypesOne}
+          compareSlotTypesTwo={compareSlotTypesTwo}
+          setCompareSlotTypesTwo={setCompareSlotTypesTwo}
+          currentCompareItemObject={currentCompareItemObject}
+          setCurrentCompareItemObject={setCurrentCompareItemObject}
+          selectedArmorTypeOne={selectedArmorTypeOne}
+          setSelectedArmorTypeOne={setSelectedArmorTypeOne}
+          selectedArmorTypeTwo={selectedArmorTypeTwo}
+          setSelectedArmorTypeTwo={setSelectedArmorTypeTwo}
+          selectedArmorType={selectedArmorType}
+          setSelectedArmorType={setSelectedArmorType}
           />
         )}
       </div>

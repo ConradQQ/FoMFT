@@ -31,8 +31,10 @@ module.exports = {
     
     // Helmets
       'bg-[url(assets/firstborn-powered-helmet.png)]',
+      'bg-[url(assets/firstborn-powered-helmet-sm.png)]',
       'lg:bg-[url(assets/firstborn-powered-helmetlg.png)]',
       'bg-[url(assets/infensus-x2-assault-helmet.png)]',
+      'bg-[url(assets/infensus-x2-assault-helmet-sm.png)]',
       'lg:bg-[url(assets/infensus-x2-assault-helmetlg.png)]',
       'bg-[url(assets/advanced-civilian-helmet.png)]',
       'lg:bg-[url(assets/advanced-civilian-helmetlg.png)]',
@@ -206,6 +208,7 @@ module.exports = {
 
       // Torsos
       'bg-[url(assets/firstborn-powered-torso-armor.png)]',
+      'bg-[url(assets/firstborn-powered-torso-armor-sm.png)]',
       'lg:bg-[url(assets/firstborn-powered-torso-armorlg.png)]',   
       'bg-[url(assets/advanced-civilian-torso-armor.png)]',
       'lg:bg-[url(assets/advanced-civilian-torso-armorlg.png)]',

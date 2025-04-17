@@ -573,6 +573,9 @@
   .bg-\[url\(assets\/firstborn-powered-gloves\.png\)\] {
     background-image: url(assets/firstborn-powered-gloves.png);
   }
+  .bg-\[url\(assets\/firstborn-powered-helmet-sm\.png\)\] {
+    background-image: url(assets/firstborn-powered-helmet-sm.png);
+  }
   .bg-\[url\(assets\/firstborn-powered-helmet\.png\)\] {
     background-image: url(assets/firstborn-powered-helmet.png);
   }
@@ -581,6 +584,9 @@
   }
   .bg-\[url\(assets\/firstborn-powered-shoulders\.png\)\] {
     background-image: url(assets/firstborn-powered-shoulders.png);
+  }
+  .bg-\[url\(assets\/firstborn-powered-torso-armor-sm\.png\)\] {
+    background-image: url(assets/firstborn-powered-torso-armor-sm.png);
   }
   .bg-\[url\(assets\/firstborn-powered-torso-armor\.png\)\] {
     background-image: url(assets/firstborn-powered-torso-armor.png);
@@ -731,6 +737,9 @@
   }
   .bg-\[url\(assets\/infensus-x1-shoulder-pads\.png\)\] {
     background-image: url(assets/infensus-x1-shoulder-pads.png);
+  }
+  .bg-\[url\(assets\/infensus-x2-assault-helmet-sm\.png\)\] {
+    background-image: url(assets/infensus-x2-assault-helmet-sm.png);
   }
   .bg-\[url\(assets\/infensus-x2-assault-helmet\.png\)\] {
     background-image: url(assets/infensus-x2-assault-helmet.png);
@@ -1016,9 +1025,6 @@
   }
   .bg-\[url\(assets\/pp7Silx\.png\)\] {
     background-image: url(assets/pp7Silx.png);
-  }
-  .bg-\[url\(assets\/pp7xs-sm\.png\)\] {
-    background-image: url(assets/pp7xs-sm.png);
   }
   .bg-\[url\(assets\/premet-buffer-arm-pads\.png\)\] {
     background-image: url(assets/premet-buffer-arm-pads.png);
