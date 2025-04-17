@@ -4,6 +4,7 @@ import MedsMenuCompare from "./MedsMenuCompare";
 import BoosterMenuCompare from "./BoosterMenuCompare";
 import WeaponsMenuCompare from "./WeaponsMenuCompare";
 import ArmorMenuCompareOne from "./ArmorMenuCompareOne";
+import ArmorMenuCompareTwo from "./ArmorMenuCompareTwo";
 import { useState, useEffect } from "react";
 
 const CompareItemSlots = ({
@@ -75,11 +76,30 @@ const CompareItemSlots = ({
     const helmetImgOne = helmetItemOne ? helmetItemOne.image_path_xs : undefined;
     const helmetImgLGOne = helmetItemOne ? helmetItemOne.image_path_sm : undefined;
     
-
     const torsoItemOne = firstCompareItemsObjects.find((item) => item.slot === 'Torso');
     const torsoItemNameOne = torsoItemOne ? torsoItemOne.armor_name : undefined;
     const torsoImgOne = torsoItemOne ? torsoItemOne.image_path_xs : undefined;
     const torsoImgLGOne = torsoItemOne ? torsoItemOne.image_path_sm : undefined;
+
+    const armsItemOne = firstCompareItemsObjects.find((item) => item.slot === 'Arms');
+    const armsItemNameOne = armsItemOne ? armsItemOne.armor_name : undefined;
+    const armsImgOne = armsItemOne ? armsItemOne.image_path_xs : undefined;
+    const armsImgLGOne = armsItemOne ? armsItemOne.image_path_sm : undefined;
+
+    const legsItemOne = firstCompareItemsObjects.find((item) => item.slot === 'Legs');
+    const legsItemNameOne = legsItemOne ? legsItemOne.armor_name : undefined;
+    const legsImgOne = legsItemOne ? legsItemOne.image_path_xs : undefined;
+    const legsImgLGOne = legsItemOne ? legsItemOne.image_path_sm : undefined;
+
+    const shouldersItemOne = firstCompareItemsObjects.find((item) => item.slot === 'Shoulders');
+    const shouldersItemNameOne = shouldersItemOne ? shouldersItemOne.armor_name : undefined;
+    const shouldersImgOne = shouldersItemOne ? shouldersItemOne.image_path_xs : undefined;
+    const shouldersImgLGOne = shouldersItemOne ? shouldersItemOne.image_path_sm : undefined;
+
+    const handsItemOne = firstCompareItemsObjects.find((item) => item.slot === 'Hands');
+    const handsItemNameOne = handsItemOne ? handsItemOne.armor_name : undefined;
+    const handsImgOne = handsItemOne ? handsItemOne.image_path_xs : undefined;
+    const handsImgLGOne = handsItemOne ? handsItemOne.image_path_sm : undefined;
 
     //  Image Handling Logic for secondCompareItemsObjects
 
@@ -98,11 +118,38 @@ const CompareItemSlots = ({
     const boosterImgTwo = boosterItemTwo ? boosterItemTwo.image_path_xs : undefined;
     const boosterImgLGTwo = boosterItemTwo ? boosterItemTwo.image_path_sm : undefined;
 
+    const helmetItemTwo = secondCompareItemsObjects.find((item) => item.slot === 'Helmet');
+    const helmetItemNameTwo = helmetItemTwo ? helmetItemTwo.armor_name : undefined;
+    const helmetImgTwo = helmetItemTwo ? helmetItemTwo.image_path_xs : undefined;
+    const helmetImgLGTwo = helmetItemTwo ? helmetItemTwo.image_path_sm : undefined;
+    
+    const torsoItemTwo = secondCompareItemsObjects.find((item) => item.slot === 'Torso');
+    const torsoItemNameTwo = torsoItemTwo ? torsoItemTwo.armor_name : undefined;
+    const torsoImgTwo = torsoItemTwo ? torsoItemTwo.image_path_xs : undefined;
+    const torsoImgLGTwo = torsoItemTwo ? torsoItemTwo.image_path_sm : undefined;
 
+    const armsItemTwo = secondCompareItemsObjects.find((item) => item.slot === 'Arms');
+    const armsItemNameTwo = armsItemTwo ? armsItemTwo.armor_name : undefined;
+    const armsImgTwo = armsItemTwo ? armsItemTwo.image_path_xs : undefined;
+    const armsImgLGTwo = armsItemTwo ? armsItemTwo.image_path_sm : undefined;
 
-// Local State Logic
-const [selectedCategory, setSelectedCategory] = useState(null);
-  
+    const legsItemTwo = secondCompareItemsObjects.find((item) => item.slot === 'Legs');
+    const legsItemNameTwo = legsItemTwo ? legsItemTwo.armor_name : undefined;
+    const legsImgTwo = legsItemTwo ? legsItemTwo.image_path_xs : undefined;
+    const legsImgLGTwo = legsItemTwo ? legsItemTwo.image_path_sm : undefined;
+
+    const shouldersItemTwo = secondCompareItemsObjects.find((item) => item.slot === 'Shoulders');
+    const shouldersItemNameTwo = shouldersItemTwo ? shouldersItemTwo.armor_name : undefined;
+    const shouldersImgTwo = shouldersItemTwo ? shouldersItemTwo.image_path_xs : undefined;
+    const shouldersImgLGTwo = shouldersItemTwo ? shouldersItemTwo.image_path_sm : undefined;
+
+    const handsItemTwo = secondCompareItemsObjects.find((item) => item.slot === 'Hands');
+    const handsItemNameTwo = handsItemTwo ? handsItemTwo.armor_name : undefined;
+    const handsImgTwo = handsItemTwo ? handsItemTwo.image_path_xs : undefined;
+    const handsImgLGTwo = handsItemTwo ? handsItemTwo.image_path_sm : undefined;
+
+    
+  const [selectedCategory, setSelectedCategory] = useState(null);
 
 const handleCategoryClickOne = (category) => {
   setSelectedCategory(category);
@@ -183,24 +230,42 @@ console.log(`Selected Category: ${selectedCategory}`)
             
           <div className="HTS-slots-1 w-full h-1/3 item-center flex flex-row mt-1">
             <div className={isHelmetSlotSelectedOne
-                ? `foodSlot1 ${helmetImgOne} w-[60px] h-[60px] mx-1 cursor-pointer`
-                : "foodSlot1 bg-[url(assets/headSlot-sm.png)] w-[60px] h-[60px] mx-1 cursor-pointer"
+                ? `helmetSlot1 ${helmetImgOne} w-[60px] h-[60px] mx-1 cursor-pointer`
+                : "helmetSlot1 bg-[url(assets/headSlot-sm.png)] w-[60px] h-[60px] mx-1 cursor-pointer"
               }
               onClick={isHelmetSlotSelectedOne ? () => handleArmorSlotClickOne('Helmet') : () => handleArmorTypeClickOne('Helmet')}></div>
 
             <div className={isTorsoSlotSelectedOne
-                ? `foodSlot1 ${torsoImgOne} w-[60px] h-[60px] mx-1 cursor-pointer`
-                : "foodSlot1 bg-[url(assets/torsoSlot-sm.png)] w-[60px] h-[60px] mx-1 cursor-pointer"
+                ? `torsoSlot1 ${torsoImgOne} w-[60px] h-[60px] mx-1 cursor-pointer`
+                : "torsoSlot1 bg-[url(assets/torsoSlot-sm.png)] w-[60px] h-[60px] mx-1 cursor-pointer"
               }
-              onClick={isTorsoSlotSelectedOne ? () => handleCompareSlotClickOne('armor1') : () => handleArmorTypeClickOne('Torso')}></div>
+              onClick={isTorsoSlotSelectedOne ? () => handleArmorSlotClickOne('Torso') : () => handleArmorTypeClickOne('Torso')}></div>
               
-            <div className="bg-[url(assets/armSlot-sm.png)] w-[60px] h-[60px] mx-1 cursor-pointer"></div>
+            <div className={isArmsSlotSelectedOne
+                ? `armsSlot1 ${armsImgOne} w-[60px] h-[60px] mx-1 cursor-pointer`
+                : "armsSlot1 bg-[url(assets/armSlot-sm.png)] w-[60px] h-[60px] mx-1 cursor-pointer"
+              }
+              onClick={isArmsSlotSelectedOne ? () => handleArmorSlotClickOne('Arms') : () => handleArmorTypeClickOne('Arms')}></div>
           </div>
 
           <div className="LSH-slots-1 w-full h-1/3 item-center flex flex-row mt-1">
-            <div className="bg-[url(assets/legSlot-sm.png)] w-[60px] h-[60px] mx-1 cursor-pointer"></div>
-            <div className="bg-[url(assets/shouldersSlot-sm.png)] w-[60px] h-[60px] mx-1 cursor-pointer"></div>
-            <div className="bg-[url(assets/handSlot-sm.png)]  w-[60px] h-[60px] mx-1 cursor-pointer"></div>
+            <div className={isLegsSlotSelectedOne
+                ? `armsSlot1 ${legsImgOne} w-[60px] h-[60px] mx-1 cursor-pointer`
+                : "armsSlot1 bg-[url(assets/legSlot-sm.png)] w-[60px] h-[60px] mx-1 cursor-pointer"
+              }
+              onClick={isLegsSlotSelectedOne ? () => handleArmorSlotClickOne('Legs') : () => handleArmorTypeClickOne('Legs')}></div>
+
+            <div className={isShoulderSlotSelectedOne
+                ? `armsSlot1 ${shouldersImgOne} w-[60px] h-[60px] mx-1 cursor-pointer`
+                : "armsSlot1 bg-[url(assets/shouldersSlot-sm.png)] w-[60px] h-[60px] mx-1 cursor-pointer"
+              }
+              onClick={isShoulderSlotSelectedOne ? () => handleArmorSlotClickOne('Shoulders') : () => handleArmorTypeClickOne('Shoulders')}></div>
+
+            <div className={isHandsSlotSelectedOne
+                ? `armsSlot1 ${handsImgOne} w-[60px] h-[60px] mx-1 cursor-pointer`
+                : "armsSlot1 bg-[url(assets/handSlot-sm.png)] w-[60px] h-[60px] mx-1 cursor-pointer"
+              }
+              onClick={isHandsSlotSelectedOne ? () => handleArmorSlotClickOne('Hands') : () => handleArmorTypeClickOne('Hands')}></div>
           </div>
 
           <div className="misc-slots-1 w-full h-1/3 item-center flex flex-row mt-1">
@@ -241,17 +306,45 @@ console.log(`Selected Category: ${selectedCategory}`)
 
       <div className="item-slots-2 flex flex-col w-full h-1/2 items-center">
         
-        <div className="HTS-slots-2 w-full h-1/3 item-center flex flex-row mt-1">
-          <div className="bg-[url(assets/headSlot-sm.png)] w-[60px] h-[60px] mx-1 cursor-pointer"></div>
-          <div className="bg-[url(assets/torsoSlot-sm.png)] w-[60px] h-[60px] mx-1 cursor-pointer"></div>
-          <div className="bg-[url(assets/armSlot-sm.png)] w-[60px] h-[60px] mx-1 cursor-pointer"></div>
-        </div>
+      <div className="HTS-slots-2 w-full h-1/3 item-center flex flex-row mt-1">
+            <div className={isHelmetSlotSelectedTwo
+                ? `helmetSlot2 ${helmetImgTwo} w-[60px] h-[60px] mx-1 cursor-pointer`
+                : "helmetSlot2 bg-[url(assets/headSlot-sm.png)] w-[60px] h-[60px] mx-1 cursor-pointer"
+              }
+              onClick={isHelmetSlotSelectedTwo ? () => handleArmorSlotClickTwo('Helmet') : () => handleArmorTypeClickTwo('Helmet')}></div>
 
-        <div className="LSH-slots-2 w-full h-1/3 item-center flex flex-row mt-1">
-          <div className="bg-[url(assets/legSlot-sm.png)] w-[60px] h-[60px] mx-1 cursor-pointer"></div>
-          <div className="bg-[url(assets/shouldersSlot-sm.png)] w-[60px] h-[60px] mx-1 cursor-pointer"></div>
-          <div className="bg-[url(assets/handSlot-sm.png)]  w-[60px] h-[60px] mx-1 cursor-pointer"></div>
-        </div>
+            <div className={isTorsoSlotSelectedTwo
+                ? `torsoSlot2 ${torsoImgTwo} w-[60px] h-[60px] mx-1 cursor-pointer`
+                : "torsoSlot2 bg-[url(assets/torsoSlot-sm.png)] w-[60px] h-[60px] mx-1 cursor-pointer"
+              }
+              onClick={isTorsoSlotSelectedTwo ? () => handleArmorSlotClickTwo('Torso') : () => handleArmorTypeClickTwo('Torso')}></div>
+              
+            <div className={isArmsSlotSelectedTwo
+                ? `armsSlot2 ${armsImgTwo} w-[60px] h-[60px] mx-1 cursor-pointer`
+                : "armsSlot2 bg-[url(assets/armSlot-sm.png)] w-[60px] h-[60px] mx-1 cursor-pointer"
+              }
+              onClick={isArmsSlotSelectedTwo ? () => handleArmorSlotClickTwo('Arms') : () => handleArmorTypeClickTwo('Arms')}></div>
+          </div>
+
+          <div className="LSH-slots-2 w-full h-1/3 item-center flex flex-row mt-1">
+            <div className={isLegsSlotSelectedTwo
+                ? `legsSlot2 ${legsImgTwo} w-[60px] h-[60px] mx-1 cursor-pointer`
+                : "legsSlot2 bg-[url(assets/legSlot-sm.png)] w-[60px] h-[60px] mx-1 cursor-pointer"
+              }
+              onClick={isLegsSlotSelectedTwo ? () => handleArmorSlotClickTwo('Legs') : () => handleArmorTypeClickTwo('Legs')}></div>
+
+            <div className={isShoulderSlotSelectedTwo
+                ? `shoulderSlot2 ${shouldersImgTwo} w-[60px] h-[60px] mx-1 cursor-pointer`
+                : "shoulderSlot2 bg-[url(assets/shouldersSlot-sm.png)] w-[60px] h-[60px] mx-1 cursor-pointer"
+              }
+              onClick={isShoulderSlotSelectedTwo ? () => handleArmorSlotClickTwo('Shoulders') : () => handleArmorTypeClickTwo('Shoulders')}></div>
+
+            <div className={isHandsSlotSelectedTwo
+                ? `handsSlot2 ${handsImgTwo} w-[60px] h-[60px] mx-1 cursor-pointer`
+                : "handsSlot2 bg-[url(assets/handSlot-sm.png)] w-[60px] h-[60px] mx-1 cursor-pointer"
+              }
+              onClick={isHandsSlotSelectedTwo ? () => handleArmorSlotClickTwo('Hands') : () => handleArmorTypeClickTwo('Hands')}></div>
+          </div>
 
         <div className="misc-slots-2 w-full h-1/3 item-center flex flex-row mt-1">
 
@@ -354,6 +447,27 @@ console.log(`Selected Category: ${selectedCategory}`)
 
         {selectedCategory === 'armor1' &&  (
           <ArmorMenuCompareOne
+          firstCompareItemsObjects={firstCompareItemsObjects}
+          setFirstCompareItemObjects={setFirstCompareItemObjects}
+          secondCompareItemsObjects={secondCompareItemsObjects}
+          setSecondCompareItemObjects={setSecondCompareItemObjects}
+          compareSlotTypesOne={compareSlotTypesOne}
+          setCompareSlotTypesOne={setCompareSlotTypesOne}
+          compareSlotTypesTwo={compareSlotTypesTwo}
+          setCompareSlotTypesTwo={setCompareSlotTypesTwo}
+          currentCompareItemObject={currentCompareItemObject}
+          setCurrentCompareItemObject={setCurrentCompareItemObject}
+          selectedArmorTypeOne={selectedArmorTypeOne}
+          setSelectedArmorTypeOne={setSelectedArmorTypeOne}
+          selectedArmorTypeTwo={selectedArmorTypeTwo}
+          setSelectedArmorTypeTwo={setSelectedArmorTypeTwo}
+          selectedArmorType={selectedArmorType}
+          setSelectedArmorType={setSelectedArmorType}
+          />
+        )}
+
+        {selectedCategory === 'armor2' &&  (
+          <ArmorMenuCompareTwo
           firstCompareItemsObjects={firstCompareItemsObjects}
           setFirstCompareItemObjects={setFirstCompareItemObjects}
           secondCompareItemsObjects={secondCompareItemsObjects}

@@ -567,6 +567,9 @@
   .bg-\[url\(assets\/fakeCoca1\.png\)\] {
     background-image: url(assets/fakeCoca1.png);
   }
+  .bg-\[url\(assets\/firstborn-powered-arm-pads-sm\.png\)\] {
+    background-image: url(assets/firstborn-powered-arm-pads-sm.png);
+  }
   .bg-\[url\(assets\/firstborn-powered-arm-pads\.png\)\] {
     background-image: url(assets/firstborn-powered-arm-pads.png);
   }
@@ -579,8 +582,14 @@
   .bg-\[url\(assets\/firstborn-powered-helmet\.png\)\] {
     background-image: url(assets/firstborn-powered-helmet.png);
   }
+  .bg-\[url\(assets\/firstborn-powered-leg-pads-sm\.png\)\] {
+    background-image: url(assets/firstborn-powered-leg-pads-sm.png);
+  }
   .bg-\[url\(assets\/firstborn-powered-leg-pads\.png\)\] {
     background-image: url(assets/firstborn-powered-leg-pads.png);
+  }
+  .bg-\[url\(assets\/firstborn-powered-shoulders-sm\.png\)\] {
+    background-image: url(assets/firstborn-powered-shoulders-sm.png);
   }
   .bg-\[url\(assets\/firstborn-powered-shoulders\.png\)\] {
     background-image: url(assets/firstborn-powered-shoulders.png);
@@ -608,6 +617,9 @@
   }
   .bg-\[url\(assets\/handSlot\.png\)\] {
     background-image: url(assets/handSlot.png);
+  }
+  .bg-\[url\(assets\/handsSlot-sm\.png\)\] {
+    background-image: url(assets/handsSlot-sm.png);
   }
   .bg-\[url\(assets\/havoc-powered-arm-pads\.png\)\] {
     background-image: url(assets/havoc-powered-arm-pads.png);
@@ -744,6 +756,9 @@
   .bg-\[url\(assets\/infensus-x2-assault-helmet\.png\)\] {
     background-image: url(assets/infensus-x2-assault-helmet.png);
   }
+  .bg-\[url\(assets\/infostyle-gloves-sm\.png\)\] {
+    background-image: url(assets/infostyle-gloves-sm.png);
+  }
   .bg-\[url\(assets\/infostyle-gloves\.png\)\] {
     background-image: url(assets/infostyle-gloves.png);
   }
@@ -803,6 +818,9 @@
   }
   .bg-\[url\(assets\/legionnaire-powered-torso-armor\.png\)\] {
     background-image: url(assets/legionnaire-powered-torso-armor.png);
+  }
+  .bg-\[url\(assets\/legsSlot-sm\.png\)\] {
+    background-image: url(assets/legsSlot-sm.png);
   }
   .bg-\[url\(assets\/locans-defense-arm-pads\.png\)\] {
     background-image: url(assets/locans-defense-arm-pads.png);
@@ -1212,6 +1230,9 @@
   .bg-\[url\(assets\/shield-implant\.png\)\] {
     background-image: url(assets/shield-implant.png);
   }
+  .bg-\[url\(assets\/shoulderSlot-sm\.png\)\] {
+    background-image: url(assets/shoulderSlot-sm.png);
+  }
   .bg-\[url\(assets\/shouldersSlot-sm\.png\)\] {
     background-image: url(assets/shouldersSlot-sm.png);
   }
@@ -1611,6 +1632,11 @@
       background-image: url(assets/aramid-modified-torso-armorlg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/armSlot\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/armSlot.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/armSlotLG\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/armSlotLG.png);
@@ -1816,6 +1842,11 @@
       background-image: url(assets/ginnan-sushilg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/handSlot\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/handSlot.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/handSlotLG\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/handSlotLG.png);
@@ -1849,6 +1880,11 @@
   .lg\:bg-\[url\(assets\/havoc-powered-torso-armorlg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/havoc-powered-torso-armorlg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/headSlot\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/headSlot.png);
     }
   }
   .lg\:bg-\[url\(assets\/headSlotLG\.png\)\] {
@@ -2094,6 +2130,11 @@
   .lg\:bg-\[url\(assets\/leech-torso-armorlg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/leech-torso-armorlg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/legSlot\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/legSlot.png);
     }
   }
   .lg\:bg-\[url\(assets\/legSlotLG\.png\)\] {
@@ -2796,6 +2837,16 @@
       background-image: url(assets/shield-implantlg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/shoulderSlot\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/shoulderSlot.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/shouldersSlot\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/shouldersSlot.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/shouldersSlotLG\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/shouldersSlotLG.png);
@@ -2839,6 +2890,11 @@
   .lg\:bg-\[url\(assets\/tactical-systems-torso-armorlg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/tactical-systems-torso-armorlg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/torsoSlot\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/torsoSlot.png);
     }
   }
   .lg\:bg-\[url\(assets\/torsoSlotLG\.png\)\] {

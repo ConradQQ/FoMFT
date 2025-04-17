@@ -119,6 +119,7 @@ module.exports = {
 
       // Shoulders
       'bg-[url(assets/firstborn-powered-shoulders.png)]',
+      'bg-[url(assets/firstborn-powered-shoulders-sm.png)]',
       'lg:bg-[url(assets/firstborn-powered-shoulderslg.png)]',
       'bg-[url(assets/advanced-civilian-shoulder-pads.png)]',
       'lg:bg-[url(assets/advanced-civilian-shoulder-padslg.png)]',
@@ -299,6 +300,7 @@ module.exports = {
 
       // Arms
       'bg-[url(assets/firstborn-powered-arm-pads.png)]',
+      'bg-[url(assets/firstborn-powered-arm-pads-sm.png)]',
       'lg:bg-[url(assets/firstborn-powered-arm-padslg.png)]',
       'bg-[url(assets/advanced-civilian-arm-pads.png)]',
       'lg:bg-[url(assets/advanced-civilian-arm-padslg.png)]',
@@ -389,6 +391,7 @@ module.exports = {
 
       // Legs
       'bg-[url(assets/firstborn-powered-leg-pads.png)]',
+      'bg-[url(assets/firstborn-powered-leg-pads-sm.png)]',
       'lg:bg-[url(assets/firstborn-powered-leg-padslg.png)]',
       'bg-[url(assets/advanced-civilian-leg-pads.png)]',
       'lg:bg-[url(assets/advanced-civilian-leg-padslg.png)]',
@@ -479,6 +482,7 @@ module.exports = {
 
       // Hands
       'bg-[url(assets/infostyle-gloves.png)]',
+      'bg-[url(assets/infostyle-gloves-sm.png)]',
       'lg:bg-[url(assets/infostyle-gloveslg.png)]',
       'bg-[url(assets/envirotech-gloves.png)]',
       'lg:bg-[url(assets/envirotech-gloveslg.png)]',
