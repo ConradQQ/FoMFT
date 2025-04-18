@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
-const SlotsMenu = ({itemObjects, slotTypes, handleSlotClick}) => {
+const SlotsMenu = ({itemObjects, slotTypes, handleSlotClick, toolTipShown, setToolTipShown, setToolTipItem, handleToolTipItem}) => {
+
 
   const isHelmetSlotSelected = slotTypes.includes('Helmet');
   const isTorsoSlotSelected = slotTypes.includes('Torso');
@@ -79,14 +80,17 @@ return (
                 : 'text-center bg-[url(assets/headSlot.png)] w-16 h-16 mx-2 lg:w-32 lg:h-32 lg:bg-[url(assets/headSlotLG.png)]'
               }
                title={helmetItemName}
-               onClick={isHelmetSlotSelected ? () => handleSlotClick('Helmet') : undefined}>
+               onClick={isHelmetSlotSelected ? () => handleSlotClick('Helmet') : undefined} 
+               onContextMenu={isHelmetSlotSelected ? (toolTipShown ? () => setToolTipShown(false) : () => handleToolTipItem('Helmet')) : undefined}
+            >
               </div>
               <div className={isTorsoSlotSelected 
                 ? `text-center ${torsoImg} w-16 h-16 mx-2 lg:w-32 lg:h-32 ${torsoImgLG} cursor-pointer`
                 : 'text-center bg-[url(assets/torsoSlot.png)] w-16 h-16 mx-2 lg:w-32 lg:h-32 lg:bg-[url(assets/torsoSlotLG.png)]'
               }
               title={torsoItemName}
-              onClick={isTorsoSlotSelected ? () => handleSlotClick('Torso') : undefined}>
+              onClick={isTorsoSlotSelected ? () => handleSlotClick('Torso') : undefined}
+              onContextMenu={isTorsoSlotSelected ? (toolTipShown ? () => setToolTipShown(false) : () => handleToolTipItem('Torso')) : undefined}>
 
               </div>
               <div className={isArmsSlotSelected 
@@ -94,8 +98,8 @@ return (
                 : 'text-center bg-[url(assets/armSlot.png)] w-16 h-16 mx-2 lg:w-32 lg:h-32 lg:bg-[url(assets/armSlotLG.png)]'
               }
               title={armsItemName}
-              onClick={isArmsSlotSelected ? () => handleSlotClick('Arms') : undefined}>
-
+              onClick={isArmsSlotSelected ? () => handleSlotClick('Arms') : undefined}
+              onContextMenu={isArmsSlotSelected ? (toolTipShown ? () => setToolTipShown(false) : () => handleToolTipItem('Arms')) : undefined}>
               </div>
           </div>
           <div className='LSH-slots flex flex-row items-center justify-center '>
@@ -106,15 +110,16 @@ return (
                 : 'text-center bg-[url(assets/legSlot.png)] w-16 h-16 mx-2 lg:w-32 lg:h-32 lg:bg-[url(assets/legSlotLG.png)]'
               }
               title={legsItemName}
-              onClick={isLegsSlotSelected ? () => handleSlotClick('Legs') : undefined}>
-
+              onClick={isLegsSlotSelected ? () => handleSlotClick('Legs') : undefined}
+              onContextMenu={isLegsSlotSelected ? (toolTipShown ? () => setToolTipShown(false) : () => handleToolTipItem('Legs')) : undefined}>
             </div>
             <div className={isShoulderSlotSelected 
                 ? `text-center ${shoulderImg} w-16 h-16 mx-2 lg:w-32 lg:h-32 ${shoulderImgLG} cursor-pointer`
                 : 'text-center bg-[url(assets/shouldersSlot.png)] w-16 h-16 mx-2 lg:w-32 lg:h-32 lg:bg-[url(assets/shouldersSlotLG.png)]'
               }
               title={shoulderItemName}
-              onClick={isShoulderSlotSelected ? () => handleSlotClick('Shoulders') : undefined}>
+              onClick={isShoulderSlotSelected ? () => handleSlotClick('Shoulders') : undefined}
+              onContextMenu={isShoulderSlotSelected ? (toolTipShown ? () => setToolTipShown(false) : () => handleToolTipItem('Shoulders')) : undefined}>
 
             </div>
             <div className={isHandsSlotSelected 
@@ -122,8 +127,8 @@ return (
                 : 'text-center bg-[url(assets/handSlot.png)] w-16 h-16 mx-2 lg:w-32 lg:h-32 lg:bg-[url(assets/handSlotLG.png)]'
               }
               title={handsItemName}
-              onClick={isHandsSlotSelected ? () => handleSlotClick('Hands') : undefined}>
-
+              onClick={isHandsSlotSelected ? () => handleSlotClick('Hands') : undefined}
+              onContextMenu={isHandsSlotSelected ? (toolTipShown ? () => setToolTipShown(false) : () => handleToolTipItem('Hands')) : undefined}>
             </div>
           </div>
         </div>
@@ -141,7 +146,8 @@ return (
               : 'text-center w-full h-full bg-[url(assets/pp7Silx.png)] lg:bg-[url(assets/pp7SilxLG.png)]'
             }
             title={weaponItemName}
-            onClick={isWeaponSlotSelected ? () => handleSlotClick('weapon') : undefined}>
+            onClick={isWeaponSlotSelected ? () => handleSlotClick('weapon') : undefined}
+            onContextMenu={isWeaponSlotSelected ? (toolTipShown ? () => setToolTipShown(false) : () => handleToolTipItem('weapon')) : undefined}>
             </div>
         </div>
 
@@ -154,7 +160,8 @@ return (
                 : 'text-center bg-[url(assets/miscSlot.png)] w-16 h-16 mx-2 lg:w-32 lg:h-32 lg:bg-[url(assets/miscSlotLG.png)]'
               }
               title={foodItemName}
-              onClick={isFoodSlotSelected ? () => handleSlotClick('food') : undefined}>
+              onClick={isFoodSlotSelected ? () => handleSlotClick('food') : undefined}
+              onContextMenu={isFoodSlotSelected ? (toolTipShown ? () => setToolTipShown(false) : () => handleToolTipItem('food')) : undefined}>
 
         </div>
             
@@ -163,8 +170,8 @@ return (
               : 'text-center bg-[url(assets/miscSlot.png)] w-16 h-16 mx-2 lg:w-32 lg:h-32 lg:bg-[url(assets/miscSlotLG.png)]'
               }
               title={medItemName}
-              onClick={isMedSlotSelected ? () => handleSlotClick('med') : undefined}>
-
+              onClick={isMedSlotSelected ? () => handleSlotClick('med') : undefined}
+              onContextMenu={isMedSlotSelected ? (toolTipShown ? () => setToolTipShown(false) : () => handleToolTipItem('med')) : undefined}>
         </div>
         
         <div className={isBoosterSlotSelected 
@@ -172,11 +179,12 @@ return (
                 : 'text-center bg-[url(assets/miscSlot.png)] w-16 h-16 mx-2 lg:w-32 lg:h-32 lg:bg-[url(assets/miscSlotLG.png)]'
               }
               title={boosterItemName}
-              onClick={isBoosterSlotSelected ? () => handleSlotClick('booster') : undefined}>
-
+              onClick={isBoosterSlotSelected ? () => handleSlotClick('booster') : undefined}
+              onContextMenu={isBoosterSlotSelected ? (toolTipShown ? () => setToolTipShown(false) : () => handleToolTipItem('booster')) : undefined}>
         </div>
         </div>
       </div>
+
   </>
 )
 

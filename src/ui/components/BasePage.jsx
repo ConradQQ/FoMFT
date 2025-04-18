@@ -14,10 +14,12 @@ const BasePage = ({
   handleSlotClick,
   saveLoadout,
   loadLoadout,
-
+  toolTipShown,
+  setToolTipShown,
+  setToolTipItem,
+  handleToolTipItem
 }) => {
   
-
 
   return (
     <>
@@ -62,6 +64,10 @@ const BasePage = ({
           handleSlotClick={handleSlotClick}
           saveLoadout={saveLoadout}
           loadLoadout={loadLoadout}
+          toolTipShown={toolTipShown}
+          setToolTipShown={setToolTipShown}
+          setToolTipItem={setToolTipItem}
+          handleToolTipItem={handleToolTipItem}
         />
       </div>
 

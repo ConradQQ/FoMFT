@@ -206,6 +206,9 @@
   .left-0 {
     left: calc(var(--spacing) * 0);
   }
+  .left-40 {
+    left: calc(var(--spacing) * 40);
+  }
   .mx-1 {
     margin-inline: calc(var(--spacing) * 1);
   }
@@ -248,12 +251,6 @@
   .flex {
     display: flex;
   }
-  .table {
-    display: table;
-  }
-  .h-1 {
-    height: calc(var(--spacing) * 1);
-  }
   .h-1\/2 {
     height: calc(1/2 * 100%);
   }
@@ -278,6 +275,9 @@
   .h-\[90px\] {
     height: 90px;
   }
+  .h-fit {
+    height: fit-content;
+  }
   .h-full {
     height: 100%;
   }
@@ -286,9 +286,6 @@
   }
   .max-h-100 {
     max-height: calc(var(--spacing) * 100);
-  }
-  .w-1 {
-    width: calc(var(--spacing) * 1);
   }
   .w-1\/3 {
     width: calc(1/3 * 100%);
@@ -317,14 +314,8 @@
   .w-screen {
     width: 100vw;
   }
-  .border-collapse {
-    border-collapse: collapse;
-  }
   .cursor-pointer {
     cursor: pointer;
-  }
-  .resize {
-    resize: both;
   }
   .flex-col {
     flex-direction: column;
@@ -366,8 +357,8 @@
   .bg-\[\#1f2533\]\/50 {
     background-color: color-mix(in oklab, #1f2533 50%, transparent);
   }
-  .bg-indigo-900 {
-    background-color: var(--color-indigo-900);
+  .bg-indigo-400 {
+    background-color: var(--color-indigo-400);
   }
   .bg-indigo-900\/70 {
     background-color: color-mix(in oklab, var(--color-indigo-900) 70%, transparent);
@@ -618,9 +609,6 @@
   .bg-\[url\(assets\/handSlot\.png\)\] {
     background-image: url(assets/handSlot.png);
   }
-  .bg-\[url\(assets\/handsSlot-sm\.png\)\] {
-    background-image: url(assets/handsSlot-sm.png);
-  }
   .bg-\[url\(assets\/havoc-powered-arm-pads\.png\)\] {
     background-image: url(assets/havoc-powered-arm-pads.png);
   }
@@ -818,9 +806,6 @@
   }
   .bg-\[url\(assets\/legionnaire-powered-torso-armor\.png\)\] {
     background-image: url(assets/legionnaire-powered-torso-armor.png);
-  }
-  .bg-\[url\(assets\/legsSlot-sm\.png\)\] {
-    background-image: url(assets/legsSlot-sm.png);
   }
   .bg-\[url\(assets\/locans-defense-arm-pads\.png\)\] {
     background-image: url(assets/locans-defense-arm-pads.png);
@@ -1230,9 +1215,6 @@
   .bg-\[url\(assets\/shield-implant\.png\)\] {
     background-image: url(assets/shield-implant.png);
   }
-  .bg-\[url\(assets\/shoulderSlot-sm\.png\)\] {
-    background-image: url(assets/shoulderSlot-sm.png);
-  }
   .bg-\[url\(assets\/shouldersSlot-sm\.png\)\] {
     background-image: url(assets/shouldersSlot-sm.png);
   }
@@ -1352,9 +1334,8 @@
   .opacity-50 {
     opacity: 50%;
   }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
+  .opacity-80 {
+    opacity: 80%;
   }
   .transition-colors {
     transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;
@@ -1632,11 +1613,6 @@
       background-image: url(assets/aramid-modified-torso-armorlg.png);
     }
   }
-  .lg\:bg-\[url\(assets\/armSlot\.png\)\] {
-    @media (width >= 64rem) {
-      background-image: url(assets/armSlot.png);
-    }
-  }
   .lg\:bg-\[url\(assets\/armSlotLG\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/armSlotLG.png);
@@ -1842,11 +1818,6 @@
       background-image: url(assets/ginnan-sushilg.png);
     }
   }
-  .lg\:bg-\[url\(assets\/handSlot\.png\)\] {
-    @media (width >= 64rem) {
-      background-image: url(assets/handSlot.png);
-    }
-  }
   .lg\:bg-\[url\(assets\/handSlotLG\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/handSlotLG.png);
@@ -1880,11 +1851,6 @@
   .lg\:bg-\[url\(assets\/havoc-powered-torso-armorlg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/havoc-powered-torso-armorlg.png);
-    }
-  }
-  .lg\:bg-\[url\(assets\/headSlot\.png\)\] {
-    @media (width >= 64rem) {
-      background-image: url(assets/headSlot.png);
     }
   }
   .lg\:bg-\[url\(assets\/headSlotLG\.png\)\] {
@@ -2130,11 +2096,6 @@
   .lg\:bg-\[url\(assets\/leech-torso-armorlg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/leech-torso-armorlg.png);
-    }
-  }
-  .lg\:bg-\[url\(assets\/legSlot\.png\)\] {
-    @media (width >= 64rem) {
-      background-image: url(assets/legSlot.png);
     }
   }
   .lg\:bg-\[url\(assets\/legSlotLG\.png\)\] {
@@ -2837,16 +2798,6 @@
       background-image: url(assets/shield-implantlg.png);
     }
   }
-  .lg\:bg-\[url\(assets\/shoulderSlot\.png\)\] {
-    @media (width >= 64rem) {
-      background-image: url(assets/shoulderSlot.png);
-    }
-  }
-  .lg\:bg-\[url\(assets\/shouldersSlot\.png\)\] {
-    @media (width >= 64rem) {
-      background-image: url(assets/shouldersSlot.png);
-    }
-  }
   .lg\:bg-\[url\(assets\/shouldersSlotLG\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/shouldersSlotLG.png);
@@ -2890,11 +2841,6 @@
   .lg\:bg-\[url\(assets\/tactical-systems-torso-armorlg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/tactical-systems-torso-armorlg.png);
-    }
-  }
-  .lg\:bg-\[url\(assets\/torsoSlot\.png\)\] {
-    @media (width >= 64rem) {
-      background-image: url(assets/torsoSlot.png);
     }
   }
   .lg\:bg-\[url\(assets\/torsoSlotLG\.png\)\] {
@@ -3066,9 +3012,4 @@
 @property --tw-font-weight {
   syntax: "*";
   inherits: false;
-}
-@property --tw-outline-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
 }

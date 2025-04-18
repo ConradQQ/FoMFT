@@ -7,6 +7,7 @@ import ArmorMenuCompareOne from "./ArmorMenuCompareOne";
 import ArmorMenuCompareTwo from "./ArmorMenuCompareTwo";
 import { useState, useEffect } from "react";
 
+
 const CompareItemSlots = ({
   firstCompareItemsObjects,
   setFirstCompareItemObjects,
