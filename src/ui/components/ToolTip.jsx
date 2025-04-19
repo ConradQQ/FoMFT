@@ -1,6 +1,3 @@
-import React, { useState, useEffect } from 'react';
-
-
 const ToolTip = (toolTipItem) => {
 
 console.log(toolTipItem);
@@ -13,7 +10,7 @@ console.log(toolTipItem);
             <p key={statName} className="sm:text-[12px] lg:text-xl">
               {statName}: {statValue}
             </p>
-           </> 
+          </> 
         ))}
  
       </div>

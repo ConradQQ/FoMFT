@@ -206,9 +206,6 @@
   .left-0 {
     left: calc(var(--spacing) * 0);
   }
-  .left-40 {
-    left: calc(var(--spacing) * 40);
-  }
   .mx-1 {
     margin-inline: calc(var(--spacing) * 1);
   }
@@ -302,6 +299,9 @@
   .w-\[60px\] {
     width: 60px;
   }
+  .w-\[90px\] {
+    width: 90px;
+  }
   .w-\[200px\] {
     width: 200px;
   }
@@ -369,23 +369,41 @@
   .bg-\[url\(\.\/assets\/import\.png\)\] {
     background-image: url(./assets/import.png);
   }
+  .bg-\[url\(assets\/PP7xs-md\.png\)\] {
+    background-image: url(assets/PP7xs-md.png);
+  }
   .bg-\[url\(assets\/PP7xs-sm\.png\)\] {
     background-image: url(assets/PP7xs-sm.png);
   }
   .bg-\[url\(assets\/PP7xs\.png\)\] {
     background-image: url(assets/PP7xs.png);
   }
+  .bg-\[url\(assets\/advanced-civilian-arm-pads-sm\.png\)\] {
+    background-image: url(assets/advanced-civilian-arm-pads-sm.png);
+  }
   .bg-\[url\(assets\/advanced-civilian-arm-pads\.png\)\] {
     background-image: url(assets/advanced-civilian-arm-pads.png);
+  }
+  .bg-\[url\(assets\/advanced-civilian-helmet-sm\.png\)\] {
+    background-image: url(assets/advanced-civilian-helmet-sm.png);
   }
   .bg-\[url\(assets\/advanced-civilian-helmet\.png\)\] {
     background-image: url(assets/advanced-civilian-helmet.png);
   }
+  .bg-\[url\(assets\/advanced-civilian-leg-pads-sm\.png\)\] {
+    background-image: url(assets/advanced-civilian-leg-pads-sm.png);
+  }
   .bg-\[url\(assets\/advanced-civilian-leg-pads\.png\)\] {
     background-image: url(assets/advanced-civilian-leg-pads.png);
   }
+  .bg-\[url\(assets\/advanced-civilian-shoulder-pads-sm\.png\)\] {
+    background-image: url(assets/advanced-civilian-shoulder-pads-sm.png);
+  }
   .bg-\[url\(assets\/advanced-civilian-shoulder-pads\.png\)\] {
     background-image: url(assets/advanced-civilian-shoulder-pads.png);
+  }
+  .bg-\[url\(assets\/advanced-civilian-torso-armor-sm\.png\)\] {
+    background-image: url(assets/advanced-civilian-torso-armor-sm.png);
   }
   .bg-\[url\(assets\/advanced-civilian-torso-armor\.png\)\] {
     background-image: url(assets/advanced-civilian-torso-armor.png);
@@ -396,50 +414,98 @@
   .bg-\[url\(assets\/aquatican-brew\.png\)\] {
     background-image: url(assets/aquatican-brew.png);
   }
+  .bg-\[url\(assets\/aramid-altered-arm-pads-sm\.png\)\] {
+    background-image: url(assets/aramid-altered-arm-pads-sm.png);
+  }
   .bg-\[url\(assets\/aramid-altered-arm-pads\.png\)\] {
     background-image: url(assets/aramid-altered-arm-pads.png);
+  }
+  .bg-\[url\(assets\/aramid-altered-leg-pads-sm\.png\)\] {
+    background-image: url(assets/aramid-altered-leg-pads-sm.png);
   }
   .bg-\[url\(assets\/aramid-altered-leg-pads\.png\)\] {
     background-image: url(assets/aramid-altered-leg-pads.png);
   }
+  .bg-\[url\(assets\/aramid-altered-shoulder-pads-sm\.png\)\] {
+    background-image: url(assets/aramid-altered-shoulder-pads-sm.png);
+  }
   .bg-\[url\(assets\/aramid-altered-shoulder-pads\.png\)\] {
     background-image: url(assets/aramid-altered-shoulder-pads.png);
+  }
+  .bg-\[url\(assets\/aramid-altered-torso-armor-sm\.png\)\] {
+    background-image: url(assets/aramid-altered-torso-armor-sm.png);
   }
   .bg-\[url\(assets\/aramid-altered-torso-armor\.png\)\] {
     background-image: url(assets/aramid-altered-torso-armor.png);
   }
+  .bg-\[url\(assets\/aramid-basic-arm-pads-sm\.png\)\] {
+    background-image: url(assets/aramid-basic-arm-pads-sm.png);
+  }
   .bg-\[url\(assets\/aramid-basic-arm-pads\.png\)\] {
     background-image: url(assets/aramid-basic-arm-pads.png);
+  }
+  .bg-\[url\(assets\/aramid-basic-gloves-sm\.png\)\] {
+    background-image: url(assets/aramid-basic-gloves-sm.png);
   }
   .bg-\[url\(assets\/aramid-basic-gloves\.png\)\] {
     background-image: url(assets/aramid-basic-gloves.png);
   }
+  .bg-\[url\(assets\/aramid-basic-helmet-sm\.png\)\] {
+    background-image: url(assets/aramid-basic-helmet-sm.png);
+  }
   .bg-\[url\(assets\/aramid-basic-helmet\.png\)\] {
     background-image: url(assets/aramid-basic-helmet.png);
+  }
+  .bg-\[url\(assets\/aramid-basic-leg-pads-sm\.png\)\] {
+    background-image: url(assets/aramid-basic-leg-pads-sm.png);
   }
   .bg-\[url\(assets\/aramid-basic-leg-pads\.png\)\] {
     background-image: url(assets/aramid-basic-leg-pads.png);
   }
+  .bg-\[url\(assets\/aramid-basic-shoulder-pads-sm\.png\)\] {
+    background-image: url(assets/aramid-basic-shoulder-pads-sm.png);
+  }
   .bg-\[url\(assets\/aramid-basic-shoulder-pads\.png\)\] {
     background-image: url(assets/aramid-basic-shoulder-pads.png);
+  }
+  .bg-\[url\(assets\/aramid-basic-torso-armor-sm\.png\)\] {
+    background-image: url(assets/aramid-basic-torso-armor-sm.png);
   }
   .bg-\[url\(assets\/aramid-basic-torso-armor\.png\)\] {
     background-image: url(assets/aramid-basic-torso-armor.png);
   }
+  .bg-\[url\(assets\/aramid-modified-arm-pads-sm\.png\)\] {
+    background-image: url(assets/aramid-modified-arm-pads-sm.png);
+  }
   .bg-\[url\(assets\/aramid-modified-arm-pads\.png\)\] {
     background-image: url(assets/aramid-modified-arm-pads.png);
+  }
+  .bg-\[url\(assets\/aramid-modified-gloves-sm\.png\)\] {
+    background-image: url(assets/aramid-modified-gloves-sm.png);
   }
   .bg-\[url\(assets\/aramid-modified-gloves\.png\)\] {
     background-image: url(assets/aramid-modified-gloves.png);
   }
+  .bg-\[url\(assets\/aramid-modified-helmet-sm\.png\)\] {
+    background-image: url(assets/aramid-modified-helmet-sm.png);
+  }
   .bg-\[url\(assets\/aramid-modified-helmet\.png\)\] {
     background-image: url(assets/aramid-modified-helmet.png);
+  }
+  .bg-\[url\(assets\/aramid-modified-leg-pads-sm\.png\)\] {
+    background-image: url(assets/aramid-modified-leg-pads-sm.png);
   }
   .bg-\[url\(assets\/aramid-modified-leg-pads\.png\)\] {
     background-image: url(assets/aramid-modified-leg-pads.png);
   }
+  .bg-\[url\(assets\/aramid-modified-shoulder-pads-sm\.png\)\] {
+    background-image: url(assets/aramid-modified-shoulder-pads-sm.png);
+  }
   .bg-\[url\(assets\/aramid-modified-shoulder-pads\.png\)\] {
     background-image: url(assets/aramid-modified-shoulder-pads.png);
+  }
+  .bg-\[url\(assets\/aramid-modified-torso-armor-sm\.png\)\] {
+    background-image: url(assets/aramid-modified-torso-armor-sm.png);
   }
   .bg-\[url\(assets\/aramid-modified-torso-armor\.png\)\] {
     background-image: url(assets/aramid-modified-torso-armor.png);
@@ -468,74 +534,146 @@
   .bg-\[url\(assets\/chart\.png\)\] {
     background-image: url(assets/chart.png);
   }
+  .bg-\[url\(assets\/delta-powered-arm-pads-sm\.png\)\] {
+    background-image: url(assets/delta-powered-arm-pads-sm.png);
+  }
   .bg-\[url\(assets\/delta-powered-arm-pads\.png\)\] {
     background-image: url(assets/delta-powered-arm-pads.png);
+  }
+  .bg-\[url\(assets\/delta-powered-gloves-sm\.png\)\] {
+    background-image: url(assets/delta-powered-gloves-sm.png);
   }
   .bg-\[url\(assets\/delta-powered-gloves\.png\)\] {
     background-image: url(assets/delta-powered-gloves.png);
   }
+  .bg-\[url\(assets\/delta-powered-helmet-sm\.png\)\] {
+    background-image: url(assets/delta-powered-helmet-sm.png);
+  }
   .bg-\[url\(assets\/delta-powered-helmet\.png\)\] {
     background-image: url(assets/delta-powered-helmet.png);
+  }
+  .bg-\[url\(assets\/delta-powered-leg-pads-sm\.png\)\] {
+    background-image: url(assets/delta-powered-leg-pads-sm.png);
   }
   .bg-\[url\(assets\/delta-powered-leg-pads\.png\)\] {
     background-image: url(assets/delta-powered-leg-pads.png);
   }
+  .bg-\[url\(assets\/delta-powered-shoulder-pads-sm\.png\)\] {
+    background-image: url(assets/delta-powered-shoulder-pads-sm.png);
+  }
   .bg-\[url\(assets\/delta-powered-shoulder-pads\.png\)\] {
     background-image: url(assets/delta-powered-shoulder-pads.png);
+  }
+  .bg-\[url\(assets\/delta-powered-torso-armor-sm\.png\)\] {
+    background-image: url(assets/delta-powered-torso-armor-sm.png);
   }
   .bg-\[url\(assets\/delta-powered-torso-armor\.png\)\] {
     background-image: url(assets/delta-powered-torso-armor.png);
   }
+  .bg-\[url\(assets\/detox-combat-arm-pads-sm\.png\)\] {
+    background-image: url(assets/detox-combat-arm-pads-sm.png);
+  }
   .bg-\[url\(assets\/detox-combat-arm-pads\.png\)\] {
     background-image: url(assets/detox-combat-arm-pads.png);
+  }
+  .bg-\[url\(assets\/detox-combat-gloves-sm\.png\)\] {
+    background-image: url(assets/detox-combat-gloves-sm.png);
   }
   .bg-\[url\(assets\/detox-combat-gloves\.png\)\] {
     background-image: url(assets/detox-combat-gloves.png);
   }
+  .bg-\[url\(assets\/detox-combat-helmet-sm\.png\)\] {
+    background-image: url(assets/detox-combat-helmet-sm.png);
+  }
   .bg-\[url\(assets\/detox-combat-helmet\.png\)\] {
     background-image: url(assets/detox-combat-helmet.png);
+  }
+  .bg-\[url\(assets\/detox-combat-leg-pads-sm\.png\)\] {
+    background-image: url(assets/detox-combat-leg-pads-sm.png);
   }
   .bg-\[url\(assets\/detox-combat-leg-pads\.png\)\] {
     background-image: url(assets/detox-combat-leg-pads.png);
   }
+  .bg-\[url\(assets\/detox-combat-shoulder-pads-sm\.png\)\] {
+    background-image: url(assets/detox-combat-shoulder-pads-sm.png);
+  }
   .bg-\[url\(assets\/detox-combat-shoulder-pads\.png\)\] {
     background-image: url(assets/detox-combat-shoulder-pads.png);
+  }
+  .bg-\[url\(assets\/detox-combat-torso-armor-sm\.png\)\] {
+    background-image: url(assets/detox-combat-torso-armor-sm.png);
   }
   .bg-\[url\(assets\/detox-combat-torso-armor\.png\)\] {
     background-image: url(assets/detox-combat-torso-armor.png);
   }
+  .bg-\[url\(assets\/dilatant-46b-arm-pads-sm\.png\)\] {
+    background-image: url(assets/dilatant-46b-arm-pads-sm.png);
+  }
   .bg-\[url\(assets\/dilatant-46b-arm-pads\.png\)\] {
     background-image: url(assets/dilatant-46b-arm-pads.png);
+  }
+  .bg-\[url\(assets\/dilatant-46b-gloves-sm\.png\)\] {
+    background-image: url(assets/dilatant-46b-gloves-sm.png);
   }
   .bg-\[url\(assets\/dilatant-46b-gloves\.png\)\] {
     background-image: url(assets/dilatant-46b-gloves.png);
   }
+  .bg-\[url\(assets\/dilatant-46b-helmet-sm\.png\)\] {
+    background-image: url(assets/dilatant-46b-helmet-sm.png);
+  }
   .bg-\[url\(assets\/dilatant-46b-helmet\.png\)\] {
     background-image: url(assets/dilatant-46b-helmet.png);
+  }
+  .bg-\[url\(assets\/dilatant-46b-leg-pads-sm\.png\)\] {
+    background-image: url(assets/dilatant-46b-leg-pads-sm.png);
   }
   .bg-\[url\(assets\/dilatant-46b-leg-pads\.png\)\] {
     background-image: url(assets/dilatant-46b-leg-pads.png);
   }
+  .bg-\[url\(assets\/dilatant-46b-shoulder-pads-sm\.png\)\] {
+    background-image: url(assets/dilatant-46b-shoulder-pads-sm.png);
+  }
   .bg-\[url\(assets\/dilatant-46b-shoulder-pads\.png\)\] {
     background-image: url(assets/dilatant-46b-shoulder-pads.png);
+  }
+  .bg-\[url\(assets\/dilatant-46b-torso-armor-sm\.png\)\] {
+    background-image: url(assets/dilatant-46b-torso-armor-sm.png);
   }
   .bg-\[url\(assets\/dilatant-46b-torso-armor\.png\)\] {
     background-image: url(assets/dilatant-46b-torso-armor.png);
   }
+  .bg-\[url\(assets\/dilatant-50b-arm-pads-sm\.png\)\] {
+    background-image: url(assets/dilatant-50b-arm-pads-sm.png);
+  }
   .bg-\[url\(assets\/dilatant-50b-arm-pads\.png\)\] {
     background-image: url(assets/dilatant-50b-arm-pads.png);
+  }
+  .bg-\[url\(assets\/dilatant-50b-gloves-sm\.png\)\] {
+    background-image: url(assets/dilatant-50b-gloves-sm.png);
   }
   .bg-\[url\(assets\/dilatant-50b-gloves\.png\)\] {
     background-image: url(assets/dilatant-50b-gloves.png);
   }
+  .bg-\[url\(assets\/dilatant-50b-helmet-sm\.png\)\] {
+    background-image: url(assets/dilatant-50b-helmet-sm.png);
+  }
   .bg-\[url\(assets\/dilatant-50b-helmet\.png\)\] {
     background-image: url(assets/dilatant-50b-helmet.png);
+  }
+  .bg-\[url\(assets\/dilatant-50b-leg-pads-sm\.png\)\] {
+    background-image: url(assets/dilatant-50b-leg-pads-sm.png);
   }
   .bg-\[url\(assets\/dilatant-50b-leg-pads\.png\)\] {
     background-image: url(assets/dilatant-50b-leg-pads.png);
   }
+  .bg-\[url\(assets\/dilatant-50b-shoulder-pads-sm\.png\)\] {
+    background-image: url(assets/dilatant-50b-shoulder-pads-sm.png);
+  }
   .bg-\[url\(assets\/dilatant-50b-shoulder-pads\.png\)\] {
     background-image: url(assets/dilatant-50b-shoulder-pads.png);
+  }
+  .bg-\[url\(assets\/dilatant-50b-torso-armor-sm\.png\)\] {
+    background-image: url(assets/dilatant-50b-torso-armor-sm.png);
   }
   .bg-\[url\(assets\/dilatant-50b-torso-armor\.png\)\] {
     background-image: url(assets/dilatant-50b-torso-armor.png);
@@ -552,6 +690,9 @@
   .bg-\[url\(assets\/emergency-medikit\.png\)\] {
     background-image: url(assets/emergency-medikit.png);
   }
+  .bg-\[url\(assets\/envirotech-gloves-sm\.png\)\] {
+    background-image: url(assets/envirotech-gloves-sm.png);
+  }
   .bg-\[url\(assets\/envirotech-gloves\.png\)\] {
     background-image: url(assets/envirotech-gloves.png);
   }
@@ -563,6 +704,9 @@
   }
   .bg-\[url\(assets\/firstborn-powered-arm-pads\.png\)\] {
     background-image: url(assets/firstborn-powered-arm-pads.png);
+  }
+  .bg-\[url\(assets\/firstborn-powered-gloves-sm\.png\)\] {
+    background-image: url(assets/firstborn-powered-gloves-sm.png);
   }
   .bg-\[url\(assets\/firstborn-powered-gloves\.png\)\] {
     background-image: url(assets/firstborn-powered-gloves.png);
@@ -609,20 +753,38 @@
   .bg-\[url\(assets\/handSlot\.png\)\] {
     background-image: url(assets/handSlot.png);
   }
+  .bg-\[url\(assets\/havoc-powered-arm-pads-sm\.png\)\] {
+    background-image: url(assets/havoc-powered-arm-pads-sm.png);
+  }
   .bg-\[url\(assets\/havoc-powered-arm-pads\.png\)\] {
     background-image: url(assets/havoc-powered-arm-pads.png);
+  }
+  .bg-\[url\(assets\/havoc-powered-gloves-sm\.png\)\] {
+    background-image: url(assets/havoc-powered-gloves-sm.png);
   }
   .bg-\[url\(assets\/havoc-powered-gloves\.png\)\] {
     background-image: url(assets/havoc-powered-gloves.png);
   }
+  .bg-\[url\(assets\/havoc-powered-helmet-sm\.png\)\] {
+    background-image: url(assets/havoc-powered-helmet-sm.png);
+  }
   .bg-\[url\(assets\/havoc-powered-helmet\.png\)\] {
     background-image: url(assets/havoc-powered-helmet.png);
+  }
+  .bg-\[url\(assets\/havoc-powered-leg-pads-sm\.png\)\] {
+    background-image: url(assets/havoc-powered-leg-pads-sm.png);
   }
   .bg-\[url\(assets\/havoc-powered-leg-pads\.png\)\] {
     background-image: url(assets/havoc-powered-leg-pads.png);
   }
+  .bg-\[url\(assets\/havoc-powered-shoulder-pads-sm\.png\)\] {
+    background-image: url(assets/havoc-powered-shoulder-pads-sm.png);
+  }
   .bg-\[url\(assets\/havoc-powered-shoulder-pads\.png\)\] {
     background-image: url(assets/havoc-powered-shoulder-pads.png);
+  }
+  .bg-\[url\(assets\/havoc-powered-torso-armor-sm\.png\)\] {
+    background-image: url(assets/havoc-powered-torso-armor-sm.png);
   }
   .bg-\[url\(assets\/havoc-powered-torso-armor\.png\)\] {
     background-image: url(assets/havoc-powered-torso-armor.png);
@@ -633,107 +795,212 @@
   .bg-\[url\(assets\/headSlot\.png\)\] {
     background-image: url(assets/headSlot.png);
   }
+  .bg-\[url\(assets\/hypobaric-arm-pads-sm\.png\)\] {
+    background-image: url(assets/hypobaric-arm-pads-sm.png);
+  }
   .bg-\[url\(assets\/hypobaric-arm-pads\.png\)\] {
     background-image: url(assets/hypobaric-arm-pads.png);
+  }
+  .bg-\[url\(assets\/hypobaric-gloves-sm\.png\)\] {
+    background-image: url(assets/hypobaric-gloves-sm.png);
   }
   .bg-\[url\(assets\/hypobaric-gloves\.png\)\] {
     background-image: url(assets/hypobaric-gloves.png);
   }
+  .bg-\[url\(assets\/hypobaric-helmet-sm\.png\)\] {
+    background-image: url(assets/hypobaric-helmet-sm.png);
+  }
   .bg-\[url\(assets\/hypobaric-helmet\.png\)\] {
     background-image: url(assets/hypobaric-helmet.png);
+  }
+  .bg-\[url\(assets\/hypobaric-leg-pads-sm\.png\)\] {
+    background-image: url(assets/hypobaric-leg-pads-sm.png);
   }
   .bg-\[url\(assets\/hypobaric-leg-pads\.png\)\] {
     background-image: url(assets/hypobaric-leg-pads.png);
   }
+  .bg-\[url\(assets\/hypobaric-shoulder-pads-sm\.png\)\] {
+    background-image: url(assets/hypobaric-shoulder-pads-sm.png);
+  }
   .bg-\[url\(assets\/hypobaric-shoulder-pads\.png\)\] {
     background-image: url(assets/hypobaric-shoulder-pads.png);
+  }
+  .bg-\[url\(assets\/hypobaric-torso-armor-sm\.png\)\] {
+    background-image: url(assets/hypobaric-torso-armor-sm.png);
   }
   .bg-\[url\(assets\/hypobaric-torso-armor\.png\)\] {
     background-image: url(assets/hypobaric-torso-armor.png);
   }
+  .bg-\[url\(assets\/infensus-essentials-arm-pads-sm\.png\)\] {
+    background-image: url(assets/infensus-essentials-arm-pads-sm.png);
+  }
   .bg-\[url\(assets\/infensus-essentials-arm-pads\.png\)\] {
     background-image: url(assets/infensus-essentials-arm-pads.png);
+  }
+  .bg-\[url\(assets\/infensus-essentials-gloves-sm\.png\)\] {
+    background-image: url(assets/infensus-essentials-gloves-sm.png);
   }
   .bg-\[url\(assets\/infensus-essentials-gloves\.png\)\] {
     background-image: url(assets/infensus-essentials-gloves.png);
   }
+  .bg-\[url\(assets\/infensus-essentials-helmet-sm\.png\)\] {
+    background-image: url(assets/infensus-essentials-helmet-sm.png);
+  }
   .bg-\[url\(assets\/infensus-essentials-helmet\.png\)\] {
     background-image: url(assets/infensus-essentials-helmet.png);
+  }
+  .bg-\[url\(assets\/infensus-essentials-leg-pads-sm\.png\)\] {
+    background-image: url(assets/infensus-essentials-leg-pads-sm.png);
   }
   .bg-\[url\(assets\/infensus-essentials-leg-pads\.png\)\] {
     background-image: url(assets/infensus-essentials-leg-pads.png);
   }
+  .bg-\[url\(assets\/infensus-essentials-shoulder-pads-sm\.png\)\] {
+    background-image: url(assets/infensus-essentials-shoulder-pads-sm.png);
+  }
   .bg-\[url\(assets\/infensus-essentials-shoulder-pads\.png\)\] {
     background-image: url(assets/infensus-essentials-shoulder-pads.png);
+  }
+  .bg-\[url\(assets\/infensus-essentials-torso-armor-sm\.png\)\] {
+    background-image: url(assets/infensus-essentials-torso-armor-sm.png);
   }
   .bg-\[url\(assets\/infensus-essentials-torso-armor\.png\)\] {
     background-image: url(assets/infensus-essentials-torso-armor.png);
   }
+  .bg-\[url\(assets\/infensus-heavy-arm-pads-sm\.png\)\] {
+    background-image: url(assets/infensus-heavy-arm-pads-sm.png);
+  }
   .bg-\[url\(assets\/infensus-heavy-arm-pads\.png\)\] {
     background-image: url(assets/infensus-heavy-arm-pads.png);
+  }
+  .bg-\[url\(assets\/infensus-heavy-gloves-sm\.png\)\] {
+    background-image: url(assets/infensus-heavy-gloves-sm.png);
   }
   .bg-\[url\(assets\/infensus-heavy-gloves\.png\)\] {
     background-image: url(assets/infensus-heavy-gloves.png);
   }
+  .bg-\[url\(assets\/infensus-heavy-helmet-sm\.png\)\] {
+    background-image: url(assets/infensus-heavy-helmet-sm.png);
+  }
   .bg-\[url\(assets\/infensus-heavy-helmet\.png\)\] {
     background-image: url(assets/infensus-heavy-helmet.png);
+  }
+  .bg-\[url\(assets\/infensus-heavy-leg-pads-sm\.png\)\] {
+    background-image: url(assets/infensus-heavy-leg-pads-sm.png);
   }
   .bg-\[url\(assets\/infensus-heavy-leg-pads\.png\)\] {
     background-image: url(assets/infensus-heavy-leg-pads.png);
   }
+  .bg-\[url\(assets\/infensus-heavy-shoulder-pads-sm\.png\)\] {
+    background-image: url(assets/infensus-heavy-shoulder-pads-sm.png);
+  }
   .bg-\[url\(assets\/infensus-heavy-shoulder-pads\.png\)\] {
     background-image: url(assets/infensus-heavy-shoulder-pads.png);
+  }
+  .bg-\[url\(assets\/infensus-heavy-torso-armor-sm\.png\)\] {
+    background-image: url(assets/infensus-heavy-torso-armor-sm.png);
   }
   .bg-\[url\(assets\/infensus-heavy-torso-armor\.png\)\] {
     background-image: url(assets/infensus-heavy-torso-armor.png);
   }
+  .bg-\[url\(assets\/infensus-minimalist-arm-pads-sm\.png\)\] {
+    background-image: url(assets/infensus-minimalist-arm-pads-sm.png);
+  }
   .bg-\[url\(assets\/infensus-minimalist-arm-pads\.png\)\] {
     background-image: url(assets/infensus-minimalist-arm-pads.png);
+  }
+  .bg-\[url\(assets\/infensus-minimalist-gloves-sm\.png\)\] {
+    background-image: url(assets/infensus-minimalist-gloves-sm.png);
   }
   .bg-\[url\(assets\/infensus-minimalist-gloves\.png\)\] {
     background-image: url(assets/infensus-minimalist-gloves.png);
   }
+  .bg-\[url\(assets\/infensus-minimalist-helmet-sm\.png\)\] {
+    background-image: url(assets/infensus-minimalist-helmet-sm.png);
+  }
   .bg-\[url\(assets\/infensus-minimalist-helmet\.png\)\] {
     background-image: url(assets/infensus-minimalist-helmet.png);
+  }
+  .bg-\[url\(assets\/infensus-minimalist-leg-pads-sm\.png\)\] {
+    background-image: url(assets/infensus-minimalist-leg-pads-sm.png);
   }
   .bg-\[url\(assets\/infensus-minimalist-leg-pads\.png\)\] {
     background-image: url(assets/infensus-minimalist-leg-pads.png);
   }
+  .bg-\[url\(assets\/infensus-minimalist-shoulder-pads-sm\.png\)\] {
+    background-image: url(assets/infensus-minimalist-shoulder-pads-sm.png);
+  }
   .bg-\[url\(assets\/infensus-minimalist-shoulder-pads\.png\)\] {
     background-image: url(assets/infensus-minimalist-shoulder-pads.png);
+  }
+  .bg-\[url\(assets\/infensus-minimalist-torso-armor-sm\.png\)\] {
+    background-image: url(assets/infensus-minimalist-torso-armor-sm.png);
   }
   .bg-\[url\(assets\/infensus-minimalist-torso-armor\.png\)\] {
     background-image: url(assets/infensus-minimalist-torso-armor.png);
   }
+  .bg-\[url\(assets\/infensus-shock-arm-pads-sm\.png\)\] {
+    background-image: url(assets/infensus-shock-arm-pads-sm.png);
+  }
   .bg-\[url\(assets\/infensus-shock-arm-pads\.png\)\] {
     background-image: url(assets/infensus-shock-arm-pads.png);
+  }
+  .bg-\[url\(assets\/infensus-shock-gloves-sm\.png\)\] {
+    background-image: url(assets/infensus-shock-gloves-sm.png);
   }
   .bg-\[url\(assets\/infensus-shock-gloves\.png\)\] {
     background-image: url(assets/infensus-shock-gloves.png);
   }
+  .bg-\[url\(assets\/infensus-shock-helmet-sm\.png\)\] {
+    background-image: url(assets/infensus-shock-helmet-sm.png);
+  }
   .bg-\[url\(assets\/infensus-shock-helmet\.png\)\] {
     background-image: url(assets/infensus-shock-helmet.png);
+  }
+  .bg-\[url\(assets\/infensus-shock-leg-pads-sm\.png\)\] {
+    background-image: url(assets/infensus-shock-leg-pads-sm.png);
   }
   .bg-\[url\(assets\/infensus-shock-leg-pads\.png\)\] {
     background-image: url(assets/infensus-shock-leg-pads.png);
   }
+  .bg-\[url\(assets\/infensus-shock-shoulder-pads-sm\.png\)\] {
+    background-image: url(assets/infensus-shock-shoulder-pads-sm.png);
+  }
   .bg-\[url\(assets\/infensus-shock-shoulder-pads\.png\)\] {
     background-image: url(assets/infensus-shock-shoulder-pads.png);
+  }
+  .bg-\[url\(assets\/infensus-shock-torso-armor-sm\.png\)\] {
+    background-image: url(assets/infensus-shock-torso-armor-sm.png);
   }
   .bg-\[url\(assets\/infensus-shock-torso-armor\.png\)\] {
     background-image: url(assets/infensus-shock-torso-armor.png);
   }
+  .bg-\[url\(assets\/infensus-x1-assault-arm-pads-sm\.png\)\] {
+    background-image: url(assets/infensus-x1-assault-arm-pads-sm.png);
+  }
   .bg-\[url\(assets\/infensus-x1-assault-arm-pads\.png\)\] {
     background-image: url(assets/infensus-x1-assault-arm-pads.png);
+  }
+  .bg-\[url\(assets\/infensus-x1-assault-gloves-sm\.png\)\] {
+    background-image: url(assets/infensus-x1-assault-gloves-sm.png);
   }
   .bg-\[url\(assets\/infensus-x1-assault-gloves\.png\)\] {
     background-image: url(assets/infensus-x1-assault-gloves.png);
   }
+  .bg-\[url\(assets\/infensus-x1-assault-leg-pads-sm\.png\)\] {
+    background-image: url(assets/infensus-x1-assault-leg-pads-sm.png);
+  }
   .bg-\[url\(assets\/infensus-x1-assault-leg-pads\.png\)\] {
     background-image: url(assets/infensus-x1-assault-leg-pads.png);
   }
+  .bg-\[url\(assets\/infensus-x1-assault-torso-armor-sm\.png\)\] {
+    background-image: url(assets/infensus-x1-assault-torso-armor-sm.png);
+  }
   .bg-\[url\(assets\/infensus-x1-assault-torso-armor\.png\)\] {
     background-image: url(assets/infensus-x1-assault-torso-armor.png);
+  }
+  .bg-\[url\(assets\/infensus-x1-shoulder-pads-sm\.png\)\] {
+    background-image: url(assets/infensus-x1-shoulder-pads-sm.png);
   }
   .bg-\[url\(assets\/infensus-x1-shoulder-pads\.png\)\] {
     background-image: url(assets/infensus-x1-shoulder-pads.png);
@@ -750,35 +1017,68 @@
   .bg-\[url\(assets\/infostyle-gloves\.png\)\] {
     background-image: url(assets/infostyle-gloves.png);
   }
+  .bg-\[url\(assets\/infusion-gloves-sm\.png\)\] {
+    background-image: url(assets/infusion-gloves-sm.png);
+  }
   .bg-\[url\(assets\/infusion-gloves\.png\)\] {
     background-image: url(assets/infusion-gloves.png);
+  }
+  .bg-\[url\(assets\/justicar-powered-arm-pads-sm\.png\)\] {
+    background-image: url(assets/justicar-powered-arm-pads-sm.png);
   }
   .bg-\[url\(assets\/justicar-powered-arm-pads\.png\)\] {
     background-image: url(assets/justicar-powered-arm-pads.png);
   }
+  .bg-\[url\(assets\/justicar-powered-helmet-sm\.png\)\] {
+    background-image: url(assets/justicar-powered-helmet-sm.png);
+  }
   .bg-\[url\(assets\/justicar-powered-helmet\.png\)\] {
     background-image: url(assets/justicar-powered-helmet.png);
+  }
+  .bg-\[url\(assets\/justicar-powered-leg-pads-sm\.png\)\] {
+    background-image: url(assets/justicar-powered-leg-pads-sm.png);
   }
   .bg-\[url\(assets\/justicar-powered-leg-pads\.png\)\] {
     background-image: url(assets/justicar-powered-leg-pads.png);
   }
+  .bg-\[url\(assets\/justicar-powered-shoulder-pads-sm\.png\)\] {
+    background-image: url(assets/justicar-powered-shoulder-pads-sm.png);
+  }
   .bg-\[url\(assets\/justicar-powered-shoulder-pads\.png\)\] {
     background-image: url(assets/justicar-powered-shoulder-pads.png);
+  }
+  .bg-\[url\(assets\/justicar-powered-torso-armor-sm\.png\)\] {
+    background-image: url(assets/justicar-powered-torso-armor-sm.png);
   }
   .bg-\[url\(assets\/justicar-powered-torso-armor\.png\)\] {
     background-image: url(assets/justicar-powered-torso-armor.png);
   }
+  .bg-\[url\(assets\/leech-arm-pads-sm\.png\)\] {
+    background-image: url(assets/leech-arm-pads-sm.png);
+  }
   .bg-\[url\(assets\/leech-arm-pads\.png\)\] {
     background-image: url(assets/leech-arm-pads.png);
+  }
+  .bg-\[url\(assets\/leech-helmet-sm\.png\)\] {
+    background-image: url(assets/leech-helmet-sm.png);
   }
   .bg-\[url\(assets\/leech-helmet\.png\)\] {
     background-image: url(assets/leech-helmet.png);
   }
+  .bg-\[url\(assets\/leech-leg-pads-sm\.png\)\] {
+    background-image: url(assets/leech-leg-pads-sm.png);
+  }
   .bg-\[url\(assets\/leech-leg-pads\.png\)\] {
     background-image: url(assets/leech-leg-pads.png);
   }
+  .bg-\[url\(assets\/leech-shoulder-pads-sm\.png\)\] {
+    background-image: url(assets/leech-shoulder-pads-sm.png);
+  }
   .bg-\[url\(assets\/leech-shoulder-pads\.png\)\] {
     background-image: url(assets/leech-shoulder-pads.png);
+  }
+  .bg-\[url\(assets\/leech-torso-armor-sm\.png\)\] {
+    background-image: url(assets/leech-torso-armor-sm.png);
   }
   .bg-\[url\(assets\/leech-torso-armor\.png\)\] {
     background-image: url(assets/leech-torso-armor.png);
@@ -789,125 +1089,248 @@
   .bg-\[url\(assets\/legSlot\.png\)\] {
     background-image: url(assets/legSlot.png);
   }
+  .bg-\[url\(assets\/legionnaire-powered-arm-pads-sm\.png\)\] {
+    background-image: url(assets/legionnaire-powered-arm-pads-sm.png);
+  }
   .bg-\[url\(assets\/legionnaire-powered-arm-pads\.png\)\] {
     background-image: url(assets/legionnaire-powered-arm-pads.png);
+  }
+  .bg-\[url\(assets\/legionnaire-powered-gloves-sm\.png\)\] {
+    background-image: url(assets/legionnaire-powered-gloves-sm.png);
   }
   .bg-\[url\(assets\/legionnaire-powered-gloves\.png\)\] {
     background-image: url(assets/legionnaire-powered-gloves.png);
   }
+  .bg-\[url\(assets\/legionnaire-powered-helmet-sm\.png\)\] {
+    background-image: url(assets/legionnaire-powered-helmet-sm.png);
+  }
   .bg-\[url\(assets\/legionnaire-powered-helmet\.png\)\] {
     background-image: url(assets/legionnaire-powered-helmet.png);
+  }
+  .bg-\[url\(assets\/legionnaire-powered-leg-pads-sm\.png\)\] {
+    background-image: url(assets/legionnaire-powered-leg-pads-sm.png);
   }
   .bg-\[url\(assets\/legionnaire-powered-leg-pads\.png\)\] {
     background-image: url(assets/legionnaire-powered-leg-pads.png);
   }
+  .bg-\[url\(assets\/legionnaire-powered-shoulder-pads-sm\.png\)\] {
+    background-image: url(assets/legionnaire-powered-shoulder-pads-sm.png);
+  }
   .bg-\[url\(assets\/legionnaire-powered-shoulder-pads\.png\)\] {
     background-image: url(assets/legionnaire-powered-shoulder-pads.png);
+  }
+  .bg-\[url\(assets\/legionnaire-powered-torso-armor-sm\.png\)\] {
+    background-image: url(assets/legionnaire-powered-torso-armor-sm.png);
   }
   .bg-\[url\(assets\/legionnaire-powered-torso-armor\.png\)\] {
     background-image: url(assets/legionnaire-powered-torso-armor.png);
   }
+  .bg-\[url\(assets\/locans-defense-arm-pads-sm\.png\)\] {
+    background-image: url(assets/locans-defense-arm-pads-sm.png);
+  }
   .bg-\[url\(assets\/locans-defense-arm-pads\.png\)\] {
     background-image: url(assets/locans-defense-arm-pads.png);
+  }
+  .bg-\[url\(assets\/locans-defense-gloves-sm\.png\)\] {
+    background-image: url(assets/locans-defense-gloves-sm.png);
   }
   .bg-\[url\(assets\/locans-defense-gloves\.png\)\] {
     background-image: url(assets/locans-defense-gloves.png);
   }
+  .bg-\[url\(assets\/locans-defense-helmet-sm\.png\)\] {
+    background-image: url(assets/locans-defense-helmet-sm.png);
+  }
   .bg-\[url\(assets\/locans-defense-helmet\.png\)\] {
     background-image: url(assets/locans-defense-helmet.png);
+  }
+  .bg-\[url\(assets\/locans-defense-leg-pads-sm\.png\)\] {
+    background-image: url(assets/locans-defense-leg-pads-sm.png);
   }
   .bg-\[url\(assets\/locans-defense-leg-pads\.png\)\] {
     background-image: url(assets/locans-defense-leg-pads.png);
   }
+  .bg-\[url\(assets\/locans-defense-shoulder-pads-sm\.png\)\] {
+    background-image: url(assets/locans-defense-shoulder-pads-sm.png);
+  }
   .bg-\[url\(assets\/locans-defense-shoulder-pads\.png\)\] {
     background-image: url(assets/locans-defense-shoulder-pads.png);
+  }
+  .bg-\[url\(assets\/locans-defense-torso-armor-sm\.png\)\] {
+    background-image: url(assets/locans-defense-torso-armor-sm.png);
   }
   .bg-\[url\(assets\/locans-defense-torso-armor\.png\)\] {
     background-image: url(assets/locans-defense-torso-armor.png);
   }
+  .bg-\[url\(assets\/locans-ethereal-arm-pads-sm\.png\)\] {
+    background-image: url(assets/locans-ethereal-arm-pads-sm.png);
+  }
   .bg-\[url\(assets\/locans-ethereal-arm-pads\.png\)\] {
     background-image: url(assets/locans-ethereal-arm-pads.png);
+  }
+  .bg-\[url\(assets\/locans-ethereal-gloves-sm\.png\)\] {
+    background-image: url(assets/locans-ethereal-gloves-sm.png);
   }
   .bg-\[url\(assets\/locans-ethereal-gloves\.png\)\] {
     background-image: url(assets/locans-ethereal-gloves.png);
   }
+  .bg-\[url\(assets\/locans-ethereal-helmet-sm\.png\)\] {
+    background-image: url(assets/locans-ethereal-helmet-sm.png);
+  }
   .bg-\[url\(assets\/locans-ethereal-helmet\.png\)\] {
     background-image: url(assets/locans-ethereal-helmet.png);
+  }
+  .bg-\[url\(assets\/locans-ethereal-leg-pads-sm\.png\)\] {
+    background-image: url(assets/locans-ethereal-leg-pads-sm.png);
   }
   .bg-\[url\(assets\/locans-ethereal-leg-pads\.png\)\] {
     background-image: url(assets/locans-ethereal-leg-pads.png);
   }
+  .bg-\[url\(assets\/locans-ethereal-shoulder-pads-sm\.png\)\] {
+    background-image: url(assets/locans-ethereal-shoulder-pads-sm.png);
+  }
   .bg-\[url\(assets\/locans-ethereal-shoulder-pads\.png\)\] {
     background-image: url(assets/locans-ethereal-shoulder-pads.png);
+  }
+  .bg-\[url\(assets\/locans-ethereal-torso-armor-sm\.png\)\] {
+    background-image: url(assets/locans-ethereal-torso-armor-sm.png);
   }
   .bg-\[url\(assets\/locans-ethereal-torso-armor\.png\)\] {
     background-image: url(assets/locans-ethereal-torso-armor.png);
   }
+  .bg-\[url\(assets\/locans-patrol-arm-pads-sm\.png\)\] {
+    background-image: url(assets/locans-patrol-arm-pads-sm.png);
+  }
   .bg-\[url\(assets\/locans-patrol-arm-pads\.png\)\] {
     background-image: url(assets/locans-patrol-arm-pads.png);
+  }
+  .bg-\[url\(assets\/locans-patrol-gloves-sm\.png\)\] {
+    background-image: url(assets/locans-patrol-gloves-sm.png);
   }
   .bg-\[url\(assets\/locans-patrol-gloves\.png\)\] {
     background-image: url(assets/locans-patrol-gloves.png);
   }
+  .bg-\[url\(assets\/locans-patrol-helmet-sm\.png\)\] {
+    background-image: url(assets/locans-patrol-helmet-sm.png);
+  }
   .bg-\[url\(assets\/locans-patrol-helmet\.png\)\] {
     background-image: url(assets/locans-patrol-helmet.png);
+  }
+  .bg-\[url\(assets\/locans-patrol-leg-pads-sm\.png\)\] {
+    background-image: url(assets/locans-patrol-leg-pads-sm.png);
   }
   .bg-\[url\(assets\/locans-patrol-leg-pads\.png\)\] {
     background-image: url(assets/locans-patrol-leg-pads.png);
   }
+  .bg-\[url\(assets\/locans-patrol-shoulder-pads-sm\.png\)\] {
+    background-image: url(assets/locans-patrol-shoulder-pads-sm.png);
+  }
   .bg-\[url\(assets\/locans-patrol-shoulder-pads\.png\)\] {
     background-image: url(assets/locans-patrol-shoulder-pads.png);
+  }
+  .bg-\[url\(assets\/locans-patrol-torso-armor-sm\.png\)\] {
+    background-image: url(assets/locans-patrol-torso-armor-sm.png);
   }
   .bg-\[url\(assets\/locans-patrol-torso-armor\.png\)\] {
     background-image: url(assets/locans-patrol-torso-armor.png);
   }
+  .bg-\[url\(assets\/locans-pressured-arm-pads-sm\.png\)\] {
+    background-image: url(assets/locans-pressured-arm-pads-sm.png);
+  }
   .bg-\[url\(assets\/locans-pressured-arm-pads\.png\)\] {
     background-image: url(assets/locans-pressured-arm-pads.png);
+  }
+  .bg-\[url\(assets\/locans-pressured-gloves-sm\.png\)\] {
+    background-image: url(assets/locans-pressured-gloves-sm.png);
   }
   .bg-\[url\(assets\/locans-pressured-gloves\.png\)\] {
     background-image: url(assets/locans-pressured-gloves.png);
   }
+  .bg-\[url\(assets\/locans-pressured-helmet-sm\.png\)\] {
+    background-image: url(assets/locans-pressured-helmet-sm.png);
+  }
   .bg-\[url\(assets\/locans-pressured-helmet\.png\)\] {
     background-image: url(assets/locans-pressured-helmet.png);
+  }
+  .bg-\[url\(assets\/locans-pressured-leg-pads-sm\.png\)\] {
+    background-image: url(assets/locans-pressured-leg-pads-sm.png);
   }
   .bg-\[url\(assets\/locans-pressured-leg-pads\.png\)\] {
     background-image: url(assets/locans-pressured-leg-pads.png);
   }
+  .bg-\[url\(assets\/locans-pressured-shoulder-pads-sm\.png\)\] {
+    background-image: url(assets/locans-pressured-shoulder-pads-sm.png);
+  }
   .bg-\[url\(assets\/locans-pressured-shoulder-pads\.png\)\] {
     background-image: url(assets/locans-pressured-shoulder-pads.png);
+  }
+  .bg-\[url\(assets\/locans-pressured-torso-armor-sm\.png\)\] {
+    background-image: url(assets/locans-pressured-torso-armor-sm.png);
   }
   .bg-\[url\(assets\/locans-pressured-torso-armor\.png\)\] {
     background-image: url(assets/locans-pressured-torso-armor.png);
   }
+  .bg-\[url\(assets\/locans-stabilized-arm-pads-sm\.png\)\] {
+    background-image: url(assets/locans-stabilized-arm-pads-sm.png);
+  }
   .bg-\[url\(assets\/locans-stabilized-arm-pads\.png\)\] {
     background-image: url(assets/locans-stabilized-arm-pads.png);
+  }
+  .bg-\[url\(assets\/locans-stabilized-helmet-sm\.png\)\] {
+    background-image: url(assets/locans-stabilized-helmet-sm.png);
   }
   .bg-\[url\(assets\/locans-stabilized-helmet\.png\)\] {
     background-image: url(assets/locans-stabilized-helmet.png);
   }
+  .bg-\[url\(assets\/locans-stabilized-leg-pads-sm\.png\)\] {
+    background-image: url(assets/locans-stabilized-leg-pads-sm.png);
+  }
   .bg-\[url\(assets\/locans-stabilized-leg-pads\.png\)\] {
     background-image: url(assets/locans-stabilized-leg-pads.png);
+  }
+  .bg-\[url\(assets\/locans-stabilized-shoulder-pads-sm\.png\)\] {
+    background-image: url(assets/locans-stabilized-shoulder-pads-sm.png);
   }
   .bg-\[url\(assets\/locans-stabilized-shoulder-pads\.png\)\] {
     background-image: url(assets/locans-stabilized-shoulder-pads.png);
   }
+  .bg-\[url\(assets\/locans-stabilized-torso-armor-sm\.png\)\] {
+    background-image: url(assets/locans-stabilized-torso-armor-sm.png);
+  }
   .bg-\[url\(assets\/locans-stabilized-torso-armor\.png\)\] {
     background-image: url(assets/locans-stabilized-torso-armor.png);
+  }
+  .bg-\[url\(assets\/metabolic-arm-pads-sm\.png\)\] {
+    background-image: url(assets/metabolic-arm-pads-sm.png);
   }
   .bg-\[url\(assets\/metabolic-arm-pads\.png\)\] {
     background-image: url(assets/metabolic-arm-pads.png);
   }
+  .bg-\[url\(assets\/metabolic-gloves-sm\.png\)\] {
+    background-image: url(assets/metabolic-gloves-sm.png);
+  }
   .bg-\[url\(assets\/metabolic-gloves\.png\)\] {
     background-image: url(assets/metabolic-gloves.png);
+  }
+  .bg-\[url\(assets\/metabolic-helmet-sm\.png\)\] {
+    background-image: url(assets/metabolic-helmet-sm.png);
   }
   .bg-\[url\(assets\/metabolic-helmet\.png\)\] {
     background-image: url(assets/metabolic-helmet.png);
   }
+  .bg-\[url\(assets\/metabolic-leg-pads-sm\.png\)\] {
+    background-image: url(assets/metabolic-leg-pads-sm.png);
+  }
   .bg-\[url\(assets\/metabolic-leg-pads\.png\)\] {
     background-image: url(assets/metabolic-leg-pads.png);
   }
+  .bg-\[url\(assets\/metabolic-shoulder-pads-sm\.png\)\] {
+    background-image: url(assets/metabolic-shoulder-pads-sm.png);
+  }
   .bg-\[url\(assets\/metabolic-shoulder-pads\.png\)\] {
     background-image: url(assets/metabolic-shoulder-pads.png);
+  }
+  .bg-\[url\(assets\/metabolic-torso-armor-sm\.png\)\] {
+    background-image: url(assets/metabolic-torso-armor-sm.png);
   }
   .bg-\[url\(assets\/metabolic-torso-armor\.png\)\] {
     background-image: url(assets/metabolic-torso-armor.png);
@@ -918,17 +1341,32 @@
   .bg-\[url\(assets\/miscSlot\.png\)\] {
     background-image: url(assets/miscSlot.png);
   }
+  .bg-\[url\(assets\/mt-27-ballistics-arm-pads-sm\.png\)\] {
+    background-image: url(assets/mt-27-ballistics-arm-pads-sm.png);
+  }
   .bg-\[url\(assets\/mt-27-ballistics-arm-pads\.png\)\] {
     background-image: url(assets/mt-27-ballistics-arm-pads.png);
+  }
+  .bg-\[url\(assets\/mt-27-ballistics-leg-pads-sm\.png\)\] {
+    background-image: url(assets/mt-27-ballistics-leg-pads-sm.png);
   }
   .bg-\[url\(assets\/mt-27-ballistics-leg-pads\.png\)\] {
     background-image: url(assets/mt-27-ballistics-leg-pads.png);
   }
+  .bg-\[url\(assets\/mt-27-ballistics-shoulder-pads-sm\.png\)\] {
+    background-image: url(assets/mt-27-ballistics-shoulder-pads-sm.png);
+  }
   .bg-\[url\(assets\/mt-27-ballistics-shoulder-pads\.png\)\] {
     background-image: url(assets/mt-27-ballistics-shoulder-pads.png);
   }
+  .bg-\[url\(assets\/mt-27-ballistics-torso-armor-sm\.png\)\] {
+    background-image: url(assets/mt-27-ballistics-torso-armor-sm.png);
+  }
   .bg-\[url\(assets\/mt-27-ballistics-torso-armor\.png\)\] {
     background-image: url(assets/mt-27-ballistics-torso-armor.png);
+  }
+  .bg-\[url\(assets\/mt-27-sm\.png\)\] {
+    background-image: url(assets/mt-27-sm.png);
   }
   .bg-\[url\(assets\/mt-27\.png\)\] {
     background-image: url(assets/mt-27.png);
@@ -945,83 +1383,164 @@
   .bg-\[url\(assets\/nano-bite-burger\.png\)\] {
     background-image: url(assets/nano-bite-burger.png);
   }
+  .bg-\[url\(assets\/nanotech-cognizant-arm-pads-sm\.png\)\] {
+    background-image: url(assets/nanotech-cognizant-arm-pads-sm.png);
+  }
   .bg-\[url\(assets\/nanotech-cognizant-arm-pads\.png\)\] {
     background-image: url(assets/nanotech-cognizant-arm-pads.png);
+  }
+  .bg-\[url\(assets\/nanotech-cognizant-gloves-sm\.png\)\] {
+    background-image: url(assets/nanotech-cognizant-gloves-sm.png);
   }
   .bg-\[url\(assets\/nanotech-cognizant-gloves\.png\)\] {
     background-image: url(assets/nanotech-cognizant-gloves.png);
   }
+  .bg-\[url\(assets\/nanotech-cognizant-helmet-sm\.png\)\] {
+    background-image: url(assets/nanotech-cognizant-helmet-sm.png);
+  }
   .bg-\[url\(assets\/nanotech-cognizant-helmet\.png\)\] {
     background-image: url(assets/nanotech-cognizant-helmet.png);
+  }
+  .bg-\[url\(assets\/nanotech-cognizant-leg-pads-sm\.png\)\] {
+    background-image: url(assets/nanotech-cognizant-leg-pads-sm.png);
   }
   .bg-\[url\(assets\/nanotech-cognizant-leg-pads\.png\)\] {
     background-image: url(assets/nanotech-cognizant-leg-pads.png);
   }
+  .bg-\[url\(assets\/nanotech-cognizant-shoulder-pads-sm\.png\)\] {
+    background-image: url(assets/nanotech-cognizant-shoulder-pads-sm.png);
+  }
   .bg-\[url\(assets\/nanotech-cognizant-shoulder-pads\.png\)\] {
     background-image: url(assets/nanotech-cognizant-shoulder-pads.png);
+  }
+  .bg-\[url\(assets\/nanotech-cognizant-torso-armor-sm\.png\)\] {
+    background-image: url(assets/nanotech-cognizant-torso-armor-sm.png);
   }
   .bg-\[url\(assets\/nanotech-cognizant-torso-armor\.png\)\] {
     background-image: url(assets/nanotech-cognizant-torso-armor.png);
   }
+  .bg-\[url\(assets\/nanotech-scout-arm-pads-sm\.png\)\] {
+    background-image: url(assets/nanotech-scout-arm-pads-sm.png);
+  }
   .bg-\[url\(assets\/nanotech-scout-arm-pads\.png\)\] {
     background-image: url(assets/nanotech-scout-arm-pads.png);
+  }
+  .bg-\[url\(assets\/nanotech-scout-gloves-sm\.png\)\] {
+    background-image: url(assets/nanotech-scout-gloves-sm.png);
   }
   .bg-\[url\(assets\/nanotech-scout-gloves\.png\)\] {
     background-image: url(assets/nanotech-scout-gloves.png);
   }
+  .bg-\[url\(assets\/nanotech-scout-helmet-sm\.png\)\] {
+    background-image: url(assets/nanotech-scout-helmet-sm.png);
+  }
   .bg-\[url\(assets\/nanotech-scout-helmet\.png\)\] {
     background-image: url(assets/nanotech-scout-helmet.png);
+  }
+  .bg-\[url\(assets\/nanotech-scout-leg-pads-sm\.png\)\] {
+    background-image: url(assets/nanotech-scout-leg-pads-sm.png);
   }
   .bg-\[url\(assets\/nanotech-scout-leg-pads\.png\)\] {
     background-image: url(assets/nanotech-scout-leg-pads.png);
   }
+  .bg-\[url\(assets\/nanotech-scout-shoulder-pads-sm\.png\)\] {
+    background-image: url(assets/nanotech-scout-shoulder-pads-sm.png);
+  }
   .bg-\[url\(assets\/nanotech-scout-shoulder-pads\.png\)\] {
     background-image: url(assets/nanotech-scout-shoulder-pads.png);
+  }
+  .bg-\[url\(assets\/nanotech-scout-torso-armor-sm\.png\)\] {
+    background-image: url(assets/nanotech-scout-torso-armor-sm.png);
   }
   .bg-\[url\(assets\/nanotech-scout-torso-armor\.png\)\] {
     background-image: url(assets/nanotech-scout-torso-armor.png);
   }
+  .bg-\[url\(assets\/nanotech-trauma-arm-pads-sm\.png\)\] {
+    background-image: url(assets/nanotech-trauma-arm-pads-sm.png);
+  }
   .bg-\[url\(assets\/nanotech-trauma-arm-pads\.png\)\] {
     background-image: url(assets/nanotech-trauma-arm-pads.png);
+  }
+  .bg-\[url\(assets\/nanotech-trauma-gloves-sm\.png\)\] {
+    background-image: url(assets/nanotech-trauma-gloves-sm.png);
   }
   .bg-\[url\(assets\/nanotech-trauma-gloves\.png\)\] {
     background-image: url(assets/nanotech-trauma-gloves.png);
   }
+  .bg-\[url\(assets\/nanotech-trauma-helmet-sm\.png\)\] {
+    background-image: url(assets/nanotech-trauma-helmet-sm.png);
+  }
   .bg-\[url\(assets\/nanotech-trauma-helmet\.png\)\] {
     background-image: url(assets/nanotech-trauma-helmet.png);
+  }
+  .bg-\[url\(assets\/nanotech-trauma-leg-pads-sm\.png\)\] {
+    background-image: url(assets/nanotech-trauma-leg-pads-sm.png);
   }
   .bg-\[url\(assets\/nanotech-trauma-leg-pads\.png\)\] {
     background-image: url(assets/nanotech-trauma-leg-pads.png);
   }
+  .bg-\[url\(assets\/nanotech-trauma-shoulder-pads-sm\.png\)\] {
+    background-image: url(assets/nanotech-trauma-shoulder-pads-sm.png);
+  }
   .bg-\[url\(assets\/nanotech-trauma-shoulder-pads\.png\)\] {
     background-image: url(assets/nanotech-trauma-shoulder-pads.png);
+  }
+  .bg-\[url\(assets\/nanotech-trauma-torso-armor-sm\.png\)\] {
+    background-image: url(assets/nanotech-trauma-torso-armor-sm.png);
   }
   .bg-\[url\(assets\/nanotech-trauma-torso-armor\.png\)\] {
     background-image: url(assets/nanotech-trauma-torso-armor.png);
   }
+  .bg-\[url\(assets\/nanotech-vitality-arm-pads-sm\.png\)\] {
+    background-image: url(assets/nanotech-vitality-arm-pads-sm.png);
+  }
   .bg-\[url\(assets\/nanotech-vitality-arm-pads\.png\)\] {
     background-image: url(assets/nanotech-vitality-arm-pads.png);
+  }
+  .bg-\[url\(assets\/nanotech-vitality-leg-pads-sm\.png\)\] {
+    background-image: url(assets/nanotech-vitality-leg-pads-sm.png);
   }
   .bg-\[url\(assets\/nanotech-vitality-leg-pads\.png\)\] {
     background-image: url(assets/nanotech-vitality-leg-pads.png);
   }
+  .bg-\[url\(assets\/nanotech-vitality-shoulder-pads-sm\.png\)\] {
+    background-image: url(assets/nanotech-vitality-shoulder-pads-sm.png);
+  }
   .bg-\[url\(assets\/nanotech-vitality-shoulder-pads\.png\)\] {
     background-image: url(assets/nanotech-vitality-shoulder-pads.png);
+  }
+  .bg-\[url\(assets\/nanotech-vitality-torso-armor-sm\.png\)\] {
+    background-image: url(assets/nanotech-vitality-torso-armor-sm.png);
   }
   .bg-\[url\(assets\/nanotech-vitality-torso-armor\.png\)\] {
     background-image: url(assets/nanotech-vitality-torso-armor.png);
   }
+  .bg-\[url\(assets\/nanotech-voltaic-arm-pads-sm\.png\)\] {
+    background-image: url(assets/nanotech-voltaic-arm-pads-sm.png);
+  }
   .bg-\[url\(assets\/nanotech-voltaic-arm-pads\.png\)\] {
     background-image: url(assets/nanotech-voltaic-arm-pads.png);
+  }
+  .bg-\[url\(assets\/nanotech-voltaic-gloves-sm\.png\)\] {
+    background-image: url(assets/nanotech-voltaic-gloves-sm.png);
   }
   .bg-\[url\(assets\/nanotech-voltaic-gloves\.png\)\] {
     background-image: url(assets/nanotech-voltaic-gloves.png);
   }
+  .bg-\[url\(assets\/nanotech-voltaic-helmet-sm\.png\)\] {
+    background-image: url(assets/nanotech-voltaic-helmet-sm.png);
+  }
   .bg-\[url\(assets\/nanotech-voltaic-helmet\.png\)\] {
     background-image: url(assets/nanotech-voltaic-helmet.png);
   }
+  .bg-\[url\(assets\/nanotech-voltaic-leg-pads-sm\.png\)\] {
+    background-image: url(assets/nanotech-voltaic-leg-pads-sm.png);
+  }
   .bg-\[url\(assets\/nanotech-voltaic-leg-pads\.png\)\] {
     background-image: url(assets/nanotech-voltaic-leg-pads.png);
+  }
+  .bg-\[url\(assets\/nanotech-voltaic-torso-armor-sm\.png\)\] {
+    background-image: url(assets/nanotech-voltaic-torso-armor-sm.png);
   }
   .bg-\[url\(assets\/nanotech-voltaic-torso-armor\.png\)\] {
     background-image: url(assets/nanotech-voltaic-torso-armor.png);
@@ -1029,89 +1548,176 @@
   .bg-\[url\(assets\/pp7Silx\.png\)\] {
     background-image: url(assets/pp7Silx.png);
   }
+  .bg-\[url\(assets\/premet-buffer-arm-pads-sm\.png\)\] {
+    background-image: url(assets/premet-buffer-arm-pads-sm.png);
+  }
   .bg-\[url\(assets\/premet-buffer-arm-pads\.png\)\] {
     background-image: url(assets/premet-buffer-arm-pads.png);
+  }
+  .bg-\[url\(assets\/premet-buffer-gloves-sm\.png\)\] {
+    background-image: url(assets/premet-buffer-gloves-sm.png);
   }
   .bg-\[url\(assets\/premet-buffer-gloves\.png\)\] {
     background-image: url(assets/premet-buffer-gloves.png);
   }
+  .bg-\[url\(assets\/premet-buffer-helmet-sm\.png\)\] {
+    background-image: url(assets/premet-buffer-helmet-sm.png);
+  }
   .bg-\[url\(assets\/premet-buffer-helmet\.png\)\] {
     background-image: url(assets/premet-buffer-helmet.png);
+  }
+  .bg-\[url\(assets\/premet-buffer-leg-pads-sm\.png\)\] {
+    background-image: url(assets/premet-buffer-leg-pads-sm.png);
   }
   .bg-\[url\(assets\/premet-buffer-leg-pads\.png\)\] {
     background-image: url(assets/premet-buffer-leg-pads.png);
   }
+  .bg-\[url\(assets\/premet-buffer-shoulder-pads-sm\.png\)\] {
+    background-image: url(assets/premet-buffer-shoulder-pads-sm.png);
+  }
   .bg-\[url\(assets\/premet-buffer-shoulder-pads\.png\)\] {
     background-image: url(assets/premet-buffer-shoulder-pads.png);
+  }
+  .bg-\[url\(assets\/premet-buffer-torso-armor-sm\.png\)\] {
+    background-image: url(assets/premet-buffer-torso-armor-sm.png);
   }
   .bg-\[url\(assets\/premet-buffer-torso-armor\.png\)\] {
     background-image: url(assets/premet-buffer-torso-armor.png);
   }
+  .bg-\[url\(assets\/premet-collision-arm-pads-sm\.png\)\] {
+    background-image: url(assets/premet-collision-arm-pads-sm.png);
+  }
   .bg-\[url\(assets\/premet-collision-arm-pads\.png\)\] {
     background-image: url(assets/premet-collision-arm-pads.png);
+  }
+  .bg-\[url\(assets\/premet-collision-gloves-sm\.png\)\] {
+    background-image: url(assets/premet-collision-gloves-sm.png);
   }
   .bg-\[url\(assets\/premet-collision-gloves\.png\)\] {
     background-image: url(assets/premet-collision-gloves.png);
   }
+  .bg-\[url\(assets\/premet-collision-helmet-sm\.png\)\] {
+    background-image: url(assets/premet-collision-helmet-sm.png);
+  }
   .bg-\[url\(assets\/premet-collision-helmet\.png\)\] {
     background-image: url(assets/premet-collision-helmet.png);
+  }
+  .bg-\[url\(assets\/premet-collision-leg-pads-sm\.png\)\] {
+    background-image: url(assets/premet-collision-leg-pads-sm.png);
   }
   .bg-\[url\(assets\/premet-collision-leg-pads\.png\)\] {
     background-image: url(assets/premet-collision-leg-pads.png);
   }
+  .bg-\[url\(assets\/premet-collision-shoulder-pads-sm\.png\)\] {
+    background-image: url(assets/premet-collision-shoulder-pads-sm.png);
+  }
   .bg-\[url\(assets\/premet-collision-shoulder-pads\.png\)\] {
     background-image: url(assets/premet-collision-shoulder-pads.png);
+  }
+  .bg-\[url\(assets\/premet-collison-torso-armor-sm\.png\)\] {
+    background-image: url(assets/premet-collison-torso-armor-sm.png);
   }
   .bg-\[url\(assets\/premet-collison-torso-armor\.png\)\] {
     background-image: url(assets/premet-collison-torso-armor.png);
   }
+  .bg-\[url\(assets\/premet-contact-arm-pads-sm\.png\)\] {
+    background-image: url(assets/premet-contact-arm-pads-sm.png);
+  }
   .bg-\[url\(assets\/premet-contact-arm-pads\.png\)\] {
     background-image: url(assets/premet-contact-arm-pads.png);
+  }
+  .bg-\[url\(assets\/premet-contact-gloves-sm\.png\)\] {
+    background-image: url(assets/premet-contact-gloves-sm.png);
   }
   .bg-\[url\(assets\/premet-contact-gloves\.png\)\] {
     background-image: url(assets/premet-contact-gloves.png);
   }
+  .bg-\[url\(assets\/premet-contact-helmet-sm\.png\)\] {
+    background-image: url(assets/premet-contact-helmet-sm.png);
+  }
   .bg-\[url\(assets\/premet-contact-helmet\.png\)\] {
     background-image: url(assets/premet-contact-helmet.png);
+  }
+  .bg-\[url\(assets\/premet-contact-leg-pads-sm\.png\)\] {
+    background-image: url(assets/premet-contact-leg-pads-sm.png);
   }
   .bg-\[url\(assets\/premet-contact-leg-pads\.png\)\] {
     background-image: url(assets/premet-contact-leg-pads.png);
   }
+  .bg-\[url\(assets\/premet-contact-shoulder-pads-sm\.png\)\] {
+    background-image: url(assets/premet-contact-shoulder-pads-sm.png);
+  }
   .bg-\[url\(assets\/premet-contact-shoulder-pads\.png\)\] {
     background-image: url(assets/premet-contact-shoulder-pads.png);
+  }
+  .bg-\[url\(assets\/premet-contact-torso-armor-sm\.png\)\] {
+    background-image: url(assets/premet-contact-torso-armor-sm.png);
   }
   .bg-\[url\(assets\/premet-contact-torso-armor\.png\)\] {
     background-image: url(assets/premet-contact-torso-armor.png);
   }
+  .bg-\[url\(assets\/premet-impact-arm-pads-sm\.png\)\] {
+    background-image: url(assets/premet-impact-arm-pads-sm.png);
+  }
   .bg-\[url\(assets\/premet-impact-arm-pads\.png\)\] {
     background-image: url(assets/premet-impact-arm-pads.png);
+  }
+  .bg-\[url\(assets\/premet-impact-gloves-sm\.png\)\] {
+    background-image: url(assets/premet-impact-gloves-sm.png);
   }
   .bg-\[url\(assets\/premet-impact-gloves\.png\)\] {
     background-image: url(assets/premet-impact-gloves.png);
   }
+  .bg-\[url\(assets\/premet-impact-helmet-sm\.png\)\] {
+    background-image: url(assets/premet-impact-helmet-sm.png);
+  }
   .bg-\[url\(assets\/premet-impact-helmet\.png\)\] {
     background-image: url(assets/premet-impact-helmet.png);
+  }
+  .bg-\[url\(assets\/premet-impact-leg-pads-sm\.png\)\] {
+    background-image: url(assets/premet-impact-leg-pads-sm.png);
   }
   .bg-\[url\(assets\/premet-impact-leg-pads\.png\)\] {
     background-image: url(assets/premet-impact-leg-pads.png);
   }
+  .bg-\[url\(assets\/premet-impact-shoulder-pads-sm\.png\)\] {
+    background-image: url(assets/premet-impact-shoulder-pads-sm.png);
+  }
   .bg-\[url\(assets\/premet-impact-shoulder-pads\.png\)\] {
     background-image: url(assets/premet-impact-shoulder-pads.png);
+  }
+  .bg-\[url\(assets\/premet-impact-torso-armor-sm\.png\)\] {
+    background-image: url(assets/premet-impact-torso-armor-sm.png);
   }
   .bg-\[url\(assets\/premet-impact-torso-armor\.png\)\] {
     background-image: url(assets/premet-impact-torso-armor.png);
   }
+  .bg-\[url\(assets\/premet-tremor-arm-pads-sm\.png\)\] {
+    background-image: url(assets/premet-tremor-arm-pads-sm.png);
+  }
   .bg-\[url\(assets\/premet-tremor-arm-pads\.png\)\] {
     background-image: url(assets/premet-tremor-arm-pads.png);
+  }
+  .bg-\[url\(assets\/premet-tremor-helmet-sm\.png\)\] {
+    background-image: url(assets/premet-tremor-helmet-sm.png);
   }
   .bg-\[url\(assets\/premet-tremor-helmet\.png\)\] {
     background-image: url(assets/premet-tremor-helmet.png);
   }
+  .bg-\[url\(assets\/premet-tremor-leg-pads-sm\.png\)\] {
+    background-image: url(assets/premet-tremor-leg-pads-sm.png);
+  }
   .bg-\[url\(assets\/premet-tremor-leg-pads\.png\)\] {
     background-image: url(assets/premet-tremor-leg-pads.png);
   }
+  .bg-\[url\(assets\/premet-tremor-shoulder-pads-sm\.png\)\] {
+    background-image: url(assets/premet-tremor-shoulder-pads-sm.png);
+  }
   .bg-\[url\(assets\/premet-tremor-shoulder-pads\.png\)\] {
     background-image: url(assets/premet-tremor-shoulder-pads.png);
+  }
+  .bg-\[url\(assets\/premet-tremor-torso-armor-sm\.png\)\] {
+    background-image: url(assets/premet-tremor-torso-armor-sm.png);
   }
   .bg-\[url\(assets\/premet-tremor-torso-armor\.png\)\] {
     background-image: url(assets/premet-tremor-torso-armor.png);
@@ -1122,95 +1728,188 @@
   .bg-\[url\(assets\/pulse-mineral-water\.png\)\] {
     background-image: url(assets/pulse-mineral-water.png);
   }
+  .bg-\[url\(assets\/pythica-durable-battle-arm-pads-sm\.png\)\] {
+    background-image: url(assets/pythica-durable-battle-arm-pads-sm.png);
+  }
   .bg-\[url\(assets\/pythica-durable-battle-arm-pads\.png\)\] {
     background-image: url(assets/pythica-durable-battle-arm-pads.png);
+  }
+  .bg-\[url\(assets\/pythica-durable-battle-helmet-sm\.png\)\] {
+    background-image: url(assets/pythica-durable-battle-helmet-sm.png);
   }
   .bg-\[url\(assets\/pythica-durable-battle-helmet\.png\)\] {
     background-image: url(assets/pythica-durable-battle-helmet.png);
   }
+  .bg-\[url\(assets\/pythica-durable-battle-leg-pads-sm\.png\)\] {
+    background-image: url(assets/pythica-durable-battle-leg-pads-sm.png);
+  }
   .bg-\[url\(assets\/pythica-durable-battle-leg-pads\.png\)\] {
     background-image: url(assets/pythica-durable-battle-leg-pads.png);
+  }
+  .bg-\[url\(assets\/pythica-durable-battle-shoulder-pads-sm\.png\)\] {
+    background-image: url(assets/pythica-durable-battle-shoulder-pads-sm.png);
   }
   .bg-\[url\(assets\/pythica-durable-battle-shoulder-pads\.png\)\] {
     background-image: url(assets/pythica-durable-battle-shoulder-pads.png);
   }
+  .bg-\[url\(assets\/pythica-durable-battle-torso-armor-sm\.png\)\] {
+    background-image: url(assets/pythica-durable-battle-torso-armor-sm.png);
+  }
   .bg-\[url\(assets\/pythica-durable-battle-torso-armor\.png\)\] {
     background-image: url(assets/pythica-durable-battle-torso-armor.png);
+  }
+  .bg-\[url\(assets\/pythica-mobile-infantry-arm-pads-sm\.png\)\] {
+    background-image: url(assets/pythica-mobile-infantry-arm-pads-sm.png);
   }
   .bg-\[url\(assets\/pythica-mobile-infantry-arm-pads\.png\)\] {
     background-image: url(assets/pythica-mobile-infantry-arm-pads.png);
   }
+  .bg-\[url\(assets\/pythica-mobile-infantry-gloves-sm\.png\)\] {
+    background-image: url(assets/pythica-mobile-infantry-gloves-sm.png);
+  }
   .bg-\[url\(assets\/pythica-mobile-infantry-gloves\.png\)\] {
     background-image: url(assets/pythica-mobile-infantry-gloves.png);
+  }
+  .bg-\[url\(assets\/pythica-mobile-infantry-helmet-sm\.png\)\] {
+    background-image: url(assets/pythica-mobile-infantry-helmet-sm.png);
   }
   .bg-\[url\(assets\/pythica-mobile-infantry-helmet\.png\)\] {
     background-image: url(assets/pythica-mobile-infantry-helmet.png);
   }
+  .bg-\[url\(assets\/pythica-mobile-infantry-leg-pads-sm\.png\)\] {
+    background-image: url(assets/pythica-mobile-infantry-leg-pads-sm.png);
+  }
   .bg-\[url\(assets\/pythica-mobile-infantry-leg-pads\.png\)\] {
     background-image: url(assets/pythica-mobile-infantry-leg-pads.png);
+  }
+  .bg-\[url\(assets\/pythica-mobile-infantry-shoulder-pads-sm\.png\)\] {
+    background-image: url(assets/pythica-mobile-infantry-shoulder-pads-sm.png);
   }
   .bg-\[url\(assets\/pythica-mobile-infantry-shoulder-pads\.png\)\] {
     background-image: url(assets/pythica-mobile-infantry-shoulder-pads.png);
   }
+  .bg-\[url\(assets\/pythica-mobile-infantry-torso-armor-sm\.png\)\] {
+    background-image: url(assets/pythica-mobile-infantry-torso-armor-sm.png);
+  }
   .bg-\[url\(assets\/pythica-mobile-infantry-torso-armor\.png\)\] {
     background-image: url(assets/pythica-mobile-infantry-torso-armor.png);
+  }
+  .bg-\[url\(assets\/pythica-s1-arm-pads-sm\.png\)\] {
+    background-image: url(assets/pythica-s1-arm-pads-sm.png);
   }
   .bg-\[url\(assets\/pythica-s1-arm-pads\.png\)\] {
     background-image: url(assets/pythica-s1-arm-pads.png);
   }
+  .bg-\[url\(assets\/pythica-s1-gloves-sm\.png\)\] {
+    background-image: url(assets/pythica-s1-gloves-sm.png);
+  }
   .bg-\[url\(assets\/pythica-s1-gloves\.png\)\] {
     background-image: url(assets/pythica-s1-gloves.png);
+  }
+  .bg-\[url\(assets\/pythica-s1-helmet-sm\.png\)\] {
+    background-image: url(assets/pythica-s1-helmet-sm.png);
   }
   .bg-\[url\(assets\/pythica-s1-helmet\.png\)\] {
     background-image: url(assets/pythica-s1-helmet.png);
   }
+  .bg-\[url\(assets\/pythica-s1-leg-pads-sm\.png\)\] {
+    background-image: url(assets/pythica-s1-leg-pads-sm.png);
+  }
   .bg-\[url\(assets\/pythica-s1-leg-pads\.png\)\] {
     background-image: url(assets/pythica-s1-leg-pads.png);
+  }
+  .bg-\[url\(assets\/pythica-s1-shoulder-pads-sm\.png\)\] {
+    background-image: url(assets/pythica-s1-shoulder-pads-sm.png);
   }
   .bg-\[url\(assets\/pythica-s1-shoulder-pads\.png\)\] {
     background-image: url(assets/pythica-s1-shoulder-pads.png);
   }
+  .bg-\[url\(assets\/pythica-s1-torso-armor-sm\.png\)\] {
+    background-image: url(assets/pythica-s1-torso-armor-sm.png);
+  }
   .bg-\[url\(assets\/pythica-s1-torso-armor\.png\)\] {
     background-image: url(assets/pythica-s1-torso-armor.png);
+  }
+  .bg-\[url\(assets\/pythica-special-operations-arm-pads-sm\.png\)\] {
+    background-image: url(assets/pythica-special-operations-arm-pads-sm.png);
   }
   .bg-\[url\(assets\/pythica-special-operations-arm-pads\.png\)\] {
     background-image: url(assets/pythica-special-operations-arm-pads.png);
   }
+  .bg-\[url\(assets\/pythica-special-operations-gloves-sm\.png\)\] {
+    background-image: url(assets/pythica-special-operations-gloves-sm.png);
+  }
   .bg-\[url\(assets\/pythica-special-operations-gloves\.png\)\] {
     background-image: url(assets/pythica-special-operations-gloves.png);
+  }
+  .bg-\[url\(assets\/pythica-special-operations-helmet-sm\.png\)\] {
+    background-image: url(assets/pythica-special-operations-helmet-sm.png);
   }
   .bg-\[url\(assets\/pythica-special-operations-helmet\.png\)\] {
     background-image: url(assets/pythica-special-operations-helmet.png);
   }
+  .bg-\[url\(assets\/pythica-special-operations-leg-pads-sm\.png\)\] {
+    background-image: url(assets/pythica-special-operations-leg-pads-sm.png);
+  }
   .bg-\[url\(assets\/pythica-special-operations-leg-pads\.png\)\] {
     background-image: url(assets/pythica-special-operations-leg-pads.png);
+  }
+  .bg-\[url\(assets\/pythica-special-operations-shoulder-pads-sm\.png\)\] {
+    background-image: url(assets/pythica-special-operations-shoulder-pads-sm.png);
   }
   .bg-\[url\(assets\/pythica-special-operations-shoulder-pads\.png\)\] {
     background-image: url(assets/pythica-special-operations-shoulder-pads.png);
   }
+  .bg-\[url\(assets\/pythica-special-operations-torso-armor-sm\.png\)\] {
+    background-image: url(assets/pythica-special-operations-torso-armor-sm.png);
+  }
   .bg-\[url\(assets\/pythica-special-operations-torso-armor\.png\)\] {
     background-image: url(assets/pythica-special-operations-torso-armor.png);
+  }
+  .bg-\[url\(assets\/pythica-sustained-battle-arm-pads-sm\.png\)\] {
+    background-image: url(assets/pythica-sustained-battle-arm-pads-sm.png);
   }
   .bg-\[url\(assets\/pythica-sustained-battle-arm-pads\.png\)\] {
     background-image: url(assets/pythica-sustained-battle-arm-pads.png);
   }
+  .bg-\[url\(assets\/pythica-sustained-battle-gloves-sm\.png\)\] {
+    background-image: url(assets/pythica-sustained-battle-gloves-sm.png);
+  }
   .bg-\[url\(assets\/pythica-sustained-battle-gloves\.png\)\] {
     background-image: url(assets/pythica-sustained-battle-gloves.png);
+  }
+  .bg-\[url\(assets\/pythica-sustained-battle-helmet-sm\.png\)\] {
+    background-image: url(assets/pythica-sustained-battle-helmet-sm.png);
   }
   .bg-\[url\(assets\/pythica-sustained-battle-helmet\.png\)\] {
     background-image: url(assets/pythica-sustained-battle-helmet.png);
   }
+  .bg-\[url\(assets\/pythica-sustained-battle-leg-pads-sm\.png\)\] {
+    background-image: url(assets/pythica-sustained-battle-leg-pads-sm.png);
+  }
   .bg-\[url\(assets\/pythica-sustained-battle-leg-pads\.png\)\] {
     background-image: url(assets/pythica-sustained-battle-leg-pads.png);
+  }
+  .bg-\[url\(assets\/pythica-sustained-battle-shoulder-pads-sm\.png\)\] {
+    background-image: url(assets/pythica-sustained-battle-shoulder-pads-sm.png);
   }
   .bg-\[url\(assets\/pythica-sustained-battle-shoulder-pads\.png\)\] {
     background-image: url(assets/pythica-sustained-battle-shoulder-pads.png);
   }
+  .bg-\[url\(assets\/pythica-sustained-battle-torso-armor-sm\.png\)\] {
+    background-image: url(assets/pythica-sustained-battle-torso-armor-sm.png);
+  }
   .bg-\[url\(assets\/pythica-sustained-battle-torso-armor\.png\)\] {
     background-image: url(assets/pythica-sustained-battle-torso-armor.png);
   }
+  .bg-\[url\(assets\/resAmp-sm\.png\)\] {
+    background-image: url(assets/resAmp-sm.png);
+  }
   .bg-\[url\(assets\/resAmp\.png\)\] {
     background-image: url(assets/resAmp.png);
+  }
+  .bg-\[url\(assets\/shield-implant-sm\.png\)\] {
+    background-image: url(assets/shield-implant-sm.png);
   }
   .bg-\[url\(assets\/shield-implant\.png\)\] {
     background-image: url(assets/shield-implant.png);
@@ -1227,6 +1926,12 @@
   .bg-\[url\(assets\/small-medikit\.png\)\] {
     background-image: url(assets/small-medikit.png);
   }
+  .bg-\[url\(assets\/stamina-amp-md\.png\)\] {
+    background-image: url(assets/stamina-amp-md.png);
+  }
+  .bg-\[url\(assets\/stamina-amp-sm\.png\)\] {
+    background-image: url(assets/stamina-amp-sm.png);
+  }
   .bg-\[url\(assets\/stamina-amp\.png\)\] {
     background-image: url(assets/stamina-amp.png);
   }
@@ -1236,17 +1941,32 @@
   .bg-\[url\(assets\/standard-medikit\.png\)\] {
     background-image: url(assets/standard-medikit.png);
   }
+  .bg-\[url\(assets\/tactical-systems-arm-pads-sm\.png\)\] {
+    background-image: url(assets/tactical-systems-arm-pads-sm.png);
+  }
   .bg-\[url\(assets\/tactical-systems-arm-pads\.png\)\] {
     background-image: url(assets/tactical-systems-arm-pads.png);
+  }
+  .bg-\[url\(assets\/tactical-systems-helmet-sm\.png\)\] {
+    background-image: url(assets/tactical-systems-helmet-sm.png);
   }
   .bg-\[url\(assets\/tactical-systems-helmet\.png\)\] {
     background-image: url(assets/tactical-systems-helmet.png);
   }
+  .bg-\[url\(assets\/tactical-systems-leg-pads-sm\.png\)\] {
+    background-image: url(assets/tactical-systems-leg-pads-sm.png);
+  }
   .bg-\[url\(assets\/tactical-systems-leg-pads\.png\)\] {
     background-image: url(assets/tactical-systems-leg-pads.png);
   }
+  .bg-\[url\(assets\/tactical-systems-shoulder-pads-sm\.png\)\] {
+    background-image: url(assets/tactical-systems-shoulder-pads-sm.png);
+  }
   .bg-\[url\(assets\/tactical-systems-shoulder-pads\.png\)\] {
     background-image: url(assets/tactical-systems-shoulder-pads.png);
+  }
+  .bg-\[url\(assets\/tactical-systems-torso-armor-sm\.png\)\] {
+    background-image: url(assets/tactical-systems-torso-armor-sm.png);
   }
   .bg-\[url\(assets\/tactical-systems-torso-armor\.png\)\] {
     background-image: url(assets/tactical-systems-torso-armor.png);
@@ -1257,38 +1977,74 @@
   .bg-\[url\(assets\/torsoSlot\.png\)\] {
     background-image: url(assets/torsoSlot.png);
   }
+  .bg-\[url\(assets\/venom-arm-pads-sm\.png\)\] {
+    background-image: url(assets/venom-arm-pads-sm.png);
+  }
   .bg-\[url\(assets\/venom-arm-pads\.png\)\] {
     background-image: url(assets/venom-arm-pads.png);
+  }
+  .bg-\[url\(assets\/venom-gloves-sm\.png\)\] {
+    background-image: url(assets/venom-gloves-sm.png);
   }
   .bg-\[url\(assets\/venom-gloves\.png\)\] {
     background-image: url(assets/venom-gloves.png);
   }
+  .bg-\[url\(assets\/venom-helmet-sm\.png\)\] {
+    background-image: url(assets/venom-helmet-sm.png);
+  }
   .bg-\[url\(assets\/venom-helmet\.png\)\] {
     background-image: url(assets/venom-helmet.png);
+  }
+  .bg-\[url\(assets\/venom-leg-pads-sm\.png\)\] {
+    background-image: url(assets/venom-leg-pads-sm.png);
   }
   .bg-\[url\(assets\/venom-leg-pads\.png\)\] {
     background-image: url(assets/venom-leg-pads.png);
   }
+  .bg-\[url\(assets\/venom-shoulder-pads-sm\.png\)\] {
+    background-image: url(assets/venom-shoulder-pads-sm.png);
+  }
   .bg-\[url\(assets\/venom-shoulder-pads\.png\)\] {
     background-image: url(assets/venom-shoulder-pads.png);
+  }
+  .bg-\[url\(assets\/venom-torso-armor-sm\.png\)\] {
+    background-image: url(assets/venom-torso-armor-sm.png);
   }
   .bg-\[url\(assets\/venom-torso-armor\.png\)\] {
     background-image: url(assets/venom-torso-armor.png);
   }
+  .bg-\[url\(assets\/xenotech-expeditionary-arm-pads-sm\.png\)\] {
+    background-image: url(assets/xenotech-expeditionary-arm-pads-sm.png);
+  }
   .bg-\[url\(assets\/xenotech-expeditionary-arm-pads\.png\)\] {
     background-image: url(assets/xenotech-expeditionary-arm-pads.png);
+  }
+  .bg-\[url\(assets\/xenotech-expeditionary-gloves-sm\.png\)\] {
+    background-image: url(assets/xenotech-expeditionary-gloves-sm.png);
   }
   .bg-\[url\(assets\/xenotech-expeditionary-gloves\.png\)\] {
     background-image: url(assets/xenotech-expeditionary-gloves.png);
   }
+  .bg-\[url\(assets\/xenotech-expeditionary-helmet-sm\.png\)\] {
+    background-image: url(assets/xenotech-expeditionary-helmet-sm.png);
+  }
   .bg-\[url\(assets\/xenotech-expeditionary-helmet\.png\)\] {
     background-image: url(assets/xenotech-expeditionary-helmet.png);
+  }
+  .bg-\[url\(assets\/xenotech-expeditionary-leg-pads-sm\.png\)\] {
+    background-image: url(assets/xenotech-expeditionary-leg-pads-sm.png);
   }
   .bg-\[url\(assets\/xenotech-expeditionary-leg-pads\.png\)\] {
     background-image: url(assets/xenotech-expeditionary-leg-pads.png);
   }
+  .bg-\[url\(assets\/xenotech-expeditionary-shoulder-pads-sm\.png\)\] {
+    background-image: url(assets/xenotech-expeditionary-shoulder-pads-sm.png);
+  }
   .bg-\[url\(assets\/xenotech-expeditionary-shoulder-pads\.png\)\] {
     background-image: url(assets/xenotech-expeditionary-shoulder-pads.png);
+  }
+  .bg-\[url\(assets\/xenotech-expeditionary-torso-armor-sm\.png\)\] {
+    background-image: url(assets/xenotech-expeditionary-torso-armor-sm.png);
   }
   .bg-\[url\(assets\/xenotech-expeditionary-torso-armor\.png\)\] {
     background-image: url(assets/xenotech-expeditionary-torso-armor.png);
@@ -1336,6 +2092,9 @@
   }
   .opacity-80 {
     opacity: 80%;
+  }
+  .opacity-100 {
+    opacity: 100%;
   }
   .transition-colors {
     transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;
@@ -1413,6 +2172,11 @@
       right: calc(var(--spacing) * 140);
     }
   }
+  .lg\:mx-1 {
+    @media (width >= 64rem) {
+      margin-inline: calc(var(--spacing) * 1);
+    }
+  }
   .lg\:mx-3 {
     @media (width >= 64rem) {
       margin-inline: calc(var(--spacing) * 3);
@@ -1431,6 +2195,11 @@
   .lg\:mt-27 {
     @media (width >= 64rem) {
       margin-top: calc(var(--spacing) * 27);
+    }
+  }
+  .lg\:mt-55 {
+    @media (width >= 64rem) {
+      margin-top: calc(var(--spacing) * 55);
     }
   }
   .lg\:mb-0 {
@@ -1468,6 +2237,16 @@
       height: 24px;
     }
   }
+  .lg\:h-\[90px\] {
+    @media (width >= 64rem) {
+      height: 90px;
+    }
+  }
+  .lg\:h-\[120px\] {
+    @media (width >= 64rem) {
+      height: 120px;
+    }
+  }
   .lg\:h-full {
     @media (width >= 64rem) {
       height: 100%;
@@ -1488,6 +2267,16 @@
       width: 24px;
     }
   }
+  .lg\:w-\[90px\] {
+    @media (width >= 64rem) {
+      width: 90px;
+    }
+  }
+  .lg\:w-\[275px\] {
+    @media (width >= 64rem) {
+      width: 275px;
+    }
+  }
   .lg\:w-full {
     @media (width >= 64rem) {
       width: 100%;
@@ -1503,9 +2292,24 @@
       background-image: url(./assets/importLG.png);
     }
   }
+  .lg\:bg-\[url\(assets\/PP7xs-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/PP7xs-md.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/advanced-civilian-arm-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/advanced-civilian-arm-pads-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/advanced-civilian-arm-padslg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/advanced-civilian-arm-padslg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/advanced-civilian-helmet-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/advanced-civilian-helmet-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/advanced-civilian-helmetlg\.png\)\] {
@@ -1513,9 +2317,19 @@
       background-image: url(assets/advanced-civilian-helmetlg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/advanced-civilian-leg-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/advanced-civilian-leg-pads-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/advanced-civilian-leg-padslg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/advanced-civilian-leg-padslg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/advanced-civilian-shoulder-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/advanced-civilian-shoulder-pads-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/advanced-civilian-shoulder-padslg\.png\)\] {
@@ -1523,9 +2337,19 @@
       background-image: url(assets/advanced-civilian-shoulder-padslg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/advanced-civilian-torso-armor-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/advanced-civilian-torso-armor-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/advanced-civilian-torso-armorlg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/advanced-civilian-torso-armorlg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/aquatican-brew-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/aquatican-brew-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/aquatican-brewlg\.png\)\] {
@@ -1533,9 +2357,19 @@
       background-image: url(assets/aquatican-brewlg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/aramid-altered-arm-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/aramid-altered-arm-pads-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/aramid-altered-arm-padslg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/aramid-altered-arm-padslg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/aramid-altered-leg-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/aramid-altered-leg-pads-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/aramid-altered-leg-padslg\.png\)\] {
@@ -1543,9 +2377,19 @@
       background-image: url(assets/aramid-altered-leg-padslg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/aramid-altered-shoulder-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/aramid-altered-shoulder-pads-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/aramid-altered-shoulder-padslg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/aramid-altered-shoulder-padslg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/aramid-altered-torso-armor-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/aramid-altered-torso-armor-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/aramid-altered-torso-armorlg\.png\)\] {
@@ -1553,9 +2397,19 @@
       background-image: url(assets/aramid-altered-torso-armorlg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/aramid-basic-arm-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/aramid-basic-arm-pads-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/aramid-basic-arm-padslg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/aramid-basic-arm-padslg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/aramid-basic-gloves-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/aramid-basic-gloves-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/aramid-basic-gloveslg\.png\)\] {
@@ -1563,9 +2417,19 @@
       background-image: url(assets/aramid-basic-gloveslg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/aramid-basic-helmet-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/aramid-basic-helmet-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/aramid-basic-helmetlg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/aramid-basic-helmetlg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/aramid-basic-leg-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/aramid-basic-leg-pads-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/aramid-basic-leg-padslg\.png\)\] {
@@ -1573,9 +2437,19 @@
       background-image: url(assets/aramid-basic-leg-padslg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/aramid-basic-shoulder-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/aramid-basic-shoulder-pads-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/aramid-basic-shoulder-padslg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/aramid-basic-shoulder-padslg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/aramid-basic-torso-armor-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/aramid-basic-torso-armor-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/aramid-basic-torso-armorlg\.png\)\] {
@@ -1583,9 +2457,19 @@
       background-image: url(assets/aramid-basic-torso-armorlg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/aramid-modified-arm-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/aramid-modified-arm-pads-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/aramid-modified-arm-padslg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/aramid-modified-arm-padslg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/aramid-modified-gloves-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/aramid-modified-gloves-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/aramid-modified-gloveslg\.png\)\] {
@@ -1593,9 +2477,19 @@
       background-image: url(assets/aramid-modified-gloveslg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/aramid-modified-helmet-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/aramid-modified-helmet-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/aramid-modified-helmetlg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/aramid-modified-helmetlg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/aramid-modified-leg-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/aramid-modified-leg-pads-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/aramid-modified-leg-padslg\.png\)\] {
@@ -1603,14 +2497,29 @@
       background-image: url(assets/aramid-modified-leg-padslg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/aramid-modified-shoulder-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/aramid-modified-shoulder-pads-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/aramid-modified-shoulder-padslg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/aramid-modified-shoulder-padslg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/aramid-modified-torso-armor-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/aramid-modified-torso-armor-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/aramid-modified-torso-armorlg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/aramid-modified-torso-armorlg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/armSlot-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/armSlot-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/armSlotLG\.png\)\] {
@@ -1623,9 +2532,19 @@
       background-image: url(assets/backgroundLG.png);
     }
   }
+  .lg\:bg-\[url\(assets\/battle-medikit-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/battle-medikit-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/battle-medikitlg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/battle-medikitlg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/biocell-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/biocell-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/biocelllg\.png\)\] {
@@ -1638,9 +2557,19 @@
       background-image: url(assets/chartlg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/delta-powered-arm-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/delta-powered-arm-pads-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/delta-powered-arm-padslg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/delta-powered-arm-padslg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/delta-powered-gloves-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/delta-powered-gloves-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/delta-powered-gloveslg\.png\)\] {
@@ -1648,9 +2577,19 @@
       background-image: url(assets/delta-powered-gloveslg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/delta-powered-helmet-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/delta-powered-helmet-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/delta-powered-helmetlg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/delta-powered-helmetlg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/delta-powered-leg-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/delta-powered-leg-pads-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/delta-powered-leg-padslg\.png\)\] {
@@ -1658,9 +2597,19 @@
       background-image: url(assets/delta-powered-leg-padslg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/delta-powered-shoulder-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/delta-powered-shoulder-pads-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/delta-powered-shoulder-padslg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/delta-powered-shoulder-padslg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/delta-powered-torso-armor-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/delta-powered-torso-armor-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/delta-powered-torso-armorlg\.png\)\] {
@@ -1668,9 +2617,19 @@
       background-image: url(assets/delta-powered-torso-armorlg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/detox-combat-arm-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/detox-combat-arm-pads-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/detox-combat-arm-padslg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/detox-combat-arm-padslg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/detox-combat-gloves-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/detox-combat-gloves-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/detox-combat-gloveslg\.png\)\] {
@@ -1678,9 +2637,19 @@
       background-image: url(assets/detox-combat-gloveslg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/detox-combat-helmet-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/detox-combat-helmet-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/detox-combat-helmetlg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/detox-combat-helmetlg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/detox-combat-leg-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/detox-combat-leg-pads-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/detox-combat-leg-padslg\.png\)\] {
@@ -1688,9 +2657,19 @@
       background-image: url(assets/detox-combat-leg-padslg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/detox-combat-shoulder-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/detox-combat-shoulder-pads-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/detox-combat-shoulder-padslg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/detox-combat-shoulder-padslg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/detox-combat-torso-armor-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/detox-combat-torso-armor-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/detox-combat-torso-armorlg\.png\)\] {
@@ -1698,9 +2677,19 @@
       background-image: url(assets/detox-combat-torso-armorlg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/dilatant-46b-arm-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/dilatant-46b-arm-pads-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/dilatant-46b-arm-padslg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/dilatant-46b-arm-padslg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/dilatant-46b-gloves-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/dilatant-46b-gloves-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/dilatant-46b-gloveslg\.png\)\] {
@@ -1708,9 +2697,19 @@
       background-image: url(assets/dilatant-46b-gloveslg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/dilatant-46b-helmet-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/dilatant-46b-helmet-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/dilatant-46b-helmetlg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/dilatant-46b-helmetlg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/dilatant-46b-leg-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/dilatant-46b-leg-pads-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/dilatant-46b-leg-padslg\.png\)\] {
@@ -1718,9 +2717,19 @@
       background-image: url(assets/dilatant-46b-leg-padslg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/dilatant-46b-shoulder-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/dilatant-46b-shoulder-pads-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/dilatant-46b-shoulder-padslg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/dilatant-46b-shoulder-padslg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/dilatant-46b-torso-armor-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/dilatant-46b-torso-armor-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/dilatant-46b-torso-armorlg\.png\)\] {
@@ -1728,9 +2737,19 @@
       background-image: url(assets/dilatant-46b-torso-armorlg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/dilatant-50b-arm-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/dilatant-50b-arm-pads-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/dilatant-50b-arm-padslg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/dilatant-50b-arm-padslg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/dilatant-50b-gloves-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/dilatant-50b-gloves-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/dilatant-50b-gloveslg\.png\)\] {
@@ -1738,9 +2757,19 @@
       background-image: url(assets/dilatant-50b-gloveslg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/dilatant-50b-helmet-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/dilatant-50b-helmet-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/dilatant-50b-helmetlg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/dilatant-50b-helmetlg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/dilatant-50b-leg-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/dilatant-50b-leg-pads-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/dilatant-50b-leg-padslg\.png\)\] {
@@ -1748,9 +2777,19 @@
       background-image: url(assets/dilatant-50b-leg-padslg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/dilatant-50b-shoulder-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/dilatant-50b-shoulder-pads-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/dilatant-50b-shoulder-padslg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/dilatant-50b-shoulder-padslg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/dilatant-50b-torso-armor-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/dilatant-50b-torso-armor-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/dilatant-50b-torso-armorlg\.png\)\] {
@@ -1758,14 +2797,29 @@
       background-image: url(assets/dilatant-50b-torso-armorlg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/doublecheese-mystique-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/doublecheese-mystique-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/doublecheese-mystiquelg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/doublecheese-mystiquelg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/emergency-medikit-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/emergency-medikit-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/emergency-medikitlg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/emergency-medikitlg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/envirotech-gloves-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/envirotech-gloves-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/envirotech-gloveslg\.png\)\] {
@@ -1778,9 +2832,19 @@
       background-image: url(assets/fakeCoca1LG.png);
     }
   }
+  .lg\:bg-\[url\(assets\/firstborn-powered-arm-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/firstborn-powered-arm-pads-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/firstborn-powered-arm-padslg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/firstborn-powered-arm-padslg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/firstborn-powered-gloves-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/firstborn-powered-gloves-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/firstborn-powered-gloveslg\.png\)\] {
@@ -1788,9 +2852,19 @@
       background-image: url(assets/firstborn-powered-gloveslg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/firstborn-powered-helmet-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/firstborn-powered-helmet-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/firstborn-powered-helmetlg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/firstborn-powered-helmetlg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/firstborn-powered-leg-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/firstborn-powered-leg-pads-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/firstborn-powered-leg-padslg\.png\)\] {
@@ -1798,9 +2872,19 @@
       background-image: url(assets/firstborn-powered-leg-padslg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/firstborn-powered-shoulders-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/firstborn-powered-shoulders-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/firstborn-powered-shoulderslg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/firstborn-powered-shoulderslg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/firstborn-powered-torso-armor-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/firstborn-powered-torso-armor-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/firstborn-powered-torso-armorlg\.png\)\] {
@@ -1808,9 +2892,19 @@
       background-image: url(assets/firstborn-powered-torso-armorlg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/flying-orange-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/flying-orange-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/flying-orangelg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/flying-orangelg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/ginnan-sushi-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/ginnan-sushi-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/ginnan-sushilg\.png\)\] {
@@ -1818,9 +2912,19 @@
       background-image: url(assets/ginnan-sushilg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/handSlot-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/handSlot-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/handSlotLG\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/handSlotLG.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/havoc-powered-arm-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/havoc-powered-arm-pads-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/havoc-powered-arm-padslg\.png\)\] {
@@ -1828,9 +2932,19 @@
       background-image: url(assets/havoc-powered-arm-padslg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/havoc-powered-gloves-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/havoc-powered-gloves-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/havoc-powered-gloveslg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/havoc-powered-gloveslg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/havoc-powered-helmet-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/havoc-powered-helmet-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/havoc-powered-helmetlg\.png\)\] {
@@ -1838,9 +2952,19 @@
       background-image: url(assets/havoc-powered-helmetlg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/havoc-powered-leg-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/havoc-powered-leg-pads-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/havoc-powered-leg-padslg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/havoc-powered-leg-padslg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/havoc-powered-shoulder-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/havoc-powered-shoulder-pads-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/havoc-powered-shoulder-padslg\.png\)\] {
@@ -1848,9 +2972,19 @@
       background-image: url(assets/havoc-powered-shoulder-padslg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/havoc-powered-torso-armor-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/havoc-powered-torso-armor-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/havoc-powered-torso-armorlg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/havoc-powered-torso-armorlg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/headSlot-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/headSlot-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/headSlotLG\.png\)\] {
@@ -1858,9 +2992,19 @@
       background-image: url(assets/headSlotLG.png);
     }
   }
+  .lg\:bg-\[url\(assets\/hypobaric-arm-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/hypobaric-arm-pads-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/hypobaric-arm-padslg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/hypobaric-arm-padslg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/hypobaric-gloves-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/hypobaric-gloves-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/hypobaric-gloveslg\.png\)\] {
@@ -1868,9 +3012,19 @@
       background-image: url(assets/hypobaric-gloveslg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/hypobaric-helmet-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/hypobaric-helmet-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/hypobaric-helmetlg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/hypobaric-helmetlg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/hypobaric-leg-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/hypobaric-leg-pads-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/hypobaric-leg-padslg\.png\)\] {
@@ -1878,9 +3032,19 @@
       background-image: url(assets/hypobaric-leg-padslg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/hypobaric-shoulder-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/hypobaric-shoulder-pads-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/hypobaric-shoulder-padslg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/hypobaric-shoulder-padslg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/hypobaric-torso-armor-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/hypobaric-torso-armor-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/hypobaric-torso-armorlg\.png\)\] {
@@ -1888,9 +3052,19 @@
       background-image: url(assets/hypobaric-torso-armorlg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/infensus-essentials-arm-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/infensus-essentials-arm-pads-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/infensus-essentials-arm-padslg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/infensus-essentials-arm-padslg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/infensus-essentials-gloves-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/infensus-essentials-gloves-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/infensus-essentials-gloveslg\.png\)\] {
@@ -1898,9 +3072,19 @@
       background-image: url(assets/infensus-essentials-gloveslg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/infensus-essentials-helmet-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/infensus-essentials-helmet-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/infensus-essentials-helmetlg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/infensus-essentials-helmetlg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/infensus-essentials-leg-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/infensus-essentials-leg-pads-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/infensus-essentials-leg-padslg\.png\)\] {
@@ -1908,9 +3092,19 @@
       background-image: url(assets/infensus-essentials-leg-padslg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/infensus-essentials-shoulder-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/infensus-essentials-shoulder-pads-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/infensus-essentials-shoulder-padslg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/infensus-essentials-shoulder-padslg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/infensus-essentials-torso-armor-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/infensus-essentials-torso-armor-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/infensus-essentials-torso-armorlg\.png\)\] {
@@ -1918,9 +3112,19 @@
       background-image: url(assets/infensus-essentials-torso-armorlg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/infensus-heavy-arm-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/infensus-heavy-arm-pads-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/infensus-heavy-arm-padslg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/infensus-heavy-arm-padslg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/infensus-heavy-gloves-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/infensus-heavy-gloves-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/infensus-heavy-gloveslg\.png\)\] {
@@ -1928,9 +3132,19 @@
       background-image: url(assets/infensus-heavy-gloveslg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/infensus-heavy-helmet-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/infensus-heavy-helmet-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/infensus-heavy-helmetlg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/infensus-heavy-helmetlg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/infensus-heavy-leg-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/infensus-heavy-leg-pads-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/infensus-heavy-leg-padslg\.png\)\] {
@@ -1938,9 +3152,19 @@
       background-image: url(assets/infensus-heavy-leg-padslg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/infensus-heavy-shoulder-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/infensus-heavy-shoulder-pads-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/infensus-heavy-shoulder-padslg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/infensus-heavy-shoulder-padslg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/infensus-heavy-torso-armor-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/infensus-heavy-torso-armor-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/infensus-heavy-torso-armorlg\.png\)\] {
@@ -1948,9 +3172,19 @@
       background-image: url(assets/infensus-heavy-torso-armorlg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/infensus-minimalist-arm-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/infensus-minimalist-arm-pads-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/infensus-minimalist-arm-padslg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/infensus-minimalist-arm-padslg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/infensus-minimalist-gloves-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/infensus-minimalist-gloves-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/infensus-minimalist-gloveslg\.png\)\] {
@@ -1958,9 +3192,19 @@
       background-image: url(assets/infensus-minimalist-gloveslg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/infensus-minimalist-helmet-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/infensus-minimalist-helmet-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/infensus-minimalist-helmetlg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/infensus-minimalist-helmetlg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/infensus-minimalist-leg-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/infensus-minimalist-leg-pads-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/infensus-minimalist-leg-padslg\.png\)\] {
@@ -1968,9 +3212,19 @@
       background-image: url(assets/infensus-minimalist-leg-padslg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/infensus-minimalist-shoulder-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/infensus-minimalist-shoulder-pads-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/infensus-minimalist-shoulder-padslg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/infensus-minimalist-shoulder-padslg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/infensus-minimalist-torso-armor-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/infensus-minimalist-torso-armor-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/infensus-minimalist-torso-armorlg\.png\)\] {
@@ -1978,9 +3232,19 @@
       background-image: url(assets/infensus-minimalist-torso-armorlg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/infensus-shock-arm-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/infensus-shock-arm-pads-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/infensus-shock-arm-padslg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/infensus-shock-arm-padslg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/infensus-shock-gloves-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/infensus-shock-gloves-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/infensus-shock-gloveslg\.png\)\] {
@@ -1988,9 +3252,19 @@
       background-image: url(assets/infensus-shock-gloveslg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/infensus-shock-helmet-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/infensus-shock-helmet-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/infensus-shock-helmetlg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/infensus-shock-helmetlg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/infensus-shock-leg-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/infensus-shock-leg-pads-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/infensus-shock-leg-padslg\.png\)\] {
@@ -1998,9 +3272,19 @@
       background-image: url(assets/infensus-shock-leg-padslg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/infensus-shock-shoulder-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/infensus-shock-shoulder-pads-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/infensus-shock-shoulder-padslg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/infensus-shock-shoulder-padslg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/infensus-shock-torso-armor-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/infensus-shock-torso-armor-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/infensus-shock-torso-armorlg\.png\)\] {
@@ -2008,9 +3292,19 @@
       background-image: url(assets/infensus-shock-torso-armorlg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/infensus-x1-assault-arm-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/infensus-x1-assault-arm-pads-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/infensus-x1-assault-arm-padslg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/infensus-x1-assault-arm-padslg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/infensus-x1-assault-gloves-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/infensus-x1-assault-gloves-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/infensus-x1-assault-gloveslg\.png\)\] {
@@ -2018,9 +3312,19 @@
       background-image: url(assets/infensus-x1-assault-gloveslg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/infensus-x1-assault-leg-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/infensus-x1-assault-leg-pads-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/infensus-x1-assault-leg-padslg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/infensus-x1-assault-leg-padslg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/infensus-x1-assault-torso-armor-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/infensus-x1-assault-torso-armor-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/infensus-x1-assault-torso-armorlg\.png\)\] {
@@ -2028,9 +3332,19 @@
       background-image: url(assets/infensus-x1-assault-torso-armorlg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/infensus-x1-shoulder-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/infensus-x1-shoulder-pads-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/infensus-x1-shoulder-padslg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/infensus-x1-shoulder-padslg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/infensus-x2-assault-helmet-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/infensus-x2-assault-helmet-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/infensus-x2-assault-helmetlg\.png\)\] {
@@ -2038,9 +3352,19 @@
       background-image: url(assets/infensus-x2-assault-helmetlg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/infostyle-gloves-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/infostyle-gloves-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/infostyle-gloveslg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/infostyle-gloveslg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/infusion-gloves-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/infusion-gloves-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/infusion-gloveslg\.png\)\] {
@@ -2048,9 +3372,19 @@
       background-image: url(assets/infusion-gloveslg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/justicar-powered-arm-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/justicar-powered-arm-pads-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/justicar-powered-arm-padslg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/justicar-powered-arm-padslg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/justicar-powered-helmet-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/justicar-powered-helmet-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/justicar-powered-helmetlg\.png\)\] {
@@ -2058,9 +3392,19 @@
       background-image: url(assets/justicar-powered-helmetlg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/justicar-powered-leg-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/justicar-powered-leg-pads-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/justicar-powered-leg-padslg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/justicar-powered-leg-padslg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/justicar-powered-shoulder-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/justicar-powered-shoulder-pads-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/justicar-powered-shoulder-padslg\.png\)\] {
@@ -2068,9 +3412,19 @@
       background-image: url(assets/justicar-powered-shoulder-padslg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/justicar-powered-torso-armor-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/justicar-powered-torso-armor-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/justicar-powered-torso-armorlg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/justicar-powered-torso-armorlg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/leech-arm-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/leech-arm-pads-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/leech-arm-padslg\.png\)\] {
@@ -2078,9 +3432,19 @@
       background-image: url(assets/leech-arm-padslg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/leech-helmet-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/leech-helmet-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/leech-helmetlg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/leech-helmetlg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/leech-leg-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/leech-leg-pads-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/leech-leg-padslg\.png\)\] {
@@ -2088,9 +3452,19 @@
       background-image: url(assets/leech-leg-padslg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/leech-shoulder-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/leech-shoulder-pads-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/leech-shoulder-padslg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/leech-shoulder-padslg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/leech-torso-armor-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/leech-torso-armor-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/leech-torso-armorlg\.png\)\] {
@@ -2098,9 +3472,19 @@
       background-image: url(assets/leech-torso-armorlg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/legSlot-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/legSlot-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/legSlotLG\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/legSlotLG.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/legionnaire-powered-arm-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/legionnaire-powered-arm-pads-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/legionnaire-powered-arm-padslg\.png\)\] {
@@ -2108,9 +3492,19 @@
       background-image: url(assets/legionnaire-powered-arm-padslg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/legionnaire-powered-gloves-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/legionnaire-powered-gloves-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/legionnaire-powered-gloveslg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/legionnaire-powered-gloveslg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/legionnaire-powered-helmet-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/legionnaire-powered-helmet-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/legionnaire-powered-helmetlg\.png\)\] {
@@ -2118,9 +3512,19 @@
       background-image: url(assets/legionnaire-powered-helmetlg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/legionnaire-powered-leg-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/legionnaire-powered-leg-pads-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/legionnaire-powered-leg-padslg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/legionnaire-powered-leg-padslg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/legionnaire-powered-shoulder-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/legionnaire-powered-shoulder-pads-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/legionnaire-powered-shoulder-padslg\.png\)\] {
@@ -2128,9 +3532,19 @@
       background-image: url(assets/legionnaire-powered-shoulder-padslg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/legionnaire-powered-torso-armor-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/legionnaire-powered-torso-armor-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/legionnaire-powered-torso-armorlg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/legionnaire-powered-torso-armorlg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/locans-defense-arm-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/locans-defense-arm-pads-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/locans-defense-arm-padslg\.png\)\] {
@@ -2138,9 +3552,19 @@
       background-image: url(assets/locans-defense-arm-padslg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/locans-defense-gloves-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/locans-defense-gloves-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/locans-defense-gloveslg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/locans-defense-gloveslg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/locans-defense-helmet-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/locans-defense-helmet-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/locans-defense-helmetlg\.png\)\] {
@@ -2148,9 +3572,19 @@
       background-image: url(assets/locans-defense-helmetlg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/locans-defense-leg-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/locans-defense-leg-pads-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/locans-defense-leg-padslg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/locans-defense-leg-padslg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/locans-defense-shoulder-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/locans-defense-shoulder-pads-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/locans-defense-shoulder-padslg\.png\)\] {
@@ -2158,9 +3592,19 @@
       background-image: url(assets/locans-defense-shoulder-padslg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/locans-defense-torso-armor-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/locans-defense-torso-armor-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/locans-defense-torso-armorlg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/locans-defense-torso-armorlg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/locans-ethereal-arm-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/locans-ethereal-arm-pads-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/locans-ethereal-arm-padslg\.png\)\] {
@@ -2168,9 +3612,19 @@
       background-image: url(assets/locans-ethereal-arm-padslg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/locans-ethereal-gloves-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/locans-ethereal-gloves-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/locans-ethereal-gloveslg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/locans-ethereal-gloveslg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/locans-ethereal-helmet-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/locans-ethereal-helmet-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/locans-ethereal-helmetlg\.png\)\] {
@@ -2178,9 +3632,19 @@
       background-image: url(assets/locans-ethereal-helmetlg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/locans-ethereal-leg-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/locans-ethereal-leg-pads-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/locans-ethereal-leg-padslg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/locans-ethereal-leg-padslg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/locans-ethereal-shoulder-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/locans-ethereal-shoulder-pads-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/locans-ethereal-shoulder-padslg\.png\)\] {
@@ -2188,9 +3652,19 @@
       background-image: url(assets/locans-ethereal-shoulder-padslg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/locans-ethereal-torso-armor-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/locans-ethereal-torso-armor-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/locans-ethereal-torso-armorlg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/locans-ethereal-torso-armorlg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/locans-patrol-arm-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/locans-patrol-arm-pads-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/locans-patrol-arm-padslg\.png\)\] {
@@ -2198,9 +3672,19 @@
       background-image: url(assets/locans-patrol-arm-padslg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/locans-patrol-gloves-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/locans-patrol-gloves-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/locans-patrol-gloveslg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/locans-patrol-gloveslg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/locans-patrol-helmet-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/locans-patrol-helmet-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/locans-patrol-helmetlg\.png\)\] {
@@ -2208,9 +3692,19 @@
       background-image: url(assets/locans-patrol-helmetlg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/locans-patrol-leg-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/locans-patrol-leg-pads-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/locans-patrol-leg-padslg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/locans-patrol-leg-padslg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/locans-patrol-shoulder-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/locans-patrol-shoulder-pads-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/locans-patrol-shoulder-padslg\.png\)\] {
@@ -2218,9 +3712,19 @@
       background-image: url(assets/locans-patrol-shoulder-padslg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/locans-patrol-torso-armor-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/locans-patrol-torso-armor-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/locans-patrol-torso-armorlg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/locans-patrol-torso-armorlg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/locans-pressured-arm-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/locans-pressured-arm-pads-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/locans-pressured-arm-padslg\.png\)\] {
@@ -2228,9 +3732,19 @@
       background-image: url(assets/locans-pressured-arm-padslg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/locans-pressured-gloves-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/locans-pressured-gloves-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/locans-pressured-gloveslg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/locans-pressured-gloveslg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/locans-pressured-helmet-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/locans-pressured-helmet-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/locans-pressured-helmetlg\.png\)\] {
@@ -2238,9 +3752,19 @@
       background-image: url(assets/locans-pressured-helmetlg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/locans-pressured-leg-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/locans-pressured-leg-pads-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/locans-pressured-leg-padslg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/locans-pressured-leg-padslg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/locans-pressured-shoulder-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/locans-pressured-shoulder-pads-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/locans-pressured-shoulder-padslg\.png\)\] {
@@ -2248,9 +3772,19 @@
       background-image: url(assets/locans-pressured-shoulder-padslg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/locans-pressured-torso-armor-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/locans-pressured-torso-armor-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/locans-pressured-torso-armorlg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/locans-pressured-torso-armorlg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/locans-stabilized-arm-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/locans-stabilized-arm-pads-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/locans-stabilized-arm-padslg\.png\)\] {
@@ -2258,9 +3792,19 @@
       background-image: url(assets/locans-stabilized-arm-padslg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/locans-stabilized-helmet-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/locans-stabilized-helmet-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/locans-stabilized-helmetlg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/locans-stabilized-helmetlg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/locans-stabilized-leg-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/locans-stabilized-leg-pads-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/locans-stabilized-leg-padslg\.png\)\] {
@@ -2268,9 +3812,19 @@
       background-image: url(assets/locans-stabilized-leg-padslg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/locans-stabilized-shoulder-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/locans-stabilized-shoulder-pads-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/locans-stabilized-shoulder-padslg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/locans-stabilized-shoulder-padslg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/locans-stabilized-torso-armor-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/locans-stabilized-torso-armor-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/locans-stabilized-torso-armorlg\.png\)\] {
@@ -2278,9 +3832,19 @@
       background-image: url(assets/locans-stabilized-torso-armorlg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/metabolic-arm-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/metabolic-arm-pads-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/metabolic-arm-padslg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/metabolic-arm-padslg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/metabolic-gloves-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/metabolic-gloves-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/metabolic-gloveslg\.png\)\] {
@@ -2288,9 +3852,19 @@
       background-image: url(assets/metabolic-gloveslg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/metabolic-helmet-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/metabolic-helmet-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/metabolic-helmetlg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/metabolic-helmetlg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/metabolic-leg-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/metabolic-leg-pads-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/metabolic-leg-padslg\.png\)\] {
@@ -2298,9 +3872,19 @@
       background-image: url(assets/metabolic-leg-padslg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/metabolic-shoulder-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/metabolic-shoulder-pads-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/metabolic-shoulder-padslg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/metabolic-shoulder-padslg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/metabolic-torso-armor-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/metabolic-torso-armor-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/metabolic-torso-armorlg\.png\)\] {
@@ -2308,9 +3892,19 @@
       background-image: url(assets/metabolic-torso-armorlg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/miscSlot-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/miscSlot-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/miscSlotLG\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/miscSlotLG.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/mt-27-ballistics-arm-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/mt-27-ballistics-arm-pads-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/mt-27-ballistics-arm-padslg\.png\)\] {
@@ -2318,9 +3912,19 @@
       background-image: url(assets/mt-27-ballistics-arm-padslg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/mt-27-ballistics-leg-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/mt-27-ballistics-leg-pads-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/mt-27-ballistics-leg-padslg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/mt-27-ballistics-leg-padslg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/mt-27-ballistics-shoulder-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/mt-27-ballistics-shoulder-pads-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/mt-27-ballistics-shoulder-padslg\.png\)\] {
@@ -2328,9 +3932,19 @@
       background-image: url(assets/mt-27-ballistics-shoulder-padslg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/mt-27-ballistics-torso-armor-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/mt-27-ballistics-torso-armor-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/mt-27-ballistics-torso-armorlg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/mt-27-ballistics-torso-armorlg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/mt-27-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/mt-27-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/mt-27lg\.png\)\] {
@@ -2338,9 +3952,19 @@
       background-image: url(assets/mt-27lg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/mystical-cola-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/mystical-cola-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/mystical-colalg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/mystical-colalg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/nano-bite-burger-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/nano-bite-burger-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/nano-bite-burgerlg\.png\)\] {
@@ -2348,9 +3972,19 @@
       background-image: url(assets/nano-bite-burgerlg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/nanotech-cognizant-arm-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/nanotech-cognizant-arm-pads-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/nanotech-cognizant-arm-padslg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/nanotech-cognizant-arm-padslg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/nanotech-cognizant-gloves-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/nanotech-cognizant-gloves-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/nanotech-cognizant-gloveslg\.png\)\] {
@@ -2358,9 +3992,19 @@
       background-image: url(assets/nanotech-cognizant-gloveslg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/nanotech-cognizant-helmet-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/nanotech-cognizant-helmet-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/nanotech-cognizant-helmetlg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/nanotech-cognizant-helmetlg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/nanotech-cognizant-leg-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/nanotech-cognizant-leg-pads-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/nanotech-cognizant-leg-padslg\.png\)\] {
@@ -2368,9 +4012,19 @@
       background-image: url(assets/nanotech-cognizant-leg-padslg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/nanotech-cognizant-shoulder-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/nanotech-cognizant-shoulder-pads-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/nanotech-cognizant-shoulder-padslg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/nanotech-cognizant-shoulder-padslg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/nanotech-cognizant-torso-armor-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/nanotech-cognizant-torso-armor-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/nanotech-cognizant-torso-armorlg\.png\)\] {
@@ -2378,9 +4032,19 @@
       background-image: url(assets/nanotech-cognizant-torso-armorlg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/nanotech-scout-arm-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/nanotech-scout-arm-pads-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/nanotech-scout-arm-padslg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/nanotech-scout-arm-padslg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/nanotech-scout-gloves-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/nanotech-scout-gloves-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/nanotech-scout-gloveslg\.png\)\] {
@@ -2388,9 +4052,19 @@
       background-image: url(assets/nanotech-scout-gloveslg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/nanotech-scout-helmet-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/nanotech-scout-helmet-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/nanotech-scout-helmetlg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/nanotech-scout-helmetlg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/nanotech-scout-leg-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/nanotech-scout-leg-pads-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/nanotech-scout-leg-padslg\.png\)\] {
@@ -2398,9 +4072,19 @@
       background-image: url(assets/nanotech-scout-leg-padslg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/nanotech-scout-shoulder-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/nanotech-scout-shoulder-pads-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/nanotech-scout-shoulder-padslg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/nanotech-scout-shoulder-padslg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/nanotech-scout-torso-armor-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/nanotech-scout-torso-armor-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/nanotech-scout-torso-armorlg\.png\)\] {
@@ -2408,9 +4092,19 @@
       background-image: url(assets/nanotech-scout-torso-armorlg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/nanotech-trauma-arm-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/nanotech-trauma-arm-pads-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/nanotech-trauma-arm-padslg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/nanotech-trauma-arm-padslg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/nanotech-trauma-gloves-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/nanotech-trauma-gloves-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/nanotech-trauma-gloveslg\.png\)\] {
@@ -2418,9 +4112,19 @@
       background-image: url(assets/nanotech-trauma-gloveslg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/nanotech-trauma-helmet-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/nanotech-trauma-helmet-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/nanotech-trauma-helmetlg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/nanotech-trauma-helmetlg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/nanotech-trauma-leg-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/nanotech-trauma-leg-pads-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/nanotech-trauma-leg-padslg\.png\)\] {
@@ -2428,9 +4132,19 @@
       background-image: url(assets/nanotech-trauma-leg-padslg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/nanotech-trauma-shoulder-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/nanotech-trauma-shoulder-pads-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/nanotech-trauma-shoulder-padslg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/nanotech-trauma-shoulder-padslg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/nanotech-trauma-torso-armor-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/nanotech-trauma-torso-armor-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/nanotech-trauma-torso-armorlg\.png\)\] {
@@ -2438,9 +4152,19 @@
       background-image: url(assets/nanotech-trauma-torso-armorlg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/nanotech-vitality-arm-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/nanotech-vitality-arm-pads-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/nanotech-vitality-arm-padslg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/nanotech-vitality-arm-padslg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/nanotech-vitality-leg-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/nanotech-vitality-leg-pads-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/nanotech-vitality-leg-padslg\.png\)\] {
@@ -2448,9 +4172,19 @@
       background-image: url(assets/nanotech-vitality-leg-padslg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/nanotech-vitality-shoulder-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/nanotech-vitality-shoulder-pads-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/nanotech-vitality-shoulder-padslg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/nanotech-vitality-shoulder-padslg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/nanotech-vitality-torso-armor-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/nanotech-vitality-torso-armor-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/nanotech-vitality-torso-armorlg\.png\)\] {
@@ -2458,9 +4192,19 @@
       background-image: url(assets/nanotech-vitality-torso-armorlg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/nanotech-voltaic-arm-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/nanotech-voltaic-arm-pads-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/nanotech-voltaic-arm-padslg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/nanotech-voltaic-arm-padslg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/nanotech-voltaic-gloves-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/nanotech-voltaic-gloves-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/nanotech-voltaic-gloveslg\.png\)\] {
@@ -2468,14 +4212,29 @@
       background-image: url(assets/nanotech-voltaic-gloveslg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/nanotech-voltaic-helmet-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/nanotech-voltaic-helmet-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/nanotech-voltaic-helmetlg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/nanotech-voltaic-helmetlg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/nanotech-voltaic-leg-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/nanotech-voltaic-leg-pads-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/nanotech-voltaic-leg-padslg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/nanotech-voltaic-leg-padslg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/nanotech-voltaic-torso-armor-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/nanotech-voltaic-torso-armor-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/nanotech-voltaic-torso-armorlg\.png\)\] {
@@ -2493,9 +4252,19 @@
       background-image: url(assets/pp7XL.png);
     }
   }
+  .lg\:bg-\[url\(assets\/premet-buffer-arm-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/premet-buffer-arm-pads-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/premet-buffer-arm-padslg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/premet-buffer-arm-padslg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/premet-buffer-gloves-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/premet-buffer-gloves-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/premet-buffer-gloveslg\.png\)\] {
@@ -2503,9 +4272,19 @@
       background-image: url(assets/premet-buffer-gloveslg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/premet-buffer-helmet-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/premet-buffer-helmet-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/premet-buffer-helmetlg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/premet-buffer-helmetlg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/premet-buffer-leg-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/premet-buffer-leg-pads-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/premet-buffer-leg-padslg\.png\)\] {
@@ -2513,9 +4292,19 @@
       background-image: url(assets/premet-buffer-leg-padslg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/premet-buffer-shoulder-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/premet-buffer-shoulder-pads-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/premet-buffer-shoulder-padslg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/premet-buffer-shoulder-padslg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/premet-buffer-torso-armor-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/premet-buffer-torso-armor-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/premet-buffer-torso-armorlg\.png\)\] {
@@ -2523,9 +4312,19 @@
       background-image: url(assets/premet-buffer-torso-armorlg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/premet-collision-arm-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/premet-collision-arm-pads-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/premet-collision-arm-padslg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/premet-collision-arm-padslg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/premet-collision-gloves-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/premet-collision-gloves-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/premet-collision-gloveslg\.png\)\] {
@@ -2533,9 +4332,19 @@
       background-image: url(assets/premet-collision-gloveslg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/premet-collision-helmet-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/premet-collision-helmet-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/premet-collision-helmetlg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/premet-collision-helmetlg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/premet-collision-leg-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/premet-collision-leg-pads-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/premet-collision-leg-padslg\.png\)\] {
@@ -2543,9 +4352,19 @@
       background-image: url(assets/premet-collision-leg-padslg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/premet-collision-shoulder-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/premet-collision-shoulder-pads-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/premet-collision-shoulder-padslg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/premet-collision-shoulder-padslg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/premet-collison-torso-armor-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/premet-collison-torso-armor-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/premet-collison-torso-armorlg\.png\)\] {
@@ -2553,9 +4372,19 @@
       background-image: url(assets/premet-collison-torso-armorlg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/premet-contact-arm-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/premet-contact-arm-pads-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/premet-contact-arm-padslg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/premet-contact-arm-padslg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/premet-contact-gloves-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/premet-contact-gloves-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/premet-contact-gloveslg\.png\)\] {
@@ -2563,9 +4392,19 @@
       background-image: url(assets/premet-contact-gloveslg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/premet-contact-helmet-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/premet-contact-helmet-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/premet-contact-helmetlg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/premet-contact-helmetlg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/premet-contact-leg-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/premet-contact-leg-pads-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/premet-contact-leg-padslg\.png\)\] {
@@ -2573,9 +4412,19 @@
       background-image: url(assets/premet-contact-leg-padslg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/premet-contact-shoulder-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/premet-contact-shoulder-pads-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/premet-contact-shoulder-padslg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/premet-contact-shoulder-padslg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/premet-contact-torso-armor-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/premet-contact-torso-armor-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/premet-contact-torso-armorlg\.png\)\] {
@@ -2583,9 +4432,19 @@
       background-image: url(assets/premet-contact-torso-armorlg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/premet-impact-arm-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/premet-impact-arm-pads-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/premet-impact-arm-padslg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/premet-impact-arm-padslg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/premet-impact-gloves-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/premet-impact-gloves-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/premet-impact-gloveslg\.png\)\] {
@@ -2593,9 +4452,19 @@
       background-image: url(assets/premet-impact-gloveslg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/premet-impact-helmet-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/premet-impact-helmet-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/premet-impact-helmetlg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/premet-impact-helmetlg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/premet-impact-leg-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/premet-impact-leg-pads-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/premet-impact-leg-padslg\.png\)\] {
@@ -2603,9 +4472,19 @@
       background-image: url(assets/premet-impact-leg-padslg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/premet-impact-shoulder-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/premet-impact-shoulder-pads-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/premet-impact-shoulder-padslg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/premet-impact-shoulder-padslg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/premet-impact-torso-armor-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/premet-impact-torso-armor-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/premet-impact-torso-armorlg\.png\)\] {
@@ -2613,9 +4492,19 @@
       background-image: url(assets/premet-impact-torso-armorlg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/premet-tremor-arm-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/premet-tremor-arm-pads-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/premet-tremor-arm-padslg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/premet-tremor-arm-padslg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/premet-tremor-helmet-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/premet-tremor-helmet-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/premet-tremor-helmetlg\.png\)\] {
@@ -2623,9 +4512,19 @@
       background-image: url(assets/premet-tremor-helmetlg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/premet-tremor-leg-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/premet-tremor-leg-pads-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/premet-tremor-leg-padslg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/premet-tremor-leg-padslg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/premet-tremor-shoulder-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/premet-tremor-shoulder-pads-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/premet-tremor-shoulder-padslg\.png\)\] {
@@ -2633,9 +4532,19 @@
       background-image: url(assets/premet-tremor-shoulder-padslg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/premet-tremor-torso-armor-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/premet-tremor-torso-armor-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/premet-tremor-torso-armorlg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/premet-tremor-torso-armorlg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/pulse-mineral-water-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/pulse-mineral-water-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/pulse-mineral-waterlg\.png\)\] {
@@ -2643,9 +4552,19 @@
       background-image: url(assets/pulse-mineral-waterlg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/pythica-durable-battle-arm-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/pythica-durable-battle-arm-pads-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/pythica-durable-battle-arm-padslg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/pythica-durable-battle-arm-padslg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/pythica-durable-battle-helmet-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/pythica-durable-battle-helmet-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/pythica-durable-battle-helmetlg\.png\)\] {
@@ -2653,9 +4572,19 @@
       background-image: url(assets/pythica-durable-battle-helmetlg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/pythica-durable-battle-leg-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/pythica-durable-battle-leg-pads-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/pythica-durable-battle-leg-padslg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/pythica-durable-battle-leg-padslg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/pythica-durable-battle-shoulder-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/pythica-durable-battle-shoulder-pads-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/pythica-durable-battle-shoulder-padslg\.png\)\] {
@@ -2663,9 +4592,19 @@
       background-image: url(assets/pythica-durable-battle-shoulder-padslg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/pythica-durable-battle-torso-armor-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/pythica-durable-battle-torso-armor-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/pythica-durable-battle-torso-armorlg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/pythica-durable-battle-torso-armorlg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/pythica-mobile-infantry-arm-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/pythica-mobile-infantry-arm-pads-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/pythica-mobile-infantry-arm-padslg\.png\)\] {
@@ -2673,9 +4612,19 @@
       background-image: url(assets/pythica-mobile-infantry-arm-padslg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/pythica-mobile-infantry-gloves-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/pythica-mobile-infantry-gloves-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/pythica-mobile-infantry-gloveslg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/pythica-mobile-infantry-gloveslg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/pythica-mobile-infantry-helmet-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/pythica-mobile-infantry-helmet-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/pythica-mobile-infantry-helmetlg\.png\)\] {
@@ -2683,9 +4632,19 @@
       background-image: url(assets/pythica-mobile-infantry-helmetlg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/pythica-mobile-infantry-leg-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/pythica-mobile-infantry-leg-pads-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/pythica-mobile-infantry-leg-padslg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/pythica-mobile-infantry-leg-padslg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/pythica-mobile-infantry-shoulder-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/pythica-mobile-infantry-shoulder-pads-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/pythica-mobile-infantry-shoulder-padslg\.png\)\] {
@@ -2693,9 +4652,19 @@
       background-image: url(assets/pythica-mobile-infantry-shoulder-padslg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/pythica-mobile-infantry-torso-armor-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/pythica-mobile-infantry-torso-armor-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/pythica-mobile-infantry-torso-armorlg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/pythica-mobile-infantry-torso-armorlg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/pythica-s1-arm-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/pythica-s1-arm-pads-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/pythica-s1-arm-padslg\.png\)\] {
@@ -2703,9 +4672,19 @@
       background-image: url(assets/pythica-s1-arm-padslg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/pythica-s1-gloves-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/pythica-s1-gloves-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/pythica-s1-gloveslg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/pythica-s1-gloveslg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/pythica-s1-helmet-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/pythica-s1-helmet-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/pythica-s1-helmetlg\.png\)\] {
@@ -2713,9 +4692,19 @@
       background-image: url(assets/pythica-s1-helmetlg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/pythica-s1-leg-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/pythica-s1-leg-pads-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/pythica-s1-leg-padslg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/pythica-s1-leg-padslg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/pythica-s1-shoulder-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/pythica-s1-shoulder-pads-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/pythica-s1-shoulder-padslg\.png\)\] {
@@ -2723,9 +4712,19 @@
       background-image: url(assets/pythica-s1-shoulder-padslg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/pythica-s1-torso-armor-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/pythica-s1-torso-armor-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/pythica-s1-torso-armorlg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/pythica-s1-torso-armorlg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/pythica-special-operations-arm-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/pythica-special-operations-arm-pads-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/pythica-special-operations-arm-padslg\.png\)\] {
@@ -2733,9 +4732,19 @@
       background-image: url(assets/pythica-special-operations-arm-padslg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/pythica-special-operations-gloves-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/pythica-special-operations-gloves-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/pythica-special-operations-gloveslg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/pythica-special-operations-gloveslg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/pythica-special-operations-helmet-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/pythica-special-operations-helmet-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/pythica-special-operations-helmetlg\.png\)\] {
@@ -2743,9 +4752,19 @@
       background-image: url(assets/pythica-special-operations-helmetlg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/pythica-special-operations-leg-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/pythica-special-operations-leg-pads-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/pythica-special-operations-leg-padslg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/pythica-special-operations-leg-padslg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/pythica-special-operations-shoulder-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/pythica-special-operations-shoulder-pads-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/pythica-special-operations-shoulder-padslg\.png\)\] {
@@ -2753,9 +4772,19 @@
       background-image: url(assets/pythica-special-operations-shoulder-padslg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/pythica-special-operations-torso-armor-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/pythica-special-operations-torso-armor-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/pythica-special-operations-torso-armorlg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/pythica-special-operations-torso-armorlg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/pythica-sustained-battle-arm-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/pythica-sustained-battle-arm-pads-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/pythica-sustained-battle-arm-padslg\.png\)\] {
@@ -2763,9 +4792,19 @@
       background-image: url(assets/pythica-sustained-battle-arm-padslg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/pythica-sustained-battle-gloves-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/pythica-sustained-battle-gloves-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/pythica-sustained-battle-gloveslg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/pythica-sustained-battle-gloveslg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/pythica-sustained-battle-helmet-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/pythica-sustained-battle-helmet-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/pythica-sustained-battle-helmetlg\.png\)\] {
@@ -2773,9 +4812,19 @@
       background-image: url(assets/pythica-sustained-battle-helmetlg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/pythica-sustained-battle-leg-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/pythica-sustained-battle-leg-pads-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/pythica-sustained-battle-leg-padslg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/pythica-sustained-battle-leg-padslg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/pythica-sustained-battle-shoulder-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/pythica-sustained-battle-shoulder-pads-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/pythica-sustained-battle-shoulder-padslg\.png\)\] {
@@ -2783,9 +4832,19 @@
       background-image: url(assets/pythica-sustained-battle-shoulder-padslg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/pythica-sustained-battle-torso-armor-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/pythica-sustained-battle-torso-armor-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/pythica-sustained-battle-torso-armorlg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/pythica-sustained-battle-torso-armorlg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/resAmp-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/resAmp-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/resAmpLG\.png\)\] {
@@ -2793,14 +4852,29 @@
       background-image: url(assets/resAmpLG.png);
     }
   }
+  .lg\:bg-\[url\(assets\/shield-implant-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/shield-implant-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/shield-implantlg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/shield-implantlg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/shouldersSlot-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/shouldersSlot-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/shouldersSlotLG\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/shouldersSlotLG.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/small-medikit-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/small-medikit-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/small-medikitlg\.png\)\] {
@@ -2813,9 +4887,19 @@
       background-image: url(assets/stamina-amplg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/standard-medikit-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/standard-medikit-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/standard-medikitlg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/standard-medikitlg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/tactical-systems-arm-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/tactical-systems-arm-pads-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/tactical-systems-arm-padslg\.png\)\] {
@@ -2823,9 +4907,19 @@
       background-image: url(assets/tactical-systems-arm-padslg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/tactical-systems-helmet-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/tactical-systems-helmet-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/tactical-systems-helmetlg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/tactical-systems-helmetlg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/tactical-systems-leg-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/tactical-systems-leg-pads-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/tactical-systems-leg-padslg\.png\)\] {
@@ -2833,9 +4927,19 @@
       background-image: url(assets/tactical-systems-leg-padslg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/tactical-systems-shoulder-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/tactical-systems-shoulder-pads-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/tactical-systems-shoulder-padslg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/tactical-systems-shoulder-padslg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/tactical-systems-torso-armor-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/tactical-systems-torso-armor-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/tactical-systems-torso-armorlg\.png\)\] {
@@ -2843,9 +4947,19 @@
       background-image: url(assets/tactical-systems-torso-armorlg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/torsoSlot-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/torsoSlot-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/torsoSlotLG\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/torsoSlotLG.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/venom-arm-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/venom-arm-pads-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/venom-arm-padslg\.png\)\] {
@@ -2853,9 +4967,19 @@
       background-image: url(assets/venom-arm-padslg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/venom-gloves-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/venom-gloves-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/venom-gloveslg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/venom-gloveslg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/venom-helmet-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/venom-helmet-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/venom-helmetlg\.png\)\] {
@@ -2863,9 +4987,19 @@
       background-image: url(assets/venom-helmetlg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/venom-leg-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/venom-leg-pads-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/venom-leg-padslg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/venom-leg-padslg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/venom-shoulder-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/venom-shoulder-pads-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/venom-shoulder-padslg\.png\)\] {
@@ -2873,9 +5007,19 @@
       background-image: url(assets/venom-shoulder-padslg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/venom-torso-armor-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/venom-torso-armor-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/venom-torso-armorlg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/venom-torso-armorlg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/xenotech-expeditionary-arm-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/xenotech-expeditionary-arm-pads-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/xenotech-expeditionary-arm-padslg\.png\)\] {
@@ -2883,9 +5027,19 @@
       background-image: url(assets/xenotech-expeditionary-arm-padslg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/xenotech-expeditionary-gloves-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/xenotech-expeditionary-gloves-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/xenotech-expeditionary-gloveslg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/xenotech-expeditionary-gloveslg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/xenotech-expeditionary-helmet-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/xenotech-expeditionary-helmet-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/xenotech-expeditionary-helmetlg\.png\)\] {
@@ -2893,14 +5047,29 @@
       background-image: url(assets/xenotech-expeditionary-helmetlg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/xenotech-expeditionary-leg-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/xenotech-expeditionary-leg-pads-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/xenotech-expeditionary-leg-padslg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/xenotech-expeditionary-leg-padslg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/xenotech-expeditionary-shoulder-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/xenotech-expeditionary-shoulder-pads-md.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/xenotech-expeditionary-shoulder-padslg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/xenotech-expeditionary-shoulder-padslg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/xenotech-expeditionary-torso-armor-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/xenotech-expeditionary-torso-armor-md.png);
     }
   }
   .lg\:bg-\[url\(assets\/xenotech-expeditionary-torso-armorlg\.png\)\] {
@@ -2933,6 +5102,11 @@
   .lg\:text-\[16px\] {
     @media (width >= 64rem) {
       font-size: 16px;
+    }
+  }
+  .lg\:opacity-100 {
+    @media (width >= 64rem) {
+      opacity: 100%;
     }
   }
   .hover\:lg\:bg-\[url\(\.\/assets\/exportHoverLG\.png\)\] {

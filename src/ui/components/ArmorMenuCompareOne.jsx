@@ -6,12 +6,8 @@ import axios from 'axios';
 const ArmorMenuCompareOne = ({
   firstCompareItemsObjects,
   setFirstCompareItemObjects,
-  secondCompareItemsObjects,
-  setSecondCompareItemObjects,
   compareSlotTypesOne,
   setCompareSlotTypesOne,
-  compareSlotTypesTwo,
-  setCompareSlotTypesTwo,
   currentCompareItemObject,
   setCurrentCompareItemObject,
   selectedArmorTypeOne,
