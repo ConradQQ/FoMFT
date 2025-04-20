@@ -90,7 +90,7 @@ secondCompareItemsObjects.forEach((existingItem, index) => {
     <div className="armor-menu">
       {selectedArmorType && (
         <div className="items flex flex-col">
-          {loading && <div>Loading...</div>}
+          {loading && <div className='text-indigo-400'>Loading...</div>}
           {error && <div>Error: {error}</div>}
           {items.length > 0 && (
             <ul className="item-list overflow-y-auto scrollbar max-h-100">

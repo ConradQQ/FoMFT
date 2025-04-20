@@ -59,7 +59,7 @@ const ImplantsMenu = ({setItemObjects, itemObjects, setSlotTypes  }) => {
   return (
     <div className="implants-menu">
       <div className="items flex flex-col">
-        {loading && <div>Loading...</div>}
+        {loading && <div className='text-indigo-400'>Loading...</div>}
         {error && <div>Error: {error}</div>}
         {implants.length > 0 && (
           <ul className="item-list overflow-y-auto max-h-100">

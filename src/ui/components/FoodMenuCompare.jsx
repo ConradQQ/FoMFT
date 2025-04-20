@@ -110,7 +110,7 @@ const FoodMenuCompare = ({
   return (
     <div className="foods-menu">
       <div className="items flex flex-col">
-        {loading && <div>Loading...</div>}
+        {loading && <div className='text-indigo-400'>Loading...</div>}
         {error && <div>Error: {error}</div>}
         {foods.length > 0 && (
           <ul className="item-list overflow-y-auto max-h-100">

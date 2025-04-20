@@ -12,6 +12,8 @@ app.on('ready', () => {
   const mainWindow = new BrowserWindow({
     width: 800,
     height: 600,
+    maxWidth: 1920,
+    maxHeight: 1080,
     webPreferences: {
       nodeIntegration: false,
       contextIsolation: true,

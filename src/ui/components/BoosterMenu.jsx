@@ -59,7 +59,7 @@ const BoosterMenu = ({ setItemObjects, itemObjects, setSlotTypes}) => {
   return (
     <div className="boosters-menu">
       <div className="items flex flex-col">
-        {loading && <div>Loading...</div>}
+        {loading && <div className='text-indigo-400'>Loading...</div>}
         {error && <div>Error: {error}</div>}
         {boosters.length > 0 && (
           <ul className="item-list overflow-y-auto max-h-100">

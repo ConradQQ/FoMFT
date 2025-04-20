@@ -299,9 +299,6 @@
   .w-\[60px\] {
     width: 60px;
   }
-  .w-\[90px\] {
-    width: 90px;
-  }
   .w-\[200px\] {
     width: 200px;
   }
@@ -368,9 +365,6 @@
   }
   .bg-\[url\(\.\/assets\/import\.png\)\] {
     background-image: url(./assets/import.png);
-  }
-  .bg-\[url\(assets\/PP7xs-md\.png\)\] {
-    background-image: url(assets/PP7xs-md.png);
   }
   .bg-\[url\(assets\/PP7xs-sm\.png\)\] {
     background-image: url(assets/PP7xs-sm.png);
@@ -2078,6 +2072,9 @@
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
   }
+  .text-indigo-400 {
+    color: var(--color-indigo-400);
+  }
   .text-red-500 {
     color: var(--color-red-500);
   }
@@ -2092,9 +2089,6 @@
   }
   .opacity-80 {
     opacity: 80%;
-  }
-  .opacity-100 {
-    opacity: 100%;
   }
   .transition-colors {
     transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;
