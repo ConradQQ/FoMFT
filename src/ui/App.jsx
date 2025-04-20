@@ -3,7 +3,6 @@ import './input.css';
 import BasePage from './components/BasePage';
 import DetailedStatsPage from './components/DetailedStatsPage';
 import CompareToolPage from './components/CompareToolPage';
-import ToolTip from './components/ToolTip';
 import { useState, useEffect, useCallback } from 'react';
 import { Routes, Route, Link, useNavigate } from 'react-router-dom';
 
@@ -27,25 +26,6 @@ const App = () => {
   const [compareSlotTypesTwo, setCompareSlotTypesTwo] = useState([]);
   const [currentCompareItemObject, setCurrentCompareItemObject] = useState(1);
   
-  // ToolTip Component State & Logic
-  
-  const [toolTipShown, setToolTipShown] = useState(false);
-  const [toolTipItem, setToolTipItem] = useState({});
-
-  const handleToolTipItem = (slot) => {
-    const filteredItems = itemObjects.filter(item => item.slot === slot);
-
-  if (filteredItems.length > 0) {
-    setToolTipItem(filteredItems[0]?.stats || {}) } 
-    else {
-    setToolTipItem({});   
-    }
-    setToolTipShown(true);
-    console.log(toolTipItem);
-  };
-
- 
-
 
   // Function to remove item of a slot from SlotTypes and ItemObjects on item slot click
   const handleSlotClick = (slotToRemove) => {
@@ -156,10 +136,6 @@ const App = () => {
           handleSlotClick={handleSlotClick}
           saveLoadout={saveLoadout}
           loadLoadout={loadLoadout}
-          toolTipShown={toolTipShown}
-          setToolTipShown={setToolTipShown}
-          setToolTipItem={setToolTipItem}
-          handleToolTipItem={handleToolTipItem}
           
         />}
       />
@@ -206,11 +182,6 @@ const App = () => {
       />
 
     </Routes>
-    {toolTipShown && (
-      <ToolTip
-        toolTipItem={toolTipItem}
-        />
-    )}
     </>
   );
 }

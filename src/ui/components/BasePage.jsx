@@ -9,15 +9,9 @@ const BasePage = ({
   setItemObjects,
   slotTypes,
   setSlotTypes,
-  slotItems,
-  setSlotItems,
   handleSlotClick,
   saveLoadout,
-  loadLoadout,
-  toolTipShown,
-  setToolTipShown,
-  setToolTipItem,
-  handleToolTipItem
+  loadLoadout
 }) => {
   
 
@@ -46,13 +40,14 @@ const BasePage = ({
     </div>
 
       {/* Items Menu */}
-      <div className='items-menu w-1/3 '>
+      <div className='items-menu w-1/3'>
         <div className='flex flex-col'>
          <ItemMenu  
-          setItemObjects={setItemObjects}
-          setSlotTypes={setSlotTypes}
-          itemObjects={itemObjects}
-          slotTypes={slotTypes}/>
+            setItemObjects={setItemObjects}
+            setSlotTypes={setSlotTypes}
+            itemObjects={itemObjects}
+            slotTypes={slotTypes}
+          />
         </div>
       </div>
 
@@ -64,18 +59,15 @@ const BasePage = ({
           handleSlotClick={handleSlotClick}
           saveLoadout={saveLoadout}
           loadLoadout={loadLoadout}
-          toolTipShown={toolTipShown}
-          setToolTipShown={setToolTipShown}
-          setToolTipItem={setToolTipItem}
-          handleToolTipItem={handleToolTipItem}
         />
       </div>
 
       {/* Stats Display */}
       <div className="stats-display flex flex-col w-1/3 h-full items-center">
         <StatsDisplay 
-        itemObjects = {itemObjects}
-        slotTypes = {slotTypes} />
+          itemObjects = {itemObjects}
+          slotTypes = {slotTypes} 
+        />
       </div>
     </div>
   </>
