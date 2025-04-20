@@ -114,7 +114,7 @@ const SlotsMenu = ({itemObjects, slotTypes, handleSlotClick}) => {
     : ''
   const weaponToolTipName = weaponItemName
     ? `${weaponItemName}\n${'-'.repeat(weaponItemName.length)}\n` 
-    : '';
+    : ''
   const weaponToolTip = weaponToolTipStats && weaponToolTipName 
     ? weaponToolTipName + weaponToolTipStats
     : ''
