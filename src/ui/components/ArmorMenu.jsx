@@ -95,7 +95,7 @@ const ArmorMenu = ({showArmorTypes, setItemObjects, itemObjects, setSlotTypes}) 
         )}
       </div>
       {selectedArmorType && (
-        <div className="items flex flex-col">
+        <div className="items flex flex-col ">
           {loading && <div className='text-indigo-400'>Loading...</div>}
           {error && <div>Error: {error}</div>}
           {items.length > 0 && (
@@ -106,7 +106,7 @@ const ArmorMenu = ({showArmorTypes, setItemObjects, itemObjects, setSlotTypes}) 
                   onClick={() => {
                     handleItemClick(item)
                   }}
-                  className='w-fit cursor-pointer my-1 text-white hover:text-indigo-400 hover:underline'
+                  className='w-fit cursor-pointer my-1 text-white hover:text-indigo-400 hover:underline lg:text-[18px]'
                 >
                   {item.armor_name}
                 </li>
