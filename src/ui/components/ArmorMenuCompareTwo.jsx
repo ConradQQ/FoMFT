@@ -4,18 +4,10 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
 const ArmorMenuCompareOne = ({
-  firstCompareItemsObjects,
-  setFirstCompareItemObjects,
   secondCompareItemsObjects,
   setSecondCompareItemObjects,
-  compareSlotTypesOne,
-  setCompareSlotTypesOne,
-  compareSlotTypesTwo,
   setCompareSlotTypesTwo,
   currentCompareItemObject,
-  setCurrentCompareItemObject,
-  selectedArmorTypeOne,
-  setSelectedArmorTypeOne,
   selectedArmorType
 }) => {
   const [armorTypes, _setArmorTypes] = useState([

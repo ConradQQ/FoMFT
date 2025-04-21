@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 import { useState, useEffect } from 'react';
 import CompareItemSlots from './CompareItemSlots';
+import CompareStatsDisplay from './CompareStatsDisplay';
 
 const CompareToolPage = ({
   firstCompareItemsObjects,
@@ -34,7 +35,8 @@ const CompareToolPage = ({
 
 return (
   <>
-    <div className='compare-tool-container w-screen h-screen bg-[url(assets/background.png)] lg:bg-[url(assets/backgroundLG.png)] flex flex-row'>
+    <div className='compare-tool-container w-screen h-screen bg-[url(assets/background.png)] lg:bg-[url(assets/backgroundLG.png)] flex flex-row overflow-hidden'>
+
 
       <div className='compare-tool-armorslots w-1/3 h-full'>
 
@@ -61,6 +63,15 @@ return (
             handleArmorSlotClickTwo={handleArmorSlotClickTwo}
           />
         
+      </div>
+      
+      <div className='compare-tool-statsDisplay w-2/3 h-full'>
+
+        <CompareStatsDisplay 
+          firstCompareItemsObjects={firstCompareItemsObjects}
+          secondCompareItemsObjects={secondCompareItemsObjects}
+        />
+
       </div>
 
     </div>

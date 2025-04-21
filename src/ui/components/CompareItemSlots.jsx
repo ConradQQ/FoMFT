@@ -223,7 +223,6 @@ const CompareItemSlots = ({
 
     const weaponItemTwo = secondCompareItemsObjects.find((item) => item.slot === 'weapon');
     const weaponItemNameTwo = weaponItemTwo ? weaponItemTwo.weapon_name : undefined;
-    const weaponImgTwo = weaponItemTwo ? weaponItemTwo.image_path_xs : undefined;
     const weaponImgTwoMD = weaponItemTwo ? weaponItemTwo.image_path_md : undefined;
     const weaponStatsTwo = weaponItemTwo ? weaponItemTwo.stats : undefined;
     const weaponToolTipStatsTwo = weaponStatsTwo
@@ -240,7 +239,6 @@ const CompareItemSlots = ({
     const foodItemNameTwo = foodItemTwo ? foodItemTwo.food_name : undefined;
     const foodImgTwo = foodItemTwo ? foodItemTwo.image_path_xs : undefined;
     const foodImgTwoMD = foodItemTwo ? foodItemTwo.image_path_md : undefined;
-    const foodImgLGTwo = foodItemTwo ? foodItemTwo.image_path_sm : undefined;
     const foodStatsTwo = foodItemTwo ? foodItemTwo.stats : undefined;
     const foodToolTipStatsTwo = foodStatsTwo
     ? Object.entries(foodStatsTwo).map(([statName, statValue]) => `${statName}: ${statValue}`).join('\n')
@@ -256,7 +254,6 @@ const CompareItemSlots = ({
     const medItemNameTwo = medItemTwo ? medItemTwo.med_name : undefined;
     const medImgTwo = medItemTwo ? medItemTwo.image_path_xs : undefined;
     const medImgTwoMD = medItemTwo ? medItemTwo.image_path_md : undefined;
-    const medImgLGTwo = medItemTwo ? medItemTwo.image_path_sm : undefined;
     const medStatsTwo = medItemTwo ? medItemTwo.stats : undefined;
     const medToolTipStatsTwo = medStatsTwo
     ? Object.entries(medStatsTwo).map(([statName, statValue]) => `${statName}: ${statValue}`).join('\n')
@@ -272,7 +269,6 @@ const CompareItemSlots = ({
     const boosterItemNameTwo = boosterItemTwo ? boosterItemTwo.booster_name : undefined;
     const boosterImgTwo = boosterItemTwo ? boosterItemTwo.image_path_xs : undefined;
     const boosterImgTwoMD = boosterItemTwo ? boosterItemTwo.image_path_md : undefined;
-    const boosterImgLGTwo = boosterItemTwo ? boosterItemTwo.image_path_sm : undefined;
     const boosterStatsTwo = boosterItemTwo ? boosterItemTwo.stats : undefined;
     const boosterToolTipStatsTwo = boosterStatsTwo
     ? Object.entries(boosterStatsTwo).map(([statName, statValue]) => `${statName}: ${statValue}`).join('\n')
@@ -288,7 +284,6 @@ const CompareItemSlots = ({
     const helmetItemNameTwo = helmetItemTwo ? helmetItemTwo.armor_name : undefined;
     const helmetImgTwo = helmetItemTwo ? helmetItemTwo.image_path_xs : undefined;
     const helmetImgTwoMD = helmetItemTwo ? helmetItemTwo.image_path_md : undefined;
-    const helmetImgLGTwo = helmetItemTwo ? helmetItemTwo.image_path_sm : undefined;
     const helmetStatsTwo = helmetItemTwo ? helmetItemTwo.stats : undefined;
     const helmetToolTipStatsTwo = helmetStatsTwo
     ? Object.entries(helmetStatsTwo).map(([statName, statValue]) => `${statName}: ${statValue}`).join('\n')
@@ -304,7 +299,6 @@ const CompareItemSlots = ({
     const torsoItemNameTwo = torsoItemTwo ? torsoItemTwo.armor_name : undefined;
     const torsoImgTwo = torsoItemTwo ? torsoItemTwo.image_path_xs : undefined;
     const torsoImgTwoMD = torsoItemTwo ? torsoItemTwo.image_path_md : undefined;
-    const torsoImgLGTwo = torsoItemTwo ? torsoItemTwo.image_path_sm : undefined;
     const torsoStatsTwo = torsoItemTwo ? torsoItemTwo.stats : undefined;
     const torsoToolTipStatsTwo = torsoStatsTwo
     ? Object.entries(torsoStatsTwo).map(([statName, statValue]) => `${statName}: ${statValue}`).join('\n')
@@ -320,7 +314,6 @@ const CompareItemSlots = ({
     const armsItemNameTwo = armsItemTwo ? armsItemTwo.armor_name : undefined;
     const armsImgTwo = armsItemTwo ? armsItemTwo.image_path_xs : undefined;
     const armsImgTwoMD = armsItemTwo ? armsItemTwo.image_path_md : undefined;
-    const armsImgLGTwo = armsItemTwo ? armsItemTwo.image_path_sm : undefined;
     const armsStatsTwo = armsItemTwo ? armsItemTwo.stats : undefined;
     const armsToolTipStatsTwo = armsStatsTwo
     ? Object.entries(armsStatsTwo).map(([statName, statValue]) => `${statName}: ${statValue}`).join('\n')
@@ -336,7 +329,6 @@ const CompareItemSlots = ({
     const legsItemNameTwo = legsItemTwo ? legsItemTwo.armor_name : undefined;
     const legsImgTwo = legsItemTwo ? legsItemTwo.image_path_xs : undefined;
     const legsImgTwoMD = legsItemTwo ? legsItemTwo.image_path_md : undefined;
-    const legsImgLGTwo = legsItemTwo ? legsItemTwo.image_path_sm : undefined;
     const legsStatsTwo = legsItemTwo ? legsItemTwo.stats : undefined;
     const legsToolTipStatsTwo = legsStatsTwo
     ? Object.entries(legsStatsTwo).map(([statName, statValue]) => `${statName}: ${statValue}`).join('\n')
@@ -352,7 +344,6 @@ const CompareItemSlots = ({
     const shouldersItemNameTwo = shouldersItemTwo ? shouldersItemTwo.armor_name : undefined;
     const shouldersImgTwo = shouldersItemTwo ? shouldersItemTwo.image_path_xs : undefined;
     const shouldersImgTwoMD = shouldersItemTwo ? shouldersItemTwo.image_path_md : undefined;
-    const shouldersImgLGTwo = shouldersItemTwo ? shouldersItemTwo.image_path_sm : undefined;
     const shouldersStatsTwo = shouldersItemTwo ? shouldersItemTwo.stats : undefined;
     const shouldersToolTipStatsTwo = shouldersStatsTwo
     ? Object.entries(shouldersStatsTwo).map(([statName, statValue]) => `${statName}: ${statValue}`).join('\n')
@@ -368,7 +359,6 @@ const CompareItemSlots = ({
     const handsItemNameTwo = handsItemTwo ? handsItemTwo.armor_name : undefined;
     const handsImgTwo = handsItemTwo ? handsItemTwo.image_path_xs : undefined;
     const handsImgTwoMD = handsItemTwo ? handsItemTwo.image_path_md : undefined;
-    const handsImgLGTwo = handsItemTwo ? handsItemTwo.image_path_sm : undefined;
     const handsStatsTwo = handsItemTwo ? handsItemTwo.stats : undefined;
     const handsToolTipStatsTwo = handsStatsTwo
     ? Object.entries(handsStatsTwo).map(([statName, statValue]) => `${statName}: ${statValue}`).join('\n')
@@ -380,7 +370,6 @@ const CompareItemSlots = ({
     ? handsToolTipNameTwo + handsToolTipStatsTwo
     : ''
 
-    
   const [selectedCategory, setSelectedCategory] = useState(null);
 
 const handleCategoryClickOne = (category) => {
@@ -399,7 +388,6 @@ const handleArmorTypeClickOne = (armorType) => {
   setCurrentCompareItemObject(1);
 };
 
-console.log(selectedArmorType)
 
 const handleArmorTypeClickTwo = (armorType) => {
   setSelectedArmorType(armorType);
@@ -454,7 +442,7 @@ useEffect(() => {
 
   return (
     <>
-      <div className="compare-item-slots-container">
+      <div className="compare-item-slots-container overflow-hidden">
       {selectedCategory === null && (
         <>
           <div className="item-slots-1 flex flex-col  w-full h-1/2 items-center">
@@ -523,7 +511,7 @@ useEffect(() => {
         </div>
 
           <div className="weapon-slot-1 w-full h-1/3 item-center flex flex-row mt-1">
-            <div className="bg-[#1f2533] opacity-50 lg:opacity-100 w-[200px] h-[90px]  lg:w-[275px] lg:h-[120px] mx-1 rounded-lg cursor-pointer">
+            <div className="bg-[#1f2533] opacity-50 lg:opacity-100 w-[200px] h-[80px]  lg:w-[275px] lg:h-[110px] mx-1 rounded-lg cursor-pointer">
               <div className={isWeaponSlotSelectedOne
                 ? `weaponSlot1 bg-[url(assets/PP7xs-sm.png)]  lg:bg-[url(assets/PP7xs-md.png)] w-full h-full bg-auto`
                 : 'w-full h-full'
@@ -603,7 +591,7 @@ useEffect(() => {
         </div>
 
         <div className="weapon-slot-2 w-full h-1/3 item-center flex flex-row mt-1 cursor-pointer">
-          <div className="bg-[#1f2533] opacity-50 lg:opacity-100 w-[200px] h-[90px] lg:w-[275px] lg:h-[120px] mx-1 rounded-lg">
+          <div className="bg-[#1f2533] opacity-50 lg:opacity-100 w-[200px] h-[80px] lg:w-[275px] lg:h-[120px] mx-1 rounded-lg">
           <div className={isWeaponSlotSelectedTwo
                 ? `weaponSlot1 bg-[url(assets/PP7xs-sm.png)] lg:bg-[url(assets/PP7xs-md.png)] w-full h-full bg-auto`
                 : 'w-full h-full'

@@ -23,6 +23,7 @@ const DefenseChart = ({armorStats}) => {
     },
     {
       stat: 'resistance',
+
       A: 0,
       fullMark: 300,
     },
