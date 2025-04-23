@@ -62,7 +62,7 @@ const OffenseChart = ({weaponStats}) => {
         <RadarChart cx="50%" cy="40%" outerRadius="60%" data={updatedData} style={{fontSize: '12px', color: 'red'}}>
           <PolarGrid />
           <PolarAngleAxis dataKey="stat" style={{color: 'red'}} />
-          <Radar name="Defense" dataKey="A" stroke="#8884d8" fill="#3F51B5" fillOpacity={0.6} />
+          <Radar name="Defense" dataKey="A" stroke="#8884d8" fill="#FF0000" fillOpacity={0.6} />
         </RadarChart>
       </ResponsiveContainer>
   );

@@ -100,9 +100,7 @@ if (firstCompareItemsObjects) {
 
 // eslint-disable-next-line no-unused-vars
 for (let [weaponKey, weaponValue] of Object.entries(weaponStatsOne)) {
-
   if (typeof weaponStatsOne[weaponKey] === 'number') {
-
     weaponStatsOne[weaponKey] = Math.round(weaponStatsOne[weaponKey] * 10000) / 10000
 
 }
@@ -112,9 +110,7 @@ for (let [weaponKey, weaponValue] of Object.entries(weaponStatsOne)) {
 
 // eslint-disable-next-line no-unused-vars
 for (let [armorKey, armorValue] of Object.entries(armorStatsOne)) {
-
   if (typeof armorStatsOne[armorKey] === 'number') {
-
     armorStatsOne[armorKey] = Math.round(armorStatsOne[armorKey] * 10000) / 10000
 }
 
@@ -202,9 +198,7 @@ if (secondCompareItemsObjects) {
 
 // eslint-disable-next-line no-unused-vars
 for (let [weaponKey, weaponValue] of Object.entries(weaponStatsTwo)) {
-
   if (typeof weaponStatsTwo[weaponKey] === 'number') {
-
     weaponStatsTwo[weaponKey] = Math.round(weaponStatsTwo[weaponKey] * 10000) / 10000
 
 }
@@ -214,9 +208,7 @@ for (let [weaponKey, weaponValue] of Object.entries(weaponStatsTwo)) {
 
 // eslint-disable-next-line no-unused-vars
 for (let [armorKey, armorValue] of Object.entries(armorStatsTwo)) {
-
   if (typeof armorStatsTwo[armorKey] === 'number') {
-
     armorStatsTwo[armorKey] = Math.round(armorStatsTwo[armorKey] * 10000) / 10000
 }
 
@@ -224,7 +216,7 @@ for (let [armorKey, armorValue] of Object.entries(armorStatsTwo)) {
 
 
   return (
-    <div className="stats-container text-white flex flex-col sm:mt-5 w-full h-full items-right justify-right">
+    <div className="stats-container text-white flex flex-col sm:mt-5 w-full h-full items-right justify-right ">
 
       <div 
       className="bg-[url(assets/chart.png)] lg:bg-[url(assets/chartlg.png)] hover:bg-[url(assets/chartHover.png)] hover:lg:bg-[url(assets/chartHover.png)] w-[16px] h-[16px] lg:w-[24px] lg:h-[24px] cursor-pointer absolute top-1 right-2 lg:top-1 lg:right-2" 
@@ -233,28 +225,57 @@ for (let [armorKey, armorValue] of Object.entries(armorStatsTwo)) {
 
       {!showRawStats && (
         <>
-        <div className="defensive-stats mt-4 p-4 bg-indigo-900/70 rounded-md w-fit h-fit ml-70 lg:ml-230">
-        <h2 className="underline sm:text-sm lg:text-xl text-center mb-3">Defensive Stats</h2>
-        {Object.entries(armorStatsOne).map(([statName, statValue]) => (
-          <p key={statName} className="sm:text-[12px] lg:text-xl">
-            {statName}: {statValue}
-          </p>
-        ))}
+      <div className='raw-stats-display w-full h-full flex flex-row'>
+
+        <div className='build-1-container flex flex-col w-1/2'>
+          <div className="defensive-stats p-4 bg-indigo-900/70 rounded-md w-51 lg:w-80 h-fit">
+          <h1 className="sm:text-md lg:text-2xl text-center mb-3">Loadout: 1</h1>
+          <h2 className="underline sm:text-sm lg:text-xl text-center mb-3">Defensive Stats</h2>
+          {Object.entries(armorStatsOne).map(([statName, statValue]) => (
+            <p key={statName} className="sm:text-[12px] lg:text-xl">
+              {statName}: {statValue}
+            </p>
+          ))}
       </div>
 
-      <div className="offensive-stats mt-4 p-4 bg-indigo-900/70 rounded-md w-51 lg:w-79 h-fit ml-70 lg:ml-230">
-        <h2 className="underline sm:text-sm lg:text-xl text-center mb-3">Offensive Stats</h2>
-        {Object.entries(weaponStatsOne).map(([statName, statValue]) => (
-          <p key={statName} className='sm:text-[12px] lg:text-xl'>
-            {statName}: {statValue}
-          </p>
-        ))}
+        <div className="offensive-stats mt-2 p-4 bg-indigo-900/70 rounded-md w-51 lg:w-80 h-fit ">
+          <h2 className="underline sm:text-sm lg:text-xl text-center mb-3">Offensive Stats</h2>
+          {Object.entries(weaponStatsOne).map(([statName, statValue]) => (
+            <p key={statName} className='sm:text-[12px] lg:text-xl'>
+              {statName}: {statValue}
+            </p>
+          ))}
+        </div>
       </div>
+
+
+        <div className='build-2-container flex flex-col w-1/2'>
+          <div className="defensive-stats p-4 bg-indigo-900/70 rounded-md w-51 lg:w-80 h-fit">
+          <h1 className="sm:text-md  lg:text-2xl text-center mb-3">Loadout: 2</h1>
+          <h2 className="underline sm:text-sm lg:text-xl text-center mb-3">Defensive Stats</h2>
+          {Object.entries(armorStatsTwo).map(([statName, statValue]) => (
+            <p key={statName} className="sm:text-[12px] lg:text-xl">
+              {statName}: {statValue}
+            </p>
+          ))}
+      </div>
+
+        <div className="offensive-stats mt-2 p-4 bg-indigo-900/70 rounded-md w-51 lg:w-80 h-fit">
+          <h2 className="underline sm:text-sm lg:text-xl text-center mb-3">Offensive Stats</h2>
+          {Object.entries(weaponStatsTwo).map(([statName, statValue]) => (
+            <p key={statName} className='sm:text-[12px] lg:text-xl'>
+              {statName}: {statValue}
+            </p>
+          ))}
+        </div>
+      </div>
+
+    </div>
         </>
       )}
       {showRawStats && (
         <>
-        <div className="w-full h-full ml-25 lg:w-2/3 lg:h-2/3 lg:ml-140 lg:mt-3">
+        <div className="w-full h-full ml-25 lg:w-2/3 lg:h-2/3 lg:ml-140  lg:mt-3">
         <DefenseChartCompare 
             armorStatsOne={armorStatsOne} 
             armorStatsTwo={armorStatsTwo} />

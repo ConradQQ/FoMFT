@@ -14,21 +14,17 @@ import {
 } from 'recharts';
 
 const OffenseChartCompare = ({weaponStatsOne, weaponStatsTwo}) => {
+  
+
+// This needs refactoring
 
 
+
+
+ 
   const data = [
     {
-      stat: 'xeno',
-      A: 0,
-      fullMark: 10,
-    },
-    {
-      stat: 'ballistics',
-      A: 0,
-      fullMark: 100,
-    },
-    {
-      stat: 'energy',
+      stat: 'DPS',
       A: 0,
       fullMark: 100,
     },
@@ -38,17 +34,7 @@ const OffenseChartCompare = ({weaponStatsOne, weaponStatsTwo}) => {
       fullMark: 100,
     },
     {
-      stat: 'bio',
-      A: 0,
-      fullMark: 100,
-    },
-    {
-      stat: 'stamina',
-      A: 0,
-      fullMark: 100,
-    },
-    {
-      stat: 'aura',
+      stat: 'alpha',
       A: 0,
       fullMark: 100,
     },
@@ -81,7 +67,7 @@ const OffenseChartCompare = ({weaponStatsOne, weaponStatsTwo}) => {
   : undefined;
 
   return (
-      <ResponsiveContainer width="85%" height="45%">
+      <ResponsiveContainer width="85%" height="60%">
         <BarChart
           width={500}
           height={300}
@@ -92,7 +78,7 @@ const OffenseChartCompare = ({weaponStatsOne, weaponStatsTwo}) => {
             left: 20,
             bottom: 5,
           }}
-          style={{fontSize:'10px', fontWeight: 'bold'}}
+          style={{fontSize:'12px', fontWeight: 'bold', }}
         >
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis dataKey="stat" />

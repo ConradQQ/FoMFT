@@ -373,8 +373,10 @@ module.exports = {
       'bg-[url(assets/infensus-essentials-shoulder-pads-sm.png)]',
       'lg:bg-[url(assets/infensus-essentials-shoulder-padslg.png)]',
       'lg:bg-[url(assets/infensus-essentials-shoulder-pads-md.png)]',
-      
-
+      'bg-[url(assets/nanotech-voltaic-shoulder-pads.png)]',
+      'lg:bg-[url(assets/nanotech-voltaic-shoulder-padslg.png)]',
+      'lg:bg-[url(assets/nanotech-voltaic-shoulder-pads-md.png)]',
+      'bg-[url(assets/nanotech-voltaic-shoulder-pads-sm.png)]',
 
       // Torsos
       'bg-[url(assets/firstborn-powered-torso-armor.png)]',

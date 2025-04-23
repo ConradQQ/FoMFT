@@ -2,6 +2,7 @@ import React, { PureComponent } from 'react';
 import {
   BarChart,
   Bar,
+  Label,
   Cell,
   XAxis,
   YAxis,
@@ -85,7 +86,7 @@ updatedData = armorStatsTwo
   
 
     return (
-      <ResponsiveContainer width="85%" height="45%">
+      <ResponsiveContainer width="85%" height="60%">
         <BarChart
           width={500}
           height={300}
@@ -96,7 +97,7 @@ updatedData = armorStatsTwo
             left: 20,
             bottom: 5,
           }}
-          style={{fontSize:'10px', fontWeight: 'bold'}}
+          style={{fontSize:'11px', fontWeight: 'bold', fill: 'blue' }}
         >
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis dataKey="stat" />

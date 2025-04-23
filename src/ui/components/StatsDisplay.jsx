@@ -45,9 +45,9 @@ const StatsDisplay = ({ itemObjects }) => {
   
   itemObjects.forEach(item => {
     if(Object.keys(item)[0] === 'weapon_id') {
-      if (item.stats) {
-        for (const key in item.stats) {
-          const value = item.stats[key];
+      if (item.stats_plus) {
+        for (const key in item.stats_plus) {
+          const value = item.stats_plus[key];
           if (weaponStats[key]) {
             weaponStats[key] += value;
           } else {

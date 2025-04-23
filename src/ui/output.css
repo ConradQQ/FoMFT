@@ -197,12 +197,6 @@
   .top-6 {
     top: calc(var(--spacing) * 6);
   }
-  .top-50 {
-    top: calc(var(--spacing) * 50);
-  }
-  .right-0 {
-    right: calc(var(--spacing) * 0);
-  }
   .right-1 {
     right: calc(var(--spacing) * 1);
   }
@@ -214,9 +208,6 @@
   }
   .left-0 {
     left: calc(var(--spacing) * 0);
-  }
-  .left-50 {
-    left: calc(var(--spacing) * 50);
   }
   .mx-1 {
     margin-inline: calc(var(--spacing) * 1);
@@ -239,8 +230,11 @@
   .mt-4 {
     margin-top: calc(var(--spacing) * 4);
   }
-  .mt-5 {
-    margin-top: calc(var(--spacing) * 5);
+  .mt-15 {
+    margin-top: calc(var(--spacing) * 15);
+  }
+  .mt-20 {
+    margin-top: calc(var(--spacing) * 20);
   }
   .mt-30 {
     margin-top: calc(var(--spacing) * 30);
@@ -263,38 +257,26 @@
   .ml-2 {
     margin-left: calc(var(--spacing) * 2);
   }
-  .ml-15 {
-    margin-left: calc(var(--spacing) * 15);
-  }
-  .ml-20 {
-    margin-left: calc(var(--spacing) * 20);
-  }
   .ml-25 {
     margin-left: calc(var(--spacing) * 25);
-  }
-  .ml-30 {
-    margin-left: calc(var(--spacing) * 30);
   }
   .ml-70 {
     margin-left: calc(var(--spacing) * 70);
   }
-  .ml-90 {
-    margin-left: calc(var(--spacing) * 90);
-  }
-  .ml-100 {
-    margin-left: calc(var(--spacing) * 100);
-  }
   .flex {
     display: flex;
+  }
+  .table {
+    display: table;
+  }
+  .h-1 {
+    height: calc(var(--spacing) * 1);
   }
   .h-1\/2 {
     height: calc(1/2 * 100%);
   }
   .h-1\/3 {
     height: calc(1/3 * 100%);
-  }
-  .h-1\/4 {
-    height: calc(1/4 * 100%);
   }
   .h-1\/6 {
     height: calc(1/6 * 100%);
@@ -305,17 +287,29 @@
   .h-16 {
     height: calc(var(--spacing) * 16);
   }
+  .h-100 {
+    height: calc(var(--spacing) * 100);
+  }
   .h-\[16px\] {
     height: 16px;
+  }
+  .h-\[40px\] {
+    height: 40px;
+  }
+  .h-\[50px\] {
+    height: 50px;
+  }
+  .h-\[51px\] {
+    height: 51px;
+  }
+  .h-\[55px\] {
+    height: 55px;
   }
   .h-\[60px\] {
     height: 60px;
   }
   .h-\[80px\] {
     height: 80px;
-  }
-  .h-\[90px\] {
-    height: 90px;
   }
   .h-fit {
     height: fit-content;
@@ -329,6 +323,9 @@
   .max-h-100 {
     max-height: calc(var(--spacing) * 100);
   }
+  .w-1 {
+    width: calc(var(--spacing) * 1);
+  }
   .w-1\/2 {
     width: calc(1/2 * 100%);
   }
@@ -341,62 +338,38 @@
   .w-2\/3 {
     width: calc(2/3 * 100%);
   }
-  .w-3\/4 {
-    width: calc(3/4 * 100%);
-  }
   .w-16 {
     width: calc(var(--spacing) * 16);
-  }
-  .w-20 {
-    width: calc(var(--spacing) * 20);
-  }
-  .w-50 {
-    width: calc(var(--spacing) * 50);
   }
   .w-51 {
     width: calc(var(--spacing) * 51);
   }
-  .w-52 {
-    width: calc(var(--spacing) * 52);
-  }
-  .w-55 {
-    width: calc(var(--spacing) * 55);
-  }
-  .w-60 {
-    width: calc(var(--spacing) * 60);
-  }
-  .w-80 {
-    width: calc(var(--spacing) * 80);
-  }
-  .w-100 {
-    width: calc(var(--spacing) * 100);
-  }
-  .w-120 {
-    width: calc(var(--spacing) * 120);
-  }
-  .w-130 {
-    width: calc(var(--spacing) * 130);
-  }
-  .w-140 {
-    width: calc(var(--spacing) * 140);
-  }
-  .w-150 {
-    width: calc(var(--spacing) * 150);
-  }
-  .w-200 {
-    width: calc(var(--spacing) * 200);
-  }
   .w-\[16px\] {
     width: 16px;
+  }
+  .w-\[40px\] {
+    width: 40px;
+  }
+  .w-\[50px\] {
+    width: 50px;
+  }
+  .w-\[55px\] {
+    width: 55px;
   }
   .w-\[60px\] {
     width: 60px;
   }
+  .w-\[150px\] {
+    width: 150px;
+  }
+  .w-\[170px\] {
+    width: 170px;
+  }
+  .w-\[180px\] {
+    width: 180px;
+  }
   .w-\[200px\] {
     width: 200px;
-  }
-  .w-\[400px\] {
-    width: 400px;
   }
   .w-fit {
     width: fit-content;
@@ -407,11 +380,14 @@
   .w-screen {
     width: 100vw;
   }
-  .transform {
-    transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
+  .border-collapse {
+    border-collapse: collapse;
   }
   .cursor-pointer {
     cursor: pointer;
+  }
+  .resize {
+    resize: both;
   }
   .flex-col {
     flex-direction: column;
@@ -424,9 +400,6 @@
   }
   .justify-center {
     justify-content: center;
-  }
-  .overflow-auto {
-    overflow: auto;
   }
   .overflow-hidden {
     overflow: hidden;
@@ -455,6 +428,9 @@
   }
   .bg-\[\#1f2533\]\/50 {
     background-color: color-mix(in oklab, #1f2533 50%, transparent);
+  }
+  .bg-indigo-900 {
+    background-color: var(--color-indigo-900);
   }
   .bg-indigo-900\/70 {
     background-color: color-mix(in oklab, var(--color-indigo-900) 70%, transparent);
@@ -1476,6 +1452,12 @@
   .bg-\[url\(assets\/nano-bite-burger\.png\)\] {
     background-image: url(assets/nano-bite-burger.png);
   }
+  .bg-\[url\(assets\/nanotch-voltaic-shoulder-pads-sm\.png\)\] {
+    background-image: url(assets/nanotch-voltaic-shoulder-pads-sm.png);
+  }
+  .bg-\[url\(assets\/nanotch-voltaic-shoulder-pads\.png\)\] {
+    background-image: url(assets/nanotch-voltaic-shoulder-pads.png);
+  }
   .bg-\[url\(assets\/nanotech-cognizant-arm-pads-sm\.png\)\] {
     background-image: url(assets/nanotech-cognizant-arm-pads-sm.png);
   }
@@ -1631,6 +1613,12 @@
   }
   .bg-\[url\(assets\/nanotech-voltaic-leg-pads\.png\)\] {
     background-image: url(assets/nanotech-voltaic-leg-pads.png);
+  }
+  .bg-\[url\(assets\/nanotech-voltaic-shoulder-pads-sm\.png\)\] {
+    background-image: url(assets/nanotech-voltaic-shoulder-pads-sm.png);
+  }
+  .bg-\[url\(assets\/nanotech-voltaic-shoulder-pads\.png\)\] {
+    background-image: url(assets/nanotech-voltaic-shoulder-pads.png);
   }
   .bg-\[url\(assets\/nanotech-voltaic-torso-armor-sm\.png\)\] {
     background-image: url(assets/nanotech-voltaic-torso-armor-sm.png);
@@ -2189,6 +2177,10 @@
   .opacity-50 {
     opacity: 50%;
   }
+  .outline {
+    outline-style: var(--tw-outline-style);
+    outline-width: 1px;
+  }
   .transition-colors {
     transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
@@ -2285,11 +2277,6 @@
       margin-block: calc(var(--spacing) * 10);
     }
   }
-  .lg\:mt-2 {
-    @media (width >= 64rem) {
-      margin-top: calc(var(--spacing) * 2);
-    }
-  }
   .lg\:mt-3 {
     @media (width >= 64rem) {
       margin-top: calc(var(--spacing) * 3);
@@ -2315,11 +2302,6 @@
       margin-bottom: calc(var(--spacing) * 0);
     }
   }
-  .lg\:mb-2 {
-    @media (width >= 64rem) {
-      margin-bottom: calc(var(--spacing) * 2);
-    }
-  }
   .lg\:mb-20 {
     @media (width >= 64rem) {
       margin-bottom: calc(var(--spacing) * 20);
@@ -2330,34 +2312,14 @@
       margin-left: calc(var(--spacing) * 8);
     }
   }
-  .lg\:ml-40 {
-    @media (width >= 64rem) {
-      margin-left: calc(var(--spacing) * 40);
-    }
-  }
-  .lg\:ml-100 {
-    @media (width >= 64rem) {
-      margin-left: calc(var(--spacing) * 100);
-    }
-  }
   .lg\:ml-140 {
     @media (width >= 64rem) {
       margin-left: calc(var(--spacing) * 140);
     }
   }
-  .lg\:ml-150 {
-    @media (width >= 64rem) {
-      margin-left: calc(var(--spacing) * 150);
-    }
-  }
   .lg\:ml-230 {
     @media (width >= 64rem) {
       margin-left: calc(var(--spacing) * 230);
-    }
-  }
-  .lg\:ml-240 {
-    @media (width >= 64rem) {
-      margin-left: calc(var(--spacing) * 240);
     }
   }
   .lg\:h-2\/3 {
@@ -4145,6 +4107,16 @@
       background-image: url(assets/nano-bite-burgerlg.png);
     }
   }
+  .lg\:bg-\[url\(assets\/nanotch-voltaic-shoulder-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/nanotch-voltaic-shoulder-pads-md.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/nanotch-voltaic-shoulder-padslg\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/nanotch-voltaic-shoulder-padslg.png);
+    }
+  }
   .lg\:bg-\[url\(assets\/nanotech-cognizant-arm-pads-md\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/nanotech-cognizant-arm-pads-md.png);
@@ -4403,6 +4375,16 @@
   .lg\:bg-\[url\(assets\/nanotech-voltaic-leg-padslg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(assets/nanotech-voltaic-leg-padslg.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/nanotech-voltaic-shoulder-pads-md\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/nanotech-voltaic-shoulder-pads-md.png);
+    }
+  }
+  .lg\:bg-\[url\(assets\/nanotech-voltaic-shoulder-padslg\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(assets/nanotech-voltaic-shoulder-padslg.png);
     }
   }
   .lg\:bg-\[url\(assets\/nanotech-voltaic-torso-armor-md\.png\)\] {
@@ -5255,6 +5237,12 @@
       padding-inline: 10px;
     }
   }
+  .lg\:text-2xl {
+    @media (width >= 64rem) {
+      font-size: var(--text-2xl);
+      line-height: var(--tw-leading, var(--text-2xl--line-height));
+    }
+  }
   .lg\:text-5xl {
     @media (width >= 64rem) {
       font-size: var(--text-5xl);
@@ -5356,31 +5344,6 @@
 .armorType:hover {
   background-color: rgb(129 140 248);
 }
-@property --tw-rotate-x {
-  syntax: "*";
-  inherits: false;
-  initial-value: rotateX(0);
-}
-@property --tw-rotate-y {
-  syntax: "*";
-  inherits: false;
-  initial-value: rotateY(0);
-}
-@property --tw-rotate-z {
-  syntax: "*";
-  inherits: false;
-  initial-value: rotateZ(0);
-}
-@property --tw-skew-x {
-  syntax: "*";
-  inherits: false;
-  initial-value: skewX(0);
-}
-@property --tw-skew-y {
-  syntax: "*";
-  inherits: false;
-  initial-value: skewY(0);
-}
 @property --tw-border-style {
   syntax: "*";
   inherits: false;
@@ -5389,4 +5352,9 @@
 @property --tw-font-weight {
   syntax: "*";
   inherits: false;
+}
+@property --tw-outline-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
 }
