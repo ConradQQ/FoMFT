@@ -446,22 +446,22 @@ useEffect(() => {
       {selectedCategory === null && (
         <>
           <div className="item-slots-1 flex flex-col  w-full h-1/2 items-center">
-            
+          <h1 className='text-white text-center mr-20 underline'>Loadout A</h1> 
           <div className="HTS-slots-1 w-full h-1/3 item-center flex flex-row mt-1">
             <div className={isHelmetSlotSelectedOne
-                ? `helmetSlot1 ${helmetImgOne} w-[60px] h-[60px] ${helmetImgOneMD} lg:w-[90px] lg:h-[90px] mx-1 cursor-pointer`
+                ? `helmetSlot1 ${helmetImgOne} w-[55px] h-[51px] ${helmetImgOneMD} lg:w-[90px] lg:h-[90px] mx-1 cursor-pointer`
                 : "helmetSlot1 lg:bg-[url(assets/headSlot-md.png)] bg-[url(assets/headSlot-sm.png)] lg:w-[90px] lg:h-[90px] w-[55px] h-[51px] mx-1 cursor-pointer"
               }
               onClick={isHelmetSlotSelectedOne ? () => handleArmorSlotClickOne('Helmet') : () => handleArmorTypeClickOne('Helmet')} title={helmetToolTipOne}></div>
 
             <div className={isTorsoSlotSelectedOne
-                ? `torsoSlot1 ${torsoImgOne} w-[55px] h-[51px] ${torsoImgOneMD} lg:w-[90px] lg:h-[90px] lg:mx-1 cursor-pointer`
+                ? `torsoSlot1 ${torsoImgOne} w-[55px] h-[51px] ${torsoImgOneMD} lg:w-[90px] lg:h-[90px] lg:mx-1 cursor-pointer mx-1`
                 : "torsoSlot1 bg-[url(assets/torsoSlot-sm.png)] lg:bg-[url(assets/torsoSlot-md.png)] lg:w-[90px] lg:h-[90px] w-[55px] h-[51px] mx-1 cursor-pointer"
               }
               onClick={isTorsoSlotSelectedOne ? () => handleArmorSlotClickOne('Torso') : () => handleArmorTypeClickOne('Torso')} title={torsoToolTipOne}></div>
               
             <div className={isArmsSlotSelectedOne
-                ? `armsSlot1 ${armsImgOne} w-[60px] h-[60px]  ${armsImgOneMD} lg:w-[90px] lg:h-[90px] mx-1 cursor-pointer`
+                ? `armsSlot1 ${armsImgOne} w-[55px] h-[51px]  ${armsImgOneMD} lg:w-[90px] lg:h-[90px] mx-1 cursor-pointer`
                 : "armsSlot1 bg-[url(assets/armSlot-sm.png)] w-[55px] h-[51px] mx-1 cursor-pointer  lg:bg-[url(assets/armSlot-md.png)] lg:w-[90px] lg:h-[90px] "
               }
               onClick={isArmsSlotSelectedOne ? () => handleArmorSlotClickOne('Arms') : () => handleArmorTypeClickOne('Arms')} title={armsToolTipOne}></div>
@@ -469,20 +469,20 @@ useEffect(() => {
 
           <div className="LSH-slots-1 w-full h-1/3 item-center flex flex-row mt-1">
             <div className={isLegsSlotSelectedOne
-                ? `armsSlot1 ${legsImgOne} w-[60px] h-[60px]  ${legsImgOneMD} lg:w-[90px] lg:h-[90px] mx-1 cursor-pointer`
+                ? `armsSlot1 ${legsImgOne} w-[55px] h-[51px]  ${legsImgOneMD} lg:w-[90px] lg:h-[90px] mx-1 cursor-pointer`
                 : "armsSlot1 bg-[url(assets/legSlot-sm.png)] w-[55px] h-[51px] mx-1 cursor-pointer lg:bg-[url(assets/legSlot-md.png)] lg:w-[90px] lg:h-[90px] "
               }
               onClick={isLegsSlotSelectedOne ? () => handleArmorSlotClickOne('Legs') : () => handleArmorTypeClickOne('Legs')} title={legsToolTipOne}></div>
 
 
             <div className={isShoulderSlotSelectedOne
-                ? `armsSlot1 ${shouldersImgOne} w-[60px] h-[60px]  ${shouldersImgOneMD} lg:w-[90px] lg:h-[90px] mx-1 cursor-pointer`
+                ? `armsSlot1 ${shouldersImgOne} w-[55px] h-[51px]  ${shouldersImgOneMD} lg:w-[90px] lg:h-[90px] mx-1 cursor-pointer`
                 : "armsSlot1 bg-[url(assets/shouldersSlot-sm.png)] w-[55px] h-[51px] mx-1 cursor-pointer lg:bg-[url(assets/shouldersSlot-md.png)] lg:w-[90px] lg:h-[90px] "
               }
               onClick={isShoulderSlotSelectedOne ? () => handleArmorSlotClickOne('Shoulders') : () => handleArmorTypeClickOne('Shoulders')}  title={shouldersToolTipOne}></div>
 
             <div className={isHandsSlotSelectedOne
-                ? `armsSlot1 ${handsImgOne} w-[60px] h-[60px]  ${handsImgOneMD} lg:w-[90px] lg:h-[90px] mx-1 cursor-pointer`
+                ? `armsSlot1 ${handsImgOne} w-[55px] h-[51px]  ${handsImgOneMD} lg:w-[90px] lg:h-[90px] mx-1 cursor-pointer`
                 : "armsSlot1 bg-[url(assets/handSlot-sm.png)] w-[55px] h-[51px] mx-1 cursor-pointer lg:bg-[url(assets/handSlot-md.png)] lg:w-[90px] lg:h-[90px] "
               }
               onClick={isHandsSlotSelectedOne ? () => handleArmorSlotClickOne('Hands') : () => handleArmorTypeClickOne('Hands')} title={handsToolTipOne}></div>
@@ -492,19 +492,19 @@ useEffect(() => {
             <div 
 
               className={isFoodSlotSelectedOne
-                ? `foodSlot1 ${foodImgOne} w-[60px] h-[60px] mx-1 cursor-pointer ${foodImgOneMD} lg:w-[90px] lg:h-[90px] `
+                ? `foodSlot1 ${foodImgOne} w-[55px] h-[51px] mx-1 cursor-pointer ${foodImgOneMD} lg:w-[90px] lg:h-[90px] `
                 : "foodSlot1 bg-[url(assets/miscSlot-sm.png)] w-[55px] h-[51px] mx-1 cursor-pointer lg:bg-[url(assets/miscSlot-md.png)] lg:w-[90px] lg:h-[90px] "
               }
               onClick={isFoodSlotSelectedOne ? () => handleCompareSlotClickOne('food') : () => handleCategoryClickOne('food')} title={foodToolTipOne}></div>
 
             <div className={isMedSlotSelectedOne
-                ? `medSlot1 ${medImgOne} w-[60px] h-[60px] mx-1 cursor-pointer ${medImgOneMD} lg:w-[90px] lg:h-[90px]`
+                ? `medSlot1 ${medImgOne} w-[55px] h-[51px] mx-1 cursor-pointer ${medImgOneMD} lg:w-[90px] lg:h-[90px]`
                 : "medSlot1 bg-[url(assets/miscSlot-sm.png)] w-[55px] h-[51px] mx-1 cursor-pointer lg:bg-[url(assets/miscSlot-md.png)] lg:w-[90px] lg:h-[90px] "
               }
               onClick={isMedSlotSelectedOne ? () => handleCompareSlotClickOne('med') : () => handleCategoryClickOne('med')} title={medToolTipOne}></div>
 
             <div className={isBoosterSlotSelectedOne
-                ? `medSlot1 ${boosterImgOne} w-[60px] h-[60px] mx-1 cursor-pointer ${boosterImgOneMD} lg:w-[90px] lg:h-[90px]`
+                ? `medSlot1 ${boosterImgOne} w-[55px] h-[51px] mx-1 cursor-pointer ${boosterImgOneMD} lg:w-[90px] lg:h-[90px]`
                 : "medSlot1 bg-[url(assets/miscSlot-sm.png)] w-[55px] h-[51px] mx-1 cursor-pointer lg:bg-[url(assets/miscSlot-md.png)] lg:w-[90px] lg:h-[90px] "
               }
               onClick={isBoosterSlotSelectedOne ? () => handleCompareSlotClickOne('booster') : () => handleCategoryClickOne('booster')} title={boosterToolTipOne}></div>
@@ -524,9 +524,9 @@ useEffect(() => {
         
       </div>
 
-      <div className="item-slots-2 flex flex-col w-full h-1/2 items-center lg:mt-55 mt-15">
-        
-      <div className="HTS-slots-2 w-full h-1/3 item-center flex flex-row mt-1">
+      <div className="item-slots-2 flex flex-col w-full h-1/2 items-center lg:mt-55 mt-5">
+        <h1 className='text-white text-center mr-20 underline'>Loadout B</h1> 
+        <div className="HTS-slots-2 w-full h-1/3 item-center flex flex-row mt-1">
             <div className={isHelmetSlotSelectedTwo
                 ? `helmetSlot2  ${helmetImgTwoMD} lg:w-[90px] lg:h-[90px] ${helmetImgTwo} w-[55px] h-[51px] mx-1 cursor-pointer`
                 : "helmetSlot2 bg-[url(assets/headSlot-sm.png)] w-[55px] h-[51px] mx-1 cursor-pointer lg:bg-[url(assets/headSlot-md.png)] lg:w-[90px] lg:h-[90px] "

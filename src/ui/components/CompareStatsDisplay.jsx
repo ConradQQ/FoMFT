@@ -229,7 +229,7 @@ for (let [armorKey, armorValue] of Object.entries(armorStatsTwo)) {
 
         <div className='build-1-container flex flex-col w-1/2'>
           <div className="defensive-stats p-4 bg-indigo-900/70 rounded-md w-51 lg:w-80 h-fit">
-          <h1 className="sm:text-md lg:text-2xl text-center mb-3">Loadout: 1</h1>
+          <h1 className="sm:text-md lg:text-2xl text-center mb-3">Loadout: A</h1>
           <h2 className="underline sm:text-sm lg:text-xl text-center mb-3">Defensive Stats</h2>
           {Object.entries(armorStatsOne).map(([statName, statValue]) => (
             <p key={statName} className="sm:text-[12px] lg:text-xl">
@@ -251,7 +251,7 @@ for (let [armorKey, armorValue] of Object.entries(armorStatsTwo)) {
 
         <div className='build-2-container flex flex-col w-1/2'>
           <div className="defensive-stats p-4 bg-indigo-900/70 rounded-md w-51 lg:w-80 h-fit">
-          <h1 className="sm:text-md  lg:text-2xl text-center mb-3">Loadout: 2</h1>
+          <h1 className="sm:text-md  lg:text-2xl text-center mb-3">Loadout: B</h1>
           <h2 className="underline sm:text-sm lg:text-xl text-center mb-3">Defensive Stats</h2>
           {Object.entries(armorStatsTwo).map(([statName, statValue]) => (
             <p key={statName} className="sm:text-[12px] lg:text-xl">
