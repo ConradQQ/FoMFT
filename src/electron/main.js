@@ -29,25 +29,25 @@ app.on('ready', () => {
   }
 
   const template = [
-    {
-      label: 'File',
-      submenu: [
-        {
-          label: 'Load Loadout',
-          click: () => {
-            mainWindow.webContents.send('load-loadout-request');
-          },
-        },
-        {
-          label: 'Save Loadout',
-          click: () => {
-            mainWindow.webContents.send('save-loadout-request');
-          },
-        },
-        { type: 'separator' },
-        { role: 'quit' },
-      ],
-    },
+    // {
+    //   label: 'File',
+    //   submenu: [
+    //     {
+    //       label: 'Load Loadout',
+    //       click: () => {
+    //         mainWindow.webContents.send('load-loadout-request');
+    //       },
+    //     },
+    //     {
+    //       label: 'Save Loadout',
+    //       click: () => {
+    //         mainWindow.webContents.send('save-loadout-request');
+    //       },
+    //     },
+    //     { type: 'separator' },
+    //     { role: 'quit' },
+    //   ],
+    // },
     {
       label: 'Menus',
       submenu: [
@@ -71,26 +71,26 @@ app.on('ready', () => {
         },
       ],
     },
-    { 
-      label: 'DevTools',
-      submenu: [
-        {
-          label: 'Toggle DevTools',
-          // eslint-disable-next-line no-undef
-          accelerator: process.platform === 'darwin' ? 'Cmd+Option+I' : 'Ctrl+Shift+I',
-          click: () => {
-            mainWindow.webContents.toggleDevTools();
-          },
-        },
-        {
-          label: 'Reload',
-          accelerator: 'CmdOrCtrl+R',
-          click: () => {
-            mainWindow.webContents.reload();
-          },
-        },
-      ],
-    },
+    // { 
+    //   label: 'DevTools',
+    //   submenu: [
+    //     {
+    //       label: 'Toggle DevTools',
+    //       // eslint-disable-next-line no-undef
+    //       accelerator: process.platform === 'darwin' ? 'Cmd+Option+I' : 'Ctrl+Shift+I',
+    //       click: () => {
+    //         mainWindow.webContents.toggleDevTools();
+    //       },
+    //     },
+    //     {
+    //       label: 'Reload',
+    //       accelerator: 'CmdOrCtrl+R',
+    //       click: () => {
+    //         mainWindow.webContents.reload();
+    //       },
+    //     },
+    //   ],
+    // },
   ];
 
   const menu = Menu.buildFromTemplate(template);
