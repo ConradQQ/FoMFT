@@ -1,0 +1,15 @@
+{
+  "appId": "com.conradqq.fomft",
+  "files": ["src/electron", "dist-react"],
+  "icon": "./fomftIcon.png",
+  "mac": {
+    "target": "dmg"
+  },
+  "linux": {
+    "target": "AppImage",
+    "category": "Utility"
+  },
+  "win": {
+    "target": ["portable"]
+  }
+}
