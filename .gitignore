@@ -6,7 +6,6 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
-tailwind.config.js
 node_modules
 dist
 dist-react
@@ -24,3 +23,4 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+tailwind.config.js
