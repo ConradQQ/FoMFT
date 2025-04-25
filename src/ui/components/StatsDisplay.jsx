@@ -45,9 +45,9 @@ const StatsDisplay = ({ itemObjects }) => {
   
   itemObjects.forEach(item => {
     if(Object.keys(item)[0] === 'weapon_id') {
-      if (item.stats) {
-        for (const key in item.stats) {
-          const value = item.stats[key];
+      if (item.stats_plus) {
+        for (const key in item.stats_plus) {
+          const value = item.stats_plus[key];
           if (weaponStats[key]) {
             weaponStats[key] += value;
           } else {
@@ -111,7 +111,7 @@ for (let [armorKey, armorValue] of Object.entries(armorStats)) {
   return (
     <div className="stats-container text-white flex flex-col sm:mt-5 w-full h-full items-center">
       <div 
-      className="bg-[url(assets/chart.png)] lg:bg-[url(assets/chartlg.png)] hover:bg-[url(assets/chartHover.png)] hover:lg:bg-[url(assets/chartHover.png)] w-[16px] h-[16px] lg:w-[24px] lg:h-[24px] cursor-pointer absolute top-1 right-56 lg:top-1 lg:right-100" 
+      className="bg-[url(assets/chart.png)] lg:bg-[url(assets/chartlg.png)] hover:bg-[url(assets/chartHover.png)] hover:lg:bg-[url(assets/chartHoverlg.png)] w-[16px] h-[16px] lg:w-[24px] lg:h-[24px] cursor-pointer absolute top-1 right-18 lg:top-1 lg:right-25" 
       onClick={() => setShowRawStats(!showRawStats)}></div>
 
       {!showRawStats && (

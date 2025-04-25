@@ -60,12 +60,12 @@ const WeaponsMenu = ({setItemObjects, itemObjects, setSlotTypes }) => {
   return (
     <div className="weapons-menu">
       <div className="items flex flex-col">
-        {loading && <div>Loading...</div>}
+        {loading && <div className='text-indigo-400'>Loading...</div>}
         {error && <div>Error: {error}</div>}
         {weapons.length > 0 && (
           <ul className="item-list overflow-y-auto max-h-100">
             {weapons.map((weapon) => (
-              <li key={weapon.weapon_id} onClick={() => handleItemClick(weapon)} className='cursor-pointer underline text-white hover:text-indigo-400'>
+              <li key={weapon.weapon_id} onClick={() => handleItemClick(weapon)} className='w-fit cursor-pointer my-1 text-white hover:text-indigo-400 hover:underline text-[18px]'>
                 {weapon.weapon_name}
               </li>
             ))}

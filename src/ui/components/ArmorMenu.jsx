@@ -80,13 +80,13 @@ const ArmorMenu = ({showArmorTypes, setItemObjects, itemObjects, setSlotTypes}) 
     <div className="armor-menu">
       <div className="armor-category absolute top-0 left-0 ml-2 lg:ml-8">
         {showArmorTypes && (
-          <div className="armor-types flex flex-row text-[11px] lg:text-[16px] top-0 left-0">
+          <div className="armor-types flex flex-row text-[11px] lg:text-[16px] absolute top-6 left-0">
             {armorTypes.map((type) => (
               <button
                 key={type}
                 onClick={() => handleArmorTypeClick(type)}
-                className='mr-2 lg:mx-3 font-bold text-white text-[10px] lg:text-[14px] rounded-lg sm:px-[4px] lg:px-[10px]'
-                style={{backgroundColor: 'rgb(79, 70, 229)'}}
+                className='armorType mr-2 lg:mx-3 font-bold  text-white text-[10px] lg:text-[14px] cursor-pointer rounded-lg sm:px-[4px] 
+                lg:px-[10px]'
               >
                 {type.charAt(0).toUpperCase() + type.slice(1)}
               </button>
@@ -95,18 +95,18 @@ const ArmorMenu = ({showArmorTypes, setItemObjects, itemObjects, setSlotTypes}) 
         )}
       </div>
       {selectedArmorType && (
-        <div className="items flex flex-col">
-          {loading && <div>Loading...</div>}
+        <div className="items flex flex-col ">
+          {loading && <div className='text-indigo-400'>Loading...</div>}
           {error && <div>Error: {error}</div>}
           {items.length > 0 && (
-            <ul className="item-list overflow-y-auto max-h-100 no-scrollbar">
+            <ul className="item-list overflow-y-auto scrollbar max-h-100">
               {items.map((item) => (
                 <li
                   key={item.armor_id}
                   onClick={() => {
                     handleItemClick(item)
                   }}
-                  className='cursor-pointer underline mt-0.5 text-white hover:text-indigo-400'
+                  className='w-fit cursor-pointer my-1 text-white hover:text-indigo-400 hover:underline lg:text-[18px]'
                 >
                   {item.armor_name}
                 </li>

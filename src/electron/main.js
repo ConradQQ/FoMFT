@@ -12,6 +12,8 @@ app.on('ready', () => {
   const mainWindow = new BrowserWindow({
     width: 800,
     height: 600,
+    maxWidth: 1920,
+    maxHeight: 1080,
     webPreferences: {
       nodeIntegration: false,
       contextIsolation: true,
@@ -46,7 +48,30 @@ app.on('ready', () => {
     //     { role: 'quit' },
     //   ],
     // },
-    // { // Add a new menu item for DevTools
+    {
+      label: 'Menus',
+      submenu: [
+        {
+          label: 'Main Menu',
+          click: () => {
+            mainWindow.webContents.send('navigate-basePage');
+          },
+        },
+        // {
+        //   label: 'Detailed Stats',
+        //   click: () => {
+        //     mainWindow.webContents.send('navigate-stats');
+        //   },
+        // },
+        {
+          label: 'Comparison Tool',
+          click: () => {
+            mainWindow.webContents.send('navigate-about');
+          },
+        },
+      ],
+    },
+    // { 
     //   label: 'DevTools',
     //   submenu: [
     //     {

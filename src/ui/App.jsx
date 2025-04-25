@@ -1,22 +1,62 @@
+/* eslint-disable no-unused-vars */
 import './input.css';
-import ItemMenu from './components/ItemMenu';
-import StatsDisplay from './components/StatsDisplay';
-import SlotsMenu from './components/SlotsMenu';
-import { useState, useEffect } from 'react';
+import BasePage from './components/BasePage';
+import DetailedStatsPage from './components/DetailedStatsPage';
+import CompareToolPage from './components/CompareToolPage';
+import { useState, useEffect, useCallback } from 'react';
+import { Routes, Route, Link, useNavigate } from 'react-router-dom';
 
-function App() {
+const App = () => {
+
+  // Base Page State Logic
   const [itemObjects, setItemObjects] = useState([]);
-  // eslint-disable-next-line no-unused-vars
-  const [key, setKey] = useState(0); 
   const [slotTypes, setSlotTypes] = useState([]);
-  // eslint-disable-next-line no-unused-vars
   const [slotItems, setSlotItems] = useState({});
+  const [selectedArmorType, setSelectedArmorType] = useState(null);
+  const [selectedArmorTypeOne, setSelectedArmorTypeOne] = useState(null);
+  const [selectedArmorTypeTwo, setSelectedArmorTypeTwo] = useState(null);
+  
+  const navigate = useNavigate();
+
+  // CompareToolPage state logic
+
+  const [firstCompareItemsObjects, setFirstCompareItemObjects] = useState([]);
+  const [secondCompareItemsObjects, setSecondCompareItemObjects] = useState([]);
+  const [compareSlotTypesOne, setCompareSlotTypesOne] = useState([]);
+  const [compareSlotTypesTwo, setCompareSlotTypesTwo] = useState([]);
+  const [currentCompareItemObject, setCurrentCompareItemObject] = useState(1);
+  
 
   // Function to remove item of a slot from SlotTypes and ItemObjects on item slot click
   const handleSlotClick = (slotToRemove) => {
     setSlotTypes((prevSlots) => prevSlots.filter((slot) => slot !== slotToRemove));
     setItemObjects((prevItems) => prevItems.filter((item) => item.slot !== slotToRemove));
   };
+
+   // Functions to remove item of a non-armor compare slot  
+   const handleCompareSlotClickOne = (slotToRemove) => {
+    setCompareSlotTypesOne((prevSlots) => prevSlots.filter((slot) => slot !== slotToRemove));
+    setFirstCompareItemObjects((prevItems) => prevItems.filter((item) => item.slot !== slotToRemove));
+  };
+
+   const handleCompareSlotClickTwo = (slotToRemove) => {
+    setCompareSlotTypesTwo((prevSlots) => prevSlots.filter((slot) => slot !== slotToRemove));
+    setSecondCompareItemObjects((prevItems) => prevItems.filter((item) => item.slot !== slotToRemove));
+  };
+
+  // Functions to remove armor compare slot
+    const handleArmorSlotClickOne = (slotToRemove) => {
+    setCompareSlotTypesOne((prevSlots) => prevSlots.filter((slot) => slot !== slotToRemove));
+    setFirstCompareItemObjects((prevItems) => prevItems.filter((item) => item.slot !== slotToRemove));
+  };
+
+   const handleArmorSlotClickTwo = (slotToRemove) => {
+    setCompareSlotTypesTwo((prevSlots) => prevSlots.filter((slot) => slot !== slotToRemove));
+    setSecondCompareItemObjects((prevItems) => prevItems.filter((item) => item.slot !== slotToRemove));
+  };
+
+
+
 
   // Function to save the current loadout
   const saveLoadout = () => {
@@ -59,61 +99,91 @@ function App() {
       }
     }, []);
 
+    // Electron menu navigation
+
+    useEffect(() => {
+      if (window.electronAPI && window.electronAPI.on) {
+        window.electronAPI.on('navigate-basePage', () => {
+          navigate('/');
+        });
+  
+        window.electronAPI.on('navigate-stats', () => {
+          console.log('Navigate to Detailed Stats');
+          navigate('/stats');
+        });
+  
+        window.electronAPI.on('navigate-about', () => {
+          console.log('Navigate to About');
+          navigate('/about');
+        });
+      }
+    }, [navigate]);
+
   return (
     <>
-    <div className="app-container flex flex-row w-screen h-screen  overflow-hidden bg-[url(assets/background.png)] lg:bg-[url(assets/backgroundLG.png)]">
 
-    {/* Save/Load Container */}
-    <div className='load-save-container flex flex-row absolute right-1 top-1'>
+    <Routes>
       
-      {/* Save Button */}
-      <div
-      className='bg-[url(./assets/export.png)] hover:bg-[url(./assets/exportHover.png)] lg:bg-[url(./assets/exportLG.png)] hover:lg:bg-[url(./assets/exportHoverLG.png)] w-[16px] h-[16px] lg:w-[24px] lg:h-[24px] cursor-pointer'
-      onClick={() => {
-      saveLoadout();
-      }}>
-      </div>
-
-      {/* Load Button */}
-       <div
-       className='bg-[url(./assets/import.png)] hover:bg-[url(./assets/importHover.png)] lg:bg-[url(./assets/importLG.png)] hover:lg:bg-[url(./assets/importHoverLG.png)] h-[16px] w-[16px] lg:w-[24px] lg:h-[24px] cursor-pointer ml-2'
-      onClick={() => {
-      loadLoadout();
-      }}>
-      </div>
-    </div>
-
-      {/* Items Menu */}
-      <div className='items-menu w-1/3'>
-        <div className='flex flex-col'>
-         <ItemMenu  
+      <Route
+        path="/"
+        element={<BasePage
+          itemObjects={itemObjects}
           setItemObjects={setItemObjects}
-          setSlotTypes={setSlotTypes}
-          itemObjects={itemObjects}
-          slotTypes={slotTypes}/>
-        </div>
-      </div>
-
-      {/* Slots Menu */}
-      <div className='slots-menu flex flex-col w-1/3 h-full items-center'>
-        <SlotsMenu 
-          itemObjects={itemObjects}
           slotTypes={slotTypes}
+          setSlotTypes={setSlotTypes}
+          slotItems={slotItems}
+          setSlotItems={setSlotItems}
           handleSlotClick={handleSlotClick}
           saveLoadout={saveLoadout}
           loadLoadout={loadLoadout}
-        />
-      </div>
+          
+        />}
+      />
 
-      {/* Stats Display */}
-      <div className="stats-display flex flex-col w-1/3 h-full items-center">
-        <StatsDisplay 
-        itemObjects = {itemObjects}
-        slotTypes = {slotTypes} />
-      </div>
-    </div>
-  </>
-  )
+      <Route 
+        path="/stats" 
+        element={<DetailedStatsPage 
+          itemObjects={itemObjects}
+          setItemObjects={setItemObjects}
+          slotTypes={slotTypes}
+          setSlotTypes={setSlotTypes}
+          slotItems={slotItems}
+          setSlotItems={setSlotItems}
+          handleSlotClick={handleSlotClick}
+          saveLoadout={saveLoadout}
+          loadLoadout={loadLoadout}
+        />} 
+      />
+
+      <Route 
+        path="/about"
+        element={<CompareToolPage 
+          firstCompareItemsObjects={firstCompareItemsObjects}
+          setFirstCompareItemObjects={setFirstCompareItemObjects}
+          secondCompareItemsObjects={secondCompareItemsObjects}
+          setSecondCompareItemObjects={setSecondCompareItemObjects}
+          compareSlotTypesOne={compareSlotTypesOne}
+          setCompareSlotTypesOne={setCompareSlotTypesOne}
+          compareSlotTypesTwo={compareSlotTypesTwo}
+          setCompareSlotTypesTwo={setCompareSlotTypesTwo}
+          currentCompareItemObject={currentCompareItemObject}
+          setCurrentCompareItemObject={setCurrentCompareItemObject}
+          handleCompareSlotClickOne={handleCompareSlotClickOne}
+          handleCompareSlotClickTwo={handleCompareSlotClickTwo}
+          selectedArmorTypeOne={selectedArmorTypeOne}
+          setSelectedArmorTypeOne={setSelectedArmorTypeOne}
+          selectedArmorTypeTwo={selectedArmorTypeTwo}
+          setSelectedArmorTypeTwo={setSelectedArmorTypeTwo}
+          selectedArmorType={selectedArmorType}
+          setSelectedArmorType={setSelectedArmorType}
+          handleArmorSlotClickTwo={handleArmorSlotClickTwo}
+          handleArmorSlotClickOne={handleArmorSlotClickOne}
+        />}
+      />
+
+    </Routes>
+    </>
+  );
 }
 
 export default App

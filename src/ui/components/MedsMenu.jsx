@@ -14,7 +14,7 @@ const MedsMenu = ({ setItemObjects, itemObjects, setSlotTypes}) => {
         setMeds(response.data);
         setLoading(false);
       } catch (err) {
-        setError(err.message || 'Error fetching food.');
+        setError(err.message || 'Error fetching Meds.');
         setLoading(false);
       }
     };
@@ -59,13 +59,13 @@ const MedsMenu = ({ setItemObjects, itemObjects, setSlotTypes}) => {
   return (
     <div className="meds-menu">
       <div className="items flex flex-col">
-        {loading && <div>Loading...</div>}
+        {loading && <div className='text-indigo-400'>Loading...</div>}
         {error && <div>Error: {error}</div>}
         {meds.length > 0 && (
           <ul className="item-list overflow-y-auto max-h-100">
             {meds.map((med) => (
               <li key={med.id} 
-                  className='cursor-pointer underline mt-0.5 text-white hover:text-indigo-400'
+                  className='w-fit cursor-pointer my-1 text-white hover:text-indigo-400 hover:underline lg:text-[18px]'
                   onClick={() => handleItemClick(med)}>
                   {med.med_name}
               </li>

@@ -59,13 +59,13 @@ const ImplantsMenu = ({setItemObjects, itemObjects, setSlotTypes  }) => {
   return (
     <div className="implants-menu">
       <div className="items flex flex-col">
-        {loading && <div>Loading...</div>}
+        {loading && <div className='text-indigo-400'>Loading...</div>}
         {error && <div>Error: {error}</div>}
         {implants.length > 0 && (
           <ul className="item-list overflow-y-auto max-h-100">
             {implants.map((implant) => (
               <li key={implant.id} 
-              className='cursor-pointer underline mt-0.5 text-white hover:text-indigo-400'
+              className='w-fit cursor-pointer my-1 text-white hover:text-indigo-400 hover:underline lg:text-[18px]'
                   onClick={() => handleItemClick(implant)}>
                   {implant.implant_name}
               </li>

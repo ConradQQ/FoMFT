@@ -18,30 +18,18 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* app-container styles */
-.no-scrollbar::-webkit-scrollbar {
-  display: none;
+/* scrollbar styles */
+::-webkit-scrollbar {
+  width: 8px;
 }
-
-/* Hide scrollbar for IE, Edge and Firefox */
-.no-scrollbar {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+::-webkit-scrollbar-track {
+  background:  #272727;
+  border-radius: 10px;
 }
-/* Item Slot Styles */
-.item-slot {
-  width: 5rem;
-  height: 5rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+::-webkit-scrollbar-thumb {
+  background:  #667eea;
+  border-radius: 10px;
 }
-.HCS-slots {
-  border-spacing: 10px;
-}
-button {
-  cursor: pointer;
-}
-
 
 /* Media Queries */
 @media (prefers-color-scheme: light) {
@@ -55,4 +43,11 @@ button {
   button {
     background-color: #f9f9f9;
   }
+}
+
+.armorType {
+  background-color: rgb(79 70 229);
+}
+.armorType:hover {
+  background-color: rgb(129 140 248);
 }

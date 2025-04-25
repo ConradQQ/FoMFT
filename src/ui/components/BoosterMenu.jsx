@@ -59,13 +59,13 @@ const BoosterMenu = ({ setItemObjects, itemObjects, setSlotTypes}) => {
   return (
     <div className="boosters-menu">
       <div className="items flex flex-col">
-        {loading && <div>Loading...</div>}
+        {loading && <div className='text-indigo-400'>Loading...</div>}
         {error && <div>Error: {error}</div>}
         {boosters.length > 0 && (
           <ul className="item-list overflow-y-auto max-h-100">
             {boosters.map((booster) => (
               <li key={booster.id} 
-                  className='cursor-pointer underline mt-0.5 text-white hover:text-indigo-400'
+                  className='w-fit cursor-pointer my-1 text-white hover:text-indigo-400 hover:underline lg:text-[18px]'
                   onClick={() => handleItemClick(booster)}>
                   {booster.booster_name}
               </li>
